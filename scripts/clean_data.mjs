@@ -24,6 +24,9 @@ files.splice(files.indexOf("cleaned"), 1);
 
 console.log({files})
 
+// We are going to combine all of the .csvs together at the end, so we need to make an array to hold them
+const all_data = [];
+
 // Then we need to loop through each file and clean it up
 files.forEach((file) => {
   // Read the file
@@ -85,4 +88,12 @@ files.forEach((file) => {
     d3.csvFormat(parsed_data)
   );
 
+  // Then we need to add the parsed data to the all_data array
+  all_data.push(...parsed_data);
 });
+
+// Write the all_data array as JSON
+fs.writeFileSync(
+  path.join(process.cwd(), "public/data/ovuzpsg_1221/cleaned", "all_data.json"),
+  JSON.stringify(all_data, null, 2)
+);
