@@ -1,0 +1,5 @@
+oblastNameUkrainian,harvestedArea,volume,grainYield,volumeEnterprise,grainYieldEnterprise,harvestedAreaEnterprise,volumeHousehold,grainYieldHousehold,harvestedAreaHousehold,oblastNameEnglish
+Одеська,4.1,213.5,52.2,213.5,52.2,4.1,NaN,NaN,NaN,Odesa
+Херсонська,5.2,301.6,57.8,301.6,57.8,5.2,NaN,NaN,NaN,Kherson
+Одеська,213.5,105.9,0,105.9,0,213.5,NaN,0,NaN,Odesa
+Херсонська,301.6,79.5,0,79.5,0,301.6,NaN,0,NaN,Kherson
