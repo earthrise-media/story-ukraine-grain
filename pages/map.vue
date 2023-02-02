@@ -18,54 +18,6 @@ const valueKey = ref("harvestedArea")
 const valueColorScale = d3.scaleLinear().domain([0, 1000]).range(["white", "red"])
 
 onMounted(async () => {
-  // load .csv data from public/data/ovuzpsg_1221/cleaned/all_data.json with d3 (use async so we wait for the data to load)
-
-  /*
-  parsed_data = d3
-  .csvParseRows(file)
-  // throw away the first two header rows
-  .slice(2)
-  // make a new array where we pull out each row and do something with it
-  .map((row) => {
-    const // // yank the first three entries from the row array and call their new array ‘race’.
-      // race = row.splice(0,3),
-      // assign the variables ‘age’ and ‘occupation’ to the last two entries.
-      [
-        ,
-        oblastNameUkrainian,
-        harvestedArea,
-        volume,
-        grainYield,
-        harvestedAreaEnterprise,
-        volumeEnterprise,
-        grainYieldEnterprise,
-        harvestedAreaHousehold,
-        volumeHousehold,
-        grainYieldHousehold,
-        oblastNameEnglish
-      ] = row;
-    // make a new object to return for each row
-    return {
-      oblastNameUkrainian,
-      harvestedArea: +harvestedArea,
-      volume: +volume,
-      grainYield: +grainYield,
-      harvestedArea: +harvestedArea,
-      volumeEnterprise: +volumeEnterprise,
-      grainYieldEnterprise: +grainYieldEnterprise,
-      harvestedAreaEnterprise: +harvestedAreaEnterprise,
-      volumeHousehold: +volumeHousehold,
-      grainYieldHousehold: +grainYieldHousehold,
-      harvestedAreaHousehold: +harvestedAreaHousehold,
-      oblastNameEnglish
-    };
-    // return row
-  })
-  .filter((d) => d.oblastNameUkrainian)
-  */
-
-  const parsed_data = []
-
   d3.json('/data/ovuzpsg_1221/cleaned/all_data.json').then((allData) => {
     // load geojson data from public/data/stanford-ukraine-geojson.json with d3
     d3.json('/data/stanford-ukraine-geojson.json').then((data) => {
