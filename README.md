@@ -1,6 +1,10 @@
 # story-ukraine-grain
 Repository for the work related to the Ukraine Grain story
 
+## Data
+- UKRStat <https://ukrstat.gov.ua/operativ/operativ2021/sg/ovuzpsg/Arh_ovuzpsg_2021_e.html>
+- Map shapefiles; UC Berkeley https://geodata.mit.edu/catalog/stanford-gg870xt4706 University of California, Berkeley. Museum of Vertebrate Zoology
+
 ## Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
