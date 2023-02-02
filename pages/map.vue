@@ -15,17 +15,16 @@
 
       <!-- a list of grain types, when clicked, make that grain type active -->
       <ul class="list ma0 pa0">
-        <li v-for="grainType in grainTypes" :key="grainType"
-        class="w-100 dib v-top ph2 pv1 f7"
-        >
-          <div @click="activeGrainType = grainType" :class="{active: activeGrainType === grainType, ba: true, 'bg-white': true, 'br2': true, 'pa2': true}">
+        <li v-for="grainType in grainTypes" :key="grainType" class="w-100 dib v-top ph2 pv1 f7">
+          <div @click="activeGrainType = grainType"
+            :class="{ active: activeGrainType === grainType, ba: true, 'bg-white': true, 'br2': true, 'pa2': true }">
             {{ grainType.split('року1')[1] }}
             <!-- if the name contains "Dynamics", it probably won't work, so we put a warning emoji -->
             <span v-if="grainType.includes('Dynamics')">&#9888;</span>
           </div>
         </li>
       </ul>
-      
+
 
     </div>
 
@@ -37,22 +36,22 @@
 
       <!-- use a transition group to animate the table -->
 
-      
-        <thead>
-          <tr>
-            <th>Oblast</th>
-            <th>Harvested Area</th>
-            <th>Yield</th>
-            <th>Volume</th>
-          </tr>
-        </thead>
-        <TransitionGroup name="table" tag="tbody" v-if="dataByGrainType">
-          <tr v-for="oblast in sortedDataByGrainType" :key="oblast.oblastNameUkrainian">
-            <td>{{ oblast.oblastNameUkrainian }}</td>
-            <td>{{ oblast.harvestedArea }}</td>
-            <td>{{ oblast.grainYield }}</td>
-            <td>{{ oblast.volume }}</td>
-          </tr>
+
+      <thead>
+        <tr>
+          <th>Oblast</th>
+          <th>Harvested Area</th>
+          <th>Yield</th>
+          <th>Volume</th>
+        </tr>
+      </thead>
+      <TransitionGroup name="table" tag="tbody" v-if="dataByGrainType">
+        <tr v-for="oblast in sortedDataByGrainType" :key="oblast.oblastNameUkrainian">
+          <td>{{ oblast.oblastNameUkrainian }}</td>
+          <td>{{ oblast.harvestedArea }}</td>
+          <td>{{ oblast.grainYield }}</td>
+          <td>{{ oblast.volume }}</td>
+        </tr>
       </TransitionGroup>
     </div>
   </div>
@@ -173,7 +172,7 @@ onMounted(async () => {
 
     // Set the active grain type to the first grain type
     activeGrainType.value = Array.from(dataByGrainType.value.keys())[0]
-    
+
     // Get a list of the grain types from the keys of the group
     // const grainTypes = Array.from(dataByGrainType.keys())
     grainTypes.value = Array.from(dataByGrainType.value.keys())
@@ -236,11 +235,10 @@ watch(activeGrainType, (newGrainType) => {
 .table-leave-active {
   transition: all 2s ease;
 }
+
 .table-enter-from,
 .table-leave-to {
   opacity: 0;
   transform: translateX(30px);
 }
-
-
 </style>
