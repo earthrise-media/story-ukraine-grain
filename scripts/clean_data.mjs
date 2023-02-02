@@ -22,8 +22,6 @@ const files = fs.readdirSync(path.join(process.cwd(), "public/data/ovuzpsg_1221"
 // remove 'cleaned' from the list of files
 files.splice(files.indexOf("cleaned"), 1);
 
-console.log({files})
-
 // We are going to combine all of the .csvs together at the end, so we need to make an array to hold them
 const all_data = [];
 
@@ -36,6 +34,12 @@ files.forEach((file) => {
   );
 
   // console.log('fileData', fileData)
+
+  // grab the current file name
+  const fileName = file.split(".")[0];
+
+  // grab the metadata out of the first 2 rows
+  const metadata = d3.csvParseRows(fileData).slice(0, 2);
 
   // Parse the file
   const parsed_data = d3
@@ -60,6 +64,8 @@ files.forEach((file) => {
       ] = row;
       // make a new object to return for each row
       return {
+        fileName,
+        metadata,
         oblastNameUkrainian,
         harvestedArea: +harvestedArea,
         volume: +volume,
@@ -84,7 +90,7 @@ files.forEach((file) => {
 
   // Write the file as .csv
   fs.writeFileSync(
-    path.join(process.cwd(), "public/data/ovuzpsg_1221/cleaned", file),
+    path.join(process.cwd(), "public/data/ovuzpsg_1221/cleaned", "all_data.csv"),
     d3.csvFormat(parsed_data)
   );
 
