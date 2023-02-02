@@ -80,6 +80,9 @@ const valueKey = ref("harvestedArea")
 // Make a D3 color scale for the values
 const valueColorScale = ref(null)
 
+const width = 960
+const height = 500
+
 // Make a computed that takes dataByGrainType and sorts it by our selected valueKey
 const sortedDataByGrainType = computed(() => {
   if (dataByGrainType.value) {
@@ -89,67 +92,7 @@ const sortedDataByGrainType = computed(() => {
 
 valueColorScale.value = d3.scaleLinear().domain([0, 1000]).range(["white", "red"])
 
-
-// A function to draw the map SVG
-// function initMap(geographicData) {
-//   // Our geojson is contained in data.objects.stanford-pp624tm0074-geojson
-//   // We need to convert it to a feature collection
-//   const featureCollection = topojson.feature(geographicData, geographicData.objects['stanford-pp624tm0074-geojson'])
-
-//   // get the width and height of the SVG
-//   const width = mapSvg.value.clientWidth
-//   const height = mapSvg.value.clientHeight
-
-//   // create a projection
-//   const projection = d3.geoMercator()
-//     .fitSize([width, height], featureCollection)
-
-//   // create a path generator
-//   const path = d3.geoPath()
-//     .projection(projection)
-
-//   // clear SVG
-//   // d3.select(mapSvg.value).selectAll('*').remove()
-
-//   // create a geojson layer
-//   const geojsonLayer = d3.select(mapSvg.value)
-//     .selectAll('path')
-//     .data(featureCollection.features)
-//     .join('path')
-//     .attr('d', path)
-//     .attr("fill", (d, i) => {
-//       const shapeName1 = d.properties.name_1;
-
-//       const oblastData = parsedDataByName.value[shapeName1];
-//       const shapeValue = oblastData ? oblastData[valueKey.value] : 0;
-
-//       if (shapeValue) return valueColorScale.value(+shapeValue);
-//       else return '#FFF'
-//     })
-//     .attr('stroke', '#CCC')
-//     .attr('stroke-width', '0.2')
-// }
-
-// function updateMap(geographicData) {
-//   // use d3 select and update to update the map
-//   // this lets us use transitions to fade in the new data
-//   d3.select(mapSvg.value)
-//     .selectAll('path')
-//     .data(topojson.feature(geographicData, geographicData.objects['stanford-pp624tm0074-geojson']).features)
-//     .join('path')
-//     .transition()
-//     .duration(1000)
-//     .attr("fill", (d, i) => {
-//       const shapeName1 = d.properties.name_1;
-
-//       const oblastData = parsedDataByName.value[shapeName1];
-//       const shapeValue = oblastData ? oblastData[valueKey.value] : 0;
-
-//       if (shapeValue) return valueColorScale.value(+shapeValue);
-//       else return '#FFF'
-//     })
-
-// }
+const margin = { top: 20, right: 20, bottom: 30, left: 40 }
 
 function initScatterplot() {
   // get the width and height of the SVG
@@ -160,13 +103,13 @@ function initScatterplot() {
   const xExtent = d3.extent(dataByGrainType.value.get(activeGrainType.value), (d) => d[scatterplotX.value])
 
   const yExtent = d3.extent(dataByGrainType.value.get(activeGrainType.value), (d) => d[scatterplotY.value])
-  
+
 
   // grab the scatterplot svg
   const svg = d3.select(scatterplotSvg.value)
 
   // configure margins
-  const margin = { top: 20, right: 20, bottom: 30, left: 40 }
+
 
   // create the Y and X axes for the scatterplot
   const x = d3.scaleLinear()
@@ -213,32 +156,6 @@ function initScatterplot() {
     .classed("y-axis", true)
     .call(yAxis)
 
-  // // create the scatterplot points
-  // const points = svg.append("g")
-  //   .classed("points", true)
-  //   .attr("fill", "steelblue")
-  //   .selectAll("circle")
-  //   .data(dataByGrainType.value.get(activeGrainType.value))
-  //   .join("circle")
-  //   .attr("cx", d => x(d[scatterplotX.value]))
-  //   .attr("cy", d => y(d[scatterplotY.value]))
-  //   .attr("r", 3)
-
-  // // Label the scatterplot points with the oblast name
-  // const labels = svg.append("g")
-  //   .classed("labels", true)
-  //   .attr("fill", "black")
-  //   .attr("font-family", "sans-serif")
-  //   .attr("font-size", 10)
-  //   .selectAll("text")
-  //   .data(dataByGrainType.value.get(activeGrainType.value))
-  //   .join("text")
-  //   .attr("x", d => x(d[scatterplotX.value]))
-  //   .attr("y", d => y(d[scatterplotY.value]))
-  //   .attr("dy", "0.35em")
-  //   .attr("dx", "0.35em")
-  //   .text(d => d.oblastNameUkrainian)
-
   // Use a group with a transform to contain both the points and the labels
   const pointsAndLabels = svg.append("g")
     .classed("points-and-labels", true)
@@ -256,53 +173,89 @@ function initScatterplot() {
 
   // Label the scatterplot points with the oblast name
   const labels = pointsAndLabels.append("text")
+    .classed('oblast-label', true)
     .attr("dy", "0.35em")
     .attr("dx", "0.35em")
     .text(d => d.oblastNameUkrainian)
-    
+
+  // select and update all of the point label text
+    labels
+      .attr("fill", "black")
+      .attr("font-weight", "normal")
+      // .filter(d => d.oblastNameUkrainian === activeOblast.value)
+      .attr("fill", "red")
+      .attr("font-weight", "bold")
+      .text(d => d.oblastNameUkrainian)
+
 }
 
 // Select and update the axes and points so that they transition
 // select by the class name
 function updateScatterplot() {
   const svg = d3.select(scatterplotSvg.value)
-  
-  // update the X and Y axis labels
-  svg.select(".x-axis-label")
-    .text(scatterplotX.value)
 
-  svg.select(".y-axis-label")
-    .text(scatterplotY.value)
+  // Get the extent of the scatterplot X and Y in the data
+  const xExtent = d3.extent(dataByGrainType.value.get(activeGrainType.value), (d) => d[scatterplotX.value])
 
-  // update the X and Y axis generators
+  const yExtent = d3.extent(dataByGrainType.value.get(activeGrainType.value), (d) => d[scatterplotY.value])
+
+  // create the Y and X axes for the scatterplot
   const x = d3.scaleLinear()
-    .domain(d3.extent(dataByGrainType.value.get(activeGrainType.value), (d) => d[scatterplotX.value]))
+    .domain(xExtent)
     .range([margin.left, width - margin.right])
 
   const y = d3.scaleLinear()
-    .domain(d3.extent(dataByGrainType.value.get(activeGrainType.value), (d) => d[scatterplotY.value]))
+    .domain(yExtent)
     .range([height - margin.bottom, margin.top])
 
-  
-  // remove any pre-existing axes
-  svg.select(".x-axis").remove()
-  svg.select(".y-axis").remove()
+  // const pointsAndLabels = svg.append("g")
+  //   .classed("points-and-labels", true)
+  //   .attr("fill", "steelblue")
+  //   .attr("font-family", "sans-serif")
+  //   .attr("font-size", 10)
+  //   .selectAll("g")
+  //   .data(dataByGrainType.value.get(activeGrainType.value))
+  //   .join("g")
+  //   .attr("transform", d => `translate(${x(d[scatterplotX.value])},${y(d[scatterplotY.value])})`)
 
-  // create the X and Y axis groups
-  const xAxisGroup = svg.append("g")
-    .classed("x-axis", true)
-    .call(xAxis)
-
-  const yAxisGroup = svg.append("g")
-    .classed("y-axis", true)
-    .call(yAxis)
-
-  // update and transition the scatterplot point groups that contain the points and the labels
+  // instead of appending select and update with a transition
   const pointsAndLabels = svg.select(".points-and-labels")
     .selectAll("g")
     .data(dataByGrainType.value.get(activeGrainType.value))
     .join("g")
     .attr("transform", d => `translate(${x(d[scatterplotX.value])},${y(d[scatterplotY.value])})`)
+    .transition()
+    .duration(1000)
+
+    // update axes and axes labels
+  const xAxis = d3.axisBottom(x)
+  const yAxis = d3.axisLeft(y)
+
+  // clear old axes
+  svg.select(".x-axis").remove()
+  svg.select(".y-axis").remove()
+
+  // add new axes
+  const xAxisGroup = svg.append("g")
+    .classed("x-axis", true)
+    .attr("transform", `translate(0,${height - margin.bottom})`)
+    .call(xAxis)
+
+  const yAxisGroup = svg.append("g")
+    .classed("y-axis", true)
+    .attr("transform", `translate(${margin.left},0)`)
+    .call(yAxis)
+  
+  // update the labels with class .oblast-label
+  const labels = svg.select(".points-and-labels")
+    .selectAll(".oblast-label")
+    .data(dataByGrainType.value.get(activeGrainType.value))
+    .join("text")
+    .classed('oblast-label', true)
+    .attr("dy", "0.35em")
+    .attr("dx", "0.35em")
+    .text(d => d.oblastNameUkrainian)
+
 }
 
 
@@ -356,10 +309,7 @@ watch(activeGrainType, (newGrainType) => {
   valueColorScale.value.domain(extent)
 
   // update the scatterplot
-  // updateScatterplot()
-
-
-  
+  updateScatterplot()
 })
 
 
