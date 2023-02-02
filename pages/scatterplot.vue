@@ -29,14 +29,12 @@
     </div>
 
 
-    <div id="data-table" class="w-two-thirds ba b--gray bw2 fl">
+    <table id="data-table" class="w-two-thirds ba b--gray bw2 fl">
       <!-- <pre v-if="dataByGrainType">
         {{dataByGrainType.get(activeGrainType)}}
       </pre> -->
 
       <!-- use a transition group to animate the table -->
-
-
       <thead>
         <tr>
           <th>Oblast</th>
@@ -53,7 +51,18 @@
           <td>{{ oblast.volume }}</td>
         </tr>
       </TransitionGroup>
-    </div>
+
+      <!-- add a total row -->
+      <tfoot>
+        <tr class="bg-gray white">
+          <td>Total</td>
+          <td>{{ numberFormat(totalHarvestedArea) }}</td>
+          <td>{{ numberFormat(totalYield) }}</td>
+          <td>{{ numberFormat(totalVolume) }}</td>
+        </tr>
+      </tfoot>
+
+    </table>
   </div>
 </template>
 <script setup>
@@ -83,12 +92,37 @@ const valueColorScale = ref(null)
 const width = 960
 const height = 500
 
+const numberFormat = (number) => {
+  return d3.format(",.0f")(number)
+}
+
 // Make a computed that takes dataByGrainType and sorts it by our selected valueKey
 const sortedDataByGrainType = computed(() => {
   if (dataByGrainType.value) {
     return dataByGrainType.value.get(activeGrainType.value).sort((a, b) => b[valueKey.value] - a[valueKey.value])
   }
 })
+
+// Make a computed that sums the total harvestedArea, yield, and volume for the active grain type
+const totalHarvestedArea = computed(() => {
+  if (dataByGrainType.value) {
+    return dataByGrainType.value.get(activeGrainType.value).reduce((acc, curr) => acc + curr.harvestedArea, 0)
+  }
+})
+
+const totalYield = computed(() => {
+  if (dataByGrainType.value) {
+    return dataByGrainType.value.get(activeGrainType.value).reduce((acc, curr) => acc + curr.grainYield, 0)
+  }
+})
+
+const totalVolume = computed(() => {
+  if (dataByGrainType.value) {
+    return dataByGrainType.value.get(activeGrainType.value).reduce((acc, curr) => acc + curr.volume, 0)
+  }
+})
+
+
 
 valueColorScale.value = d3.scaleLinear().domain([0, 1000]).range(["white", "red"])
 
@@ -330,7 +364,7 @@ watch(activeGrainType, (newGrainType) => {
 
 .table-enter-active,
 .table-leave-active {
-  transition: all 2s ease;
+  transition: all 500ms ease;
 }
 
 .table-enter-from,
