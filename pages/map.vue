@@ -88,12 +88,34 @@ const sortedDataByGrainType = computed(() => {
 
 valueColorScale.value = d3.scaleLinear().domain([0, 1000]).range(["white", "red"])
 
+// Merges geometries by shared ID.
+// Inspired by https://github.com/neocarto/geotoolbox/blob/cee58b6c45e3faa59ef680d8e3162c430077e80c/src/gis/aggregate.js
+const aggregate = (topology, objects, idProperty) => {
+  const reduce = geometries => topojson.merge(topology,geometries)
+  const rolledUp = d3.flatRollup(objects.geometries, reduce, d=> d.properties[idProperty]);
+  return {
+    type: 'FeatureCollection',
+    features: rolledUp.map(([id, geometry]) => ({
+      type: "Feature",
+      properties: { [idProperty]: id },
+      geometry
+    }))
+  };
+}
 
 // A function to draw the map SVG
 function initMap(geographicData) {
+
   // Our geojson is contained in data.objects.stanford-pp624tm0074-geojson
   // We need to convert it to a feature collection
-  const featureCollection = topojson.feature(geographicData, geographicData.objects['stanford-pp624tm0074-geojson'])
+  // const featureCollection2 = topojson.feature(geographicData, geographicData.objects['stanford-pp624tm0074-geojson'])
+
+  // Merge geometries so we end up with Oblast-level shapes.
+  const featureCollection = aggregate(
+    geographicData,
+    geographicData.objects['stanford-pp624tm0074-geojson'],
+    'name_1'
+  );
 
   // get the width and height of the SVG
   const width = mapSvg.value.clientWidth
