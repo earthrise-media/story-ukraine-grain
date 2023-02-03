@@ -216,16 +216,8 @@ function initMap(geographicData) {
     .attr('d', path)
     .attr("fill", (d, i) => {
       const shapeName1 = normalizeOblastName(d.properties.name_1);
-      // console.log(shapeName1, parsedDataByName)
       const oblastData = parsedDataByName.value[shapeName1];
       const shapeValue = oblastData ? oblastData[valueKey.value] : 0;
-
-      // console.log('🌻', shapeName1, oblastData, shapeValue)
-      // console.log('💯', shapeValue)
-      // console.log(oblastData[valueKey.value])
-      if (!oblastData) {
-        // console.log('no match', shapeName1)
-      }
 
       if (shapeValue) return valueColorScale.value(+shapeValue);
       else return '#FFF'
@@ -255,9 +247,6 @@ function updateMap(geographicData) {
 
 }
 
-// A germ of an idea: -- Curran
-// const renames = { "Luhansk": "Lugansk"}
-// const rename = str => str in renames ? renames[str] : str;
 
 function normalizeOblastName(key) {
   if (!key) return key
