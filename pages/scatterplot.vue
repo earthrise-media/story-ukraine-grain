@@ -5,17 +5,19 @@
     <svg id="scatterplot" ref="scatterplotSvg" class="w-two-thirds fl"></svg>
     <!-- make a table with a breakdown of the data by oblast for the active grain type -->
 
-    <div class="w-third fl vh-50 overflow-y-auto ba b--red">
+    <div class="w-third fl vh-50 overflow-y-auto">
       <h2>{{ activeGrainType }}</h2>
 
       <!-- next and previous buttons to navigate through grain types -->
-      <button @click="activeGrainType = grainTypes[grainTypes.indexOf(activeGrainType) - 1]">Previous</button>
+      <button @click="activeGrainType = grainTypes[grainTypes.indexOf(activeGrainType) - 1]"
+        class="pointer">Previous</button>
 
-      <button @click="activeGrainType = grainTypes[grainTypes.indexOf(activeGrainType) + 1]">Next</button>
+      <button @click="activeGrainType = grainTypes[grainTypes.indexOf(activeGrainType) + 1]"
+        class="pointer">Next</button>
 
       <!-- a list of grain types, when clicked, make that grain type active -->
       <ul class="list ma0 pa0">
-        <li v-for="grainType in grainTypes" :key="grainType" class="w-100 dib v-top ph2 pv1 f7">
+        <li v-for="grainType in grainTypes" :key="grainType" class="w-100 dib v-top ph2 pv1 f7 pointer">
           <div @click="activeGrainType = grainType"
             :class="{ active: activeGrainType === grainType, ba: true, 'bg-white': true, 'br2': true, 'pa2': true }">
             {{ grainType.split('року1')[1] }}
@@ -24,45 +26,8 @@
           </div>
         </li>
       </ul>
-
-
     </div>
-
-
-    <table id="data-table" class="w-two-thirds ba b--gray bw2 fl">
-      <!-- <pre v-if="dataByGrainType">
-        {{dataByGrainType.get(activeGrainType)}}
-      </pre> -->
-
-      <!-- use a transition group to animate the table -->
-      <thead>
-        <tr>
-          <th>Oblast</th>
-          <th>Harvested Area</th>
-          <th>Yield</th>
-          <th>Volume</th>
-        </tr>
-      </thead>
-      <TransitionGroup name="table" tag="tbody" v-if="dataByGrainType">
-        <tr v-for="oblast in sortedDataByGrainType" :key="oblast.oblastNameUkrainian">
-          <td>{{ oblast.oblastNameUkrainian }}</td>
-          <td>{{ oblast.harvestedArea }}</td>
-          <td>{{ oblast.grainYield }}</td>
-          <td>{{ oblast.volume }}</td>
-        </tr>
-      </TransitionGroup>
-
-      <!-- add a total row -->
-      <tfoot>
-        <tr class="bg-gray white">
-          <td>Total</td>
-          <td>{{ numberFormat(totalHarvestedArea) }}</td>
-          <td>{{ numberFormat(totalYield) }}</td>
-          <td>{{ numberFormat(totalVolume) }}</td>
-        </tr>
-      </tfoot>
-
-    </table>
+    <DataTable :sorted-data-by-grain-type="sortedDataByGrainType" />
   </div>
 </template>
 <script setup>
@@ -91,10 +56,6 @@ const valueColorScale = ref(null)
 
 const width = 960
 const height = 500
-
-const numberFormat = (number) => {
-  return d3.format(",.0f")(number)
-}
 
 // Make a computed that takes dataByGrainType and sorts it by our selected valueKey
 const sortedDataByGrainType = computed(() => {
@@ -213,13 +174,13 @@ function initScatterplot() {
     .text(d => d.oblastNameUkrainian)
 
   // select and update all of the point label text
-    labels
-      .attr("fill", "black")
-      .attr("font-weight", "normal")
-      // .filter(d => d.oblastNameUkrainian === activeOblast.value)
-      .attr("fill", "red")
-      .attr("font-weight", "bold")
-      .text(d => d.oblastNameUkrainian)
+  labels
+    .attr("fill", "black")
+    .attr("font-weight", "normal")
+    // .filter(d => d.oblastNameUkrainian === activeOblast.value)
+    .attr("fill", "red")
+    .attr("font-weight", "bold")
+    .text(d => d.oblastNameUkrainian)
 
 }
 
@@ -261,7 +222,7 @@ function updateScatterplot() {
     .transition()
     .duration(1000)
 
-    // update axes and axes labels
+  // update axes and axes labels
   const xAxis = d3.axisBottom(x)
   const yAxis = d3.axisLeft(y)
 
@@ -279,7 +240,7 @@ function updateScatterplot() {
     .classed("y-axis", true)
     .attr("transform", `translate(${margin.left},0)`)
     .call(yAxis)
-  
+
   // update the labels with class .oblast-label
   const labels = svg.select(".points-and-labels")
     .selectAll(".oblast-label")
