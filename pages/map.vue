@@ -28,28 +28,28 @@
 
     </div>
 
-    <div id="data-table" class="w-two-thirds ba b--gray bw2 fl">
+    <div id="data-table-container" class="">
       <!-- <pre v-if="dataByGrainType">
         {{dataByGrainType.get(activeGrainType)}}
       </pre> -->
 
       <!-- use a transition group to animate the table -->
-      
-      <h2>{{selectedOblasts}}</h2>
+
+      <h2>{{ selectedOblasts }}</h2>
       <pre>
-        {{oblastForecastScale}}
+        {{ oblastForecastScale }}
       </pre>
 
-      <!-- if there are selected oblasts, show the forecast controls --> 
+      <!-- if there are selected oblasts, show the forecast controls -->
       <div>
         <h3>Forecast Select Options</h3>
         <!-- use a select and events to update value, do not use v-model -->
         <select @change="updateForecastScale($event.target.value)">
           <option v-for="option in forecastSelectOptions" :key="option.scaleValue" :value="option.scaleValue">
-            {{option.text}}
-          </option>          
+            {{ option.text }}
+          </option>
         </select>
-        
+
         <!-- button to trigger the forecast in selected oblasts -->
         <button @click="triggerForecast">Forecast</button>
 
@@ -57,57 +57,20 @@
         <button @click="clearSelectedOblasts">Clear</button>
       </div>
 
+      <DataTable :sorted-data-by-grain-type="sortedDataByGrainType" :total-harvested-area="totalHarvestedArea"
+        :total-yield="totalYield" :total-volume="totalVolume" class="w-100 bt b--light-gray mt2 fl" />
 
-      <thead>
-        <tr>
-          <th>Oblast</th>
-          <th>Harvested Area</th>
-          <th>Yield</th>
-          <th>Volume</th>
-        </tr>
-      </thead>
-      <TransitionGroup name="table" tag="tbody" v-if="forecastedDataByGrainType">
-        <tr v-for="oblast in sortedDataByGrainType" :key="oblast.oblastNameUkrainian"
-        @click="addSelectedOblast(oblast.oblastNameEnglish)"
-        >
-          <td>🇺🇦 {{ oblast.oblastNameUkrainian }} 🇺🇸 {{ oblast.oblastNameEnglish }}</td>
-          <!-- <td>{{ oblast.harvestedArea }}</td>
-          <td>{{ oblast.grainYield }}</td>
-          <td>{{ oblast.volume }}</td> -->
 
-          <!-- show the original + forecasted numbers if there is a forecast -->
-          <td v-if="oblastForecastScale[oblast.oblastNameEnglish]">
-            <span class="strike">{{ oblast.harvestedArea }}</span>
-            <span class="bg-green">{{ oblast.harvestedArea * oblastForecastScale[oblast.oblastNameEnglish] }}</span>
-          </td>
-
-          <td v-else>{{ oblast.harvestedArea }}</td>
-
-          <td v-if="oblastForecastScale[oblast.oblastNameEnglish]">
-            <span class="strike">{{ oblast.grainYield }}</span>
-            <span class="bg-green">{{ oblast.grainYield * oblastForecastScale[oblast.oblastNameEnglish] }}</span>
-          </td>
-
-          <td v-else>{{ oblast.grainYield }}</td>
-
-          <td v-if="oblastForecastScale[oblast.oblastNameEnglish]">
-            <span class="strike">{{ oblast.volume }}</span>
-            <span class="bg-green">{{ oblast.volume * oblastForecastScale[oblast.oblastNameEnglish] }}</span>
-          </td>
-          
-
-        </tr>
-      </TransitionGroup>
     </div>
 
     <div id="forecasts">
       <h2>Forecasts</h2>
       <ul>
         <li v-for="forecast in forecasts" :key="forecast.id">
-          <h3>{{forecast.oblastName}}</h3>
-          <p>{{forecast.harvestedArea}}</p>
-          <p>{{forecast.grainYield}}</p>
-          <p>{{forecast.volume}}</p>
+          <h3>{{ forecast.oblastName }}</h3>
+          <p>{{ forecast.harvestedArea }}</p>
+          <p>{{ forecast.grainYield }}</p>
+          <p>{{ forecast.volume }}</p>
         </li>
       </ul>
     </div>
@@ -260,7 +223,7 @@ function initMap(geographicData) {
       // console.log('🌻', shapeName1, oblastData, shapeValue)
       // console.log('💯', shapeValue)
       // console.log(oblastData[valueKey.value])
-      if(!oblastData) {
+      if (!oblastData) {
         // console.log('no match', shapeName1)
       }
 
@@ -297,7 +260,7 @@ function updateMap(geographicData) {
 // const rename = str => str in renames ? renames[str] : str;
 
 function normalizeOblastName(key) {
-  if(!key) return key
+  if (!key) return key
   return slugify(key, {
     strict: true,
     lower: true
