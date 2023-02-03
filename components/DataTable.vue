@@ -1,5 +1,5 @@
 <template>
-  <table id="data-table" class="w-two-thirds ba b--gray bw2 fl">
+  <table id="data-table">
       <!-- <pre v-if="dataByGrainType">
         {{dataByGrainType.get(activeGrainType)}}
       </pre> -->
@@ -36,7 +36,7 @@
 </template>
 <script setup>
 import * as d3 from 'd3'
-defineProps(['sortedDataByGrainType'])
+defineProps(['sortedDataByGrainType', 'totalHarvestedArea', 'totalYield', 'totalVolume'])
 
 const numberFormat = (number) => {
   return d3.format(",.0f")(number)

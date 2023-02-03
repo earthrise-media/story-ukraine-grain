@@ -27,7 +27,8 @@
         </li>
       </ul>
     </div>
-    <DataTable :sorted-data-by-grain-type="sortedDataByGrainType" />
+    <DataTable :sorted-data-by-grain-type="sortedDataByGrainType" :total-harvested-area="totalHarvestedArea"
+      :total-yield="totalYield" :total-volume="totalVolume" class="w-100 bt b--light-gray mt2 fl" />
   </div>
 </template>
 <script setup>
