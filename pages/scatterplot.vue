@@ -55,9 +55,6 @@ const valueKey = ref("harvestedArea")
 // Make a D3 color scale for the values
 const valueColorScale = ref(null)
 
-const width = 960
-const height = 500
-
 // Make a computed that takes dataByGrainType and sorts it by our selected valueKey
 const sortedDataByGrainType = computed(() => {
   if (dataByGrainType.value) {
