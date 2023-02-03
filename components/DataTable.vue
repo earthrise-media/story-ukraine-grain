@@ -38,7 +38,5 @@
 import * as d3 from 'd3'
 defineProps(['sortedDataByGrainType', 'totalHarvestedArea', 'totalYield', 'totalVolume'])
 
-const numberFormat = (number) => {
-  return d3.format(",.0f")(number)
-}
+const numberFormat = d3.format(",.0f");
 </script>
