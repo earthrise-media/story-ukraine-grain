@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="sans-serif">
     <!-- <NuxtWelcome /> -->
     <!-- Use Nuxt Pages for routing -->
     <NuxtPage />

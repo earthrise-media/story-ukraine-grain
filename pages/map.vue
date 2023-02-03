@@ -28,31 +28,51 @@
 
     </div>
 
-
-    <div id="data-table" class="w-two-thirds ba b--gray bw2 fl">
+    <div id="data-table-container" class="">
       <!-- <pre v-if="dataByGrainType">
         {{dataByGrainType.get(activeGrainType)}}
       </pre> -->
 
       <!-- use a transition group to animate the table -->
 
+      <h2>{{ selectedOblasts }}</h2>
+      <pre>
+        {{ oblastForecastScale }}
+      </pre>
 
-      <thead>
-        <tr>
-          <th>Oblast</th>
-          <th>Harvested Area</th>
-          <th>Yield</th>
-          <th>Volume</th>
-        </tr>
-      </thead>
-      <TransitionGroup name="table" tag="tbody" v-if="dataByGrainType">
-        <tr v-for="oblast in sortedDataByGrainType" :key="oblast.oblastNameUkrainian">
-          <td>{{ oblast.oblastNameUkrainian }}</td>
-          <td>{{ oblast.harvestedArea }}</td>
-          <td>{{ oblast.grainYield }}</td>
-          <td>{{ oblast.volume }}</td>
-        </tr>
-      </TransitionGroup>
+      <!-- if there are selected oblasts, show the forecast controls -->
+      <div>
+        <h3>Forecast Select Options</h3>
+        <!-- use a select and events to update value, do not use v-model -->
+        <select @change="updateForecastScale($event.target.value)">
+          <option v-for="option in forecastSelectOptions" :key="option.scaleValue" :value="option.scaleValue">
+            {{ option.text }}
+          </option>
+        </select>
+
+        <!-- button to trigger the forecast in selected oblasts -->
+        <button @click="triggerForecast">Forecast</button>
+
+        <!-- button to clear oblasts -->
+        <button @click="clearSelectedOblasts">Clear</button>
+      </div>
+
+      <DataTable :sorted-data-by-grain-type="sortedDataByGrainType" :total-harvested-area="totalHarvestedArea"
+        :total-yield="totalYield" :total-volume="totalVolume" class="w-100 bt b--light-gray mt2 fl" />
+
+
+    </div>
+
+    <div id="forecasts">
+      <h2>Forecasts</h2>
+      <ul>
+        <li v-for="forecast in forecasts" :key="forecast.id">
+          <h3>{{ forecast.oblastName }}</h3>
+          <p>{{ forecast.harvestedArea }}</p>
+          <p>{{ forecast.grainYield }}</p>
+          <p>{{ forecast.volume }}</p>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -61,6 +81,7 @@
 import * as d3 from 'd3'
 import * as topojson from 'topojson'
 import * as turf from '@turf/turf'
+import slugify from 'slugify'
 
 // Set our refs- these are all automatically reactive
 // The only thing we need to do is get the value of the ref with .value
@@ -68,6 +89,83 @@ const activeGrainType = ref(null)
 const grainTypes = ref([])
 const parsedDataByName = ref(null)
 const dataByGrainType = ref(null)
+const selectedScaleValue = ref(1)
+const oblastForecastScale = ref({})
+
+// the normalized names of the selected oblasts, can be one or many
+const selectedOblasts = ref([])
+
+function updateForecastScale(scaleValue) {
+  selectedScaleValue.value = scaleValue;
+  selectedOblasts.value.forEach((oblast) => {
+    oblastForecastScale.value[normalizeOblastName(oblast)] = scaleValue;
+  })
+  // console.log(oblastForecastScale.value);
+}
+
+function addSelectedOblast(oblastName) {
+  if (selectedOblasts.value.includes(oblastName)) {
+    selectedOblasts.value = selectedOblasts.value.filter(oblast => oblast !== oblastName)
+  } else {
+    selectedOblasts.value = [...selectedOblasts.value, oblastName]
+  }
+}
+
+function clearSelectedOblasts() {
+  selectedOblasts.value = []
+}
+
+// HELLO 
+const forecastSelectOptions = [
+  {
+    text: '100%',
+    scaleValue: 1,
+  },
+  {
+    text: '90%',
+    scaleValue: 0.9,
+  },
+  {
+    text: '50%',
+    scaleValue: 0.5,
+  },
+  {
+    text: '25%',
+    scaleValue: 0.25,
+  },
+  {
+    text: '0%',
+    scaleValue: 0,
+  },
+]
+
+
+// Need a method to upsert an Oblast forceast to the forecasts
+
+// Need a computed that applies the forecasts to the data and returns a forecasted version
+const forecastedDataByGrainType = computed(() => {
+  if (dataByGrainType.value) {
+    const forecastedData = new Map()
+    for (const [grainType, oblasts] of dataByGrainType.value) {
+      forecastedData.set(grainType, oblasts.map(oblast => {
+        const forecastScale = oblastForecastScale[oblast.oblastNameEnglish] || forecastSelectOptions[0].scaleValue
+        return {
+          ...oblast,
+          harvestedArea: oblast.harvestedArea * forecastScale,
+          grainYield: oblast.grainYield * forecastScale,
+          volume: oblast.volume * forecastScale,
+        }
+      }))
+    }
+    return forecastedData
+  }
+})
+
+// Add ability to apply a forecast to all oblasts at once
+
+// Add ability to remove forecast from the forecasts
+
+
 
 // This is a template ref, so mapSvg.value is the actual SVG element
 // because we set ref="mapSvg" on the SVG element
@@ -81,8 +179,8 @@ const valueColorScale = ref(null)
 
 // Make a computed that takes dataByGrainType and sorts it by our selected valueKey
 const sortedDataByGrainType = computed(() => {
-  if (dataByGrainType.value) {
-    return dataByGrainType.value.get(activeGrainType.value).sort((a, b) => b[valueKey.value] - a[valueKey.value])
+  if (forecastedDataByGrainType.value) {
+    return forecastedDataByGrainType.value.get(activeGrainType.value).sort((a, b) => b[valueKey.value] - a[valueKey.value])
   }
 })
 
@@ -117,8 +215,7 @@ function initMap(geographicData) {
     .join('path')
     .attr('d', path)
     .attr("fill", (d, i) => {
-      const shapeName1 = d.properties.name_1;
-
+      const shapeName1 = normalizeOblastName(d.properties.name_1);
       const oblastData = parsedDataByName.value[shapeName1];
       const shapeValue = oblastData ? oblastData[valueKey.value] : 0;
 
@@ -145,10 +242,28 @@ function updateMap(geographicData) {
       const shapeValue = oblastData ? oblastData[valueKey.value] : 0;
 
       if (shapeValue) return valueColorScale.value(+shapeValue);
-      else return '#FFF'
+      else return '#CCC'
     })
 
 }
+
+
+function normalizeOblastName(key) {
+  if (!key) return key
+  return slugify(key, {
+    strict: true,
+    lower: true
+  })
+}
+
+// slugify('some string', {
+//   replacement: '-',  // replace spaces with replacement character, defaults to `-`
+//   remove: undefined, // remove characters that match regex, defaults to `undefined`
+//   lower: false,      // convert to lower case, defaults to `false`
+//   strict: false,     // strip special characters except replacement, defaults to `false`
+//   locale: 'vi',       // language code of the locale to use
+//   trim: true         // trim leading and trailing replacement chars, defaults to `true`
+// })
 
 
 onMounted(async () => {
@@ -182,7 +297,8 @@ onMounted(async () => {
     d3.json('/data/stanford-ukraine-geojson.json').then((geographicData) => {
       // create an object where the keys are the oblast names and the values are the data
       parsedDataByName.value = allData.reduce((acc, d) => {
-        acc[d.oblastNameEnglish] = d
+        // console.log("key: ", d.oblastNameEnglish)
+        acc[normalizeOblastName(d.oblastNameEnglish)] = d
         return acc
       }, {})
 
@@ -190,6 +306,8 @@ onMounted(async () => {
     })
   })
 })
+
+
 
 // When the activeGrainType changes, we need to update the map
 watch(activeGrainType, (newGrainType) => {
