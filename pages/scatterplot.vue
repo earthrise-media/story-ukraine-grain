@@ -90,31 +90,29 @@ valueColorScale.value = d3.scaleLinear().domain([0, 1000]).range(["white", "red"
 
 const margin = { top: 20, right: 20, bottom: 30, left: 40 }
 
+// get the width and height of the SVG
+const width = scatterplotSvg.value.clientWidth
+const height = scatterplotSvg.value.clientHeight
+
+// Get the extent of the scatterplot X and Y in the data
+const xExtent = d3.extent(dataByGrainType.value.get(activeGrainType.value), (d) => d[scatterplotX.value])
+
+const yExtent = d3.extent(dataByGrainType.value.get(activeGrainType.value), (d) => d[scatterplotY.value])
+
+
+// grab the scatterplot svg
+const svg = d3.select(scatterplotSvg.value)
+
+// create the Y and X axes for the scatterplot
+const x = d3.scaleLinear()
+  .domain(xExtent)
+  .range([margin.left, width - margin.right])
+
+const y = d3.scaleLinear()
+  .domain(yExtent)
+  .range([height - margin.bottom, margin.top])
+
 function initScatterplot() {
-  // get the width and height of the SVG
-  const width = scatterplotSvg.value.clientWidth
-  const height = scatterplotSvg.value.clientHeight
-
-  // Get the extent of the scatterplot X and Y in the data
-  const xExtent = d3.extent(dataByGrainType.value.get(activeGrainType.value), (d) => d[scatterplotX.value])
-
-  const yExtent = d3.extent(dataByGrainType.value.get(activeGrainType.value), (d) => d[scatterplotY.value])
-
-
-  // grab the scatterplot svg
-  const svg = d3.select(scatterplotSvg.value)
-
-  // configure margins
-
-
-  // create the Y and X axes for the scatterplot
-  const x = d3.scaleLinear()
-    .domain(xExtent)
-    .range([margin.left, width - margin.right])
-
-  const y = d3.scaleLinear()
-    .domain(yExtent)
-    .range([height - margin.bottom, margin.top])
 
   // create the X and Y axis generators
   const xAxis = g => g
@@ -190,29 +188,16 @@ function initScatterplot() {
 function updateScatterplot() {
   const svg = d3.select(scatterplotSvg.value)
 
-  // Get the extent of the scatterplot X and Y in the data
+  // update extent of the scatterplot X and Y in the data
   const xExtent = d3.extent(dataByGrainType.value.get(activeGrainType.value), (d) => d[scatterplotX.value])
 
   const yExtent = d3.extent(dataByGrainType.value.get(activeGrainType.value), (d) => d[scatterplotY.value])
 
-  // create the Y and X axes for the scatterplot
-  const x = d3.scaleLinear()
-    .domain(xExtent)
-    .range([margin.left, width - margin.right])
+  // update the Y and X axes for the scatterplot
+  x.domain(xExtent)
+  y.domain(yExtent)
 
-  const y = d3.scaleLinear()
-    .domain(yExtent)
-    .range([height - margin.bottom, margin.top])
 
-  // const pointsAndLabels = svg.append("g")
-  //   .classed("points-and-labels", true)
-  //   .attr("fill", "steelblue")
-  //   .attr("font-family", "sans-serif")
-  //   .attr("font-size", 10)
-  //   .selectAll("g")
-  //   .data(dataByGrainType.value.get(activeGrainType.value))
-  //   .join("g")
-  //   .attr("transform", d => `translate(${x(d[scatterplotX.value])},${y(d[scatterplotY.value])})`)
 
   // instead of appending select and update with a transition
   const pointsAndLabels = svg.select(".points-and-labels")
