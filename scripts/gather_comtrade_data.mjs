@@ -36,7 +36,7 @@ function getCountryComtradeData(tradeType, countryCode) {
   )}&r=${countryCode}&p=all&rg=${tradeCodeForTradeType}&cc=${foodCodesJoined}`;
 
   // return the fetch of that API call
-  return fetch(combinedCallString).then((response) => response.json()) // Returns a promise that we can await or .then()
+  return fetch(combinedCallString).then((response) => response.json()); // Returns a promise that we can await or .then()
 }
 
 // we need a function go through Ukraine export data and create a list of all the countries that receive exports from Ukraine
@@ -83,63 +83,69 @@ function getCountryComtradeData(tradeType, countryCode) {
 //   .then((response) => response.json())
 
 const main = async () => {
-    const data = await getCountryComtradeData("2", "804") // 1 for import, 804 for Ukraine
+  const data = await getCountryComtradeData("2", "804"); // 1 for import, 804 for Ukraine
 
-    console.log("data", data);
+  console.log("data", data);
 
-    // Once we receive the ukrainian export data
-    // we need to make an array of the importee countries
+  // Once we receive the ukrainian export data
+  // we need to make an array of the importee countries
 
-    // We can use the ptCode to get the country code
-    // We can use the ptTitle to get the country name
-    const importeeCountries = data.dataset.map((d) => {
-        return {
-        ptCode: d.ptCode,
-        ptTitle: d.ptTitle,
-        };
-    });
+  // We can use the ptCode to get the country code
+  // We can use the ptTitle to get the country name
+  const importeeCountries = data.dataset.map((d) => {
+    return {
+      ptCode: d.ptCode,
+      ptTitle: d.ptTitle,
+    };
+  });
 
-    // Save out Ukraine export data as a csv
+  // Save out Ukraine export data as a csv
+  const csv = d3.csvFormat(data.dataset);
+
+  // save the csv to a file
+  fs.writeFileSync(
+    path.join(`public/data/comtrade_exports/804_Ukraine.csv`),
+    csv
+  );
+
+  console.log(importeeCountries);
+  for (const country of importeeCountries) {
+    console.log("Fetching data for country code " + country.ptCode);
+
+    // Wait 2 seconds between each request to avoid reate limit
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+
+    // check if the file already exists, and if it does, don't call this function
+    const fileExists = fs.existsSync(
+      path.join(
+        `public/data/comtrade_imports/${country.ptCode}_${country.ptTitle}.csv`
+      )
+    );
+
+    if (fileExists) {
+      console.log("File already exists, skipping");
+      continue;
+    }
+
+    const data = await getCountryComtradeData("1", country.ptCode);
+
+    console.log(country.ptTitle, data);
+
+    // format as a csv with d3 and then save it to a file
     const csv = d3.csvFormat(data.dataset);
 
     // save the csv to a file
     fs.writeFileSync(
-        path.join(`public/data/comtrade_exports/804_Ukraine.csv`),
-        csv
+      path.join(
+        `public/data/comtrade_imports/${country.ptCode}_${country.ptTitle}.csv`
+      ),
+      csv
     );
-
-    console.log(importeeCountries)  
-    for(const country of importeeCountries){
-        console.log('Fetching data for country code '+country.ptCode)
-        
-        // Wait 2 seconds between each request to avoid reate limit
-        await new Promise(resolve => setTimeout(resolve, 2000))
-        // Do the call
-        
-        const data = await getCountryComtradeData("1", country.ptCode)
-
-        console.log(country.ptTitle, data)
-        
-
-        // format as a csv with d3 and then save it to a file
-        const csv = d3.csvFormat(data.dataset)
-
-        // save the csv to a file
-        fs.writeFileSync(
-            path.join(
-            `public/data/comtrade_imports/${country.ptCode}_${country.ptTitle}.csv`
-            ),
-            csv
-        );
-
-
-
-    }
-    
-}
+  }
+};
 
 function determineUkrainePercentOfImports(importeeComtradeData) {
-  // importee comtrade data 
+  // importee comtrade data
 }
 
 main();
