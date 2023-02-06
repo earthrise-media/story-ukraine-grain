@@ -1,0 +1,62 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,172072910,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,124954,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,147359,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2280,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,569331,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,43861,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,52501,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,112,Belarus,BLR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4830019,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,74569,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,589,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,157503,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,14789,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,24449,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,170,Colombia,COL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,117,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,539000,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,208,Denmark,DNK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6098716,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,218,Ecuador,ECU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,623,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,231,Ethiopia,ETH,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13913,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,233,Estonia,EST,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3493773,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,246,Finland,FIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3597662,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,805237,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,25201213,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,37306,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,344,"China, Hong Kong SAR",HKG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,82606,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,220088,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,41425,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,372,Ireland,IRL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,260843,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4950226,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,42014,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3203878,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6774,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,422,Lebanon,LBN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3309,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4890765,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5076885,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1911,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,498,Rep. of Moldova,MDA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,97561,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2439656,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,554,New Zealand,NZL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,263,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,566,Nigeria,NGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1106,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3646943,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,470568,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3775,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,33492996,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6939,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,315258,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16412781,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,17801,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3781522,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2334433,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1277,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1471870,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,752,Sweden,SWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,25528831,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8102,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13038286,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,768,Togo,TGO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,210,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,406,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,765692,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,800303,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,20283,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2315840,,,0
+H5,2021,2021,2021,2,0,1,Import,579,Norway,NOR,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,489692,,,0

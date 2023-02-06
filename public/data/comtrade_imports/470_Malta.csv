@@ -1,0 +1,34 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,29947777,,,4
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,24371,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,174406,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,240,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8833,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,748221,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,556021,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,191,Croatia,HRV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16774165,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,259,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1112110,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,20908,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1505,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1056862,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,372,Ireland,IRL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1908,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1184451,,,4
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,75290,,,4
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,146151,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,40892,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,97,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,34078,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,740154,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,903781,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,29,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,806637,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,705,Slovenia,SVN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4403903,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,19770,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,25004,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,497510,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13289,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,859,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,166311,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,180906,,,0
+H5,2021,2021,2021,2,0,1,Import,470,Malta,MLT,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,228842,,,0

@@ -1,0 +1,15 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,84,Belize,BLZ,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8024098,,,4
+H5,2021,2021,2021,2,0,1,Import,84,Belize,BLZ,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1081,,,0
+H5,2021,2021,2021,2,0,1,Import,84,Belize,BLZ,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,227786,,,0
+H5,2021,2021,2021,2,0,1,Import,84,Belize,BLZ,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1423,,,0
+H5,2021,2021,2021,2,0,1,Import,84,Belize,BLZ,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,576,,,0
+H5,2021,2021,2021,2,0,1,Import,84,Belize,BLZ,320,Guatemala,GTM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,95250,,,4
+H5,2021,2021,2021,2,0,1,Import,84,Belize,BLZ,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1014,,,0
+H5,2021,2021,2021,2,0,1,Import,84,Belize,BLZ,388,Jamaica,JAM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,173,,,0
+H5,2021,2021,2021,2,0,1,Import,84,Belize,BLZ,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,913766,,,4
+H5,2021,2021,2021,2,0,1,Import,84,Belize,BLZ,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1361,,,0
+H5,2021,2021,2021,2,0,1,Import,84,Belize,BLZ,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4887,,,0
+H5,2021,2021,2021,2,0,1,Import,84,Belize,BLZ,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6762,,,0
+H5,2021,2021,2021,2,0,1,Import,84,Belize,BLZ,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,566266,,,0
+H5,2021,2021,2021,2,0,1,Import,84,Belize,BLZ,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6203747,,,0

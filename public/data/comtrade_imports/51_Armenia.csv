@@ -1,0 +1,31 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,89534524,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1102,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,31,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1725,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4406,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1381,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,218,Ecuador,ECU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,97,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15898,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,268,Georgia,GEO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,453005,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,282,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,190,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,467,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,97160,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,852081,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,23396,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,144,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,147,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1030,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,83214786,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,925511,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6256,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1211,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9282,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3522434,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,60064,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6306,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,818,Egypt,EGY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,750,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,91680,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,90,,,0
+H5,2021,2021,2021,2,0,1,Import,51,Armenia,ARM,899,"Areas, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,243599,,,0

@@ -1,0 +1,36 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,100138847,,,4
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,206890,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9673368,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1101,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,70,Bosnia Herzegovina,BIH,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13051154,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,362016,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,829664,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,20845,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5593,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,489995,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,246,Finland,FIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,566,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4917567,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1629278,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16467,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,328,Guyana,GUY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,746245,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,35458301,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8562757,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,390737,,,4
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,87041,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13900,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,300601,,,4
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3106074,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12631272,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,30253,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,144027,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,705,Slovenia,SVN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6561726,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13164,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,740,Suriname,SUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,242894,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,752,Sweden,SWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12058,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,101975,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,332695,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,807,North Macedonia,MKD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7183,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15680,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,36194,,,0
+H5,2021,2021,2021,2,0,1,Import,191,Croatia,HRV,899,"Areas, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,139566,,,0

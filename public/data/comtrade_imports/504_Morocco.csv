@@ -1,0 +1,53 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2389378455,,,4
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,541693333,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,97,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13769,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,51059,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,125345709,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,38665624,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5219,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,433696293,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4918871,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,191,Croatia,HRV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1669,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,196,Cyprus,CYP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,46260,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,208,Denmark,DNK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8354342,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,233,Estonia,EST,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3707840,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,246,Finland,FIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3386027,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,353528946,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,60215986,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,398276,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,458839,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5880087,,,4
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1181,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2113,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,422,Lebanon,LBN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,979,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7210909,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,19547223,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,549,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,498,Rep. of Moldova,MDA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6089128,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1454,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,566,Nigeria,NGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3427047,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,206636,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,145514661,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,886628,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,634,Qatar,QAT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,260,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13168634,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,53732871,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,682,Saudi Arabia,SAU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,225,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,686,Senegal,SEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,26124,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2515650,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16589071,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,126,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,182573,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11050259,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,752,Sweden,SWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8707969,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2792,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3370994,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1025,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4548056,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,326418945,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,19720268,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,166081567,,,0
+H5,2021,2021,2021,2,0,1,Import,504,Morocco,MAR,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4263,,,0

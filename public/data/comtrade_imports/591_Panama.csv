@@ -1,0 +1,23 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,591,Panama,PAN,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,275007707,,,0
+H5,2021,2021,2021,2,0,1,Import,591,Panama,PAN,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6514792,,,0
+H5,2021,2021,2021,2,0,1,Import,591,Panama,PAN,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,109525,,,0
+H5,2021,2021,2021,2,0,1,Import,591,Panama,PAN,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1605060,,,0
+H5,2021,2021,2021,2,0,1,Import,591,Panama,PAN,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8847,,,0
+H5,2021,2021,2021,2,0,1,Import,591,Panama,PAN,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,262512,,,0
+H5,2021,2021,2021,2,0,1,Import,591,Panama,PAN,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,197287,,,0
+H5,2021,2021,2021,2,0,1,Import,591,Panama,PAN,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4568,,,0
+H5,2021,2021,2021,2,0,1,Import,591,Panama,PAN,170,Colombia,COL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,242862,,,0
+H5,2021,2021,2021,2,0,1,Import,591,Panama,PAN,188,Costa Rica,CRI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2663063,,,0
+H5,2021,2021,2021,2,0,1,Import,591,Panama,PAN,214,Dominican Rep.,DOM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,197,,,0
+H5,2021,2021,2021,2,0,1,Import,591,Panama,PAN,218,Ecuador,ECU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,21353,,,0
+H5,2021,2021,2021,2,0,1,Import,591,Panama,PAN,320,Guatemala,GTM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,58663,,,0
+H5,2021,2021,2021,2,0,1,Import,591,Panama,PAN,328,Guyana,GUY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,616947,,,0
+H5,2021,2021,2021,2,0,1,Import,591,Panama,PAN,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,59855,,,0
+H5,2021,2021,2021,2,0,1,Import,591,Panama,PAN,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,326544,,,0
+H5,2021,2021,2021,2,0,1,Import,591,Panama,PAN,600,Paraguay,PRY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,626644,,,0
+H5,2021,2021,2021,2,0,1,Import,591,Panama,PAN,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,280317,,,0
+H5,2021,2021,2021,2,0,1,Import,591,Panama,PAN,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22782,,,0
+H5,2021,2021,2021,2,0,1,Import,591,Panama,PAN,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1632825,,,0
+H5,2021,2021,2021,2,0,1,Import,591,Panama,PAN,838,Free Zones,,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,67071,,,0
+H5,2021,2021,2021,2,0,1,Import,591,Panama,PAN,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,259685993,,,0

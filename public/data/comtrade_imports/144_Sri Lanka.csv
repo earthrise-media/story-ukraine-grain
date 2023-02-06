@@ -1,0 +1,35 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,528073810,,,4
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,116267367,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1781,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,761442,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,52071517,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,73974,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22116,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,246,Finland,FIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10462,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,229,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,328012,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1116,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1552,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,458,Malaysia,MYS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14572,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,30824,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,554,New Zealand,NZL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10431912,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4470,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,98,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,634,Qatar,QAT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,508,,,4
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,48200188,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18462015,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,220047911,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,702,Singapore,SGP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6852,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,250,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,516710,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6323209,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,28734,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10065,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,37574340,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,326,,,0
+H5,2021,2021,2021,2,0,1,Import,144,Sri Lanka,LKA,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16881209,,,0

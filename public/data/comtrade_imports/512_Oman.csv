@@ -1,0 +1,42 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,826165626,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15206130,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,48388769,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,48,Bahrain,BHR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4504,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2631,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,923,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,38803497,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,34212442,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1585833,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,120691,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,231,Ethiopia,ETH,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18509149,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16535,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,85209,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15806949,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9716,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,404,Kenya,KEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11973,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2457,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,414,Kuwait,KWT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9638,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,442,Luxembourg,LUX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,17451,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,458,Malaysia,MYS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2876,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14582,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,504,Morocco,MAR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,160889,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,31334,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,60512850,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,634,Qatar,QAT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10949,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,30059159,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,87298202,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,682,Saudi Arabia,SAU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,442468,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,187222688,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,702,Singapore,SGP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,280,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1344738,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1017544,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,201450179,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,133446,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,72724759,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,818,Egypt,EGY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,166954,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16062,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,834,United Rep. of Tanzania,TZA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1838013,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8603872,,,0
+H5,2021,2021,2021,2,0,1,Import,512,Oman,OMN,887,Yemen,YEM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,319261,,,0

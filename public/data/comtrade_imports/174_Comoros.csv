@@ -1,0 +1,11 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,174,Comoros,COM,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,34063585,,,0
+H5,2021,2021,2021,2,0,1,Import,174,Comoros,COM,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15127,,,0
+H5,2021,2021,2021,2,0,1,Import,174,Comoros,COM,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,409,,,0
+H5,2021,2021,2021,2,0,1,Import,174,Comoros,COM,450,Madagascar,MDG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2790,,,0
+H5,2021,2021,2021,2,0,1,Import,174,Comoros,COM,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,28728206,,,0
+H5,2021,2021,2021,2,0,1,Import,174,Comoros,COM,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5165421,,,0
+H5,2021,2021,2021,2,0,1,Import,174,Comoros,COM,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15229,,,0
+H5,2021,2021,2021,2,0,1,Import,174,Comoros,COM,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,107483,,,0
+H5,2021,2021,2021,2,0,1,Import,174,Comoros,COM,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,28589,,,0
+H5,2021,2021,2021,2,0,1,Import,174,Comoros,COM,834,United Rep. of Tanzania,TZA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,326,,,0

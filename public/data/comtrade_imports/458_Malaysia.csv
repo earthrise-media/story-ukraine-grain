@@ -1,0 +1,40 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2146150923,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,836247470,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,296467549,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1449130,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,456675,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,181314109,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,84,Belize,BLZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2337431,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,49236,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8154873,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,31116962,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,47041537,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1067567,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,20652,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,288,Ghana,GHA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,349016,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1553,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,24871,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,415259,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5068,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,863607,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8483,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,583107,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,498,Rep. of Moldova,MDA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4459699,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,414285,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,554,New Zealand,NZL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12827,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,143624565,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,202425,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,19400,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16969133,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,524541,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,289077808,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,702,Singapore,SGP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,92053,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,133166174,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,562059,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,27620,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,75502447,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,460,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15780722,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,98681,,,0
+H5,2021,2021,2021,2,0,1,Import,458,Malaysia,MYS,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,57641850,,,0

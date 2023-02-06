@@ -1,0 +1,41 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,939590741,,,0
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,175709019,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,171336,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,299403,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,116478,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,25549024,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,31615079,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,112,Belarus,BLR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5047,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,450750,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9509,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3765026,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,21995,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,275,State of Palestine,PSE,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,7842,,,0
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,266128,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,368,Iraq,IRQ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2323,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15565108,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,422,Lebanon,LBN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,456999,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9136,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,61612,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13170,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,613917,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,65934,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,50654,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18760195,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,357770110,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,71105644,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,682,Saudi Arabia,SAU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10706,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,55094094,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,632861,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,322562,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,914475,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,729,Sudan,SDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,114298,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,760,Syria,SYR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,66025,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2070458,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,60904,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1228467,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,86777480,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,818,Egypt,EGY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,470416,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1942,,,4
+H5,2021,2021,2021,2,0,1,Import,400,Jordan,JOR,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,89364596,,,4

@@ -1,0 +1,39 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,127667363,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,31,Azerbaijan,AZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11960,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,79950,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,559237,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,51,Armenia,ARM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,626153,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,104,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,112,Belarus,BLR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,356,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,65237,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5039,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,191,Croatia,HRV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,147383,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,212010,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,27649,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,42466,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,253625,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16208,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,368,Iraq,IRQ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,399383,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,569022,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,414,Kuwait,KWT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,582,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,63462,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,566,Nigeria,NGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,579,Norway,NOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8235,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1315780,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7774,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11062,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,110896006,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,197425,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3652481,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,28231,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,118820,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,191230,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,80647,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,331414,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,200194,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2599249,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,247064,,,0
+H5,2021,2021,2021,2,0,1,Import,268,Georgia,GEO,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4701859,,,0

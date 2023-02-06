@@ -1,0 +1,34 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,678796352,,,4
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9606925,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,141646,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,19825158,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,84,Belize,BLZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,584212,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18860,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,97799666,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,162523,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,45,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,170,Colombia,COL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,29477,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,188,Costa Rica,CRI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2474225,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,218,Ecuador,ECU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1057561,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,222,El Salvador,SLV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1056376,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1341,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,328,Guyana,GUY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,311873,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,340,Honduras,HND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,838823,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,425,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,30870247,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,987145,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,558,Nicaragua,NIC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,392823,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,591,Panama,PAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,38431,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,600,Paraguay,PRY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1294015,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,139041,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,69,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,41585,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,220721,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9227,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10675,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,353329,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,195228,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,510176218,,,4
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,158232,,,0
+H5,2021,2021,2021,2,0,1,Import,320,Guatemala,GTM,862,Venezuela,VEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,230,,,0

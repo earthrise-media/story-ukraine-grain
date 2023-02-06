@@ -1,0 +1,35 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,197824397,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2862603,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,50501732,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,271578,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,37940,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3423858,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,58985,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,408455,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,222451,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,175274,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,42981,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,47881,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,120370,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,222132,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,422,Lebanon,LBN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15031,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,512,Oman,OMN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,40036,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7049208,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,151376,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,388101,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,108750,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6379398,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,27402,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2081268,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,108112474,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7418808,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,65689,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1374873,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,729,Sudan,SDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,535886,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1209399,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,55758,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,637060,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,71113,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3605570,,,0
+H5,2021,2021,2021,2,0,1,Import,634,Qatar,QAT,887,Yemen,YEM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,100943,,,0

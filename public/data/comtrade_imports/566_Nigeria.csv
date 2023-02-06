@@ -1,0 +1,36 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,2737584918,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,127773300,,,4
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,36642425,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,300603,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,724105,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5013,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,370232981,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,42486,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2936252,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,170,Colombia,COL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,47780,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,3704719,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,233,Estonia,EST,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,63359957,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13935537,,,4
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,85427876,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,218107,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18729,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,384,Côte d'Ivoire,CIV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,938,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,422,Lebanon,LBN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,27741,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,268882300,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,400045245,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,458,Malaysia,MYS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1457,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14500888,,,4
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,42289,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,541,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,296638929,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,755144,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,702,Singapore,SGP,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,1385682,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1132055,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10779,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,49032,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,47,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,491897414,,,4
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2026333,,,0
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,554806789,,,4
+H4,2021,2021,2021,2,0,1,Import,566,Nigeria,NGA,894,Zambia,ZMB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11429,,,0

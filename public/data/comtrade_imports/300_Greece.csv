@@ -1,0 +1,53 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,633823026,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,796991,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,273,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1066271,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,568715,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3229216,,,4
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,100492,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,290092766,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,31324,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,537234,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1002537,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,37427,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,191,Croatia,HRV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5142360,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,196,Cyprus,CYP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,827933,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,45269,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,208,Denmark,DNK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16765,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,233,Estonia,EST,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5570,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,246,Finland,FIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6172,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22561647,,,4
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6426444,,,4
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,328,Guyana,GUY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,153289,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5935165,,,4
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,372,Ireland,IRL,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,80549,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,30695524,,,4
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1855179,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,44176,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,833034,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,442,Luxembourg,LUX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,30,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,470,Malta,MLT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9994,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,30,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,498,Rep. of Moldova,MDA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,37940490,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2298761,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4297438,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,600,Paraguay,PRY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,550940,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,472140,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,231886,,,4
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,64546307,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,111270592,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11079555,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2025323,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,173090,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,109845,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3506432,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,740,Suriname,SUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,33316,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,752,Sweden,SWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5097,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,556562,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,206858,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12935005,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,807,North Macedonia,MKD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8530119,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,818,Egypt,EGY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13325,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,122457,,,0
+H5,2021,2021,2021,2,0,1,Import,300,Greece,GRC,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,815084,,,0

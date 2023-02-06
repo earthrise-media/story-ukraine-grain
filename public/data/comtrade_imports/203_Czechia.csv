@@ -1,0 +1,70 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,211622687,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,327156,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1,,,4
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,17194080,,,4
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9091418,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,132338,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,143246,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,488669,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3487395,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,112,Belarus,BLR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,184467,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4667987,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,20001,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,113870,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,859332,,,4
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,191,Croatia,HRV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9245,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,208,Denmark,DNK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,37019,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,218,Ecuador,ECU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12588,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,233,Estonia,EST,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,99884,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,234,Faeroe Isds,FRO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,54,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,246,Finland,FIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,969,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14803949,,,4
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6607484,,,4
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4517928,,,4
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,308,Grenada,GRD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,216751,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,328,Guyana,GUY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1932985,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13028042,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4795,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,376,Israel,ISR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,393,,,4
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,33013087,,,4
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,57612,,,4
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,37261,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,103,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,90090,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,490307,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,442,Luxembourg,LUX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,28,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,24162,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,498,Rep. of Moldova,MDA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,17947,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4888282,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,554,New Zealand,NZL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10962,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,566,Nigeria,NGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,108,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,568,"Other Europe, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,147699,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2898077,,,4
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,327846,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,612,Pitcairn,PCN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,260417,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,24980786,,,4
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,562,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,4865301,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,475569,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,682,Saudi Arabia,SAU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,117,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,331462,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1010232,,,4
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,44372532,,,4
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6608033,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,705,Slovenia,SVN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,56758,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,95,,,4
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,922308,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,740,Suriname,SUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,145927,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,752,Sweden,SWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,21,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,24661,,,4
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4639741,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,788,Tunisia,TUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,21,,,4
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,197540,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,997857,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,245584,,,4
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1500589,,,4
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,854,Burkina Faso,BFA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,910,,,0
+H5,2021,2021,2021,2,0,1,Import,203,Czechia,CZE,899,"Areas, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,33,,,4

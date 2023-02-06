@@ -1,0 +1,43 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,26597224,,,4
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5088,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,577594,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1375,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,334,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,233,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,37189,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16308,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,112,Belarus,BLR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6000,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22428,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,36,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,295,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1374662,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,191,Croatia,HRV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,34070,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,50169,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3931913,,,4
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,38086,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,65162,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,328,Guyana,GUY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6148976,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,615576,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,894,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,51242,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,26896,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,56533,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1160,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6303683,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1345251,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1120072,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,898460,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,261524,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,28537,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,705,Slovenia,SVN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,52536,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,101673,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,70,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,45758,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,102078,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2732221,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,818,Egypt,EGY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1844,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,95820,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,168,,,0
+H5,2021,2021,2021,2,0,1,Import,498,Rep. of Moldova,MDA,899,"Areas, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,445297,,,0

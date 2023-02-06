@@ -1,0 +1,46 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,597620057,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,70318778,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,709,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,484844,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12706949,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,112,Belarus,BLR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4026,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,306431,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,898884,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,178,Congo,COG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1853344,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,180,Dem. Rep. of the Congo,COD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18129,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,231,Ethiopia,ETH,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,359,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,129746020,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14400367,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,344,"China, Hong Kong SAR",HKG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,34,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,183136,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,963,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,118,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,400,Jordan,JOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,993,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,404,Kenya,KEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,258,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,422,Lebanon,LBN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,225417,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4541250,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,17362766,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,466,Mali,MLI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,50,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,188558,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,516,Namibia,NAM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1378174,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,57855,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,744444,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3817144,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,68887217,,,4
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,654,Saint Helena,SHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,24,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,110593322,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,702,Singapore,SGP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,35788,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,767990,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6770561,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,716,Zimbabwe,ZWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5623,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,41534,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,121326536,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,770335,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11351693,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,800,Uganda,UGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5197,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,14559840,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2472360,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,213503,,,0
+H5,2021,2021,2021,2,0,1,Import,24,Angola,AGO,894,Zambia,ZMB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,578511,,,0

@@ -1,0 +1,30 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,127906478,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,27118019,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,110332,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,122062,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,264,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3328,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,464240,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1942,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,246,Finland,FIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,195,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,43661893,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10328111,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,156,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,32609,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,458,Malaysia,MYS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,545,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,841,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6864,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10632245,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,31210,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,67,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,339,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,34567631,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,58362,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,100319,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3730,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,521475,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,17375,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,789,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,27191,,,0
+H5,2021,2021,2021,2,0,1,Import,480,Mauritius,MUS,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,94330,,,0

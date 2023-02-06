@@ -1,0 +1,28 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,350312582,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12133304,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12381182,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,279,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,143,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,468,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11778552,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,349711,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,262,Djibouti,DJI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,288559,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,32686,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,783,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,568,"Other Europe, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7370,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,48745919,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,180,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,26602428,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,686,Senegal,SEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1510,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,210845245,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,75923,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1526263,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,496,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,64261,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,990,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,800,Uganda,UGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13037,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13095731,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,834,United Rep. of Tanzania,TZA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,103724,,,0
+H5,2021,2021,2021,2,0,1,Import,450,Madagascar,MDG,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12263811,,,0

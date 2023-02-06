@@ -1,0 +1,31 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3163443440,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2182184546,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,241493,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1453042,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7524,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13427472,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,36820,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,96592,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,240669,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,328,Guyana,GUY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5687606,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1156,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8034768,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,422,Lebanon,LBN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,52130,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3550,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,448857,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,600,Paraguay,PRY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,688334183,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2083709,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,30685,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14773,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8116683,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8116165,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,167799,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,57296,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,151787,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,740,Suriname,SUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1442265,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14490336,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,52954,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,41694767,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,186740994,,,0
+H5,2021,2021,2021,2,0,1,Import,76,Brazil,BRA,862,Venezuela,VEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,32819,,,0

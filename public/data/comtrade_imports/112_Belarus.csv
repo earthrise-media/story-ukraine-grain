@@ -1,0 +1,35 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,157137700,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9100,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1021000,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,51,Armenia,ARM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1300,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,200,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,332100,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,568600,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,266300,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11893600,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6318000,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2091500,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,100,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,65400,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,656400,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,417,Kyrgyzstan,KGZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12000,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,900,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,498,Rep. of Moldova,MDA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5096700,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2088000,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,28100,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2501000,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,67400,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2316600,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,98450000,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2089900,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4062400,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3917000,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,744100,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,705,Slovenia,SVN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,214300,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,51700,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,200,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11944400,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7700,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,321500,,,0
+H5,2021,2021,2021,2,0,1,Import,112,Belarus,BLR,899,"Areas, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,200,,,0

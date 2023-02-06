@@ -1,0 +1,44 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,126065539,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,689400,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2789381,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,26664,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10032,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3616736,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12039450,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,170,Colombia,COL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,564,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,191,Croatia,HRV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,28832,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,87736,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12771927,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,502123,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11213029,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,344,"China, Hong Kong SAR",HKG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3837,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,17478527,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,372,Ireland,IRL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,74308,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3758704,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,274,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,400,Jordan,JOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,116466,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6468,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,478,Mauritania,MRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,714,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8803,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,498,Rep. of Moldova,MDA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,628617,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,162756,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,209791,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,544337,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,330119,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,36547747,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,409747,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7106706,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,303816,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,390293,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,107897,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1033,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9981950,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,91168,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2442,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,788,Tunisia,TUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1269,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1814339,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1785108,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,807,North Macedonia,MKD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,193049,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,213007,,,0
+H5,2021,2021,2021,2,0,1,Import,100,Bulgaria,BGR,899,"Areas, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16352,,,0

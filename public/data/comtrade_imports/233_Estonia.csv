@@ -1,0 +1,48 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,23082594,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,96,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,115504,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,697804,,,4
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13644,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,25730,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,177208,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,112,Belarus,BLR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,897127,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1599,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,552,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,3198,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,119834,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,208,Denmark,DNK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,493303,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,233,Estonia,EST,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,487311,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,246,Finland,FIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,453189,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,847560,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,553023,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,65888,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,328,Guyana,GUY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,38302,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,130124,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,439654,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3556,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,348,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9666050,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4559634,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,496,Mongolia,MNG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,624650,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,363535,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,568,"Other Europe, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,47224,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,185099,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,141337,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,104,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,250044,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,165779,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13467,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,344867,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,250135,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22458,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,20946,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,339575,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,72655,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,752,Sweden,SWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8009,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,62401,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2390,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,302213,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2989,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,27191,,,0
+H5,2021,2021,2021,2,0,1,Import,233,Estonia,EST,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,45264,,,0

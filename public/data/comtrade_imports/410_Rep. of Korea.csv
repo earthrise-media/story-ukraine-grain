@@ -1,0 +1,62 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5023158728,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,28,Antigua and Barbuda,ATG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,806926,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1282524862,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,408146469,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,28,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,64,Bhutan,BTN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1674411,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3980,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,435864028,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,231835161,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,75,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,310146,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,87938197,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14566,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,190574039,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,233,Estonia,EST,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2638296,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1756774,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,359039,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,344,"China, Hong Kong SAR",HKG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22282,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,26054272,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,647,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3923,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,34678,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,418,Lao People's Dem. Rep.,LAO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,26,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2201982,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,458,Malaysia,MYS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,192,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,466,Mali,MLI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,158,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,524,Nepal,NPL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,21312,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,554,New Zealand,NZL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1417067,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,566,Nigeria,NGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,26,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,355813,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,600,Paraguay,PRY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,39055232,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,134350,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,41,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,99,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,105377798,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,184568792,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,682,Saudi Arabia,SAU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,501,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,141685834,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11403508,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,702,Singapore,SGP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,251,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,34889646,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,104729544,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,67,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18714650,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1820577,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,800,Uganda,UGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,27,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,145917111,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,818,Egypt,EGY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,29,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,612,,,0
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1560300399,,,4
+H5,2021,2021,2021,2,0,1,Import,410,Rep. of Korea,KOR,860,Uzbekistan,UZB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,192,,,0
