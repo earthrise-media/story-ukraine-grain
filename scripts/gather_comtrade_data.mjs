@@ -115,6 +115,7 @@ const main = async () => {
         // Wait 2 seconds between each request to avoid reate limit
         await new Promise(resolve => setTimeout(resolve, 2000))
         // Do the call
+        
         const data = await getCountryComtradeData("1", country.ptCode)
 
         console.log(country.ptTitle, data)
