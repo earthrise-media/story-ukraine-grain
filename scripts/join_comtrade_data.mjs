@@ -12,7 +12,7 @@ import fetch from "node-fetch";
 global.fetch = fetch;
 
 // read a csv file and parse it into json
-const processCsvFile = async (path) => {
+const processCsvFile = (path) => {
   try {
     const contents = fs.readFileSync(path, "utf8");
     if (contents) {
@@ -45,36 +45,40 @@ function determineUkrainePercentOfImports(importerComtradeData) {
   const worldTradeValue = parseInt(worldStats.TradeValue);
   const ukrTradeValue = parseInt(ukrStats.TradeValue);
 
-  return ukrTradeValue / worldTradeValue;
+  return {
+    worldTradeValue,
+    ukrTradeValue,
+    percent: ukrTradeValue / worldTradeValue
+  }
 }
 
 // main loop
 const main = () => {
-  Promise.all(
-    fileList.map(async (file) => {
-      const countryCsvData = await processCsvFile(comtradeDataPath(file))
+    let aggregatedData = fileList.map((file) => {
+      const countryCsvData = processCsvFile(comtradeDataPath(file))
       if (!countryCsvData) {
         return null;
       }
       // parse country number and name
       const [countryNumber, countryFile] = file.split("_");
-      const [countryName,] = countryFile.split(".");
+      const countryName = countryFile.replace(".csv", "")
 
       const percentOfImports = determineUkrainePercentOfImports(countryCsvData)
-      console.log(countryNumber, countryName, ` ${(percentOfImports * 100).toFixed(1)}% of grain imports from UKR`)
+      if(!percentOfImports) {
+        return null;
+      }
+      console.log(countryNumber, countryName, ` ${(percentOfImports.percent * 100).toFixed(2)}% of grain imports from UKR`)
       return {
         countryName,
         countryNumber,
-        data: countryCsvData,
-        percentOfUkrImports: percentOfImports
+        ...percentOfImports
       }
-    })
-    .filter(data => data)
-  ).then(aggregatedData => {
+    }).filter(d => !!d)
     // aggregatedData contains everything we need to write everything into one big file
-    // TODO: write everything to a single 00_all_data_ukraine.csv file
     console.log(`data collected for ${aggregatedData.length} countries`)
-  })
+    // convert aggregateData to csv and save it to a file
+    const csv = d3.csvFormat(aggregatedData);
+    fs.writeFileSync(comtradeDataPath("00_all_data_ukraine.csv"), csv);
 }
 
 // run the script
