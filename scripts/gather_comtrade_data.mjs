@@ -27,6 +27,8 @@ const apiBaseUrl = "https://comtrade.un.org/";
 
 const selectedYears = ["2021"];
 
+const countriesWithProblems = []
+
 function getCountryComtradeData(tradeType, countryCode) {
   // tradeType is either 1 for import or 2 for export
   // countryCode is the comtrade country code
@@ -36,7 +38,12 @@ function getCountryComtradeData(tradeType, countryCode) {
   )}&r=${countryCode}&p=all&rg=${tradeCodeForTradeType}&cc=${foodCodesJoined}`;
 
   // return the fetch of that API call
-  return fetch(combinedCallString).then((response) => response.json()); // Returns a promise that we can await or .then()
+  return fetch(combinedCallString).then((response) => response.json()) // Returns a promise that we can await or .then()
+    .catch(e => { 
+      // Add this country to countriesWithProblems array      
+      console.log(e)
+      countriesWithProblems.push(countryCode)
+    })
 }
 
 // we need a function go through Ukraine export data and create a list of all the countries that receive exports from Ukraine
@@ -112,9 +119,6 @@ const main = async () => {
   for (const country of importeeCountries) {
     console.log("Fetching data for country code " + country.ptCode);
 
-    // Wait 2 seconds between each request to avoid reate limit
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-
     // check if the file already exists, and if it does, don't call this function
     const fileExists = fs.existsSync(
       path.join(
@@ -126,6 +130,10 @@ const main = async () => {
       console.log("File already exists, skipping");
       continue;
     }
+
+    // Wait 2 seconds between each request to avoid reate limit
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+
 
     const data = await getCountryComtradeData("1", country.ptCode);
 
@@ -142,6 +150,8 @@ const main = async () => {
       csv
     );
   }
+  // done with all countries
+  console.log("we had some problems:", countriesWithProblems)
 };
 
 function determineUkrainePercentOfImports(importeeComtradeData) {

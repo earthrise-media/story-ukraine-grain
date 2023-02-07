@@ -1,0 +1,129 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11843938108,,,4
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,8,Albania,ALB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3771553,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,12,Algeria,DZA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,124611311,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,24,Angola,AGO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9935335,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,28,Antigua and Barbuda,ATG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,31,Azerbaijan,AZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,308649,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,56074,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1792478,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,44,Bahamas,BHS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,107,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,48,Bahrain,BHR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,168343,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,192504439,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,51,Armenia,ARM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5477,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,134477985,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,60,Bermuda,BMU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,475,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,33953,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,84,Belize,BLZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,19,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,92,Br. Virgin Isds,VGB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,46,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1295240,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7962599,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,112,Belarus,BLR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11570463,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,120,Cameroon,CMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10167172,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,632013,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11552566,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2491200066,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,170,Colombia,COL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3536043,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,174,Comoros,COM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,78,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,180,Dem. Rep. of the Congo,COD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1221667,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,188,Costa Rica,CRI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,301807,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,191,Croatia,HRV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,202940,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,192,Cuba,CUB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1270,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,196,Cyprus,CYP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,20326232,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2127303,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,208,Denmark,DNK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,935984,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,214,Dominican Rep.,DOM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4993,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,222,El Salvador,SLV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,60731,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,231,Ethiopia,ETH,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,142080591,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,232,Eritrea,ERI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6015075,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,233,Estonia,EST,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,114622,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,246,Finland,FIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,107504,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,281940,,,4
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,262,Djibouti,DJI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,48696750,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,266,Gabon,GAB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,846000,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,268,Georgia,GEO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,191501,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,47067673,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,288,Ghana,GHA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10100718,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,21624822,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,320,Guatemala,GTM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,100257,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,340,Honduras,HND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,20206,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,344,"China, Hong Kong SAR",HKG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,681089,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8149915,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,655934199,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,498481457,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,368,Iraq,IRQ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,118801604,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,372,Ireland,IRL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,66415246,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,376,Israel,ISR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,267386599,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,243610700,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,384,Côte d'Ivoire,CIV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1399835,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,25757559,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1453620,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,400,Jordan,JOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,58268055,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,404,Kenya,KEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,57824616,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,170830390,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,414,Kuwait,KWT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,665218,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,417,Kyrgyzstan,KGZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,26399,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,422,Lebanon,LBN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,227576927,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1370675,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,430,Liberia,LBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,29057,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,434,Libya,LBY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,299182479,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11660615,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,442,Luxembourg,LUX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,592443,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,450,Madagascar,MDG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7899411,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,458,Malaysia,MYS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13967705,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,470,Malta,MLT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,836,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,478,Mauritania,MRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,47847219,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,480,Mauritius,MUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7799,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,34327667,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16791848,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,498,Rep. of Moldova,MDA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3736839,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,499,Montenegro,MNE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,337,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,504,Morocco,MAR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,309209120,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,508,Mozambique,MOZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15806953,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,512,Oman,OMN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,118561450,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,516,Namibia,NAM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,24194,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,539432474,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,554,New Zealand,NZL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,90296,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,566,Nigeria,NGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,65890930,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,579,Norway,NOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,432893,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,584,Marshall Isds,MHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1843,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,585,Palau,PLW,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,137,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,351422427,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,591,Panama,PAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2123,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,85882369,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14360046,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,150265834,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,634,Qatar,QAT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,641037,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1841001,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,150,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,659,Saint Kitts and Nevis,KNA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,682,Saudi Arabia,SAU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,243529972,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,293152,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,690,Seychelles,SYC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,63582,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,694,Sierra Leone,SLE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,92,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1216545,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,702,Singapore,SGP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,689711,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9215,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,71618979,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,706,Somalia,SOM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8474153,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2219405,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,660346146,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,729,Sudan,SDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2909072,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,752,Sweden,SWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,41101,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6060417,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,760,Syria,SYR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2888321,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,117234117,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,768,Togo,TGO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,36,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,780,Trinidad and Tobago,TTO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22331,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,23466258,,,4
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,788,Tunisia,TUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,304032745,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,833817369,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,795,Turkmenistan,TKM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,28401,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,798,Tuvalu,TUV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,764,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,800,Uganda,UGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3068464,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,818,Egypt,EGY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1377312745,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,143012385,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,834,United Rep. of Tanzania,TZA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,38741940,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1668863,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,860,Uzbekistan,UZB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,297879,,,0
+H5,2021,2021,2021,2,0,2,Export,804,Ukraine,UKR,887,Yemen,YEM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,198317168,,,0
