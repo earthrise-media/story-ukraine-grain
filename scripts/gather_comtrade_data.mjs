@@ -119,7 +119,6 @@ const main = async () => {
         const data = await getCountryComtradeData("1", country.ptCode)
 
         console.log(country.ptTitle, data)
-        
 
         // format as a csv with d3 and then save it to a file
         const csv = d3.csvFormat(data.dataset)
@@ -131,11 +130,7 @@ const main = async () => {
             ),
             csv
         );
-
-
-
     }
-    
 }
 
 function determineUkrainePercentOfImports(importeeComtradeData) {
