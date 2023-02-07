@@ -133,8 +133,4 @@ const main = async () => {
     }
 }
 
-function determineUkrainePercentOfImports(importeeComtradeData) {
-  // importee comtrade data 
-}
-
 main();

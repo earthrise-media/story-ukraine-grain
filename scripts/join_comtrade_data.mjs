@@ -32,14 +32,52 @@ const comtradeDataPath = file => path.join(process.cwd(), "public/data/comtrade_
 // get a list of available country comtrade data files
 const fileList = fs.readdirSync(comtradeDataPath(''));
 
-// main
-fileList.forEach(async (file) => {
-  const countryCsv = await processCsvFile(comtradeDataPath(file))
-  if (!countryCsv) {
-    return;
+function determineUkrainePercentOfImports(importerComtradeData) {
+  // importer comtrade data
+  const worldStats = importerComtradeData[0];
+  // pt3ISO is the country code exporting the goods. UKR hardcoded here
+  const ukrStats = importerComtradeData.find((country) => country.pt3ISO === 'UKR');
+
+  if (!ukrStats || !worldStats) {
+    return null
   }
-  const [countryNumber, countryName] = file.split("_");
-  console.log(countryNumber, countryName)
-})
+
+  const worldTradeValue = parseInt(worldStats.TradeValue);
+  const ukrTradeValue = parseInt(ukrStats.TradeValue);
+
+  return ukrTradeValue / worldTradeValue;
+}
+
+// main loop
+const main = () => {
+  Promise.all(
+    fileList.map(async (file) => {
+      const countryCsvData = await processCsvFile(comtradeDataPath(file))
+      if (!countryCsvData) {
+        return null;
+      }
+      // parse country number and name
+      const [countryNumber, countryFile] = file.split("_");
+      const [countryName,] = countryFile.split(".");
+
+      const percentOfImports = determineUkrainePercentOfImports(countryCsvData)
+      console.log(countryNumber, countryName, ` ${(percentOfImports * 100).toFixed(1)}% of grain imports from UKR`)
+      return {
+        countryName,
+        countryNumber,
+        data: countryCsvData,
+        percentOfUkrImports: percentOfImports
+      }
+    })
+    .filter(data => data)
+  ).then(aggregatedData => {
+    // aggregatedData contains everything we need to write everything into one big file
+    // TODO: write everything to a single 00_all_data_ukraine.csv file
+    console.log(`data collected for ${aggregatedData.length} countries`)
+  })
+}
+
+// run the script
+main();
 
 
