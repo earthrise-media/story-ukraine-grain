@@ -273,13 +273,18 @@ function initMap(geographicData) {
 function updateMap(geographicData) {
   // use d3 select and update to update the map
   // this lets us use transitions to fade in the new data
-  let geodata = topojson.feature(geographicData, geographicData.objects['stanford-pp624tm0074-geojson']).features
-  // console.log("GEODATA", geodata)
-  // console.log("sortedDataByGrainType", sortedDataByGrainType.value)
-  // console.log("dataByGrainType", dataByGrainType.value)
+  console.log("raw objects", geographicData.objects['stanford-pp624tm0074-geojson'])
+  // let geodata = topojson.feature(geographicData, geographicData.objects['stanford-pp624tm0074-geojson']).features
+  // Merge geometries so we end up with Oblast-level shapes.
+  const featureCollection = aggregate(
+    geographicData,
+    geographicData.objects['stanford-pp624tm0074-geojson'],
+    'name_1'
+  );
+
   let map = d3.select(mapSvg.value)
   let paths = map.selectAll('path')
-    .data(geodata)
+     .data(featureCollection.features)
     .join('path')
   paths
     .on("mouseenter", (evt, d) => {
