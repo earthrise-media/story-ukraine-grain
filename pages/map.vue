@@ -115,7 +115,6 @@ function clearSelectedOblasts() {
   selectedOblasts.value = []
 }
 
-// HELLO
 const forecastSelectOptions = [
   {
     text: '100%',
