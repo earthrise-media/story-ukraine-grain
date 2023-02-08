@@ -6,10 +6,8 @@
         <NuxtLink :to="`/${prototype}`">{{ prototype }}</NuxtLink>
       </li>
     </ul>
-
   </main>
 </template>
 <script setup>
-
-const prototypes = ['map', 'scatterplot']
+const prototypes = ["map", "scatterplot", "scrollytelling"];
 </script>
