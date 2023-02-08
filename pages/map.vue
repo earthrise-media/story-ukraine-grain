@@ -281,7 +281,7 @@ function updateMap(geographicData) {
     'name_1'
   );
 
-  let map = d3.select(mapSvg.value)
+  const map = d3.select(mapSvg.value)
   let paths = map.selectAll('path')
      .data(featureCollection.features)
     .join('path')
