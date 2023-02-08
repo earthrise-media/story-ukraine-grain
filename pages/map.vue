@@ -282,7 +282,7 @@ function updateMap(geographicData) {
   );
 
   const map = d3.select(mapSvg.value)
-  let paths = map.selectAll('path')
+  const paths = map.selectAll('path')
      .data(featureCollection.features)
     .join('path')
   paths
