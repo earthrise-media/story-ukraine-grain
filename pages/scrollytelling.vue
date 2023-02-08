@@ -33,12 +33,30 @@ import scrollama from "scrollama";
 const stepIndex = ref(0); // keep track of the index
 const rectFill = ref("white");
 
+// const vizType = ref("scatterplot");
+// const vizConfig = ref({xProperty: "foo",yProperty: "bar"});
+
+
+// Example of a config object for a scatterplot
+// const scatterplotConfig = ref({
+//   visibility: false, // true = show, false = hide
+//   xProperty: "harvestedArea",
+//   yProperty: "volume",
+//   rProperty: "grainYield",
+//   highlight: "oblastNameUkrainian",
+// });
+
+// const oblastMapConfig = ref({
+//   visibility: false, // true = show, false = hide
+//   colorProperty: "harvestedArea",
+// });
 
 // watch for changes to stepIndex when a user scrolls
 watch(stepIndex, (newIndex) => {
   if (newIndex === 1) {
     // show the icicle map of UKR exports
     rectFill.value = "yellow";
+    scatterplotConfig.value.visibility = true
   } else if (newIndex === 2) {
     // show the icicle map of UKR and RUS exports
     rectFill.value = "red";
