@@ -1,0 +1,25 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,250475966,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,12,Algeria,DZA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,41139,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,46399544,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,48,Bahrain,BHR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2433,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4395210,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1236,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,233,Estonia,EST,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7624244,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,43567831,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5877543,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,20581308,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,466,Mali,MLI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,584247,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,498,Rep. of Moldova,MDA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1011,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,504,Morocco,MAR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,560,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4201097,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,21886641,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,686,Senegal,SEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1152215,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4728966,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,702,Singapore,SGP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,83933,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,17257532,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8442795,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14324,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,53081956,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,603366,,,0
+H5,2021,2021,2021,2,0,1,Import,478,Mauritania,MRT,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9946824,,,0

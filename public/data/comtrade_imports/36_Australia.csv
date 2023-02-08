@@ -1,0 +1,52 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,215240319,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,294552,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,42875,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,546339,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,389761,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4601747,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,161613,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,92,Br. Virgin Isds,VGB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,32189,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,80823,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7897544,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,35566,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,843341,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8408,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4038932,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,231,Ethiopia,ETH,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3358,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,242,Fiji,FJI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12337,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14584,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,262,Djibouti,DJI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,894,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,66684,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,288,Ghana,GHA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,20171,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3048,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,344,"China, Hong Kong SAR",HKG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4975,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,230714,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6323322,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2795081,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,400,Jordan,JOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,25762,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1059173,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,418,Lao People's Dem. Rep.,LAO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,364844,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,422,Lebanon,LBN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2389,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3185436,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,516,Namibia,NAM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15468,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,524,Nepal,NPL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,65751,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,33181,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,554,New Zealand,NZL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4195132,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14802995,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,600,Paraguay,PRY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,43657,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2309430,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6242,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,694,Sierra Leone,SLE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18212,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,57337975,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,702,Singapore,SGP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,346773,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,28401442,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,84710,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1825957,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,58759812,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,68378,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,135130,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,68270,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15144,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13067540,,,0
+H5,2021,2021,2021,2,0,1,Import,36,Australia,AUS,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,552634,,,0

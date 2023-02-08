@@ -1,0 +1,84 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,500122534,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,12,Algeria,DZA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,20,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,49970,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1381,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,132929,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,17208,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2312910,,,4
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9698,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,72,Botswana,BWA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,26,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,36895596,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5027172,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,294763,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,536397,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,136768822,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,34,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,127384,,,4
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,170,Colombia,COL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,174,Comoros,COM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3542,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,191,Croatia,HRV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1775,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,606,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,208,Denmark,DNK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,26770397,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,218,Ecuador,ECU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,17169,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,231,Ethiopia,ETH,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,280,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,233,Estonia,EST,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,2141224,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,246,Finland,FIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2335661,,,4
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,62916353,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,275,State of Palestine,PSE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,63,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2135493,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,288,Ghana,GHA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,864801,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,47984,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,328,Guyana,GUY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,28271,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,380219,,,4
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2820645,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,17976,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,935,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,400,Jordan,JOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,86,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7245,,,4
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,414,Kuwait,KWT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1581,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3720293,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4814927,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,454,Malawi,MWI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2,,,4
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,458,Malaysia,MYS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1060,,,4
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3586,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,675,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,498,Rep. of Moldova,MDA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1113648,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,504,Morocco,MAR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,43,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,516,Namibia,NAM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1,,,4
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,524,Nepal,NPL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,257,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6137660,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,554,New Zealand,NZL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,124,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,566,Nigeria,NGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2649,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,579,Norway,NOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,196,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4360782,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,439159,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3180,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13698837,,,4
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,39432,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,626,Timor-Leste,TLS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9066349,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,258879,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,666,Saint Pierre and Miquelon,SPM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,17555,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,682,Saudi Arabia,SAU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,706,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15882237,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5920711,,,4
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,702,Singapore,SGP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,697,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,203,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,162400,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,37604,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2037958,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,752,Sweden,SWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5121914,,,4
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3106855,,,4
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,780,Trinidad and Tobago,TTO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,210,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,788,Tunisia,TUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,56,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,82685,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,43579377,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,818,Egypt,EGY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1073,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,96143648,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,834,United Rep. of Tanzania,TZA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1348844,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,348018,,,0
+H5,2021,2021,2021,2,0,1,Import,372,Ireland,IRL,899,"Areas, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1347,,,0

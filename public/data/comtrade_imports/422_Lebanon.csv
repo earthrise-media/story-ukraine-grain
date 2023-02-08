@@ -1,0 +1,49 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,430570048,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15259131,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,102589,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9833,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,146,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,30330,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11033741,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3447279,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,64324,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7038,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,193011,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2258,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,20938287,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,191,Croatia,HRV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1959439,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,196,Cyprus,CYP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2886,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,71993,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,997,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,581256,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,259,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2347,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3247317,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1600464,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,414,Kuwait,KWT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,840,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22155,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,498,Rep. of Moldova,MDA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,36291576,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,512,Oman,OMN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,285,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3257,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1115682,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,241700,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,30,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,41596342,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,31875450,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,682,Saudi Arabia,SAU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1073,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22661849,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13028381,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,74924,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,119550,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,160567,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,191,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,760,Syria,SYR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2130,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3331334,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4642,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,946038,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,202605159,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,818,Egypt,EGY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,52186,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8884,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,17795367,,,0
+H5,2021,2021,2021,2,0,1,Import,422,Lebanon,LBN,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,75531,,,0

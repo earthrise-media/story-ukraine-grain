@@ -1,0 +1,91 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2599813418,,,4
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5433960,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,352251,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1616098,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,561,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,51,Armenia,ARM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3420,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9926,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2221121,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,94825,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,57667480,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,112,Belarus,BLR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,42933,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1818572,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,38849807,,,4
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,289,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,192,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,576841,,,4
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,170,Colombia,COL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,304,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,180,Dem. Rep. of the Congo,COD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,196,Cyprus,CYP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,140,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,950809,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,208,Denmark,DNK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,23228631,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,218,Ecuador,ECU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,233,Estonia,EST,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4598050,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,246,Finland,FIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13051182,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1301917338,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,328679886,,,4
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,288,Ghana,GHA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1942,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6420047,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,324,Guinea,GIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4550,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,328,Guyana,GUY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,853098,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11902788,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2580,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,20252,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,372,Ireland,IRL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1083538,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,376,Israel,ISR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,592,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,40763018,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,384,Côte d'Ivoire,CIV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,785,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16431,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1334902,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,404,Kenya,KEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,99,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,418,Lao People's Dem. Rep.,LAO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3161984,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9967422,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1561378,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,442,Luxembourg,LUX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1779168,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,450,Madagascar,MDG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,177,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,458,Malaysia,MYS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,44,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,466,Mali,MLI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,94,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1361,,,4
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,249,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,498,Rep. of Moldova,MDA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,504,Morocco,MAR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8831,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,524,Nepal,NPL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2287,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,249902630,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,554,New Zealand,NZL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15554,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,566,Nigeria,NGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,486,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,579,Norway,NOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,79563522,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,600,Paraguay,PRY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5130469,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1376346,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,324,,,4
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6277536,,,4
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1602269,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,634,Qatar,QAT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,617,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,870780,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4031911,,,4
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,686,Senegal,SEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,277,,,4
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12853,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,17751395,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,702,Singapore,SGP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,189,,,4
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,535727,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1885761,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9456,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,75588573,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,729,Sudan,SDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,442367,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,752,Sweden,SWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,27001589,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12697,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,760,Syria,SYR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,446,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,23192160,,,4
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,768,Togo,TGO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3241,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,439,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,788,Tunisia,TUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,123,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6133240,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,800,Uganda,UGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2746,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,180271590,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,818,Egypt,EGY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,93063,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,32121402,,,4
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11515139,,,4
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,854,Burkina Faso,BFA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18,,,0
+H5,2021,2021,2021,2,0,1,Import,56,Belgium,BEL,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14464176,,,0

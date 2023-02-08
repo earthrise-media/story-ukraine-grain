@@ -1,0 +1,41 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3448059647,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4847362,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,702544437,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10238,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1705395,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,57019624,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,150963947,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1312174,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,34359901,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,486,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,51988329,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,42005669,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,577,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,320,Guatemala,GTM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1645,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,126409,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,372,Ireland,IRL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6737,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14250,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9101,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3769,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,418,Lao People's Dem. Rep.,LAO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,57,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,458,Malaysia,MYS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,764620,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,704539,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,554,New Zealand,NZL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,21577,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10285658,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,76251,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8392923,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,64197,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,682,Saudi Arabia,SAU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,51,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,149530810,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,702,Singapore,SGP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2704641,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1013533289,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1596862,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7887,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1174,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,81451477,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2315,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,559330,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,127695115,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,24304,,,4
+H5,2021,2021,2021,2,0,1,Import,608,Philippines,PHL,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1003722520,,,4

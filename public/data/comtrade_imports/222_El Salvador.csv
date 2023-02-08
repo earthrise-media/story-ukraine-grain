@@ -1,0 +1,26 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,297347760,,,4
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,437810,,,0
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,48,Bahrain,BHR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4168,,,0
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16900,,,0
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8984071,,,0
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,45164351,,,0
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2,,,0
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,188,Costa Rica,CRI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2280077,,,0
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,218,Ecuador,ECU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,137,,,0
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,320,Guatemala,GTM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,555764,,,0
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,328,Guyana,GUY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,128163,,,0
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,340,Honduras,HND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,611955,,,0
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,23750,,,0
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4903,,,0
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7115369,,,0
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,558,Nicaragua,NIC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1355043,,,0
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11,,,0
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,156613,,,0
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14127,,,0
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1368,,,0
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,28809,,,0
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,189,,,0
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,120132,,,0
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,230274305,,,4
+H5,2021,2021,2021,2,0,1,Import,222,El Salvador,SLV,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,69731,,,0

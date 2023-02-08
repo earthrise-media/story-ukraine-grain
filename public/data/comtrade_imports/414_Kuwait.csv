@@ -1,0 +1,58 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,582046375,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,24,Angola,AGO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,413,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,41255172,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,263147785,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1326,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,48,Bahrain,BHR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1639,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,145125,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,221333,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,94334,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1260,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,57769,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,120,Cameroon,CMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,549,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,25444223,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,82339,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,224886,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,170,Colombia,COL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,595,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,97217,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,73574,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2699521,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,34390,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,379942,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2258,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,400,Jordan,JOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,124754,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,404,Kenya,KEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,453,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3204,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,422,Lebanon,LBN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15407,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,86738,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,458,Malaysia,MYS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13994,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,909,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1493546,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,504,Morocco,MAR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3699,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,512,Oman,OMN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,791,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,34226,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2619106,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,112481,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,112873,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,69365,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,66751,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10462112,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,34606,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,682,Saudi Arabia,SAU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,64057,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,686,Senegal,SEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1497,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,210146139,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,550,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1342503,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,942,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,71609,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,889,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,760,Syria,SYR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12187,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2083327,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,400226,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,91649,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,865553,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,818,Egypt,EGY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,550479,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,283745,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16899295,,,0
+H5,2021,2021,2021,2,0,1,Import,414,Kuwait,KWT,887,Yemen,YEM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11063,,,0

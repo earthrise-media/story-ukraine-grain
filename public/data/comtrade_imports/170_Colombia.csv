@@ -1,0 +1,23 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,170,Colombia,COL,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2569703198,,,0
+H5,2021,2021,2021,2,0,1,Import,170,Colombia,COL,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,417887434,,,0
+H5,2021,2021,2021,2,0,1,Import,170,Colombia,COL,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1580,,,0
+H5,2021,2021,2021,2,0,1,Import,170,Colombia,COL,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1522918,,,0
+H5,2021,2021,2021,2,0,1,Import,170,Colombia,COL,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,229261320,,,0
+H5,2021,2021,2021,2,0,1,Import,170,Colombia,COL,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,451926942,,,0
+H5,2021,2021,2021,2,0,1,Import,170,Colombia,COL,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,60257,,,0
+H5,2021,2021,2021,2,0,1,Import,170,Colombia,COL,208,Denmark,DNK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6538144,,,0
+H5,2021,2021,2021,2,0,1,Import,170,Colombia,COL,218,Ecuador,ECU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11756765,,,0
+H5,2021,2021,2021,2,0,1,Import,170,Colombia,COL,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,37136702,,,0
+H5,2021,2021,2021,2,0,1,Import,170,Colombia,COL,320,Guatemala,GTM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,49095,,,0
+H5,2021,2021,2021,2,0,1,Import,170,Colombia,COL,340,Honduras,HND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2860167,,,0
+H5,2021,2021,2021,2,0,1,Import,170,Colombia,COL,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,379015,,,0
+H5,2021,2021,2021,2,0,1,Import,170,Colombia,COL,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1519457,,,0
+H5,2021,2021,2021,2,0,1,Import,170,Colombia,COL,600,Paraguay,PRY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,160491,,,0
+H5,2021,2021,2021,2,0,1,Import,170,Colombia,COL,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,378477,,,0
+H5,2021,2021,2021,2,0,1,Import,170,Colombia,COL,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6348473,,,0
+H5,2021,2021,2021,2,0,1,Import,170,Colombia,COL,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,180678,,,0
+H5,2021,2021,2021,2,0,1,Import,170,Colombia,COL,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,84762,,,0
+H5,2021,2021,2021,2,0,1,Import,170,Colombia,COL,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,696043,,,0
+H5,2021,2021,2021,2,0,1,Import,170,Colombia,COL,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4463051,,,0
+H5,2021,2021,2021,2,0,1,Import,170,Colombia,COL,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1396491419,,,0

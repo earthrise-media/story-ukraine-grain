@@ -1,0 +1,43 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11308913,,,4
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,8,Albania,ALB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,21415,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,49450,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3856,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11842,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,70,Bosnia Herzegovina,BIH,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9863,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11117,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2295,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,227,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,180212,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,191,Croatia,HRV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,109130,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9428,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,762,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14210,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,52371,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,36405,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1895,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,752734,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1206,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,309,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1187,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,164749,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,600,Paraguay,PRY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,755,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11226,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,61,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18844,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,164,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2014,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,100653,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9395480,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,101762,,,4
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,589,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,891,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,705,Slovenia,SVN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,60714,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,96,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6865,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12953,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1776,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,807,North Macedonia,MKD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,144958,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,389,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13629,,,0
+H5,2021,2021,2021,2,0,1,Import,499,Montenegro,MNE,899,"Areas, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,409,,,0

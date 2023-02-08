@@ -1,0 +1,90 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3674236974,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3627647,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,146225360,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22243,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,97908142,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8718494,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,572800,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,526289,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1909053,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,112,Belarus,BLR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,77109,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11628341,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,50016818,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,821143,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3068859,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4774352,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,191,Croatia,HRV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2731097,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,196,Cyprus,CYP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,257,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,633150788,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,208,Denmark,DNK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,130035722,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,218,Ecuador,ECU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,195094,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,222,El Salvador,SLV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,409406,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,231,Ethiopia,ETH,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,80609,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,233,Estonia,EST,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6588338,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,246,Finland,FIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,66424630,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,497291099,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,275,State of Palestine,PSE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3376,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,288,Ghana,GHA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,314,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1014633,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,328,Guyana,GUY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4975833,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,205674999,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1922,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,561372,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,368,Iraq,IRQ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14127,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,372,Ireland,IRL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,161651,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,376,Israel,ISR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,56271,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,167569812,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1287391,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,602855,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,400,Jordan,JOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1211,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,404,Kenya,KEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,172,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,166732,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,418,Lao People's Dem. Rep.,LAO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,44609,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,422,Lebanon,LBN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,219116,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,24887366,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,49092319,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,442,Luxembourg,LUX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15377736,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,458,Malaysia,MYS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,392518,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,470,Malta,MLT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,45399,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,87282,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,36235,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,504,Morocco,MAR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12607,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,180793842,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,554,New Zealand,NZL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,33579,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,566,Nigeria,NGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,444,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,579,Norway,NOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,330,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,20752884,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,600,Paraguay,PRY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2591217,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8023452,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,94,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,861351392,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1091970,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,69924422,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3036452,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,682,Saudi Arabia,SAU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7726,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,686,Senegal,SEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11110,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3426958,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,45784936,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,702,Singapore,SGP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1187,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,109539228,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8365745,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,705,Slovenia,SVN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,137119,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,473100,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,19159177,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,729,Sudan,SDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,902,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,740,Suriname,SUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,58573,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,752,Sweden,SWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,78974301,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,884185,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,760,Syria,SYR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5220,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,21076611,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5472537,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,56995705,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,807,North Macedonia,MKD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,21309,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,818,Egypt,EGY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,91309,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5880885,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,834,United Rep. of Tanzania,TZA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3474,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18431561,,,4
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8120415,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,894,Zambia,ZMB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,137941,,,0
+H5,2021,2021,2021,2,0,1,Import,276,Germany,DEU,899,"Areas, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4484096,,,0

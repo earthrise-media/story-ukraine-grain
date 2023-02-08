@@ -1,0 +1,54 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,67015261,,,4
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,70,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,54704,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6569670,,,4
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,30984,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,72,Botswana,BWA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,179,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,31703,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,120,Cameroon,CMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1224,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5720,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2759,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4928,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3199,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,208,Denmark,DNK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1529,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,218,Ecuador,ECU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3067,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7308040,,,4
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4388833,,,4
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,288,Ghana,GHA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,154,,,4
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,31434,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2065,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,372,Ireland,IRL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7592,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,522093,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2494,,,4
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,400,Jordan,JOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,417,Kyrgyzstan,KGZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,23,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,442,Luxembourg,LUX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,37854561,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,458,Malaysia,MYS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,361,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,504,Morocco,MAR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1557,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,524,Nepal,NPL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1654,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7774265,,,4
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,554,New Zealand,NZL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,568,"Other Europe, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,344395,,,4
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,279501,,,4
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,600,Paraguay,PRY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,30777,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,257094,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,568813,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,686,Senegal,SEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,42,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,548027,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2448,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15653,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,752,Sweden,SWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4768,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,53,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,272257,,,4
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,780,Trinidad and Tobago,TTO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,328,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,23793,,,4
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1388,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,818,Egypt,EGY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5880,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,32138,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,21823,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,862,Venezuela,VEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,40,,,0
+H5,2021,2021,2021,2,0,1,Import,442,Luxembourg,LUX,899,"Areas, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1094,,,0

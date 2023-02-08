@@ -1,0 +1,54 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,1104859683,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1291754,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,33375,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,31685,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,290573,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,136034494,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,39746726,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,143998,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3538882,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,48398903,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6551,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,191,Croatia,HRV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,193765,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,435,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,208,Denmark,DNK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11407045,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,233,Estonia,EST,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9477092,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,246,Finland,FIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22438,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,218517422,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,35672818,,,4
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1066329,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,328,Guyana,GUY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,29294920,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,212984,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,372,Ireland,IRL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,23255,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,376,Israel,ISR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,100,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7273794,,,4
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,86787,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,400,Jordan,JOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,102,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,418,Lao People's Dem. Rep.,LAO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,112542,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4931253,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11275299,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,442,Luxembourg,LUX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12319,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,75,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1504725,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14980915,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,600,Paraguay,PRY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4029655,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,35690,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,28442657,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,72309861,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4854303,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,25436890,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3653234,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,183771,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,140158614,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,729,Sudan,SDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,65867,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,740,Suriname,SUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5524815,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,752,Sweden,SWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11461613,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,255,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1906716,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,42,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,60765,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,179835757,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,42634735,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5876221,,,0
+H5,2021,2021,2021,2,0,1,Import,620,Portugal,PRT,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2804841,,,0

@@ -1,0 +1,45 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,160889134,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,106465,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5561542,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,21594,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,870608,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,29734247,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,144174,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,233394,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,49524,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,43180,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,82005,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,191,Croatia,HRV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1739949,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,43,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,218,Ecuador,ECU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,958309,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,299072,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9387414,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,357660,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,376,Israel,ISR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18985,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2238274,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,400,Jordan,JOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,236,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,422,Lebanon,LBN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,41232,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,178,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,498,Rep. of Moldova,MDA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16920994,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,554247,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,566,Nigeria,NGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,43,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,384227,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,88379,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,132725,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,288,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,60163377,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13685359,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3959858,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1604835,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,45203,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1564675,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,695606,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,55,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2106,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8101099,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,818,Egypt,EGY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,20,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,203192,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,123961,,,0
+H5,2021,2021,2021,2,0,1,Import,196,Cyprus,CYP,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,770777,,,0

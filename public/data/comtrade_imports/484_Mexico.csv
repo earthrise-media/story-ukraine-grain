@@ -1,0 +1,18 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,484,Mexico,MEX,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7615941738,,,4
+H5,2021,2021,2021,2,0,1,Import,484,Mexico,MEX,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,45381113,,,0
+H5,2021,2021,2021,2,0,1,Import,484,Mexico,MEX,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,49190616,,,0
+H5,2021,2021,2021,2,0,1,Import,484,Mexico,MEX,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,136790666,,,0
+H5,2021,2021,2021,2,0,1,Import,484,Mexico,MEX,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,309257008,,,0
+H5,2021,2021,2021,2,0,1,Import,484,Mexico,MEX,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2959402,,,0
+H5,2021,2021,2021,2,0,1,Import,484,Mexico,MEX,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,88043950,,,0
+H5,2021,2021,2021,2,0,1,Import,484,Mexico,MEX,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1246,,,0
+H5,2021,2021,2021,2,0,1,Import,484,Mexico,MEX,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,521,,,0
+H5,2021,2021,2021,2,0,1,Import,484,Mexico,MEX,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,483136,,,0
+H5,2021,2021,2021,2,0,1,Import,484,Mexico,MEX,600,Paraguay,PRY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5230732,,,0
+H5,2021,2021,2021,2,0,1,Import,484,Mexico,MEX,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1991579,,,0
+H5,2021,2021,2021,2,0,1,Import,484,Mexico,MEX,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1174648,,,0
+H5,2021,2021,2021,2,0,1,Import,484,Mexico,MEX,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,27792517,,,0
+H5,2021,2021,2021,2,0,1,Import,484,Mexico,MEX,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6770780941,,,4
+H5,2021,2021,2021,2,0,1,Import,484,Mexico,MEX,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,34272737,,,0
+H5,2021,2021,2021,2,0,1,Import,484,Mexico,MEX,899,"Areas, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,142590926,,,0

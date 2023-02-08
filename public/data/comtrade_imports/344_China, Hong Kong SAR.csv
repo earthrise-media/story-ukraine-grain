@@ -1,0 +1,31 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,265927649,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2385302,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3101,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1150581,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8021988,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,263463,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1955,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,684907,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16773219,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,20858,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8661,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4755,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,685971,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,19625582,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,219667,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,446,"China, Macao SAR",MAC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,27594,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,458,Malaysia,MYS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,29296,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2183362,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,524,Nepal,NPL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1003,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3623,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2102782,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,747040,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3268,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1903235,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,702,Singapore,SGP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,49280,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,49168505,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,143664,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,147738278,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,145833,,,0
+H5,2021,2021,2021,2,0,1,Import,344,"China, Hong Kong SAR",HKG,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11830862,,,0

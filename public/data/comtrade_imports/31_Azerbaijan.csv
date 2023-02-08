@@ -1,0 +1,36 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,388606723,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,31,Azerbaijan,AZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,31664,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,387184,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,375781,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4361,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,104,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4597,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,112,Belarus,BLR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,165,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8160,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,66282,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,170,Colombia,COL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,80,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,386171,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,268,Georgia,GEO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,453,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,160174,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1040,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,99270,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22127,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,855034,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,19180305,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,442,Luxembourg,LUX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,19057,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,212,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1572558,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12821,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,43,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,197218,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,335241227,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,596139,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,24911697,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6451,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,630721,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,360,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3505274,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,303198,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,710,,,0
+H5,2021,2021,2021,2,0,1,Import,31,Azerbaijan,AZE,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,26070,,,0

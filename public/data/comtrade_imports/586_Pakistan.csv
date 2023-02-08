@@ -1,0 +1,33 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,930742349,,,4
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,4,Afghanistan,AFG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1259193,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16725193,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,976115,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15914119,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,91801762,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,395864,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1950,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,41119067,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18819261,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9584387,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,198,,,4
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,846324,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,572125,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,484424,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,992,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,290,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,422,Lebanon,LBN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7881,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,568,"Other Europe, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,17044,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1451,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18032294,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,150117919,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,682,Saudi Arabia,SAU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,81,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3525,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,35793706,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14760027,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1098767,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,795,Turkmenistan,TKM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11625,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,477854607,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,34533101,,,0
+H5,2021,2021,2021,2,0,1,Import,586,Pakistan,PAK,860,Uzbekistan,UZB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9037,,,0

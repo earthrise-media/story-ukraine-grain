@@ -1,0 +1,21 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,104,Myanmar,MMR,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,186573547,,,0
+H5,2021,2021,2021,2,0,1,Import,104,Myanmar,MMR,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,110892036,,,0
+H5,2021,2021,2021,2,0,1,Import,104,Myanmar,MMR,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6400,,,0
+H5,2021,2021,2021,2,0,1,Import,104,Myanmar,MMR,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,75349,,,0
+H5,2021,2021,2021,2,0,1,Import,104,Myanmar,MMR,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,710,,,0
+H5,2021,2021,2021,2,0,1,Import,104,Myanmar,MMR,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4581483,,,0
+H5,2021,2021,2021,2,0,1,Import,104,Myanmar,MMR,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,319046,,,0
+H5,2021,2021,2021,2,0,1,Import,104,Myanmar,MMR,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,622031,,,0
+H5,2021,2021,2021,2,0,1,Import,104,Myanmar,MMR,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2254,,,0
+H5,2021,2021,2021,2,0,1,Import,104,Myanmar,MMR,458,Malaysia,MYS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10312,,,0
+H5,2021,2021,2021,2,0,1,Import,104,Myanmar,MMR,498,Rep. of Moldova,MDA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,530402,,,0
+H5,2021,2021,2021,2,0,1,Import,104,Myanmar,MMR,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8612,,,0
+H5,2021,2021,2021,2,0,1,Import,104,Myanmar,MMR,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,34014,,,0
+H5,2021,2021,2021,2,0,1,Import,104,Myanmar,MMR,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,20527609,,,0
+H5,2021,2021,2021,2,0,1,Import,104,Myanmar,MMR,702,Singapore,SGP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,88844,,,0
+H5,2021,2021,2021,2,0,1,Import,104,Myanmar,MMR,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,155811,,,0
+H5,2021,2021,2021,2,0,1,Import,104,Myanmar,MMR,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,19659777,,,0
+H5,2021,2021,2021,2,0,1,Import,104,Myanmar,MMR,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10425310,,,0
+H5,2021,2021,2021,2,0,1,Import,104,Myanmar,MMR,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18533675,,,0
+H5,2021,2021,2021,2,0,1,Import,104,Myanmar,MMR,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,99865,,,0

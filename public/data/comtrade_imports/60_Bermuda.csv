@@ -1,0 +1,14 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,60,Bermuda,BMU,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,1364672,,,0
+H5,2021,2021,2021,2,0,1,Import,60,Bermuda,BMU,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,810,,,0
+H5,2021,2021,2021,2,0,1,Import,60,Bermuda,BMU,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,69,,,0
+H5,2021,2021,2021,2,0,1,Import,60,Bermuda,BMU,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,21757,,,0
+H5,2021,2021,2021,2,0,1,Import,60,Bermuda,BMU,388,Jamaica,JAM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1122,,,0
+H5,2021,2021,2021,2,0,1,Import,60,Bermuda,BMU,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,30,,,0
+H5,2021,2021,2021,2,0,1,Import,60,Bermuda,BMU,598,Papua New Guinea,PNG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,117,,,0
+H5,2021,2021,2021,2,0,1,Import,60,Bermuda,BMU,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,99,,,0
+H5,2021,2021,2021,2,0,1,Import,60,Bermuda,BMU,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,26,,,0
+H5,2021,2021,2021,2,0,1,Import,60,Bermuda,BMU,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14,,,0
+H5,2021,2021,2021,2,0,1,Import,60,Bermuda,BMU,752,Sweden,SWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9,,,0
+H5,2021,2021,2021,2,0,1,Import,60,Bermuda,BMU,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,55691,,,0
+H5,2021,2021,2021,2,0,1,Import,60,Bermuda,BMU,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1284922,,,4

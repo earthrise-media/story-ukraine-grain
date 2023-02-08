@@ -1,0 +1,26 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,60193473,,,4
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10040,,,0
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,212,,,0
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1221,,,0
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,85823,,,0
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,239446,,,0
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1181,,,0
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7879,,,0
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,750020,,,0
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5000,,,0
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,368332,,,0
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,27618681,,,4
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,71287,,,0
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16830,,,0
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,29155508,,,4
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13056,,,0
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,268862,,,0
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,60,,,4
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,762,Tajikistan,TJK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,733,,,0
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12000,,,0
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,999867,,,0
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,36110,,,0
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,71188,,,0
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11129,,,0
+H5,2021,2021,2021,2,0,1,Import,417,Kyrgyzstan,KGZ,860,Uzbekistan,UZB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,449008,,,0

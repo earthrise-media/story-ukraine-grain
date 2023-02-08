@@ -1,0 +1,28 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,380266031,,,4
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,492837,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4635,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2771899,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,40153,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,136,Cayman Isds,CYM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,54,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,359,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,188,Costa Rica,CRI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,41217,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,218,Ecuador,ECU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,899,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,222,El Salvador,SLV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,52900,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,320,Guatemala,GTM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3913,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,328,Guyana,GUY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,216278,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,331,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,586644,,,4
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1182942,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,558,Nicaragua,NIC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,74550,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1804,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,600,Paraguay,PRY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,474688,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,76475,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1118,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3967,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,103,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3001,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,27725,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,47,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,374069284,,,0
+H5,2021,2021,2021,2,0,1,Import,340,Honduras,HND,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,138197,,,0

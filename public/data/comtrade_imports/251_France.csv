@@ -1,0 +1,108 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1108194798,,,4
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,12,Algeria,DZA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,35025,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,580795,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,134252,,,4
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,27166189,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,105823,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,142059395,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4642044,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,105502,,,4
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,761337,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2491715,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,112,Belarus,BLR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,24,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,62410903,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,120,Cameroon,CMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,516,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,151996,,,4
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,208926,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12628632,,,4
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1453176,,,4
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,170,Colombia,COL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,49974,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,178,Congo,COG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,66,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,184,Cook Isds,COK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,96,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,191,Croatia,HRV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1845956,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1942428,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,204,Benin,BEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,169,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,208,Denmark,DNK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5363916,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,212,Dominica,DMA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,42,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,214,Dominican Rep.,DOM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,96,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,218,Ecuador,ECU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,281729,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,231,Ethiopia,ETH,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,83,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,233,Estonia,EST,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,240218,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,246,Finland,FIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1024575,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,268,Georgia,GEO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,27576,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,270,Gambia,GMB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,125075104,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,288,Ghana,GHA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,76,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,314759,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,320,Guatemala,GTM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,28978,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,324,Guinea,GIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,45162,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,328,Guyana,GUY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3712293,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,332,Haiti,HTI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,28980,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,344,"China, Hong Kong SAR",HKG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,115,,,4
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,49349436,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,184279,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6028,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,372,Ireland,IRL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,497106,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,376,Israel,ISR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,43445,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,190830321,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,384,Côte d'Ivoire,CIV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9884,,,4
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,859152,,,4
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,156,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,404,Kenya,KEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3720,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,28159,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,418,Lao People's Dem. Rep.,LAO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,192791,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,422,Lebanon,LBN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1525,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1700959,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6186937,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,442,Luxembourg,LUX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2254163,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,450,Madagascar,MDG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,71986,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,458,Malaysia,MYS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,216,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,466,Mali,MLI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,94985,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,480,Mauritius,MUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2206,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5105820,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,20399,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,498,Rep. of Moldova,MDA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,19265,,,4
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,504,Morocco,MAR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12218,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,524,Nepal,NPL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,138,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,98561520,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,534,Saint Maarten,SXM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1350,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,554,New Zealand,NZL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,602827,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,579,Norway,NOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,63,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,48158481,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,600,Paraguay,PRY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,234797,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3983841,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6577,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10257039,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7784089,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,71496056,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1517168,,,4
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,662,Saint Lucia,LCA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,165,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,682,Saudi Arabia,SAU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,686,Senegal,SEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,343337,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1797586,,,4
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,27702122,,,4
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,702,Singapore,SGP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1049,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1320306,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13064017,,,4
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,705,Slovenia,SVN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,24443,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1654340,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,716,Zimbabwe,ZWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,276,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,76360001,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,729,Sudan,SDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,819,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,740,Suriname,SUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2512432,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,752,Sweden,SWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,121314,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,427993,,,4
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,61681950,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,768,Togo,TGO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,50,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,66751,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,788,Tunisia,TUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2827,,,4
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2626595,,,4
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,473840,,,4
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,807,North Macedonia,MKD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,818,Egypt,EGY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,27,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2736690,,,4
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7242519,,,4
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,854,Burkina Faso,BFA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,56267,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12905131,,,0
+H5,2021,2021,2021,2,0,1,Import,251,France,FRA,894,Zambia,ZMB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,74121,,,0

@@ -1,0 +1,21 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,214,Dominican Rep.,DOM,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,661643761,,,4
+H5,2021,2021,2021,2,0,1,Import,214,Dominican Rep.,DOM,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,95486669,,,4
+H5,2021,2021,2021,2,0,1,Import,214,Dominican Rep.,DOM,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,204809484,,,4
+H5,2021,2021,2021,2,0,1,Import,214,Dominican Rep.,DOM,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,89350986,,,4
+H5,2021,2021,2021,2,0,1,Import,214,Dominican Rep.,DOM,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7482938,,,0
+H5,2021,2021,2021,2,0,1,Import,214,Dominican Rep.,DOM,218,Ecuador,ECU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2982,,,0
+H5,2021,2021,2021,2,0,1,Import,214,Dominican Rep.,DOM,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,185,,,0
+H5,2021,2021,2021,2,0,1,Import,214,Dominican Rep.,DOM,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,28,,,0
+H5,2021,2021,2021,2,0,1,Import,214,Dominican Rep.,DOM,320,Guatemala,GTM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1744,,,0
+H5,2021,2021,2021,2,0,1,Import,214,Dominican Rep.,DOM,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5305,,,0
+H5,2021,2021,2021,2,0,1,Import,214,Dominican Rep.,DOM,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,245883,,,0
+H5,2021,2021,2021,2,0,1,Import,214,Dominican Rep.,DOM,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1639049,,,0
+H5,2021,2021,2021,2,0,1,Import,214,Dominican Rep.,DOM,558,Nicaragua,NIC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,27720,,,0
+H5,2021,2021,2021,2,0,1,Import,214,Dominican Rep.,DOM,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1193,,,0
+H5,2021,2021,2021,2,0,1,Import,214,Dominican Rep.,DOM,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,311032,,,0
+H5,2021,2021,2021,2,0,1,Import,214,Dominican Rep.,DOM,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3011124,,,0
+H5,2021,2021,2021,2,0,1,Import,214,Dominican Rep.,DOM,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,109176,,,0
+H5,2021,2021,2021,2,0,1,Import,214,Dominican Rep.,DOM,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,63650,,,0
+H5,2021,2021,2021,2,0,1,Import,214,Dominican Rep.,DOM,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,121022,,,0
+H5,2021,2021,2021,2,0,1,Import,214,Dominican Rep.,DOM,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,258973583,,,4

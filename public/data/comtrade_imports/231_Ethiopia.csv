@@ -1,0 +1,46 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1683142236,,,4
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1283168,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14884638,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,150,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,511361,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,27031206,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,108,Burundi,BDI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1592251,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2551429,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,191,Croatia,HRV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,86054,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1696134,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,262,Djibouti,DJI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,908576,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1199694,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,49286,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22665818,,,4
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,384,Côte d'Ivoire,CIV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,105,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,404,Kenya,KEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,67,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8675835,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,414,Kuwait,KWT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,78,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,422,Lebanon,LBN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,454,Malawi,MWI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,101,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,458,Malaysia,MYS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1020430,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,797,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,498,Rep. of Moldova,MDA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,757838,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,504,Morocco,MAR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,450,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,512,Oman,OMN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3533,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,566,Nigeria,NGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,44,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5315977,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,634,Qatar,QAT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,662,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,85867813,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,127861171,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,682,Saudi Arabia,SAU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,25752,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,686,Senegal,SEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18611498,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,680271250,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,229668,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3010134,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,80507,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2842606,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3286961,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,418257607,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,818,Egypt,EGY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,696163,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,251846541,,,0
+H5,2021,2021,2021,2,0,1,Import,231,Ethiopia,ETH,894,Zambia,ZMB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18838,,,0

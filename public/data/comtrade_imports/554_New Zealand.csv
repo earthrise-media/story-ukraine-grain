@@ -1,0 +1,55 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,270489837,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,103156,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,190898983,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8782,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,67061,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,84033,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,112539,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,50,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3628579,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,94669,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,164328,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,42368,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1273644,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,231,Ethiopia,ETH,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3652,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,242,Fiji,FJI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,68013,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,965472,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6243,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,288,Ghana,GHA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,220,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1188,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,265,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3445,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,372,Ireland,IRL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,42310,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,612875,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,168608,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,404,Kenya,KEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1841,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,145123,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,418,Lao People's Dem. Rep.,LAO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7788,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,422,Lebanon,LBN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2531,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1556,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,458,Malaysia,MYS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9265,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,65,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,240761,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,524,Nepal,NPL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,622,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6557,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,554,New Zealand,NZL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,442953,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,579,Norway,NOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,197,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3090979,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,322577,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1785,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,17455021,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11883658,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,702,Singapore,SGP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,720,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8840956,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7635,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,116617,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,538,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15620143,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,776,Tonga,TON,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,34,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5795,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,29995,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,82102,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4791,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13760115,,,0
+H5,2021,2021,2021,2,0,1,Import,554,New Zealand,NZL,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,56609,,,0

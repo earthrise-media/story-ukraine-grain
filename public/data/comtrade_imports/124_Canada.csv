@@ -1,0 +1,102 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1359133146,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,4,Afghanistan,AFG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,42552,,,0
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1943217,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1213067,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,70244,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,551411,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1435,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,60,Bermuda,BMU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,19,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8171515,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,466109,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8030,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,405,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,108,Burundi,BDI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2886,,,0
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,112,Belarus,BLR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,43974,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,669170,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,120,Cameroon,CMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,327,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2297652,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,917452,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4372424,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5541572,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,170,Colombia,COL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,36,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,204,Benin,BEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,208,Denmark,DNK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4196,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,212,Dominica,DMA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,78,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,218,Ecuador,ECU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,930060,,,0
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,222,El Salvador,SLV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3174,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,231,Ethiopia,ETH,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,70321,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,242,Fiji,FJI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,75,,,0
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,246,Finland,FIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22705,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,238817,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,78240,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,288,Ghana,GHA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12123,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9409,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,320,Guatemala,GTM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,306,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,324,Guinea,GIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,232,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,332,Haiti,HTI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,40121,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,344,"China, Hong Kong SAR",HKG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,58067,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4108,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1005387,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,368,Iraq,IRQ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8082,,,0
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,372,Ireland,IRL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,43,,,0
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,376,Israel,ISR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4202,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3559275,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,384,Côte d'Ivoire,CIV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,166857,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,388,Jamaica,JAM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,507,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,681825,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,400,Jordan,JOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,111601,,,0
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,404,Kenya,KEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,321825,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,243976,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,422,Lebanon,LBN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,26338,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,458,Malaysia,MYS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,37833,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,466,Mali,MLI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11300,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,139871,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,831635,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,498,Rep. of Moldova,MDA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1396,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,504,Morocco,MAR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1823,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,524,Nepal,NPL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,29349,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,67069,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,554,New Zealand,NZL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22599,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,566,Nigeria,NGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,42436,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,581,United States Minor Outlying Islands,UMI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14079362,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,600,Paraguay,PRY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,47966,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8242722,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,24086,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,53036,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,157571,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1676,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1250180,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,646,Rwanda,RWA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,61272,,,0
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,682,Saudi Arabia,SAU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11874,,,0
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,686,Senegal,SEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22492,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,23223,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,72776378,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,702,Singapore,SGP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2337,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1352,,,0
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5789901,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,853082,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,785309,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,729,Sudan,SDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1180,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,752,Sweden,SWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,313,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,234793,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,760,Syria,SYR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3127,,,0
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,73835911,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,768,Togo,TGO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9343,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,780,Trinidad and Tobago,TTO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,48249,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,251646,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,788,Tunisia,TUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9650,,,0
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,436665,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,800,Uganda,UGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4380,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6086839,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,807,North Macedonia,MKD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,31693,,,0
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,818,Egypt,EGY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,191560,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,42767,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1137143004,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1517299,,,0
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,887,Yemen,YEM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,50,,,4
+H5,2021,2021,2021,2,0,1,Import,124,Canada,CAN,894,Zambia,ZMB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22,,,4

@@ -1,0 +1,68 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,186240638,,,4
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,12,Algeria,DZA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,28,Antigua and Barbuda,ATG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1608,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1893555,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5852,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,292337,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8177,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6267806,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,112928,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,20748,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,442,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3247367,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,155622,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,28303,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,45,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,165490,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,47073,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,231,Ethiopia,ETH,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,116,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,233,Estonia,EST,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,795,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,246,Finland,FIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2480296,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22384559,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,31991251,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,288,Ghana,GHA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2478,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9118,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1222606,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,352,Iceland,ISL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10753,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1209,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,376,Israel,ISR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,188,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16683732,,,4
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2556,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,404,Kenya,KEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,79,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,418,Lao People's Dem. Rep.,LAO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,74111,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,422,Lebanon,LBN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1561,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,528111,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15892926,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,442,Luxembourg,LUX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2131210,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,381,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,21,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7518636,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,554,New Zealand,NZL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,52811,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,579,Norway,NOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4351,,,4
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4860370,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,574513,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2152,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,25105655,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1146287,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4006733,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,682,Saudi Arabia,SAU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,156,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,944244,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,112120,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,395693,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,705,Slovenia,SVN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,41425,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16336,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,829820,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,752,Sweden,SWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,30598019,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2079364,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,23973,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,800,Uganda,UGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1159019,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,807,North Macedonia,MKD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,818,Egypt,EGY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,152,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,40944,,,4
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,834,United Rep. of Tanzania,TZA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,0,,,0
+H5,2021,2021,2021,2,0,1,Import,208,Denmark,DNK,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1062387,,,0

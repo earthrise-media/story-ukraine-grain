@@ -1,0 +1,51 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1035133793,,,4
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,123050362,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,200238612,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,108,Burundi,BDI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,45131,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,41727754,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,145146,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,208,Denmark,DNK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4431,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,231,Ethiopia,ETH,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,243477,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4271,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,225,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,115314,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4031399,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,89,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,0,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,498,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4527854,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,25356510,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,450,Madagascar,MDG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,454,Malawi,MWI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1369,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,466,Mali,MLI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7533,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,566,Nigeria,NGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,49,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,579,Norway,NOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,80657703,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,189,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,30,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8324699,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,106374124,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,646,Rwanda,RWA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,582,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,682,Saudi Arabia,SAU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1341,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,202,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,91756272,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,702,Singapore,SGP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,33203,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2285804,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,716,Zimbabwe,ZWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,312280,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,296,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,728,South Sudan,SSD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6793968,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4985,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,443,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,800,Uganda,UGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1264262,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,78631567,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,818,Egypt,EGY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,32287,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,36695,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,834,United Rep. of Tanzania,TZA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,230591681,,,4
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22627472,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,894,Zambia,ZMB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5873330,,,0
+H5,2021,2021,2021,2,0,1,Import,404,Kenya,KEN,899,"Areas, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,30289,,,0

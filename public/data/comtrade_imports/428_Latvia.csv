@@ -1,0 +1,39 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,225014076,,,4
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6091,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,403120,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,96396,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,186710,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,313823,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,112,Belarus,BLR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4260491,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,66,,,4
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,357479,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,208,Denmark,DNK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,736928,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,233,Estonia,EST,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15399211,,,4
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,246,Finland,FIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,30339,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1123237,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2540133,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,148095,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15433,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,372,Ireland,IRL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1846140,,,4
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4601889,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,111,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,152972335,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,257969,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,477361,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,133450,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2452517,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,233721,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,87995,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,32947639,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,151755,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,27023,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,80080,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,89117,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,592647,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,752,Sweden,SWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,133933,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1991,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2282983,,,0
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3263,,,4
+H5,2021,2021,2021,2,0,1,Import,428,Latvia,LVA,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22585,,,0

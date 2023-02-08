@@ -1,0 +1,39 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,676218878,,,0
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,4,Afghanistan,AFG,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,26768,,,0
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18229625,,,0
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,83765284,,,0
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,40434,,,0
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,108170,,,0
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,72,Botswana,BWA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,139001,,,0
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,86817,,,4
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,35292937,,,0
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,17197333,,,4
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,246,Finland,FIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10789,,,4
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,344,"China, Hong Kong SAR",HKG,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,147882,,,0
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,304633,,,4
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14003,,,4
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,107,,,0
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3977380,,,0
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,454,Malawi,MWI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,837475,,,4
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,480,Mauritius,MUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1733522,,,4
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,237120,,,4
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3994730,,,4
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,579,Norway,NOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,79186,,,0
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,72769747,,,4
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,21726546,,,0
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13991807,,,4
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,25872340,,,0
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,118706031,,,4
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,702,Singapore,SGP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,43742035,,,4
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,40239673,,,4
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,46536611,,,4
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,716,Zimbabwe,ZWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1130779,,,0
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,911,,,4
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4575764,,,0
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,80757479,,,4
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5828432,,,4
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10761997,,,0
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2092032,,,0
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,19138474,,,4
+H5,2021,2021,2021,2,0,1,Import,508,Mozambique,MOZ,894,Zambia,ZMB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2125006,,,0

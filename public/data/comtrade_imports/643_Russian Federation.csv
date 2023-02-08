@@ -1,0 +1,47 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,268902007,,,4
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6436324,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,51,Armenia,ARM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,802,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1877,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,112,Belarus,BLR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1084952,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2212856,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,365608,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,31753,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,87746,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2741883,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,303241,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,208,Denmark,DNK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,206641,,,4
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,246,Finland,FIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,125248,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,38291343,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,268,Georgia,GEO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,542423,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5620409,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,34923103,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2571503,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,656257,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,60227859,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,127293,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,417,Kyrgyzstan,KGZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,168882,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,453526,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,493,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,496,Mongolia,MNG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22199,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,498,Rep. of Moldova,MDA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,206796,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8447,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,554,New Zealand,NZL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,77612,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2434804,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3145733,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,552955,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8838,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9796722,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9677475,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,69725333,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1646196,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1530350,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,705,Slovenia,SVN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13666,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,293645,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,288206,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,752,Sweden,SWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5514,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3682840,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3642553,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1654430,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1132,,,0
+H5,2021,2021,2021,2,0,1,Import,643,Russian Federation,RUS,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3304518,,,0

@@ -1,0 +1,109 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4070386054,,,4
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,4,Afghanistan,AFG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6027,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,12,Algeria,DZA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,63,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,24,Angola,AGO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,117,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12477382,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,136510,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10815179,,,4
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7685,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,294476471,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2362875,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,70,Bosnia Herzegovina,BIH,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,42,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,96894636,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,49827516,,,4
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7427645,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,108,Burundi,BDI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,274,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,112,Belarus,BLR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,73365,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,19038891,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,120,Cameroon,CMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,139,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,354042,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,162817,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6720770,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1757451,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,180,Dem. Rep. of the Congo,COD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,176,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,188,Costa Rica,CRI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,281,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,191,Croatia,HRV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,50014,,,4
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,196,Cyprus,CYP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12243,,,4
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12927055,,,4
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,208,Denmark,DNK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,41107225,,,4
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,214,Dominican Rep.,DOM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,292,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,218,Ecuador,ECU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,123950,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,231,Ethiopia,ETH,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3771,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,233,Estonia,EST,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3912734,,,4
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,246,Finland,FIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12337977,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1034222150,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1053110957,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1170556,,,4
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,324,Guinea,GIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22832,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,328,Guyana,GUY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12439119,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,344,"China, Hong Kong SAR",HKG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,20606,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10898779,,,4
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,216060,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,79031,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,368,Iraq,IRQ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4443,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,372,Ireland,IRL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1864344,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,376,Israel,ISR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,529809,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,34523024,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,384,Côte d'Ivoire,CIV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,322,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,461700,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,400,Jordan,JOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12020,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,404,Kenya,KEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,62019,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,168843,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,418,Lao People's Dem. Rep.,LAO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,864713,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,422,Lebanon,LBN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,61,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,35656859,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18036896,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,442,Luxembourg,LUX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2661379,,,4
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,450,Madagascar,MDG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,30,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,458,Malaysia,MYS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,56329,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,470,Malta,MLT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10507,,,4
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5709,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,152172,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,496,Mongolia,MNG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,182,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,498,Rep. of Moldova,MDA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,546118,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,499,Montenegro,MNE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,94,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,504,Morocco,MAR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,36928,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,508,Mozambique,MOZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,609,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,516,Namibia,NAM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,54607,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,531,Curaçao,CUW,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,567,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,554,New Zealand,NZL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,725489,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,566,Nigeria,NGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1369,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,568,"Other Europe, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,403857,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,579,Norway,NOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,826,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,65716760,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,600,Paraguay,PRY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4819573,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8083860,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5503,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,163288651,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5255443,,,4
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,133331303,,,4
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5237153,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,646,Rwanda,RWA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,272,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,682,Saudi Arabia,SAU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,604,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,56423836,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,702,Singapore,SGP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,65801,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3243636,,,4
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5254055,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,705,Slovenia,SVN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,139516,,,4
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,706,Somalia,SOM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,269985,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,808126,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14568174,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,740,Suriname,SUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1596394,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,752,Sweden,SWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,44513020,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,49450,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,30556889,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,768,Togo,TGO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,16928,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1335,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,788,Tunisia,TUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,63,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,959276,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,800,Uganda,UGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,99,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,646908077,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,807,North Macedonia,MKD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,24,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,818,Egypt,EGY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,51567,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,87093873,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,834,United Rep. of Tanzania,TZA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8642314,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,854,Burkina Faso,BFA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,118362,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1287343,,,0
+H5,2021,2021,2021,2,0,1,Import,528,Netherlands,NLD,894,Zambia,ZMB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,41193,,,0

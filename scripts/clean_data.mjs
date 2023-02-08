@@ -17,7 +17,9 @@ import path from "path";
 import * as d3 from "d3";
 
 // First we need to get a list of files in the folder
-const files = fs.readdirSync(path.join(process.cwd(), "public/data/ovuzpsg_1221"));
+const files = fs.readdirSync(
+  path.join(process.cwd(), "public/data/ovuzpsg_1221")
+);
 
 // remove 'cleaned' from the list of files
 files.splice(files.indexOf("cleaned"), 1);
@@ -60,7 +62,7 @@ files.forEach((file) => {
         harvestedAreaHousehold,
         volumeHousehold,
         grainYieldHousehold,
-        oblastNameEnglish
+        oblastNameEnglish,
       ] = row;
       // make a new object to return for each row
       return {
@@ -77,7 +79,7 @@ files.forEach((file) => {
         volumeHousehold: +volumeHousehold,
         grainYieldHousehold: +grainYieldHousehold,
         harvestedAreaHousehold: +harvestedAreaHousehold,
-        oblastNameEnglish
+        oblastNameEnglish,
       };
     })
     .filter((d) => d.oblastNameUkrainian);
@@ -90,7 +92,11 @@ files.forEach((file) => {
 
   // Write the file as .csv
   fs.writeFileSync(
-    path.join(process.cwd(), "public/data/ovuzpsg_1221/cleaned", "all_data.csv"),
+    path.join(
+      process.cwd(),
+      "public/data/ovuzpsg_1221/cleaned",
+      "all_data.csv"
+    ),
     d3.csvFormat(parsed_data)
   );
 

@@ -1,0 +1,48 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1144011000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,689000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,37338000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,44000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,32000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,413000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,23000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8835000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,274000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,325000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,196,Cyprus,CYP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1943000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,593000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,218,Ecuador,ECU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1209000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,231,Ethiopia,ETH,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1390000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,43789000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2129000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,292000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2644000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,81000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,404,Kenya,KEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,73000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,26000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,442,Luxembourg,LUX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1389000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,49000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,122795000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,600,Paraguay,PRY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2743000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2515000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,131000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,72088000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5522000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,26807000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,702,Singapore,SGP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,46973000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1760000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,19000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,977000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,589895000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,35208000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,17131000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3809000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4046000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7732000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,31402000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1330000,,,4
+H5,2021,2021,2021,2,0,1,Import,376,Israel,ISR,899,"Areas, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,67536000,,,4

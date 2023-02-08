@@ -1,0 +1,41 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,101793237,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,611010,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,904210,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,294926,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,34860,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,577240,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4885950,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,112,Belarus,BLR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13572530,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,129310,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,241466,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,208,Denmark,DNK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1353700,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,233,Estonia,EST,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2823420,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3024196,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1464450,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,111300,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,328,Guyana,GUY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,84230,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1268500,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1454820,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,40,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,417,Kyrgyzstan,KGZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,35790,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13111809,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,475413,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2335490,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,600,Paraguay,PRY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,612470,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,130945,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15570458,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,488450,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15751820,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,62260,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,607900,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,570620,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,37160,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,752,Sweden,SWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8004480,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1930,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,527070,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10118220,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,497017,,,0
+H5,2021,2021,2021,2,0,1,Import,440,Lithuania,LTU,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,17760,,,0

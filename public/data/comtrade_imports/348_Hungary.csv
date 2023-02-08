@@ -1,0 +1,50 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,345933759,,,4
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,12,Algeria,DZA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,40730,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,150,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,21310673,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1831260,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2311617,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,193879,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,112,Belarus,BLR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,79636,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,563766,,,4
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,191623,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,21476,,,4
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,38,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,191,Croatia,HRV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6091779,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3399726,,,4
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,208,Denmark,DNK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9849,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,214,Dominican Rep.,DOM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,50622243,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7486570,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2700396,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,328,Guyana,GUY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,296754,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,24207897,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,273,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,422,Lebanon,LBN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,149538,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,135796,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3932337,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,202515,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,39736,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,10385030,,,4
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,20615,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,61995966,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,63755,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,48440486,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,100252,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,84121772,,,4
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,923619,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,705,Slovenia,SVN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,915853,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5,,,4
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,642809,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,27825,,,4
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,133923,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4437692,,,4
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7047179,,,4
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,818,Egypt,EGY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14598,,,0
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15239,,,4
+H5,2021,2021,2021,2,0,1,Import,348,Hungary,HUN,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,826831,,,0

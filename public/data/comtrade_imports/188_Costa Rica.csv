@@ -1,0 +1,27 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,490249109,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4566650,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,53324,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,61350477,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,72088061,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,33894,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14332,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,170,Colombia,COL,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,80298,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,214,Dominican Rep.,DOM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,240,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,218,Ecuador,ECU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,417997,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,222,El Salvador,SLV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1893900,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,320,Guatemala,GTM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,395833,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,332,Haiti,HTI,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,256,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,340,Honduras,HND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,89,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,300,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,30520,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3804874,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,600,Paraguay,PRY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3045659,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,442960,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,37453,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22474,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1190118,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,164371,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,416294,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,334052184,,,0
+H5,2021,2021,2021,2,0,1,Import,188,Costa Rica,CRI,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6146538,,,0

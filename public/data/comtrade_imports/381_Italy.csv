@@ -1,0 +1,73 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4181152267,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4134264,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,166240135,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,320519252,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,857245,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,21941107,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1054640,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,70,Bosnia Herzegovina,BIH,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,23253,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,34675939,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,77678455,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1522150,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,116,Cambodia,KHM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3941251,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,419696924,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,635253,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,41809,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,723813,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,191,Croatia,HRV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,274621207,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,196,Cyprus,CYP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,70306,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14385231,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,208,Denmark,DNK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11664562,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,218,Ecuador,ECU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,47444,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,231,Ethiopia,ETH,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,166042,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,233,Estonia,EST,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1374499,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,246,Finland,FIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,257936,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,451123570,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,124000437,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,116576680,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,328,Guyana,GUY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14654707,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,761984986,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,30307,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9442,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,372,Ireland,IRL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,212363,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,384,Côte d'Ivoire,CIV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1379,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,64229,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,398,Kazakhstan,KAZ,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,45083064,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,418,Lao People's Dem. Rep.,LAO,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,201378,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,657488,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3786046,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,442,Luxembourg,LUX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11478136,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,470,Malta,MLT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,202670,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,23185,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,498,Rep. of Moldova,MDA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,28923702,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,512,Oman,OMN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,443527,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,524,Nepal,NPL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2807,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,39448906,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,554,New Zealand,NZL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,28848,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,81556061,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,600,Paraguay,PRY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,273850,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3789432,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,15276131,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1152634,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,634,Qatar,QAT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8760,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,642,Romania,ROU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,185113189,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,95430635,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,686,Senegal,SEN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,305991,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,18070420,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,24421619,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,49564186,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6278413,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,705,Slovenia,SVN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,265201086,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,45357422,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,25994718,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,740,Suriname,SUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,76898,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,752,Sweden,SWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,274385,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,93845,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,24055528,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5101,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,22532715,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,249279344,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,266510,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,111335797,,,0
+H5,2021,2021,2021,2,0,1,Import,381,Italy,ITA,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,226989,,,0

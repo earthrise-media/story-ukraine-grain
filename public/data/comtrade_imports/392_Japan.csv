@@ -1,0 +1,47 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7528081040,,,4
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,409492594,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,696001681,,,4
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,626699,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,50,Bangladesh,BGD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,54831,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,55095,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,64,Bhutan,BTN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4983,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,68,Bolivia (Plurinational State of),BOL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,548870,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,76,Brazil,BRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,678160396,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,32764,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,667737627,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,144,Sri Lanka,LKA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,51278,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2401133,,,4
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,156,China,CHN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,62082891,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,77081,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,246,Finland,FIN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,385979,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11572827,,,4
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7449294,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,468436,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,360,Indonesia,IDN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,136914,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,372,Ireland,IRL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1922,,,4
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,957528,,,4
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4992,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8981332,,,4
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,490,"Other Asia, nes",,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2926943,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,496,Mongolia,MNG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,374991,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,524,Nepal,NPL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6541,,,4
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,142700,,,4
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,554,New Zealand,NZL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1076712,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2880129,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2899418,,,4
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,608,Philippines,PHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11744,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9175,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8915995,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7277082,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,494950,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,710,South Africa,ZAF,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,221198426,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,65181,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,148440913,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3152,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,52079,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,800,Uganda,UGA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,28591,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1055018,,,0
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3161,,,4
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4582612112,,,4
+H5,2021,2021,2021,2,0,1,Import,392,Japan,JPN,858,Uruguay,URY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,318857,,,0

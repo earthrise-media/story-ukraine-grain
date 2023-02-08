@@ -1,0 +1,54 @@
+pfCode,yr,period,periodDesc,aggrLevel,IsLeaf,rgCode,rgDesc,rtCode,rtTitle,rt3ISO,ptCode,ptTitle,pt3ISO,ptCode2,ptTitle2,pt3ISO2,cstCode,cstDesc,motCode,motDesc,cmdCode,cmdDescE,qtCode,qtDesc,qtAltCode,qtAltDesc,TradeQuantity,AltQuantity,NetWeight,GrossWeight,TradeValue,CIFValue,FOBValue,estCode
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,0,World,WLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,760664026,,,4
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,32,Argentina,ARG,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,411001,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,36,Australia,AUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,27614,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,40,Austria,AUT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,8866210,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,56,Belgium,BEL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,195089,,,4
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,100,Bulgaria,BGR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,262178465,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,104,Myanmar,MMR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1645220,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,112,Belarus,BLR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,158627,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,124,Canada,CAN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,502,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,152,Chile,CHL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9471,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,191,Croatia,HRV,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,14395696,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,196,Cyprus,CYP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,793407,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,203,Czechia,CZE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,798589,,,4
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,208,Denmark,DNK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2093558,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,251,France,FRA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,58698881,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,276,Germany,DEU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9241879,,,4
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,300,Greece,GRC,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,5482430,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,320,Guatemala,GTM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,925,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,328,Guyana,GUY,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,482875,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,348,Hungary,HUN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,330061762,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,364,Iran,IRN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,68772,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,372,Ireland,IRL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,68,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,381,Italy,ITA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12982310,,,4
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,392,Japan,JPN,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,11,,,4
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,410,Rep. of Korea,KOR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,867,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,428,Latvia,LVA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13492,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,440,Lithuania,LTU,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,25249,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,442,Luxembourg,LUX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1257,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,484,Mexico,MEX,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,9121,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,498,Rep. of Moldova,MDA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11986409,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,504,Morocco,MAR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,78,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,528,Netherlands,NLD,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2520721,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,586,Pakistan,PAK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,484382,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,604,Peru,PER,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,95805,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,616,Poland,POL,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,1690571,,,4
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,620,Portugal,PRT,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,189273,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,643,Russian Federation,RUS,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,7212,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,688,Serbia,SRB,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,12975971,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,699,India,IND,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,216941,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,703,Slovakia,SVK,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,11721416,,,4
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,704,Viet Nam,VNM,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,43579,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,705,Slovenia,SVN,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,210,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,724,Spain,ESP,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,3862588,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,752,Sweden,SWE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,75769,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,757,Switzerland,CHE,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,26464,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,760,Syria,SYR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,20,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,764,Thailand,THA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2521,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,784,United Arab Emirates,ARE,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,1802,,,4
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,792,Turkey,TUR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,4039802,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,804,Ukraine,UKR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,2058857,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,818,Egypt,EGY,,,,,,,,10,Cereals,1,No Quantity,,,0,,,,208,,,4
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,826,United Kingdom,GBR,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,13279,,,0
+H5,2021,2021,2021,2,0,1,Import,642,Romania,ROU,842,USA,USA,,,,,,,,10,Cereals,1,No Quantity,,,0,,0,,6776,,,0
