@@ -57,23 +57,19 @@
         <button @click="clearSelectedOblasts">Clear</button>
       </div>
 
-      <DataTable :sorted-data-by-grain-type="sortedDataByGrainType" :total-harvested-area="totalHarvestedArea"
-        :total-yield="totalYield" :total-volume="totalVolume" class="w-100 bt b--light-gray mt2 fl" />
+      <DataTable
+        :data-by-grain-type="originalDataByGrainType"
+        :sorted-data-by-grain-type="sortedDataByGrainType"
+        :total-harvested-area="0"
+        :total-yield="0"
+        :total-volume="0"
+        class="w-100 bt b--light-gray mt2 fl"
+        @sliderChange="updateScaleByOblast"
+      />
 
 
     </div>
 
-    <div id="forecasts">
-      <h2>Forecasts</h2>
-      <ul>
-        <li v-for="forecast in forecasts" :key="forecast.id">
-          <h3>{{ forecast.oblastName }}</h3>
-          <p>{{ forecast.harvestedArea }}</p>
-          <p>{{ forecast.grainYield }}</p>
-          <p>{{ forecast.volume }}</p>
-        </li>
-      </ul>
-    </div>
   </div>
 </template>
 <script setup>
@@ -91,6 +87,7 @@ const parsedDataByName = ref(null)
 const dataByGrainType = ref(null)
 const selectedScaleValue = ref(1)
 const oblastForecastScale = ref({})
+const scaleByOblast = ref({})
 
 // the normalized names of the selected oblasts, can be one or many
 const selectedOblasts = ref([])
@@ -100,7 +97,10 @@ function updateForecastScale(scaleValue) {
   selectedOblasts.value.forEach((oblast) => {
     oblastForecastScale.value[normalizeOblastName(oblast)] = scaleValue;
   })
-  // console.log(oblastForecastScale.value);
+}
+
+function updateScaleByOblast(scaleMap) {
+  scaleByOblast.value = scaleMap;
 }
 
 function addSelectedOblast(oblastName) {
@@ -115,7 +115,6 @@ function clearSelectedOblasts() {
   selectedOblasts.value = []
 }
 
-// HELLO 
 const forecastSelectOptions = [
   {
     text: '100%',
@@ -140,7 +139,15 @@ const forecastSelectOptions = [
 ]
 
 
-// Need a method to upsert an Oblast forceast to the forecasts
+function formatAndScaleValue(value, oblastNameUkrainian) {
+  // default to 100% if missing from scaleByOblast map
+  const scale = scaleByOblast.value[oblastNameUkrainian];
+  const sliderScale = (scale >= 0 ? scale : 100) / 100;
+  return formatValue(value * sliderScale)
+}
+function formatValue(value) {
+  return (+value).toFixed(1)
+}
 
 // Need a computed that applies the forecasts to the data and returns a forecasted version
 const forecastedDataByGrainType = computed(() => {
@@ -148,12 +155,15 @@ const forecastedDataByGrainType = computed(() => {
     const forecastedData = new Map()
     for (const [grainType, oblasts] of dataByGrainType.value) {
       forecastedData.set(grainType, oblasts.map(oblast => {
-        const forecastScale = oblastForecastScale[oblast.oblastNameEnglish] || forecastSelectOptions[0].scaleValue
+        // const forecastScale = oblastForecastScale[oblast.oblastNameEnglish] || forecastSelectOptions[0].scaleValue
         return {
           ...oblast,
-          harvestedArea: oblast.harvestedArea * forecastScale,
-          grainYield: oblast.grainYield * forecastScale,
-          volume: oblast.volume * forecastScale,
+          harvestedAreaOriginal: formatValue(oblast.harvestedArea),
+          grainYieldOriginal: formatValue(oblast.grainYield),
+          volumeOriginal: formatValue(oblast.volume),
+          harvestedArea: formatAndScaleValue(oblast.harvestedArea, oblast.oblastNameUkrainian),
+          grainYield: formatAndScaleValue(oblast.grainYield, oblast.oblastNameUkrainian),
+          volume: formatAndScaleValue(oblast.volume, oblast.oblastNameUkrainian),
         }
       }))
     }
@@ -172,17 +182,28 @@ const forecastedDataByGrainType = computed(() => {
 const mapSvg = ref(null)
 
 // This is a reactive ref with a default value
+// For now set to oblast name since sliders will change sorting rank of values
+const sortKey = ref("oblastNameUkrainian")
 const valueKey = ref("harvestedArea")
 
 // Make a D3 color scale for the values
 const valueColorScale = ref(null)
 
-// Make a computed that takes dataByGrainType and sorts it by our selected valueKey
-const sortedDataByGrainType = computed(() => {
-  if (forecastedDataByGrainType.value) {
-    return forecastedDataByGrainType.value.get(activeGrainType.value).sort((a, b) => b[valueKey.value] - a[valueKey.value])
+// make a computed that gives the original data by active grain type
+const originalDataByGrainType = computed(() => {
+  if (dataByGrainType.value) {
+    return dataByGrainType.value.get(activeGrainType.value)
   }
 })
+// Make a computed that takes forecastedDataByGrainType and sorts it by our selected sortKey
+const sortedDataByGrainType = computed(() => {
+  if (forecastedDataByGrainType.value) {
+    return forecastedDataByGrainType.value.get(activeGrainType.value).sort((a, b) => b[sortKey.value] - a[sortKey.value])
+  }
+})
+
+// update the map when the display data changes
+watch(sortedDataByGrainType, redrawMap);
 
 valueColorScale.value = d3.scaleLinear().domain([0, 1000]).range(["white", "red"])
 
@@ -251,17 +272,56 @@ function initMap(geographicData) {
 function updateMap(geographicData) {
   // use d3 select and update to update the map
   // this lets us use transitions to fade in the new data
-  d3.select(mapSvg.value)
-    .selectAll('path')
-    .data(topojson.feature(geographicData, geographicData.objects['stanford-pp624tm0074-geojson']).features)
+  console.log("raw objects", geographicData.objects['stanford-pp624tm0074-geojson'])
+  // let geodata = topojson.feature(geographicData, geographicData.objects['stanford-pp624tm0074-geojson']).features
+  // Merge geometries so we end up with Oblast-level shapes.
+  const featureCollection = aggregate(
+    geographicData,
+    geographicData.objects['stanford-pp624tm0074-geojson'],
+    'name_1'
+  );
+
+  const map = d3.select(mapSvg.value)
+  const paths = map.selectAll('path')
+     .data(featureCollection.features)
     .join('path')
+  paths
+    .on("mouseenter", (evt, d) => {
+      paths.filter(p => p == d).attr("stroke", "black").attr("stroke-width", 2)
+    })
+    .on("mouseout", (evt, d) => {
+      paths.filter(p => p == d).attr("stroke", "#ccc").attr("stroke-width", "0.2")
+    })
+    .on("click", (evt,d) => {
+      console.log("CLICKED", d)
+      const shapeName1 = d.properties.name_1
+        .replace(/\'/g, ''); // TODO: check on weird data issue with extra '
+      console.log(sortedDataByGrainType.value, valueKey.value)
+      const oblastData = sortedDataByGrainType.value.find(d => d.oblastNameEnglish === shapeName1);
+      const shapeValue = oblastData ? oblastData[valueKey.value] : 0;
+      console.log(shapeName1, oblastData, shapeValue)
+
+    })
+  paths
     .transition()
     .duration(1000)
     .attr("fill", (d, i) => {
-      const shapeName1 = d.properties.name_1;
+      // the oblast name in english
+      
+      const shapeName1 = d.properties.name_1
+        .replace(/\'/g, ''); // TODO: check on weird data issue with extra '
 
-      const oblastData = parsedDataByName.value[shapeName1];
+      const oblastData = sortedDataByGrainType.value.find(d => d.oblastNameEnglish === shapeName1);
+      // const oblastData = parsedDataByName.value[shapeName1];
       const shapeValue = oblastData ? oblastData[valueKey.value] : 0;
+      // console.log("oblast", shapeName1, shapeValue)
+
+      // TODO: show scaled values on map.
+      //  - parsedDataByName does not include the scaled value, it contains the original value.
+      //  - Either we need to get the scaled value from sortedDataByGrainType, or scale it right here using the formatAndScaleValue helper
+      // i.e.
+      // const scaledShapeValue = shapeValue ? formatAndScaleValue(shapeValue, normalizeOblastName(oblastData.oblastNameUkrainian)) : 0;
+      // console.log(shapeValue, scaledShapeValue);
 
       if (shapeValue) return valueColorScale.value(+shapeValue);
       else return '#CCC'
@@ -329,12 +389,11 @@ onMounted(async () => {
   })
 })
 
-
-
 // When the activeGrainType changes, we need to update the map
 watch(activeGrainType, (newGrainType) => {
   // get the data for the new grain type
-  const newData = dataByGrainType.value.get(newGrainType)
+  // const newData = dataByGrainType.value.get(newGrainType)
+  const newData = sortedDataByGrainType.value
 
   // create an object where the keys are the oblast names and the values are the data
   parsedDataByName.value = newData.reduce((acc, d) => {
@@ -343,17 +402,20 @@ watch(activeGrainType, (newGrainType) => {
   }, {})
 
   // Get the min and max of the data using d3.extent
-  const extent = d3.extent(newData, (d) => d[valueKey.value])
-
+  const extent = d3.extent(newData, (d) => d[valueKey.value + "Original"])
   // Set the domain of the color scale to the extent
   valueColorScale.value.domain(extent)
 
+  redrawMap();
+})
+
+function redrawMap() {
   // redraw the map
   d3.json('/data/stanford-ukraine-geojson.json').then((geographicData) => {
     // drawMap(geographicData)
     updateMap(geographicData)
   })
-})
+}
 
 
 </script>
