@@ -39,6 +39,10 @@
         pre-conflict levels. However, if we switch to the large impact scenario,
         exports drop by a whopping TK%, with the majority of the losses being
         felt by TK, TK, and the TK.
+        <ScenarioControls
+          @scenario-change="scenarioChange"
+          :scenario="scenario"
+         />
       </p>
 
       <p>
@@ -69,22 +73,48 @@
       <UkraineOblastMap
         v-if="oblastMapConfig.visibility"
         :config="oblastMapConfig"
+        :scenario="scenario"
+        :oblastData="oblastData"
       />
 
       <BarChart
         v-if="barChartConfig.visibility"
         :config="barChartConfig"
+        :scenario="scenario"
+        :oblastData="oblastData"
       />
 
-      <SankeyChart v-if="sankeyConfig.visibility" :config="sankeyConfig" />
+      <SankeyChart v-if="sankeyConfig.visibility" :config="sankeyConfig" 
+        :importExportData="importExportData"
+      />
     </div>
   </div>
 </template>
 <script setup>
+import * as d3 from "d3";
 import scrollama from "scrollama";
+
+// we will fill these later with our data
+const oblastData = ref([]);
+const importExportData = ref([]);
 
 const stepIndex = ref(0); // keep track of the index
 const rectFill = ref("white");
+
+const scenario = ref({
+  name: "Small Impact",
+  scale: 0.5,
+  oblastScales: {}
+});
+
+const scenarioOptions = [
+  { name: "Small Impact", scale: 0.5, oblastScales: {} },
+  { name: "Medium Impact", scale: 0.75, oblastScales: {} },
+  { name: "Large Impact", scale: 0.9, oblastScales: {} },
+];
+
+
+// load import/export data from public/data/ovuzpsg_1221/cleaned/all_data.json
 
 // Example of a config object for a scatterplot
 // const scatterplotConfig = ref({
@@ -175,6 +205,22 @@ onMounted(() => {
       // response = { element, direction, index }
       // console.log(response);
     });
+
+
+    // load our oblast data from public/data/ovuzpsg_1221/cleaned/oblast_data.json
+    fetch("/data/ovuzpsg_1221/cleaned/all_data.json")
+      .then((response) => response.json())
+      .then((data) => {
+        oblastData.value = data;
+      });
+
+    // load our import/export data from public/data/comtrade_imports/00_all_data_ukraine.csv as parse with d3.csvParse
+    fetch("/data/comtrade_imports/00_all_data_ukraine.csv")
+      .then((response) => response.text())
+      .then((data) => {
+        importExportData.value = d3.csvParse(data);
+      });
+
 });
 </script>
 <style>
