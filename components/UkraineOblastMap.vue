@@ -1,5 +1,5 @@
 <template>
-    <svg id="map" ref="mapSvg" class=""></svg>
+  <svg id="map" ref="mapSvg" class=""></svg>
 </template>
 <script setup>
 // import d3, topojson, and turf
@@ -7,7 +7,7 @@ import * as d3 from "d3";
 import * as topojson from "topojson";
 // import * as turf from "@turf/turf";
 import slugify from "slugify";
-import { formatAndScaleValue } from '@/helpers.js'
+import { formatAndScaleValue } from "@/helpers.js";
 
 // Set our refs- these are all automatically reactive
 // The only thing we need to do is get the value of the ref with .value
@@ -15,10 +15,6 @@ const activeGrainType = ref(null);
 const grainTypes = ref([]);
 const parsedDataByName = ref(null);
 const dataByGrainType = ref(null);
-const selectedScaleValue = ref(1);
-const oblastForecastScale = ref({});
-const scaleByOblast = ref({});
-
 
 // This should be added to a helpers file
 
