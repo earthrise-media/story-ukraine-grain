@@ -7,43 +7,44 @@
         :d="path.d"
         :fill="path.fill"
         :stroke="path.stroke"
-        stroke-width="0"
+        :stroke-width="path.strokeWidth"
+        opacity="0"
       />
     </g>
 
     <g class="sankey-nodes">
       <g
         v-for="node in sankeyNodes"
-        style="opacity: 0;"
+        style="opacity: 0"
         :transform="`translate(${node.x0}, ${node.y0})`"
       >
         <rect
           :width="node.x1 - node.x0"
           :height="node.y1 - node.y0"
           :fill="node.fill"
-          :stroke="node.stroke"
+          stroke="white"
+          stroke-width="0.1"
         />
         <!-- put the node name in the vertical middle of the node -->
         <text
-          :x="node.x1 - node.x0 - (nodeWidth)"
-          :y="(node.y1 / 2 - node.y0 / 2) - 6"
+          :x="node.x1 - node.x0 - nodeWidth"
+          :y="node.y1 / 2 - node.y0 / 2"
           :dy="0.32 + 'em'"
           text-anchor="end"
-          :fill="node.fill"
-          :font-size="Math.max(Math.sqrt(node.value) * 0.001, 8)"
+          :fill="/*node.fill*/'white'"
+          :font-size="Math.max(Math.sqrt(node.value) * 0.0009, 7)"
           transform="translate(-10, 0)"
         >
           {{ node.name }}
         </text>
       </g>
     </g>
-
   </svg>
 </template>
 <script setup>
 // import d3 and d3-sankey
-import * as d3 from 'd3';
-import * as d3Sankey from 'd3-sankey';
+import * as d3 from "d3";
+import * as d3Sankey from "d3-sankey";
 import anime from "animejs/lib/anime.es.js";
 
 const props = defineProps({
@@ -76,23 +77,22 @@ watch(
   }
 );
 
-const staggerDelay = 100;
-const animateInDuration = 2200
+const staggerDelay = 70;
+const animateInDuration = 1800;
 
 // a function to animate in sankeyPaths and sankeyNodes one by one with anime.js
 const animateSankey = (sankeyPaths, sankeyNodes) => {
   // animate in sankeyPaths
-  //strokeWidth: [0, 1.5],
   anime({
-    targets: '.sankey-paths path',
-    strokeWidth: [0, 1.5],
-    duration: animateInDuration,
+    targets: ".sankey-paths path",
+    opacity: [0, 1],
+    duration: animateInDuration * 0.5,
     easing: "easeInOutQuad",
-  })
+  });
 
   anime({
-    targets: '.sankey-paths path',
-    strokeDashoffset: [anime.setDashoffset, 0],    
+    targets: ".sankey-paths path",
+    strokeDashoffset: [anime.setDashoffset, 0],
     easing: "easeInOutQuad",
     duration: animateInDuration,
     delay: (el, i) => animateInDuration * 1.2 + i * staggerDelay,
@@ -101,7 +101,7 @@ const animateSankey = (sankeyPaths, sankeyNodes) => {
 
   // animate in sankeyNodes
   anime({
-    targets: '.sankey-nodes g',
+    targets: ".sankey-nodes g",
     opacity: [0, 1],
     easing: "easeInOutQuad",
     duration: animateInDuration,
@@ -110,9 +110,10 @@ const animateSankey = (sankeyPaths, sankeyNodes) => {
   });
 };
 
+
 // make height a computed 0.6 of props.width
 // const height = computed(() => props.width * 0.6);
-const height = 1000
+const height = 1000;
 /*
 each row of importExportData looks like this:
 {
@@ -134,30 +135,36 @@ the value will always be the ukrTradeValue
 
 // now we will make a computed sankeyPaths and sankeyNodes that will run importExportData through the sankey and return sankeyPaths with values we can draw in SVG
 
-const nodeWidth = 50
+const nodeWidth = 50;
 
 // First we set up our sankey
-const sankey = d3Sankey.sankey()
-    .nodeId(d => d.name)
-    .nodeAlign(d3Sankey.sankeyJustify)
-    .nodeWidth(nodeWidth)
-    // use .linkSort to sort by value
-    .linkSort((a, b) => b.value - a.value)
-    .nodePadding(2)
-    .extent([[1, 1], [props.width - 1, height - 6]]);
+const sankey = d3Sankey
+  .sankey()
+  .nodeId((d) => d.name)
+  .nodeAlign(d3Sankey.sankeyJustify)
+  .nodeWidth(nodeWidth)
+  // use .linkSort to sort by value
+  .linkSort((a, b) => b.value - a.value)
+  .nodePadding(2)
+  .extent([
+    [1, 1],
+    [props.width - 1, height - 6],
+  ]);
 
 // then we feed the sankey our nodes and links and get back a sankey diagram
-const sankeyDiagram = computed(() => sankey({
-  nodes: [
-    { name: 'Ukraine' },
-    ...props.importExportData.map(d => ({ name: d.countryName })),
-  ],
-  links: props.importExportData.map(d => ({
-    source: 'Ukraine',
-    target: d.countryName,
-    value: +d.ukrTradeValue,
-  })),
-}));
+const sankeyDiagram = computed(() =>
+  sankey({
+    nodes: [
+      { name: "Ukraine" },
+      ...props.importExportData.map((d) => ({ name: d.countryName })),
+    ],
+    links: props.importExportData.map((d) => ({
+      source: "Ukraine",
+      target: d.countryName,
+      value: +d.ukrTradeValue,
+    })),
+  })
+);
 
 // create a categorical scale for countries
 const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
@@ -171,24 +178,29 @@ const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 // })));
 
 // sankey paths but sorted by value
-const sankeyPaths = computed(() => sankeyDiagram.value.links
-  .sort((a, b) => b.value - a.value)
-  .map(link => ({
-    d: d3Sankey.sankeyLinkHorizontal()(link),
-    fill: 'none',
-    // stroke: '#000',
-    stroke: colorScale(link.target.name),
-  })));
-
+const sankeyPaths = computed(() =>
+  sankeyDiagram.value.links
+    .sort((a, b) => b.value - a.value)
+    .map((link) => ({
+      d: d3Sankey.sankeyLinkHorizontal()(link),
+      fill: "none",
+      // stroke: '#000',
+      // use value to calculate strokeWidth
+      strokeWidth: Math.max(Math.sqrt(link.value) * 0.0008, 0.5),
+      stroke: colorScale(link.target.name),
+    }))
+);
 
 // sankey nodes but sorted by value
-const sankeyNodes = computed(() => sankeyDiagram.value.nodes
-  .sort((a, b) => b.value - a.value)
-  .map(node => ({
-    ...node,
-    // fill: node.name === 'Ukraine' ? '#000' : '#fff',
-    fill: colorScale(node.name),
-    stroke: '#000',
-    textFill: node.name === 'Ukraine' ? '#fff' : '#000',
-  })));
+const sankeyNodes = computed(() =>
+  sankeyDiagram.value.nodes
+    .sort((a, b) => b.value - a.value)
+    .map((node) => ({
+      ...node,
+      // fill: node.name === 'Ukraine' ? '#000' : '#fff',
+      fill: colorScale(node.name),
+      stroke: "#000",
+      textFill: node.name === "Ukraine" ? "#fff" : "#000",
+    }))
+);
 </script>

@@ -1,15 +1,13 @@
 <template>
   <div class="scrollytelling-container" ref="scrollytellingContainer">
-    <div
-      class="step-container w-100 fixed top-0 right-0"
-      ref="stepContainer"
-    >
+    <div class="step-container w-100 fixed top-0 right-0" ref="stepContainer">
       <!-- <div id="step-0-graphic" v-if="stepIndex === 0">
         <h2>World grain producer breakdown</h2>
       </div> -->
       <h3 class="w-100">Step: {{ stepIndex }}</h3>
-      <!-- <UkraineOblastMap
-        v-show="oblastMapConfig.visibility"
+      <UkraineOblastMap
+        v-show="/*oblastMapConfig.visibility*/true"
+        class="fixed top-0 right-0"
         ref="oblastMap"
         :config="oblastMapConfig"
         :scenario="scenario"
@@ -17,12 +15,13 @@
         :width="graphicWidth"
         :valueKey="oblastMapConfig.valueKey"
         :style="{
-          opacity: mapOpacity,
+          // opacity: mapOpacity,
+          opacity: oblastMapConfig.visibility ? mapOpacity : 0,
         }"
-      /> -->
+      />
 
       <!-- <BarChart
-        v-show="barChartConfig.visibility"
+        v-if="barChartConfig.visibility"
         ref="barChart"
         :config="barChartConfig"
         :scenario="scenario"
@@ -31,8 +30,9 @@
       /> -->
 
       <SankeyChart
-        v-show="sankeyConfig.visibility"
+        v-if="sankeyConfig.visibility"
         ref="sankeyChart"
+        class="fixed top-0 right-0"
         :config="sankeyConfig"
         :importExportData="importExportData"
         :width="graphicWidth"
@@ -47,12 +47,13 @@
 
       <p :class="paragraphClasses">
         <span class="bg-white">
-          Ukraine's agricultural exports in 2022 totaled
+          Ukraine's agricultural exports in 2022 totaled <br />
           <a
             href="https://www.fas.usda.gov/sites/default/files/2022-04/Ukraine-Factsheet-April2022.pdf"
-            class="link db w-100 bg-light-gray tc "
-            ><span class="">{{ animatedExportNumber }}</span></a
-          > billion, making up 41% of the country's total exports.
+            class="link black tc w-20 dib"
+            ><span class="">{{ numberFormat(animatedExportNumber) }}</span></a
+          >
+          billion, making up 41% of the country's total exports.
         </span>
       </p>
 
@@ -114,16 +115,6 @@
         </span>
       </p>
 
-      <!--
-        However, if we switch to the large impact scenario,
-        exports drop by a whopping TK%, with the majority of the losses being
-        felt by TK, TK, and the TK.
-        <ScenarioControls
-          @scenario-change="scenarioChange"
-          :scenario="scenario"
-        />
-      -->
-
       <p :class="paragraphClasses">
         <span class="bg-white">
           However, if we switch to the large impact scenario, exports drop by a
@@ -158,11 +149,14 @@ const stepContainer = ref(null); // the html element for the container
 const oblastData = ref([]);
 const importExportData = ref([]);
 
-const animatedExportNumber = ref(0); // this will animate up to 27.8 
+const animatedExportNumber = ref(0); // this will animate up to 27.8
 
 const stepIndex = ref(0); // keep track of the index
 const stepProgress = ref(0); // keep track of the progress within a step
 // const pageProgress = ref(0) // keep track of the total page progress
+
+// create a d3 number format to always show 1 decimal place
+const numberFormat = d3.format(",.1f");
 
 // the tachyons classes we will use for the paragraphs
 const paragraphClasses = "pa4 measure f2 lh-copy";
@@ -217,11 +211,12 @@ const mapOpacity = computed(() => {
   }
 });
 
-const graphicWidth = computed(() => {
-  // if the stepContainer ref exists, use its width
-  // otherwise default to 500
-  return stepContainer.value ? stepContainer.value.offsetWidth : 900;
-});
+// const graphicWidth = computed(() => {
+//   // if the stepContainer ref exists, use its width
+//   // otherwise default to 500
+//   return stepContainer.value ? stepContainer.value.offsetWidth : 900;
+// });
+const graphicWidth = 900
 
 // function to handle when a user changes the scenario
 const scenarioChange = (newScenario) => {
@@ -234,8 +229,11 @@ watch(
   (newIndex) => {
     if (newIndex === 0) {
       // oblastMapConfig.value.visibility = true;
+      sankeyConfig.value.visibility = true;
+      oblastMapConfig.value.visibility = false;
     } else if (newIndex === 1) {
-      // oblastMapConfig.value.visibility = true;
+      sankeyConfig.value.visibility = true;
+      oblastMapConfig.value.visibility = false;
       // use anime.js to animate the animatedExportNumber to 27.8
       anime({
         targets: animatedExportNumber,
@@ -244,6 +242,9 @@ watch(
         easing: "easeInOutQuad",
         duration: 2200,
       });
+    } else if (newIndex === 4) {
+      sankeyConfig.value.visibility = false;
+      oblastMapConfig.value.visibility = true;
     }
   },
   { immediate: true }

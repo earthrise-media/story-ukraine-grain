@@ -1,66 +1,39 @@
 <template>
   <svg ref="svg" :width="width" :height="width / 2" class="ba bw3 b--purple">
-    <!-- use d3 scales and vue refs to create a responsive bar chart -->
+    <!-- use d3 scales and vue refs to create a responsive horizontal bar chart -->
+    <!-- add a group for each bar -->
     <g
-      v-for="(d, i) in oblastData"
+      v-for="(oblast, i) in oblastData"
       :key="i"
-      :transform="`translate(0, ${yScale(d.oblast)})`"
+      :transform="`translate(0, ${xScale(i)})`"
+      class="bar-group"
     >
+      <!-- add a rect for the bar -->
       <rect
-        :width="xScale(d[dataKey])"
+        :width="yScale(oblast[config.dataKey])"
         :height="yScale.bandwidth()"
-        :fill="colorScale(d[dataKey])"
+        fill="black"
+        class="bar"
       />
+      <!-- add a text for the label -->
       <text
-        :x="xScale(d[dataKey]) + 5"
+        :x="yScale(oblast[config.dataKey]) + 5"
         :y="yScale.bandwidth() / 2"
         :dy="0.32 + 'em'"
-        :fill="colorScale(d[dataKey]) > 0.5 ? 'white' : 'black'"
+        class="bar-label"
       >
-        {{ d[dataKey] }}
+        {{ oblast.oblast }}
       </text>
-    </g>
-
-    <!-- add an x axis and ticks with v-for -->
-    <g
-      :transform="`translate(0, ${props.width / 2})`"
-      class="axis axis--x"
-      ref="xAxis"
-    >
-      <line :x2="props.width" />
-      <g
-        v-for="(tick, i) in xScale.ticks()"
-        :key="i"
-        :transform="`translate(${xScale(tick)}, 0)`"
-      >
-        <line :y2="6" />
-        <text :y="9" :dy="0.71 + 'em'">{{ tick }}</text>
-      </g>
-    </g>
-
-    <!-- add a y axis and ticks with v-for -->
-    <g class="axis axis--y" ref="yAxis">
-      <line :x2="props.width" />
-      <g
-        v-for="(tick, i) in yScale.domain()"
-        :key="i"
-        :transform="`translate(0, ${yScale(tick)})`"
-      >
-        <line :x2="-6" />
-        <text :x="-9" :dy="0.32 + 'em'" :text-anchor="'end'">{{ tick }}</text>
-      </g>
-
-      <!-- add a title -->
+      <!-- add a text for the value -->
       <text
-        :x="props.width / 2"
-        :y="props.width / 2 + 30"
-        :dy="0.32 + 'em'"
-        :text-anchor="'middle'"
+        :x="yScale(oblast[config.dataKey]) + 5"
+        :y="yScale.bandwidth() / 2"
+        :dy="1.32 + 'em'"
+        class="bar-value"
       >
-        {{ config.title }}
+        {{ oblast[config.dataKey] }}
       </text>
     </g>
-
   </svg>
 </template>
 <script setup>
@@ -89,20 +62,39 @@ const props = defineProps({
 // and it will show data from oblastData
 // the chart will be responsive to the width prop
 
+// compute data from oblastData
+const data = computed(() => {
+  props.oblastData.map((d) => ({
+    label: d.oblast,
+    value: d[props.config.dataKey],
+  }));
+});
+
 const dataKey = "harvestedArea";
 
 // find the extent of the data from the dataKey
 const extent = d3.extent(props.oblastData, (d) => d[dataKey]);
 
-// create a scale for the x axis
-const xScale = d3.scaleLinear().domain(extent).range([0, props.width]);
+// create a categorical scale for the x axis, so each bar is evenly spaces
+const xScale = d3
+  .scaleBand()
+  .range([0, props.width / 2])
+  .padding(0.1);
 
 // create a scale for the y axis
 const yScale = d3
   .scaleBand()
-  .domain(props.oblastData.map((d) => d.oblast))
   .range([0, props.width / 2])
   .padding(0.1);
+
+// set the domain of the y scale when the data changes props.oblastData changes
+watch(
+  () => props.oblastData,
+  () => {
+    yScale.domain(props.oblastData.map((d) => d.oblast));
+    // set the xScale domain to the oblast names
+  }
+);
 
 // create a color scale
 const colorScale = d3
