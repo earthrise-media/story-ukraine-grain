@@ -1,14 +1,14 @@
 <template>
   <div class="scrollytelling-container" ref="scrollytellingContainer">
     <div
-      class="step-container w-100 fixed top-0 right-0 ba b--red"
+      class="step-container w-100 fixed top-0 right-0"
       ref="stepContainer"
     >
       <!-- <div id="step-0-graphic" v-if="stepIndex === 0">
         <h2>World grain producer breakdown</h2>
       </div> -->
-
-      <UkraineOblastMap
+      <h3 class="w-100">Step: {{ stepIndex }}</h3>
+      <!-- <UkraineOblastMap
         v-show="oblastMapConfig.visibility"
         ref="oblastMap"
         :config="oblastMapConfig"
@@ -17,9 +17,9 @@
         :width="graphicWidth"
         :valueKey="oblastMapConfig.valueKey"
         :style="{
-          opacity: mapOpacity
+          opacity: mapOpacity,
         }"
-      />
+      /> -->
 
       <!-- <BarChart
         v-show="barChartConfig.visibility"
@@ -30,13 +30,14 @@
         :width="graphicWidth"
       /> -->
 
-      <!-- <SankeyChart
+      <SankeyChart
         v-show="sankeyConfig.visibility"
         ref="sankeyChart"
         :config="sankeyConfig"
         :importExportData="importExportData"
         :width="graphicWidth"
-      /> -->
+        :stepIndex="stepIndex"
+      />
     </div>
 
     <div class="text-container w-50 center relative">
@@ -46,56 +47,93 @@
 
       <p :class="paragraphClasses">
         <span class="bg-white">
-        Ukraine is an important player in the global grain market. Although it
-        makes up only TK% of the world's total grain production, its exports
-        account for over TK% of the world's total grain imports. But in the
-        midst of the conflict with Russia, how is Ukraine's grain farming being
-        impacted? Let's take a look.
+          Ukraine's agricultural exports in 2022 totaled
+          <a
+            href="https://www.fas.usda.gov/sites/default/files/2022-04/Ukraine-Factsheet-April2022.pdf"
+            class="link db w-100 bg-light-gray tc "
+            ><span class="">{{ animatedExportNumber }}</span></a
+          > billion, making up 41% of the country's total exports.
         </span>
       </p>
 
       <p :class="paragraphClasses">
         <span class="bg-white">
-        Most of Ukraine's grain is grown in the Oblasts. Here is a breakdown of
-        where different grains are grown in Ukraine, as a percentage of the
-        country's total grain production: Wheat: TK% Barley: TK% Millet: TK%
-        Rye: TK% Oats: TK%
-      </span>
+          Ukraine is the world's top global producer of Sunflower, #2 global
+          producer of Sunflower Oil and Sunflower Meal, and the #7 producer of
+          Wheat.
+        </span>
       </p>
 
       <p :class="paragraphClasses">
         <span class="bg-white">
-        Where does Ukraine's grain end up? In a normal trade year, the bulk of
-        Ukraine's exports go to African and Southeast Asian countries. About TK%
-        of Ukraine's total exports go to Pakistan, followed by Sudan (TK%) and
-        Egypt (TK%).
-      </span>
+          But in the midst of the conflict with Russia, how is Ukraine's grain
+          farming being impacted? Let's take a look.
+        </span>
       </p>
 
       <p :class="paragraphClasses">
         <span class="bg-white">
-        But what is happening to Ukraine's grain farming now, in the midst of
-        the conflict? Russian missile strikes have recently been reported in
-        Ukraine, and some are landing in areas where grain is grown.
-        Unfortunately, the current situation makes it difficult to know the
-        exact impact on Ukraine's grain production, but our forecast and
-        scenario tool can help us explore different possibilities.
-      </span>
+          Most of Ukraine's grain is grown in the Oblasts. Here is a breakdown
+          of where different grains are grown in Ukraine, as a percentage of the
+          country's total grain production: Wheat: TK% Barley: TK% Millet: TK%
+          Rye: TK% Oats: TK%
+        </span>
       </p>
 
       <p :class="paragraphClasses">
         <span class="bg-white">
-        Let's look at three different scenarios: a small impact on grain
-        production, a medium impact, and a large impact. In the small impact
-        scenario, exports will remain virtually unchanged from their
-        pre-conflict levels. However, if we switch to the large impact scenario,
+          Where does Ukraine's grain end up? In a normal trade year, the bulk of
+          Ukraine's exports go to African and Southeast Asian countries. About
+          TK% of Ukraine's total exports go to Pakistan, followed by Sudan (TK%)
+          and Egypt (TK%).
+        </span>
+      </p>
+
+      <p :class="paragraphClasses">
+        <span class="bg-white">
+          But what is happening to Ukraine's grain farming now, in the midst of
+          the conflict? Russian missile strikes have recently been reported in
+          Ukraine, and some are landing in areas where grain is grown.
+        </span>
+      </p>
+
+      <p :class="paragraphClasses">
+        <span class="bg-white">
+          Unfortunately, the current situation makes it difficult to know the
+          exact impact on Ukraine's grain production, but our forecast and
+          scenario tool can help us explore different possibilities.
+        </span>
+      </p>
+
+      <p :class="paragraphClasses">
+        <span class="bg-white">
+          Let's look at three different scenarios: a small impact on grain
+          production, a medium impact, and a large impact. In the small impact
+          scenario, exports will remain virtually unchanged from their
+          pre-conflict levels.
+        </span>
+      </p>
+
+      <!--
+        However, if we switch to the large impact scenario,
         exports drop by a whopping TK%, with the majority of the losses being
         felt by TK, TK, and the TK.
         <ScenarioControls
           @scenario-change="scenarioChange"
           :scenario="scenario"
         />
-      </span>
+      -->
+
+      <p :class="paragraphClasses">
+        <span class="bg-white">
+          However, if we switch to the large impact scenario, exports drop by a
+          whopping TK%, with the majority of the losses being felt by TK, TK,
+          and the TK.
+        </span>
+        <ScenarioControls
+          @scenario-change="scenarioChange"
+          :scenario="scenario"
+        />
       </p>
 
       <p :class="paragraphClasses">
@@ -120,13 +158,14 @@ const stepContainer = ref(null); // the html element for the container
 const oblastData = ref([]);
 const importExportData = ref([]);
 
+const animatedExportNumber = ref(0); // this will animate up to 27.8 
+
 const stepIndex = ref(0); // keep track of the index
 const stepProgress = ref(0); // keep track of the progress within a step
 // const pageProgress = ref(0) // keep track of the total page progress
 
 // the tachyons classes we will use for the paragraphs
 const paragraphClasses = "pa4 measure f2 lh-copy";
-
 
 const scenarioIndex = ref(0);
 const scenario = computed(() => scenarioOptions[scenarioIndex.value]);
@@ -149,12 +188,12 @@ const scenarioOptions = [
 // });
 
 const oblastMapConfig = ref({
-  visibility: false, // true = show, false = hide
+  visibility: true, // true = show, false = hide
   valueKey: "harvestedArea",
 });
 
 const sankeyConfig = ref({
-  visibility: false, // true = show, false = hide
+  visibility: true, // true = show, false = hide
 });
 
 const barChartConfig = ref({
@@ -163,12 +202,18 @@ const barChartConfig = ref({
   yProperty: "harvestedArea",
 });
 
-// create a computed to smoothly fade in the map opacity from 0 to 1 between step 0 and 1
+// create a computed to smoothly fade in the map opacity from 0 to 1 between step 3 and 4 and hide the map before step 3
 const mapOpacity = computed(() => {
-  if (stepIndex.value === 0) {
+  if (stepIndex.value < 3) {
+    return 0;
+  } else if (stepIndex.value === 3) {
     return stepProgress.value;
-  } else {
+  } else if (stepIndex.value === 4) {
     return 1;
+  } else if (stepIndex.value > 4) {
+    return 1;
+  } else {
+    return 0;
   }
 });
 
@@ -188,25 +233,17 @@ watch(
   stepIndex,
   (newIndex) => {
     if (newIndex === 0) {
-      oblastMapConfig.value.visibility = true;
+      // oblastMapConfig.value.visibility = true;
     } else if (newIndex === 1) {
-      oblastMapConfig.value.visibility = true;
-    } else if (newIndex === 2) {
-      oblastMapConfig.value.visibility = true;
-    } else if (newIndex === 3) {
-      oblastMapConfig.value.visibility = true;
-    } else if (newIndex === 4) {
-      oblastMapConfig.value.visibility = false;
-      barChartConfig.value.visibility = true;
-    } else if (newIndex === 5) {
-      oblastMapConfig.value.visibility = false;
-      barChartConfig.value.visibility = true;
-    } else if (newIndex === 6) {
-      oblastMapConfig.value.visibility = false;
-    } else if (newIndex === 7) {
-      oblastMapConfig.value.visibility = false;
-    } else {
-      oblastMapConfig.value.visibility = false;
+      // oblastMapConfig.value.visibility = true;
+      // use anime.js to animate the animatedExportNumber to 27.8
+      anime({
+        targets: animatedExportNumber,
+        value: 27.8,
+        round: 2,
+        easing: "easeInOutQuad",
+        duration: 2200,
+      });
     }
   },
   { immediate: true }
@@ -220,7 +257,7 @@ onMounted(() => {
   scroller
     .setup({
       step: ".text-container p",
-      offset: 0.25,
+      offset: 0.7,
       progress: true,
       // debug: true,
     })
