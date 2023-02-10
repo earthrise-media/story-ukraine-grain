@@ -86,7 +86,7 @@ const valueColorScale = ref(null);
 
 // Make a computed that takes dataByGrainType and sorts it by our selected valueKey
 const sortedDataByGrainType = computed(() => {
-  if (dataByGrainType.value) {
+  if (dataByGrainType.value && activeGrainType.value) {
     return dataByGrainType.value
       .get(activeGrainType.value)
       .sort((a, b) => b[valueKey.value] - a[valueKey.value]);
@@ -95,7 +95,7 @@ const sortedDataByGrainType = computed(() => {
 
 // Make a computed that sums the total harvestedArea, yield, and volume for the active grain type
 const totalHarvestedArea = computed(() => {
-  if (dataByGrainType.value) {
+  if (dataByGrainType.value && activeGrainType.value) {
     return dataByGrainType.value
       .get(activeGrainType.value)
       .reduce((acc, curr) => acc + curr.harvestedArea, 0);
@@ -103,7 +103,7 @@ const totalHarvestedArea = computed(() => {
 });
 
 const totalYield = computed(() => {
-  if (dataByGrainType.value) {
+  if (dataByGrainType.value && activeGrainType.value) {
     return dataByGrainType.value
       .get(activeGrainType.value)
       .reduce((acc, curr) => acc + curr.grainYield, 0);
@@ -111,7 +111,7 @@ const totalYield = computed(() => {
 });
 
 const totalVolume = computed(() => {
-  if (dataByGrainType.value) {
+  if (dataByGrainType.value && activeGrainType.value) {
     return dataByGrainType.value
       .get(activeGrainType.value)
       .reduce((acc, curr) => acc + curr.volume, 0);
@@ -126,19 +126,56 @@ valueColorScale.value = d3
 const margin = { top: 20, right: 20, bottom: 30, left: 40 };
 
 // get the width and height of the SVG
-const width = scatterplotSvg.value.clientWidth;
-const height = scatterplotSvg.value.clientHeight;
+// const width = scatterplotSvg.value.clientWidth;
+// const height = scatterplotSvg.value.clientHeight;
+
+// make the width a computed that defaults to 500 and uses the scatterplotSvg ref if it exists
+const width = computed(() => {
+  if (scatterplotSvg.value) {
+    return scatterplotSvg.value.clientWidth;
+  } else {
+    return 500;
+  }
+});
+
+// make the height a computed that defaults to 500 and uses the scatterplotSvg ref if it exists
+const height = computed(() => {
+  if (scatterplotSvg.value) {
+    return scatterplotSvg.value.clientHeight;
+  } else {
+    return 500;
+  }
+});
 
 // Get the extent of the scatterplot X and Y in the data
-const xExtent = d3.extent(
-  dataByGrainType.value.get(activeGrainType.value),
-  (d) => d[scatterplotX.value]
-);
+// const xExtent = d3.extent(
+//   dataByGrainType.value.get(activeGrainType.value),
+//   (d) => d[scatterplotX.value]
+// );
 
-const yExtent = d3.extent(
-  dataByGrainType.value.get(activeGrainType.value),
-  (d) => d[scatterplotY.value]
-);
+// const yExtent = d3.extent(
+//   dataByGrainType.value.get(activeGrainType.value),
+//   (d) => d[scatterplotY.value]
+// );
+
+// turn xExtent and yExtent into computeds that don't run if there is no activeGrainType.value
+const xExtent = computed(() => {
+  if (dataByGrainType.value && activeGrainType.value) {
+    return d3.extent(
+      dataByGrainType.value.get(activeGrainType.value),
+      (d) => d[scatterplotX.value]
+    );
+  }
+});
+
+const yExtent = computed(() => {
+  if (dataByGrainType.value && activeGrainType.value) {
+    return d3.extent(
+      dataByGrainType.value.get(activeGrainType.value),
+      (d) => d[scatterplotY.value]
+    );
+  }
+});
 
 // grab the scatterplot svg
 const svg = d3.select(scatterplotSvg.value);
