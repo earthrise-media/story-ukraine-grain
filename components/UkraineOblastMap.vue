@@ -1,5 +1,5 @@
 <template>
-  <svg id="map" ref="mapSvg" class=""></svg>
+  <svg id="map" ref="mapSvg" class="w-100 vh-100"></svg>
 </template>
 <script setup>
 import * as d3 from "d3";
@@ -200,14 +200,13 @@ function initMap(geographicData) {
     })
     .attr("stroke", "#CCC")
     .attr("stroke-width", "0.2")
-    .on('mouseover', (evt, d) => {
-      console.log('🔖', d)
-      d3.select(evt.target).classed('focused-shape', true)
+    .on("mouseover", (evt, d) => {
+      // console.log("🔖", d);
+      d3.select(evt.target).classed("focused-shape", true);
     })
-    .on('mouseout', (evt, d) => {
-      d3.select(evt.target).classed('focused-shape', false)
-    })
-  
+    .on("mouseout", (evt, d) => {
+      d3.select(evt.target).classed("focused-shape", false);
+    });
 }
 
 // a function to receive an oblast shape and fetch the proper data to determine and return fill color
@@ -276,7 +275,7 @@ function redrawMap() {
 #map {
   /* width: 100%; */
   /* height: 50vh; */
-  width: 50vw;
+  /* width: 50vw; */
 }
 
 path.focused-shape {
