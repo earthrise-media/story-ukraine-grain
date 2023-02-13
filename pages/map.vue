@@ -2,8 +2,24 @@
   <div class="sans-serif cf">
     <!-- Eventually this should all be moved to a component, but for now we don't need to have a ton of files for prototypes -->
 
-    <svg id="map" ref="mapSvg" class="w-two-thirds fl"></svg>
+    <!-- <svg id="map" ref="mapSvg" class="w-two-thirds fl"></svg> -->
     <!-- make a table with a breakdown of the data by oblast for the active grain type -->
+
+    <UkraineOblastMap
+        v-show="true"
+        class="w-two-thirds fl"
+        ref="oblastMap"
+        :scenario="scenario"
+        :oblastData="oblastData"
+        :grainType="'wheat'"
+        :width="600"
+        :valueKey="valueKey"
+        :style="{
+          opacity: 1
+          // opacity: mapOpacity,
+          // opacity: oblastMapConfig.visibility ? mapOpacity : 0,
+        }"
+      />
 
     <div class="w-third fl vh-50 overflow-y-auto ba b--red">
       <h2>{{ activeGrainType }}</h2>
@@ -62,27 +78,6 @@
         {{ oblastForecastScale }}
       </pre>
 
-      <!-- if there are selected oblasts, show the forecast controls -->
-      <div>
-        <h3>Forecast Select Options</h3>
-        <!-- use a select and events to update value, do not use v-model -->
-        <select @change="updateForecastScale($event.target.value)">
-          <option
-            v-for="option in forecastSelectOptions"
-            :key="option.scaleValue"
-            :value="option.scaleValue"
-          >
-            {{ option.text }}
-          </option>
-        </select>
-
-        <!-- button to trigger the forecast in selected oblasts -->
-        <button @click="triggerForecast">Forecast</button>
-
-        <!-- button to clear oblasts -->
-        <button @click="clearSelectedOblasts">Clear</button>
-      </div>
-
       <DataTable
         :data-by-grain-type="originalDataByGrainType"
         :sorted-data-by-grain-type="sortedDataByGrainType"
@@ -104,6 +99,9 @@ import slugify from "slugify";
 
 // Set our refs- these are all automatically reactive
 // The only thing we need to do is get the value of the ref with .value
+const oblastData = ref([]);
+const importExportData = ref([]);
+
 const activeGrainType = ref(null);
 const grainTypes = ref([]);
 const parsedDataByName = ref(null);
@@ -140,28 +138,6 @@ function clearSelectedOblasts() {
   selectedOblasts.value = [];
 }
 
-const forecastSelectOptions = [
-  {
-    text: "100%",
-    scaleValue: 1,
-  },
-  {
-    text: "90%",
-    scaleValue: 0.9,
-  },
-  {
-    text: "50%",
-    scaleValue: 0.5,
-  },
-  {
-    text: "25%",
-    scaleValue: 0.25,
-  },
-  {
-    text: "0%",
-    scaleValue: 0,
-  },
-];
 
 function formatAndScaleValue(value, oblastNameUkrainian) {
   // default to 100% if missing from scaleByOblast map
@@ -239,7 +215,7 @@ const sortedDataByGrainType = computed(() => {
 });
 
 // update the map when the display data changes
-watch(sortedDataByGrainType, redrawMap);
+// watch(sortedDataByGrainType, redrawMap);
 
 valueColorScale.value = d3
   .scaleLinear()
@@ -265,122 +241,6 @@ const aggregate = (topology, objects, idProperty) => {
   };
 };
 
-// A function to draw the map SVG
-function initMap(geographicData) {
-  // Our geojson is contained in data.objects.stanford-pp624tm0074-geojson
-  // We need to convert it to a feature collection
-  // const featureCollection2 = topojson.feature(geographicData, geographicData.objects['stanford-pp624tm0074-geojson'])
-
-  // Merge geometries so we end up with Oblast-level shapes.
-  const featureCollection = aggregate(
-    geographicData,
-    geographicData.objects["stanford-pp624tm0074-geojson"],
-    "name_1"
-  );
-
-  // get the width and height of the SVG
-  const width = mapSvg.value.clientWidth;
-  const height = mapSvg.value.clientHeight;
-
-  // create a projection
-  const projection = d3
-    .geoMercator()
-    .fitSize([width, height], featureCollection);
-
-  // create a path generator
-  const path = d3.geoPath().projection(projection);
-
-  // clear SVG
-  // d3.select(mapSvg.value).selectAll('*').remove()
-
-  // create a geojson layer
-  const geojsonLayer = d3
-    .select(mapSvg.value)
-    .selectAll("path")
-    .data(featureCollection.features)
-    .join("path")
-    .attr("d", path)
-    .attr("fill", (d, i) => {
-      const shapeName1 = normalizeOblastName(d.properties.name_1);
-      const oblastData = parsedDataByName.value[shapeName1];
-      const shapeValue = oblastData ? oblastData[valueKey.value] : 0;
-
-      if (shapeValue) return valueColorScale.value(+shapeValue);
-      else return "#FFF";
-    })
-    .attr("stroke", "#CCC")
-    .attr("stroke-width", "0.2");
-}
-
-function updateMap(geographicData) {
-  // use d3 select and update to update the map
-  // this lets us use transitions to fade in the new data
-  console.log(
-    "raw objects",
-    geographicData.objects["stanford-pp624tm0074-geojson"]
-  );
-  // let geodata = topojson.feature(geographicData, geographicData.objects['stanford-pp624tm0074-geojson']).features
-  // Merge geometries so we end up with Oblast-level shapes.
-  const featureCollection = aggregate(
-    geographicData,
-    geographicData.objects["stanford-pp624tm0074-geojson"],
-    "name_1"
-  );
-
-  const map = d3.select(mapSvg.value);
-  const paths = map
-    .selectAll("path")
-    .data(featureCollection.features)
-    .join("path");
-  paths
-    .on("mouseenter", (evt, d) => {
-      paths
-        .filter((p) => p == d)
-        .attr("stroke", "black")
-        .attr("stroke-width", 2);
-    })
-    .on("mouseout", (evt, d) => {
-      paths
-        .filter((p) => p == d)
-        .attr("stroke", "#ccc")
-        .attr("stroke-width", "0.2");
-    })
-    .on("click", (evt, d) => {
-      console.log("CLICKED", d);
-      const shapeName1 = d.properties.name_1.replace(/\'/g, ""); // TODO: check on weird data issue with extra '
-      console.log(sortedDataByGrainType.value, valueKey.value);
-      const oblastData = sortedDataByGrainType.value.find(
-        (d) => d.oblastNameEnglish === shapeName1
-      );
-      const shapeValue = oblastData ? oblastData[valueKey.value] : 0;
-      console.log(shapeName1, oblastData, shapeValue);
-    });
-  paths
-    .transition()
-    .duration(1000)
-    .attr("fill", (d, i) => {
-      // the oblast name in english
-
-      const shapeName1 = d.properties.name_1.replace(/\'/g, ""); // TODO: check on weird data issue with extra '
-
-      const oblastData = sortedDataByGrainType.value.find(
-        (d) => d.oblastNameEnglish === shapeName1
-      );
-      // const oblastData = parsedDataByName.value[shapeName1];
-      const shapeValue = oblastData ? oblastData[valueKey.value] : 0;
-      // console.log("oblast", shapeName1, shapeValue)
-
-      // TODO: show scaled values on map.
-      //  - parsedDataByName does not include the scaled value, it contains the original value.
-      //  - Either we need to get the scaled value from sortedDataByGrainType, or scale it right here using the formatAndScaleValue helper
-      // i.e.
-      // const scaledShapeValue = shapeValue ? formatAndScaleValue(shapeValue, normalizeOblastName(oblastData.oblastNameUkrainian)) : 0;
-      // console.log(shapeValue, scaledShapeValue);
-
-      if (shapeValue) return valueColorScale.value(+shapeValue);
-      else return "#CCC";
-    });
-}
 
 function normalizeOblastName(key) {
   if (!key) return key;
@@ -400,6 +260,21 @@ function normalizeOblastName(key) {
 // })
 
 onMounted(async () => {
+
+  // load our oblast data from public/data/ovuzpsg_1221/cleaned/oblast_data.json
+  fetch("/data/ovuzpsg_1221/cleaned/all_data.json")
+    .then((response) => response.json())
+    .then((data) => {
+      oblastData.value = data;
+    });
+
+  // load our import/export data from public/data/comtrade_imports/00_all_data_ukraine.csv as parse with d3.csvParse
+  fetch("/data/comtrade_imports/00_all_data_ukraine.csv")
+    .then((response) => response.text())
+    .then((data) => {
+      importExportData.value = d3.csvParse(data);
+    });
+
   d3.json("/data/ovuzpsg_1221/cleaned/all_data.json").then((allData) => {
     // load geojson data from public/data/stanford-ukraine-geojson.json with d3
     // console.log({allData})
@@ -434,7 +309,7 @@ onMounted(async () => {
         return acc;
       }, {});
 
-      initMap(geographicData);
+      // initMap(geographicData);
     });
   });
 });
@@ -456,16 +331,10 @@ watch(activeGrainType, (newGrainType) => {
   // Set the domain of the color scale to the extent
   valueColorScale.value.domain(extent);
 
-  redrawMap();
+  // redrawMap();
 });
 
-function redrawMap() {
-  // redraw the map
-  d3.json("/data/stanford-ukraine-geojson.json").then((geographicData) => {
-    // drawMap(geographicData)
-    updateMap(geographicData);
-  });
-}
+
 </script>
 <style scoped>
 #map {
