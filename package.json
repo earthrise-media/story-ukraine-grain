@@ -5,15 +5,22 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "prettier": "prettier --single-quote {*.vue,**/*.vue} --write"
   },
   "devDependencies": {
     "nuxt": "^3.1.1"
   },
   "dependencies": {
+    "@nuxt/devtools": "^0.1.2",
     "@turf/turf": "^6.5.0",
+    "@vueuse/nuxt": "^9.12.0",
+    "animejs": "^3.2.1",
     "d3": "^7.8.2",
+    "d3-sankey": "^0.12.3",
+    "intersection-observer": "^0.12.2",
     "node-fetch": "^3.3.0",
+    "scrollama": "^3.2.0",
     "slugify": "^1.6.5",
     "tachyons": "^4.12.0",
     "topojson": "^3.0.2"

@@ -1,5 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  modules: [
+    '@nuxt/devtools',
+    '@vueuse/nuxt'
+  ],
   // add tachyons CSS framework
   css: ['tachyons/css/tachyons.min.css'],
   vite: {
