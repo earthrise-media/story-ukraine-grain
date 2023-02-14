@@ -3,7 +3,8 @@ export function formatAndScaleValue(value, oblastNameUkrainian, scaleByOblast) {
 
   let scale = 100
   if(scaleByOblast) {
-    scale = scaleByOblast.value[oblastNameUkrainian];
+    // scale = scaleByOblast.value[oblastNameUkrainian];
+    scale = scaleByOblast[oblastNameUkrainian];
   }
   const sliderScale = (scale >= 0 ? scale : 100) / 100;
   return formatValue(value * sliderScale);
