@@ -52,13 +52,21 @@
 import * as d3 from "d3";
 const props = defineProps([
   "sortedDataByGrainType",
-  "initialScenario"
+  "scenario"
 ]);
 const emit = defineEmits(["sliderChange"]);
 
+const emitSliderValues = () => emit("sliderChange", oblastSliderPercentages.value)
+
+onMounted(() => emitSliderValues())
+
 const numberFormat = d3.format(",.0f");
 
-const oblastSliderPercentages = ref({});
+const userSetSliderPercentages = ref({});
+
+const oblastSliderPercentages = computed(() =>
+  Object.assign(props.scenario, userSetSliderPercentages.value)
+)
 
 // sums up the values for a given column
 function computeTotal(columnKey) {
@@ -73,20 +81,16 @@ const totalYield = computed(() => computeTotal('grainYield'));
 const totalVolume = computed(() => computeTotal('volume'));
 
 function getOblastPercentage(oblastName) {
-  const initScalar = props.initialScenario[oblastName];
-  const userSetScalar = oblastSliderPercentages.value[oblastName];
-  const scalarToPercentage = scalar => (scalar * 100).toFixed();
-  // since 0 is falsey we can't easily default to 1 :(
-  if (initScalar === 0 || userSetScalar === 0) {
-    return 0;
-  }
-  // if the slider has set a percentage, use that, otherwise fallback on the init, and finally 100%
-  return scalarToPercentage(userSetScalar || initScalar || 1)
+  const sliderScalar = oblastSliderPercentages.value[oblastName];
+  const scalar = sliderScalar >= 0 ? sliderScalar : 1;
+  return (scalar * 100).toFixed();
 }
 
 function setOblastScale(percentage, oblastName) {
-  // convert to a scalar before emit
-  oblastSliderPercentages.value[oblastName] = (+percentage) / 100;
-  emit("sliderChange", oblastSliderPercentages.value);
+  // convert to a scalar before storing in the map of user-set values
+  userSetSliderPercentages.value[oblastName] = (+percentage) / 100;
+  // merge scenario and user set sliders
+  emitSliderValues();
 }
+
 </script>

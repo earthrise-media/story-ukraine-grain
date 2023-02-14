@@ -86,7 +86,7 @@
       <!-- sample initial scenario -->
       <DataTable
         :sorted-data-by-grain-type="sortedDataByGrainType"
-        :initial-scenario="{
+        :scenario="{
           // sample scenario sets the first oblast to 50%
           '7260': 0.5
         }"
@@ -167,9 +167,10 @@ const forecastSelectOptions = [
 function formatAndScaleValue(value, oblastNameUkrainian) {
   // default to 100% if missing from scaleByOblast map
   const scale = scaleByOblast.value[oblastNameUkrainian];
-  const sliderScale = (scale >= 0 ? scale : 100) / 100;
+  const sliderScale = (scale >= 0 ? scale : 1);
   return formatValue(value * sliderScale);
 }
+
 function formatValue(value) {
   return (+value).toFixed(1);
 }
