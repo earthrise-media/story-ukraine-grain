@@ -159,49 +159,10 @@ function clearSelectedOblasts() {
   selectedOblasts.value = [];
 }
 
-
-function formatAndScaleValue(value, oblastNameUkrainian) {
-  // default to 100% if missing from scaleByOblast map
-  const scale = scaleByOblast.value[oblastNameUkrainian];
-  const sliderScale = (scale >= 0 ? scale : 1);
-  return formatValue(value * sliderScale);
-}
-
-function formatValue(value) {
-  return (+value).toFixed(1);
-}
-
 // Need a computed that applies the forecasts to the data and returns a forecasted version
 const forecastedDataByGrainType = computed(() => {
   if (dataByGrainType.value) {
-    const forecastedData = new Map();
-    for (const [grainType, oblasts] of dataByGrainType.value) {
-      forecastedData.set(
-        grainType,
-        oblasts.map((oblast) => {
-          // const forecastScale = oblastForecastScale[oblast.oblastNameEnglish] || forecastSelectOptions[0].scaleValue
-          return {
-            ...oblast,
-            harvestedAreaOriginal: formatValue(oblast.harvestedArea),
-            grainYieldOriginal: formatValue(oblast.grainYield),
-            volumeOriginal: formatValue(oblast.volume),
-            harvestedArea: formatAndScaleValue(
-              oblast.harvestedArea,
-              oblast.oblastNameUkrainian
-            ),
-            grainYield: formatAndScaleValue(
-              oblast.grainYield,
-              oblast.oblastNameUkrainian
-            ),
-            volume: formatAndScaleValue(
-              oblast.volume,
-              oblast.oblastNameUkrainian
-            ),
-          };
-        })
-      );
-    }
-    return forecastedData;
+    return forecastDataByGrainType(dataByGrainType.value);
   }
 });
 

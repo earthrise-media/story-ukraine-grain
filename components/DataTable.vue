@@ -1,5 +1,5 @@
 <template>
-  <table id="data-table">
+  <table id="data-table" class="ba b--red">
     <!-- use a transition group to animate the table -->
     <thead>
       <tr class="tl">
@@ -10,34 +10,22 @@
       </tr>
     </thead>
     <TransitionGroup name="table" tag="tbody" v-if="sortedDataByGrainType">
-      <tr
-        v-for="oblast in sortedDataByGrainType"
-        :key="oblast.oblastNameUkrainian"
-      >
+      <tr v-for="oblast in sortedDataByGrainType" :key="oblast.oblastNameUkrainian">
         <td class="w-20">{{ oblast.oblastNameUkrainian }}</td>
         <td class="w-20">{{ oblast.harvestedArea }}</td>
         <td class="w-20">{{ oblast.grainYield }}</td>
         <td class="w-20">{{ oblast.volume }}</td>
         <td class="tl w-20">
           <div class="slider-cell">
-            <input
-              type="range"
-              min="0"
-              max="100"
-              class="slider"
-              @change="
-                setOblastScale($event.target.value, oblast.oblastNameUkrainian)
-              "
-              :value="getOblastPercentage(oblast.oblastNameUkrainian)"
-              :id="`range-${oblast.oblastNameUkrainian}`"
-            />
+            <input type="range" min="0" max="100" class="slider" @change="
+              setOblastScale($event.target.value, oblast.oblastNameUkrainian)
+            " :value="getOblastPercentage(oblast.oblastNameUkrainian)" :id="`range-${oblast.oblastNameUkrainian}`" />
             {{ getOblastPercentage(oblast.oblastNameUkrainian) }}%
           </div>
         </td>
       </tr>
     </TransitionGroup>
 
-    <!-- add a total row -->
     <tfoot>
       <tr class="bg-gray white">
         <td>Total</td>
@@ -49,43 +37,73 @@
   </table>
 </template>
 <script setup>
-import * as d3 from "d3";
-const props = defineProps([
-  "sortedDataByGrainType",
-  "scenario"
-]);
+import {format } from "d3";
+// we expect a scenario object to be passed in via props
+// what is the difference between scenario and oblastSliderPercentages?
+
+// scenario is a broader thing that describes the scenario
+// oblastSliderPercentages is a more specific thing that describes the oblasts
+const props = defineProps({
+  activeScenarioScalar: {
+    type: Object,
+    required: true,
+    default: {},
+    // when filled in, it looks like this:
+    // {
+    //   "7260": 0.5,
+    //   "Kharkiv": 0.5,
+    // }
+  },
+});
+
 const emit = defineEmits(["sliderChange"]);
+
+
+// when you load you have to emit default values
+// TODO: See if we need to emit default values
+// onMounted(() => emitSliderValues())
+
+// keep track of user-set slider values
+const userSetSliderPercentages = ref({});
+
+// // Take the scenario you pass in via props and add the user-set slider values
+const oblastSliderPercentages = computed(() =>
+  Object.assign(props.activeScenarioScalar, userSetSliderPercentages.value)
+)
 
 const emitSliderValues = () => emit("sliderChange", oblastSliderPercentages.value)
 
-onMounted(() => emitSliderValues())
+// // When the user changes a slider, update the userSetSliderPercentages
+// this causes an unhandled error 
+const sortedDataByGrainType = await useSortedData({ scaleByOblast: oblastSliderPercentages.value })
 
-const numberFormat = d3.format(",.0f");
+console.log('🚀 ~ file: DataTable.vue ~ line 80 ~ sortedDataByGrainType', sortedDataByGrainType)
 
-const userSetSliderPercentages = ref({});
+// // format numbers
+const numberFormat = format(",.0f");
 
-const oblastSliderPercentages = computed(() =>
-  Object.assign(props.scenario, userSetSliderPercentages.value)
-)
 
 // sums up the values for a given column
 function computeTotal(columnKey) {
-  if (!props.sortedDataByGrainType) return 0;
-  return props.sortedDataByGrainType.reduce(
+  console.log('💾 sortedDataByGrainType', sortedDataByGrainType)
+  return numberFormat(sortedDataByGrainType.reduce(
     (acc, { [columnKey]: value }) => acc + (+value), 0
-  ).toFixed(1)
+  ))
 }
 
+// sums of the values for each column
 const totalHarvestedArea = computed(() => computeTotal('harvestedArea'));
 const totalYield = computed(() => computeTotal('grainYield'));
 const totalVolume = computed(() => computeTotal('volume'));
 
+// get the percentage for a given oblast
 function getOblastPercentage(oblastName) {
   const sliderScalar = oblastSliderPercentages.value[oblastName];
   const scalar = sliderScalar >= 0 ? sliderScalar : 1;
   return (scalar * 100).toFixed();
 }
 
+// set the percentage for a given oblast
 function setOblastScale(percentage, oblastName) {
   // convert to a scalar before storing in the map of user-set values
   userSetSliderPercentages.value[oblastName] = (+percentage) / 100;

@@ -12,6 +12,7 @@
         :config="oblastMapConfig"
         :scenario="scenario"
         :oblastData="oblastData"
+        :grainType="grainType"
         :width="graphicWidth"
         :valueKey="oblastMapConfig.valueKey"
         :style="{
@@ -121,10 +122,13 @@
           whopping TK%, with the majority of the losses being felt by TK, TK,
           and the TK.
         </span>
-        <ScenarioControls
-          @scenario-change="scenarioChange"
-          :scenario="scenario"
-        />
+        <DataTable
+        :activeScenarioScalar="{
+          // sample scenario sets the first oblast to 50%
+          '7260': 0.5
+        }"
+        class="w-100 bt b--light-gray mt2 fl"
+      />
       </p>
 
       <p :class="paragraphClasses">
@@ -155,6 +159,9 @@ const stepIndex = ref(0); // keep track of the index
 const stepProgress = ref(0); // keep track of the progress within a step
 // const pageProgress = ref(0) // keep track of the total page progress
 
+// const grainType = useActiveGrainType()
+const grainType = ref("Wheat");
+
 // create a d3 number format to always show 1 decimal place
 const numberFormat = d3.format(",.1f");
 
@@ -163,6 +170,12 @@ const paragraphClasses = "pa4 measure f2 lh-copy";
 
 const scenarioIndex = ref(0);
 const scenario = computed(() => scenarioOptions[scenarioIndex.value]);
+
+function updateScaleByOblast(oblastScales) {
+  // TODO: Double check this
+  // scenario.value.oblastScales[oblastId] = scale;
+  return console.error('this is not implemented yet', oblastScales)
+}
 
 const scenarioOptions = [
   { name: "Small Impact", scale: 0.5, oblastScales: {} },
