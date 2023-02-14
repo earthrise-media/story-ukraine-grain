@@ -18,11 +18,11 @@
         v-for="oblast in sortedDataByGrainType"
         :key="oblast.oblastNameUkrainian"
       >
-        <td>{{ oblast.oblastNameUkrainian }}</td>
-        <td>{{ oblast.harvestedArea }}</td>
-        <td>{{ oblast.grainYield }}</td>
-        <td>{{ oblast.volume }}</td>
-        <td class="tl">
+        <td class="w-20">{{ oblast.oblastNameUkrainian }}</td>
+        <td class="w-20">{{ oblast.harvestedArea }}</td>
+        <td class="w-20">{{ oblast.grainYield }}</td>
+        <td class="w-20">{{ oblast.volume }}</td>
+        <td class="tl w-20">
           <div class="slider-cell">
             <input
               type="range"
