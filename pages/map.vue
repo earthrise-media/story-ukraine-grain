@@ -84,7 +84,6 @@
       </div>
 
       <DataTable
-        :data-by-grain-type="originalDataByGrainType"
         :sorted-data-by-grain-type="sortedDataByGrainType"
         :total-harvested-area="0"
         :total-yield="0"

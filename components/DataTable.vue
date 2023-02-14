@@ -33,15 +33,13 @@
               @change="
                 setOblastScale($event.target.value, oblast.oblastNameUkrainian)
               "
-              :value="
-                oblastSliderPercentages[oblast.oblastNameUkrainian] || 100
-              "
+              :value="getOblastPercentage(oblast.oblastNameUkrainian)"
               :id="`range-${oblast.oblastNameUkrainian}`"
             />
           </div>
         </td>
         <td class="tl">
-          {{ oblastSliderPercentages[oblast.oblastNameUkrainian] }}%
+          {{ getOblastPercentage(oblast.oblastNameUkrainian) }}%
         </td>
       </tr>
     </TransitionGroup>
@@ -71,32 +69,20 @@ const emit = defineEmits(["sliderChange"]);
 const numberFormat = d3.format(",.0f");
 
 const oblastSliderPercentages = ref({});
-// we only watch the original data so that we don't recompute this on every slider change
-watch(
-  () => props.dataByGrainType,
-  (newVal, oldVal) => {
-    // lets look at the forecasted data and calculate the percent
-    // most likely the forecasted data is available (if not we default to 100%)
-    let forecast = props.sortedDataByGrainType;
-    if (forecast) {
-      let v;
-      for (let oblast of forecast) {
-        // we still may not have an original vs forecasted value so again we default to 100%
-        v = Math.round((+oblast.volume / +oblast.volumeOriginal) * 100);
-        if (isNaN(v)) v = 100;
-        oblastSliderPercentages.value[oblast.oblastNameUkrainian] = v;
-      }
-    } else {
-      for (let oblast of newVal) {
-        // if(!oblastSliderPercentages[oblast.oblastNameUkrainian])
-        oblastSliderPercentages.value[oblast.oblastNameUkrainian] = 100;
-      }
-    }
+
+function getOblastPercentage(oblastName) {
+  const scalar = oblastSliderPercentages.value[oblastName];
+  // since 0 is falsey we can't easily default to 1 :(
+  if (scalar === 0) {
+    return 0;
   }
-);
+  // default scalar is 1
+  return ((scalar || 1) * 100).toFixed();
+}
 
 function setOblastScale(percentage, oblastName) {
-  oblastSliderPercentages.value[oblastName] = +percentage;
+  // convert to a scalar before emit
+  oblastSliderPercentages.value[oblastName] = (+percentage) / 100;
   emit("sliderChange", oblastSliderPercentages.value);
 }
 </script>
