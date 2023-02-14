@@ -77,13 +77,34 @@
       <pre>
         {{ oblastForecastScale }}
       </pre>
+      <!-- if there are selected oblasts, show the forecast controls -->
+      <div>
+        <h3>Forecast Select Options</h3>
+        <!-- use a select and events to update value, do not use v-model -->
+        <select @change="updateForecastScale($event.target.value)">
+          <option
+            v-for="option in forecastSelectOptions"
+            :key="option.scaleValue"
+            :value="option.scaleValue"
+          >
+            {{ option.text }}
+          </option>
+        </select>
 
+        <!-- button to trigger the forecast in selected oblasts -->
+        <button @click="triggerForecast">Forecast</button>
+
+        <!-- button to clear oblasts -->
+        <button @click="clearSelectedOblasts">Clear</button>
+      </div>
+
+      <!-- sample initial scenario -->
       <DataTable
-        :data-by-grain-type="originalDataByGrainType"
         :sorted-data-by-grain-type="sortedDataByGrainType"
-        :total-harvested-area="0"
-        :total-yield="0"
-        :total-volume="0"
+        :scenario="{
+          // sample scenario sets the first oblast to 50%
+          '7260': 0.5
+        }"
         class="w-100 bt b--light-gray mt2 fl"
         @sliderChange="updateScaleByOblast"
       />
@@ -142,9 +163,10 @@ function clearSelectedOblasts() {
 function formatAndScaleValue(value, oblastNameUkrainian) {
   // default to 100% if missing from scaleByOblast map
   const scale = scaleByOblast.value[oblastNameUkrainian];
-  const sliderScale = (scale >= 0 ? scale : 100) / 100;
+  const sliderScale = (scale >= 0 ? scale : 1);
   return formatValue(value * sliderScale);
 }
+
 function formatValue(value) {
   return (+value).toFixed(1);
 }
