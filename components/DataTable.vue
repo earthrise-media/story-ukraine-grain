@@ -1,9 +1,5 @@
 <template>
   <table id="data-table">
-    <!-- <pre v-if="dataByGrainType">
-        {{dataByGrainType.get(activeGrainType)}}
-      </pre> -->
-
     <!-- use a transition group to animate the table -->
     <thead>
       <tr class="tl">
@@ -55,8 +51,8 @@
 <script setup>
 import * as d3 from "d3";
 const props = defineProps([
-  "dataByGrainType",
   "sortedDataByGrainType",
+  "initialScenario"
 ]);
 const emit = defineEmits(["sliderChange"]);
 
@@ -77,13 +73,15 @@ const totalYield = computed(() => computeTotal('grainYield'));
 const totalVolume = computed(() => computeTotal('volume'));
 
 function getOblastPercentage(oblastName) {
-  const scalar = oblastSliderPercentages.value[oblastName];
+  const initScalar = props.initialScenario[oblastName];
+  const userSetScalar = oblastSliderPercentages.value[oblastName];
+  const scalarToPercentage = scalar => (scalar * 100).toFixed();
   // since 0 is falsey we can't easily default to 1 :(
-  if (scalar === 0) {
+  if (initScalar === 0 || userSetScalar === 0) {
     return 0;
   }
-  // default scalar is 1
-  return ((scalar || 1) * 100).toFixed();
+  // if the slider has set a percentage, use that, otherwise fallback on the init, and finally 100%
+  return scalarToPercentage(userSetScalar || initScalar || 1)
 }
 
 function setOblastScale(percentage, oblastName) {

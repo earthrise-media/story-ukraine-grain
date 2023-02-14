@@ -83,11 +83,13 @@
         <button @click="clearSelectedOblasts">Clear</button>
       </div>
 
+      <!-- sample initial scenario -->
       <DataTable
         :sorted-data-by-grain-type="sortedDataByGrainType"
-        :total-harvested-area="0"
-        :total-yield="0"
-        :total-volume="0"
+        :initial-scenario="{
+          // sample scenario sets the first oblast to 50%
+          '7260': 0.5
+        }"
         class="w-100 bt b--light-gray mt2 fl"
         @sliderChange="updateScaleByOblast"
       />
