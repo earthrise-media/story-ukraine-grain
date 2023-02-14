@@ -6,7 +6,7 @@
 
     <!-- use a transition group to animate the table -->
     <thead>
-      <tr>
+      <tr class="tl">
         <th>Oblast</th>
         <th>Harvested Area</th>
         <th>Yield</th>
@@ -18,12 +18,11 @@
         v-for="oblast in sortedDataByGrainType"
         :key="oblast.oblastNameUkrainian"
       >
-        <td>{{ oblast.oblastNameEnglish }}</td>
         <td>{{ oblast.oblastNameUkrainian }}</td>
         <td>{{ oblast.harvestedArea }}</td>
         <td>{{ oblast.grainYield }}</td>
         <td>{{ oblast.volume }}</td>
-        <td class="tr">
+        <td class="tl">
           <div class="slider-cell">
             <input
               type="range"
@@ -36,10 +35,8 @@
               :value="getOblastPercentage(oblast.oblastNameUkrainian)"
               :id="`range-${oblast.oblastNameUkrainian}`"
             />
+            {{ getOblastPercentage(oblast.oblastNameUkrainian) }}%
           </div>
-        </td>
-        <td class="tl">
-          {{ getOblastPercentage(oblast.oblastNameUkrainian) }}%
         </td>
       </tr>
     </TransitionGroup>
@@ -48,9 +45,9 @@
     <tfoot>
       <tr class="bg-gray white">
         <td>Total</td>
-        <td>{{ numberFormat(totalHarvestedArea) }}</td>
-        <td>{{ numberFormat(totalYield) }}</td>
-        <td>{{ numberFormat(totalVolume) }}</td>
+        <td>{{ totalHarvestedArea }}</td>
+        <td>{{ totalYield }}</td>
+        <td>{{ totalVolume }}</td>
       </tr>
     </tfoot>
   </table>
@@ -60,15 +57,24 @@ import * as d3 from "d3";
 const props = defineProps([
   "dataByGrainType",
   "sortedDataByGrainType",
-  "totalHarvestedArea",
-  "totalYield",
-  "totalVolume",
 ]);
 const emit = defineEmits(["sliderChange"]);
 
 const numberFormat = d3.format(",.0f");
 
 const oblastSliderPercentages = ref({});
+
+// sums up the values for a given column
+function computeTotal(columnKey) {
+  if (!props.sortedDataByGrainType) return 0;
+  return props.sortedDataByGrainType.reduce(
+    (acc, { [columnKey]: value }) => acc + (+value), 0
+  ).toFixed(1)
+}
+
+const totalHarvestedArea = computed(() => computeTotal('harvestedArea'));
+const totalYield = computed(() => computeTotal('grainYield'));
+const totalVolume = computed(() => computeTotal('volume'));
 
 function getOblastPercentage(oblastName) {
   const scalar = oblastSliderPercentages.value[oblastName];
