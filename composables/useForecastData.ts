@@ -1,8 +1,8 @@
 // Takes a ukranian oblast and scales it by the value provided
-function formatAndScaleValue(value, oblastNameUkrainian, scaleByOblast) {
+function formatAndScaleValue(value, oblastNameUkrainian, oblastScales) {
   
   // Get the proper scale for this oblast name
-  const scale = scaleByOblast[oblastNameUkrainian];
+  const scale = oblastScales ? oblastScales[oblastNameUkrainian] : 1;
 
   // If the scale is undefined, set it to 1
   const sliderScale = (scale >= 0 ? scale : 1);
@@ -17,9 +17,11 @@ function formatValue(value) {
 }
 
 // Takes the original data and applies all scenarios to it using formatAndScaleValue
-function forecastDataByGrainType(dataByGrainType, scaleByOblast) {
+function forecastDataByGrainType(dataByGrainType, oblastScales) {
   const forecastedData = new Map();
+  
   for (const [grainType, oblasts] of dataByGrainType) {
+    if (!oblasts) continue;
     forecastedData.set(
       grainType,
       oblasts.map((oblast) => {
@@ -32,17 +34,17 @@ function forecastDataByGrainType(dataByGrainType, scaleByOblast) {
           harvestedArea: formatAndScaleValue(
             oblast.harvestedArea,
             oblast.oblastNameUkrainian,
-            scaleByOblast,
+            oblastScales,
           ),
           grainYield: formatAndScaleValue(
             oblast.grainYield,
             oblast.oblastNameUkrainian,
-            scaleByOblast
+            oblastScales
           ),
           volume: formatAndScaleValue(
             oblast.volume,
             oblast.oblastNameUkrainian,
-            scaleByOblast
+            oblastScales
           ),
         };
       })
@@ -51,9 +53,9 @@ function forecastDataByGrainType(dataByGrainType, scaleByOblast) {
   return forecastedData;
 }
 
-export async function useForecastData({ scaleByOblast }) {
+export async function useForecastData({ oblastScales }) {
   // fetch the forecast data from the json file
   const dataByGrainType = await useDataByGrainType();
   // get our grain data from all_data and then apply the scenario to it with forecastDataByGrainType
-  return forecastDataByGrainType(dataByGrainType, scaleByOblast)
+  return forecastDataByGrainType(dataByGrainType, oblastScales)
 }

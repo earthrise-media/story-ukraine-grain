@@ -6,20 +6,19 @@
     <!-- make a table with a breakdown of the data by oblast for the active grain type -->
 
     <UkraineOblastMap
-        v-show="true"
-        class="w-two-thirds fl"
-        ref="oblastMap"
-        :scenario="scenario"
-        :oblastData="oblastData"
-        :grainType="'wheat'"
-        :width="600"
-        :valueKey="valueKey"
-        :style="{
-          opacity: 1
-          // opacity: mapOpacity,
-          // opacity: oblastMapConfig.visibility ? mapOpacity : 0,
-        }"
-      />
+      v-show="true"
+      class="w-two-thirds fl"
+      ref="oblastMap"
+      :scenario="scenario"
+      :oblastData="oblastData"
+      :width="600"
+      :valueKey="valueKey"
+      :style="{
+        opacity: 1,
+        // opacity: mapOpacity,
+        // opacity: oblastMapConfig.visibility ? mapOpacity : 0,
+      }"
+    />
 
     <div class="w-third fl vh-50 overflow-y-auto ba b--red">
       <h2>{{ activeGrainType }}</h2>
@@ -103,7 +102,7 @@
         :sorted-data-by-grain-type="sortedDataByGrainType"
         :scenario="{
           // sample scenario sets the first oblast to 50%
-          '7260': 0.5
+          '7260': 0.5,
         }"
         class="w-100 bt b--light-gray mt2 fl"
         @sliderChange="updateScaleByOblast"
@@ -224,7 +223,6 @@ const aggregate = (topology, objects, idProperty) => {
   };
 };
 
-
 function normalizeOblastName(key) {
   if (!key) return key;
   return slugify(key, {
@@ -243,7 +241,6 @@ function normalizeOblastName(key) {
 // })
 
 onMounted(async () => {
-
   // load our oblast data from public/data/ovuzpsg_1221/cleaned/oblast_data.json
   fetch("/data/ovuzpsg_1221/cleaned/all_data.json")
     .then((response) => response.json())
@@ -316,8 +313,6 @@ watch(activeGrainType, (newGrainType) => {
 
   // redrawMap();
 });
-
-
 </script>
 <style scoped>
 #map {

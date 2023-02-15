@@ -1,12 +1,12 @@
 // make into composable later
 const sortKey = "oblastNameUkrainian"
 
-export async function useSortedData({ scaleByOblast }) {
-  console.log('✨ useSortedData')
-  const activeGrainTypeIndex = 0
+export async function useSortedData({ oblastScales }) {
+  // console.log('✨ useSortedData')
+  const activeGrainTypeIndex = 4
 
   // fetch the forecast data from the json file
-  const forecastedData = await useForecastData({ scaleByOblast })
+  const forecastedData = await useForecastData({ oblastScales })
 
   // console.log("👉 forecastedData", forecastedData)
   // get our grain data from all_data and then apply the scenario to it with forecastDataByGrainType

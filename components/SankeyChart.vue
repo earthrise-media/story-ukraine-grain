@@ -1,7 +1,7 @@
 <template>
   <svg class="w-100" :height="height">
     <!-- draw a sankey diagram using sankeyPaths and sankeyNodes -->
-    <g class="sankey-paths">
+    <g class="sankey-paths" v-if="sankeyPaths">
       <path
         v-for="path in sankeyPaths"
         :d="path.d"
@@ -12,7 +12,7 @@
       />
     </g>
 
-    <g class="sankey-nodes">
+    <g class="sankey-nodes" v-if="sankeyNodes">
       <g
         v-for="node in sankeyNodes"
         style="opacity: 0"
@@ -31,7 +31,7 @@
           :y="node.y1 / 2 - node.y0 / 2"
           :dy="0.32 + 'em'"
           text-anchor="end"
-          :fill="/*node.fill*/'white'"
+          :fill="/*node.fill*/ 'white'"
           :font-size="Math.max(Math.sqrt(node.value) * 0.0009, 7)"
           transform="translate(-10, 0)"
         >
@@ -109,7 +109,6 @@ const animateSankey = (sankeyPaths, sankeyNodes) => {
     loop: false,
   });
 };
-
 
 // make height a computed 0.6 of props.width
 // const height = computed(() => props.width * 0.6);

@@ -1,5 +1,21 @@
 <template>
-  <svg id="map" ref="mapSvg" class="w-100 vh-100"></svg>
+  <svg id="map" ref="mapSvg" class="w-100 vh-100">
+    <path
+      v-if="geographicData"
+      v-for="oblast in geographicData.objects['stanford-pp624tm0074-geojson'].geometries"
+      :d="path(oblast)"
+      fill="salmon"
+      stroke="#CCC"
+      stroke-width="0.2"
+      :class="{
+        'focused-shape': oblast.focused,
+        'selected-shape': oblast.selected,
+      }"
+      @mouseover="oblast.focused = true"
+      @mouseout="oblast.focused = false"
+      @click="oblast.selected = !oblast.selected"
+    />
+  </svg>
 </template>
 <script setup>
 import * as d3 from "d3";
@@ -10,7 +26,7 @@ import { formatAndScaleValue, formatValue } from "@/helpers.js";
 
 // set up our props
 const props = defineProps({
-  scenario: {
+  oblastScales: {
     type: Object,
     required: true,
   },
@@ -20,7 +36,7 @@ const props = defineProps({
   },
   grainType: {
     type: String,
-    required: true,
+    required: false,
   },
   width: {
     type: Number,
@@ -32,12 +48,8 @@ const props = defineProps({
   },
 });
 
-// Set our refs- these are all automatically reactive
-// The only thing we need to do is get the value of the ref with .value
-const geographicData = ref(null); // We will fill this with our GeoJSON data
-
 // We will fill these later with d3 groupings of our data
-const oblastsByEnglish= ref(new Map());
+const oblastsByEnglish = ref(new Map());
 
 // This is a template ref, so mapSvg.value is the actual SVG element
 // because we set ref="mapSvg" on the SVG element
@@ -49,21 +61,9 @@ const sortKey = ref("oblastNameUkrainian");
 // const valueKey = props.config.valueKey; //ref("harvestedArea");
 
 // Make a D3 color scale for the values
-const valueColorScale = ref(null);
-
-valueColorScale.value = d3
-  .scaleLinear()
-  .domain([0, 1000])
-  .range(["white", "red"]);
-
-
-
-
-/*
---------------------------------------------------------------
-Map rendering
---------------------------------------------------------------
-*/
+const valueColorScale = ref(
+  d3.scaleLinear().domain([0, 1000]).range(["white", "red"])
+);
 
 // Merges geometries by shared ID.
 // Inspired by https://github.com/neocarto/geotoolbox/blob/cee58b6c45e3faa59ef680d8e3162c430077e80c/src/gis/aggregate.js
@@ -84,89 +84,58 @@ const aggregate = (topology, objects, idProperty) => {
   };
 };
 
-// A function to draw the map SVG
-function initMap(geographicData) {
-  // Merge geometries so we end up with Oblast-level shapes.
-  const featureCollection = aggregate(
-    geographicData,
-    geographicData.objects["stanford-pp624tm0074-geojson"],
-    "name_1"
-  );
+// Create a D3 projection
+const projection = ref(d3.geoMercator());
 
-  // get the width and height of the SVG
-  const width = mapSvg.value.clientWidth;
-  const height = mapSvg.value.clientHeight;
+// Create a D3 path generator
+const path = computed(() => d3.geoPath().projection(projection.value));
 
-  // create a projection
-  const projection = d3
-    .geoMercator()
-    .fitSize([width, height], featureCollection);
+// create a reactive ref to hold our raw geographic data
+const geographicData = ref(null);
 
-  // create a path generator
-  const path = d3.geoPath().projection(projection);
+onMounted(async () => {
+  d3.json("/data/stanford-ukraine-geojson.json").then((geoData) => {
+    geographicData.value = geoData;
+  });
+});
 
-  // clear SVG
-  // d3.select(mapSvg.value).selectAll('*').remove()
 
-  // create a geojson layer
-  const geojsonLayer = d3
-    .select(mapSvg.value)
-    .selectAll("path")
-    .data(featureCollection.features)
-    .join("path")
-    .attr("d", path)
-    .attr("fill", "#white")
-    .attr("stroke", "#CCC")
-    .attr("stroke-width", "0.2")
-    .on("mouseover", (evt, d) => {
-      // console.log("🔖", d);
-      d3.select(evt.target).classed("focused-shape", true);
-    })
-    .on("mouseout", (evt, d) => {
-      d3.select(evt.target).classed("focused-shape", false);
-    });
-}
+// Create a reactive ref to hold our feature collection
+const featureCollection = ref(null);
+
+// Create a reactive ref to hold our width and height
+const width = ref(900);
+const height = ref(600);
+
+// watch geographic data and when it changes, set featureCollection to the aggregation of the data
+// and then fit the projection to the featureCollection
+watch(geographicData, (newData) => {
+  if (newData) {
+    // Merge geometries so we end up with Oblast-level shapes.
+    featureCollection.value = aggregate(
+      geographicData.value,
+      geographicData.value.objects["stanford-pp624tm0074-geojson"],
+      "name_1"
+    );
+
+    projection.value.fitSize(
+      [width.value, height.value],
+      featureCollection.value
+    );
+  }
+});
 
 // a function to receive an oblast shape and fetch the proper data to determine and return fill color
 function findOblastFillColor(d) {
   const shapeName1 = normalizeOblastName(d.properties.name_1);
+  // console.log(oblastsByEnglish.value)
   const oblastData = oblastsByEnglish.value.get(shapeName1);
   const shapeValue = oblastData ? oblastData[props.valueKey] : 0;
-  // console.log("oblast", oblastData, shapeValue)
+  // console.log("oblast", shapeName1, oblastData, shapeValue)
   if (shapeValue) return valueColorScale.value(+shapeValue);
   else return "#FFF";
 }
 
-function updateMap() {
-  // first we make sure our color scale is updated
-  const extent = d3.extent(oblastsByEnglish.value, (d) => +d[1][props.valueKey + "Original"]);
-  // Set the domain of the color scale to the extent
-  valueColorScale.value.domain(extent);
-
-  // get the map svg
-  const map = d3.select(mapSvg.value);
-  // select all of the paths
-  const paths = map.selectAll("path");
-  // update the paths
-  paths
-    .transition()
-    .duration(1000)
-    .attr("fill", (d, i) => {
-      return findOblastFillColor(d);
-    });
-}
-
-onMounted(async () => {
-  d3.json("/data/stanford-ukraine-geojson.json").then((geoData) => {
-    geographicData.value = geoData
-    // oblastData data is our raw Oblast-level grain data
-    // grainType is our currently active grain type
-    // scenario is the currently active scenario
-    initMap(geographicData.value);
-    processOblastData(props.oblastData, props.grainType, props.scenario)
-    updateMap()
-  })
-})
 
 /*
 --------------------------------------------------------------
@@ -174,7 +143,16 @@ Data processing
 --------------------------------------------------------------
 */
 // This function applies our formats and scales to oblast data
-function createScaledOblastData(oblast, scenario) {
+
+// This function expects a single oblast object
+function createScaledOblastData(oblastRaw, oblastScales) {
+  const oblast = oblastRaw;
+  // console.log('oblastRow', oblastRaw)
+  if(!oblast) return null
+  if(!oblastScales) return null
+  const oblastNameUkr = oblast.oblastNameUkrainian;
+  if(!oblastNameUkr) return null
+
   return {
     ...oblast,
     harvestedAreaOriginal: formatValue(oblast.harvestedArea),
@@ -182,92 +160,114 @@ function createScaledOblastData(oblast, scenario) {
     volumeOriginal: formatValue(oblast.volume),
     harvestedArea: formatAndScaleValue(
       oblast.harvestedArea,
-      oblast.oblastNameUkrainian,
-      scenario
+      oblastNameUkr,
+      oblastScales
     ),
     grainYield: formatAndScaleValue(
       oblast.grainYield,
-      oblast.oblastNameUkrainian,
-      scenario
+      oblastNameUkr,
+      oblastScales
     ),
-    volume: formatAndScaleValue(
-      oblast.volume, 
-      oblast.oblastNameUkrainian, 
-      scenario),
+    volume: formatAndScaleValue(oblast.volume, oblastNameUkr, oblastScales),
   };
 }
 
+// watch(() => props.oblastScales, processScales)
+// function processScales(newScales) {
+//   if (newScales) {
+//     processOblastData(props.oblastData, props.grainType, newScales)
+//     updateMap();
+//   }
+// }
 
+// // a similar watcher that watches the grain type and re-processes the data
+// watch(() => props.grainType, () => {
+//   processOblastData(props.oblastData, props.grainType, props.oblastScales)
+//   updateMap();
+// })
 
-watch(() => props.scenario, processScenario)
-// EJ: Me and the robot wrote this function to process & update on scenario change
-function processScenario(newScenario) {
-  console.log("processing scenario", newScenario)
-  // newScenario looks like??
+// // a similar watcher that watches the oblast data and re-processes the data
+// watch(() => props.oblastData, (newOblastData) => {
+//   processOblastData(newOblastData, props.grainType, props.oblastScales)
+//   updateMap();
+// })
 
-  if (newScenario) {
-    processOblastData(newScenario.oblastData, props.grainType, newScenario)
-    updateMap();
-  }  
-}
+// anytime oblastScales changes we want to re-process our data
+// watch(() => props.oblastScales, (newScales) => {
+//   console.log('do we have the prop?', props.oblastScales)
+//   processOblastData(props.oblastData, props.grainType, props.oblastScales)
+//   updateMap();
+// }, { immediate: true })
 
-// a similar watcher that watches the grain type and re-processes the data
-watch(() => props.grainType, (newGrainType) => {
-  processOblastData(props.oblastData, newGrainType, props.scenario)
-  updateMap();
-})
+// wait for oblastByEnglish to be populated
+watch(
+  () => oblastsByEnglish.value,
+  (newOblastByEnglish) => {
+    // console.log('oblast by english', newOblastByEnglish)
+    processOblastData();
+    // updateMap();
+  },
+  { immediate: true }
+);
 
-// a similar watcher that watches the oblast data and re-processes the data
-watch(() => props.oblastData, (newOblastData) => {
-  processOblastData(newOblastData, props.grainType, props.scenario)
-  updateMap();
-})
+// get the list of oblasts for the current graintype
+// const activeData = groupedByGrainType.get(grainType);
 
-// EJ: Don't think this needs to be async anymore because it does not call the geojson
-function processOblastData(oblastData, grainType, scenario) {
-    // console.log("watch oblastData", oblastData, grainType, scenario)
-    
-    if(!scenario) scenario = {};
-    if(!oblastData) {
-      console.log("no oblast data?")
-      return;
+//
+useSortedData({ oblastScales: props.oblastScales }).then((data) => {
+  const oblastByEnglishRollup = d3.rollup(
+    data,
+    // there will be only one object per name, process it and return it
+    (v, key) => {
+      // createScaledOblastData takes oblastRaw as the first param,
+      // and oblastScales as the second param
+
+      // this should be the oblast with the scalar applied
+      return createScaledOblastData(v[1], v[0], props.oblastScales);
+    },
+    // group by the normalized english name
+    (d, key) => {
+      console.log(d.oblastNameUkrainian, d, key)
+      if(!d) return
+      return normalizeOblastName(d.oblastNameUkrainian);
     }
-    
-    // group the new data by grain type
-    let groupedByGrainType = d3.group(oblastData, (d) => d.metadata[0][0]);
+  );
+  console.log("oblast by english rollup", oblastByEnglishRollup);
+  oblastsByEnglish.value = oblastByEnglishRollup;
+});
 
-    // TODO: have mapping from nice grain type names to the ones in the data
-    // then we can accept a nice grain type as a parameter
-    let grainTypes = Array.from(groupedByGrainType.keys());
-    // if(!grainType) grainType = grainTypes[1]
-    grainType = grainTypes[1]
-
-    // remove grain types where the key includes the word "dynamics"
-    // because those are bad data
-    groupedByGrainType.forEach((value, key) => {
-      if (key.toLowerCase().includes("dynamics")) {
-        groupedByGrainType.delete(key);
-      }
-    });
-
-    // get the list of oblasts for the current graintype
-    const activeData = groupedByGrainType.get(grainType);
-    if(!activeData) return;
-
-    // group the data by oblast's normalized english name
-    // and also process it with the forecast data
-    oblastsByEnglish.value = d3.rollup(activeData, 
-      // there will be only one object per name, process it and return it
-      v => createScaledOblastData(v[0], v[0].oblastNameUkrainian, scenario), 
-      // group by the normalized english name
-      d => normalizeOblastName(d.oblastNameEnglish)
-    );
-
-   
-    // get the oblast shapefile data
-    // d3.json("/data/stanford-ukraine-geojson.json").then((geographicData) => {
-    // });
+function processOblastData(oblastData, activeGrainType, oblastScales) {
+  if (!oblastScales) oblastScales = {};
+  if (!oblastData) {
+    console.log("no oblast data?");
+    return;
   }
+
+  // console.log("processing oblast data", oblastData)
+  // oblastData is the raw rows from our source data
+
+  // group the new data by grain type
+  let groupedByGrainType = d3.group(oblastData, (d) => d.metadata[0][0]);
+  // console.log("grouped by grain type", groupedByGrainType)
+
+  // TODO: have mapping from nice grain type names to the ones in the data
+  // then we can accept a nice grain type as a parameter
+  let grainTypes = Array.from(groupedByGrainType.keys());
+  // console.log("grain types", grainTypes)
+  // if(!grainType) grainType = grainTypes[1]
+  const grainType = activeGrainType || grainTypes[1];
+  console.log("grain type", grainType);
+
+  // 'Збір урожаю пшениці ярої на 01 грудня 2021 року1 Harvesting of spring wheat as of 01 December 20211'
+
+  // remove grain types where the key includes the word "dynamics"
+  // because those are bad data
+  groupedByGrainType.forEach((value, key) => {
+    if (key.toLowerCase().includes("dynamics")) {
+      groupedByGrainType.delete(key);
+    }
+  });
+}
 
 // Normalize our oblast name using slugify
 function normalizeOblastName(key) {
@@ -277,8 +277,6 @@ function normalizeOblastName(key) {
     lower: true,
   });
 }
-
-
 </script>
 <style>
 #map {
