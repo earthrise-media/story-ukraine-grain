@@ -33,7 +33,24 @@
       @click="oblast.selected = !oblast.selected"
       >
         {{oblast.properties.name_1}}
-      </text>      
+      </text>
+      <text
+      v-if="featureCollection"
+      v-for="oblast in featureCollection.features"
+      :x="path.centroid(oblast)[0]"
+      :y="path.centroid(oblast)[1] + 14"
+      fill="black"
+      font-size="12"
+      :class="{
+        'focused-shape': oblast.focused,
+        'selected-shape': oblast.selected,
+      }"
+      @mouseover="oblast.focused = true"
+      @mouseout="oblast.focused = false"
+      @click="oblast.selected = !oblast.selected"
+      >
+        {{findOblastValue(oblast)}} {{grainType}}
+      </text>     
     </g>
   </svg>
 </template>
@@ -80,7 +97,7 @@ const mapSvg = ref(null);
 
 // Make a D3 color scale for the values
 const valueColorScale = ref(
-  d3.scaleLinear().domain([0, 1000]).range(["white", "red"])
+  d3.scaleLinear().domain([0, 500]).range(["white", "red"])
 );
 // Merges geometries by shared ID.
 // Inspired by https://github.com/neocarto/geotoolbox/blob/cee58b6c45e3faa59ef680d8e3162c430077e80c/src/gis/aggregate.js
@@ -186,21 +203,34 @@ const scaledDataOblastNames = computed(() => {
   }
 });
 
+function findOblastValue(oblast) {
+  const oblastName = normalizeOblastName(oblast.properties.name_1);
+  const oblastData = scaledDataOblastNames.value[oblastName];
+  return oblastData ? oblastData[props.valueKey] : 0;
+}
+
 // a function to receive an oblast shape and fetch the proper data to determine and return fill color
+// function findOblastFillColor(oblastShape) {
+//   if(!dataOblastNames.value) return 'purple'
+//   const shapeName1 = normalizeOblastName(oblastShape.properties.name_1);
+//   const oblastNameKeys = Object.keys(dataOblastNames.value);
+//   const oblastNameSet = new Set(oblastNameKeys);
+
+//   if (oblastNameKeys.length > 0 && !oblastNameSet.has(shapeName1)) {
+//     // console.log('MISMATCH', shapeName1, oblastNameKeys);
+//   }
+
+//   const oblastData = scaledDataOblastNames.value[shapeName1];
+//   // return oblastData ? 'green' : 'red' // use this to debug which oblasts are receiving data
+
+//   const shapeValue = oblastData ? oblastData[props.valueKey] : 0;
+//   if (shapeValue) return valueColorScale.value(+shapeValue);
+//   else return "#FFF";
+// }
+
+// refactor to use findOblastValue
 function findOblastFillColor(oblastShape) {
-  if(!dataOblastNames.value) return 'purple'
-  const shapeName1 = normalizeOblastName(oblastShape.properties.name_1);
-  const oblastNameKeys = Object.keys(dataOblastNames.value);
-  const oblastNameSet = new Set(oblastNameKeys);
-
-  if (oblastNameKeys.length > 0 && !oblastNameSet.has(shapeName1)) {
-    // console.log('MISMATCH', shapeName1, oblastNameKeys);
-  }
-
-  const oblastData = scaledDataOblastNames.value[shapeName1];
-  // return oblastData ? 'green' : 'red' // use this to debug which oblasts are receiving data
-
-  const shapeValue = oblastData ? oblastData[props.valueKey] : 0;
+  const shapeValue = findOblastValue(oblastShape);
   if (shapeValue) return valueColorScale.value(+shapeValue);
   else return "#FFF";
 }
