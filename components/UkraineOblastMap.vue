@@ -161,8 +161,13 @@ const scaledDataOblastNames = computed(() => {
 function findOblastFillColor(d) {
   // console.log('finding oblast color for: ', d)
   // normalize the oblast shape name to match the oblast data name
-  const shapeName1 = normalizeOblastName(d.properties.name_1);
   if(!dataOblastNames.value) return 'purple'
+  const shapeName1 = normalizeOblastName(d.properties.name_1);
+  const oblastNameKeys = Object.keys(dataOblastNames.value);
+  const oblastNameSet = new Set(oblastNameKeys);
+  if (oblastNameKeys.length > 0 && !oblastNameSet.has(shapeName1)) {
+    console.log('MISMATCH', shapeName1, oblastNameKeys);
+  }
   const oblastData = scaledDataOblastNames.value[shapeName1];
   // return oblastData ? 'green' : 'red' // use this to debug data for oblast
 
@@ -170,7 +175,7 @@ function findOblastFillColor(d) {
   // console.log('shapeValue: ', shapeValue)
   if (shapeValue) return valueColorScale.value(+shapeValue);
   else return "#FFF";
-  
+
 }
 
 // useSortedData({ oblastScales: props.oblastScales }).then((data) => {
@@ -332,13 +337,36 @@ Data processing
 //   });
 // }
 
+// We use the spelling from the data set - NOT the map property data
+function standardizeOblastSpelling(oblastName) {
+  switch (oblastName) {
+    // TODO crimea / sevastopal are missing due to russian occupation.
+    case "khmelnytskyy":
+      return "khmelnytskiy";
+    case "kiev":
+      return "kyiv";
+    case "kiev-city":
+      return "kyiv";
+    case "odessa":
+      return "odesa";
+    case "mykolayiv":
+      return "mikolayiv";
+    case "transcarpathia":
+      return "zakarpattya";
+    default:
+      return oblastName
+  }
+}
+
 // Normalize our oblast name using slugify
 function normalizeOblastName(key) {
   if (!key) return key;
-  return slugify(key, {
-    strict: true,
-    lower: true,
-  });
+  return standardizeOblastSpelling(
+    slugify(key, {
+      strict: true,
+      lower: true,
+    })
+  );
 }
 </script>
 <style>
