@@ -5,12 +5,15 @@
         <h2>World grain producer breakdown</h2>
       </div> -->
       <h3 class="w-100">Step: {{ stepIndex }}</h3>
+      <!-- <pre>
+        {{scenario.oblastScales}}
+      </pre> -->
       <UkraineOblastMap
         v-show="/*oblastMapConfig.visibility*/ true"
         class="fixed top-0 right-0"
         ref="oblastMap"
         :config="oblastMapConfig"
-        :oblastScales="scenarioOblastScales"
+        :oblastScales="scenario.oblastScales"
         :oblastData="oblastData"
         :activeGrainType="grainType"
         :width="graphicWidth"
@@ -127,7 +130,7 @@
           </pre>
         </span>
         <DataTable
-          :activeScenarioScalar="scenarioOblastScales"
+          :activeScenarioScalar="scenario.oblastScales"
           :activeGrainType="grainType"
           class="w-100 bt b--light-gray mt2 fl"
           @sliderChange="handleSliderChange"
@@ -164,7 +167,8 @@ const stepProgress = ref(0); // keep track of the progress within a step
 
 // const grainType = useActiveGrainType()
 const grainType = ref(
-  "12 кукур-Table 1"
+  // "12 кукур-Table 1"
+  "10 пшенЯР-Table 1"
 );
 
 // create a d3 number format to always show 1 decimal place
@@ -196,11 +200,6 @@ function handleSliderChange(oblastScales) {
     oblastScales,
   };
 }
-
-// make a computed to return the oblast scales for the active scenario
-const scenarioOblastScales = computed(() => {
-  return scenario.value.oblastScales;
-});
 
 const oblastMapConfig = ref({
   visibility: true, // true = show, false = hide
