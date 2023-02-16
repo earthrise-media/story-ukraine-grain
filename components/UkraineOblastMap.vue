@@ -128,7 +128,7 @@ watch(geographicData, (newData) => {
 const geoOblastNames = computed(() => {
   if (featureCollection.value) {
     return featureCollection.value.features.map((feature) => {
-      return normalizeO(feature.properties.name_1);
+      return normalizeOblastName(feature.properties.name_1);
     });
   }
 });
