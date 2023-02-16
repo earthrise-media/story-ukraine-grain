@@ -153,16 +153,34 @@ const dataOblastNames = computed(() => {
 
 const scaledDataOblastNames = computed(() => {
   if (props.oblastData) {
-    return props.oblastData.reduce((acc, oblast) => {
+    // make a map so that we can look up the oblast data by oblast name
+    const oblastDataMap = new Map();
+    // now we can loop through the data and add it to the map
+    const oblastDataKeys = props.oblastData.map((oblast) => {
       const oblastName = oblast.oblastNameNormalized;
-      acc[oblastName] = {
-        ...oblast,
-        [props.valueKey]: formatAndScaleValue(
-          oblast[props.valueKey],
-          oblastName,
-          props.oblastScales,
-        ),
-      };
+      oblastDataMap.set(oblastName, oblast);
+      return oblastName;
+    });
+    // make a set so that we can check if the oblast name is in the data
+    const oblastDataKeysSet = new Set(oblastDataKeys);
+    
+    // now reduce the feature collection to an object with the oblast name as the key
+    return featureCollection.value.features.reduce((acc, oblast) => {
+      // normalize the oblast name
+      const oblastName = normalizeOblastName(oblast.properties.name_1);
+      // check if the oblast name is in the data
+      if (oblastDataKeysSet.has(oblastName)) {
+        // if it is in the data, get the oblast data from the map
+        const oblastData = oblastDataMap.get(oblastName);
+        acc[oblastName] = {
+          ...oblastData, // add the oblast data
+          [props.valueKey]: formatAndScaleValue(
+            oblastData[props.valueKey],
+            oblastName,
+            props.oblastScales
+          ), // add the scaled value
+        };
+      }
       return acc;
     }, {});
   }
