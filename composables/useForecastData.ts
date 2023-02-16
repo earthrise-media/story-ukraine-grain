@@ -1,3 +1,6 @@
+// import { formatAndScaleValue, formatValue } from "~~/helpers";
+// for some reason importing this makes the app dramatically slower?
+
 // Takes a ukranian oblast and scales it by the value provided
 function formatAndScaleValue(value, oblastNameUkrainian, oblastScales) {
   
