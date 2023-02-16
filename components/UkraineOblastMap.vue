@@ -15,6 +15,26 @@
       @mouseout="oblast.focused = false"
       @click="oblast.selected = !oblast.selected"
     />
+
+    <g v-if="oblastData">
+      <text
+      v-if="featureCollection"
+      v-for="oblast in featureCollection.features"
+      :x="path.centroid(oblast)[0]"
+      :y="path.centroid(oblast)[1]"
+      fill="red"
+      font-size="12"
+      :class="{
+        'focused-shape': oblast.focused,
+        'selected-shape': oblast.selected,
+      }"
+      @mouseover="oblast.focused = true"
+      @mouseout="oblast.focused = false"
+      @click="oblast.selected = !oblast.selected"
+      >
+        {{oblast.properties.name_1}}
+      </text>      
+    </g>
   </svg>
 </template>
 <script setup>
@@ -47,6 +67,14 @@ const props = defineProps({
     required: true,
   },
 });
+
+// watch for when oblastScales changes and console.log it
+watch(
+  () => props.oblastScales,
+  (oblastScales) => {
+    console.log("🌎 oblastScales", oblastScales);
+  }
+);
 
 // We will fill these later with d3 groupings of our data
 // const oblastsByEnglish = ref(new Map());
