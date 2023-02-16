@@ -5,9 +5,6 @@
         <h2>World grain producer breakdown</h2>
       </div> -->
       <h3 class="w-100">Step: {{ stepIndex }}</h3>
-      <pre>
-        {{scenario.oblastScales}}
-      </pre>
       <UkraineOblastMap
         v-show="/*oblastMapConfig.visibility*/ true"
         class="fixed top-0 right-0"
@@ -124,12 +121,12 @@
           However, if we switch to the large impact scenario, exports drop by a
           whopping TK%, with the majority of the losses being felt by TK, TK,
           and the TK.
+        </span>        
+      </p>
 
-          <pre class="f6 h5 overflow-y-auto">
-            {{scenario}}
-          </pre>
-        </span>
-        <DataTable
+      <p>
+
+      <DataTable
           :activeScenarioScalar="scenario.oblastScales"
           :activeGrainType="grainType"
           class="w-100 bt b--light-gray mt2 fl"
@@ -191,7 +188,6 @@ const scenario = ref(scenarioOptions[scenarioIndex.value]);
 
 // When the slider emits a change, write those changes to the scenario
 function handleSliderChange(oblastScales) {
-  console.log('slider changed', oblastScales)
   // oblastScales looks like
   // {1250: 0.76, 7260: 0.5}
   // where the key is the oblast id and the value is the scale
