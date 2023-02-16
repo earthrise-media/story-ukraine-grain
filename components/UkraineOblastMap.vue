@@ -40,9 +40,7 @@
 <script setup>
 import * as d3 from "d3";
 import * as topojson from "topojson";
-// import * as turf from "@turf/turf";
-import slugify from "slugify";
-import { normalizeOblastName, formatAndScaleValue, formatValue } from "@/helpers.js";
+import { normalizeOblastName, formatAndScaleValue } from "@/helpers.js";
 
 // set up our props
 const props = defineProps({
@@ -76,17 +74,9 @@ watch(
   }
 );
 
-// We will fill these later with d3 groupings of our data
-// const oblastsByEnglish = ref(new Map());
-
 // This is a template ref, so mapSvg.value is the actual SVG element
 // because we set ref="mapSvg" on the SVG element
 const mapSvg = ref(null);
-
-// This is a reactive ref with a default value
-// For now set to oblast name since sliders will change sorting rank of values
-// const sortKey = ref("oblastNameUkrainian");
-// const valueKey = props.config.valueKey; //ref("harvestedArea");
 
 // Make a D3 color scale for the values
 const valueColorScale = ref(
@@ -120,6 +110,7 @@ const path = computed(() => d3.geoPath().projection(projection.value));
 // create a reactive ref to hold our raw geographic data
 const geographicData = ref(null);
 
+// when the page is mounted fill it with the geographic data json
 onMounted(async () => {
   d3.json("/data/stanford-ukraine-geojson.json").then((geoData) => {
     geographicData.value = geoData;
@@ -151,16 +142,6 @@ watch(geographicData, (newData) => {
   }
 });
 
-// const geoOblastNames = ref(null);
-// generate a map of oblast names to oblast data for every feature (oblast) in the featureCollection
-const geoOblastNames = computed(() => {
-  if (featureCollection.value) {
-    return featureCollection.value.features.map((feature) => {
-      return normalizeOblastName(feature.properties.name_1);
-    });
-  }
-});
-
 const dataOblastNames = computed(() => {
   if (props.oblastData) {
     return props.oblastData.reduce((acc, oblast) => {
@@ -189,191 +170,25 @@ const scaledDataOblastNames = computed(() => {
 
 // a function to receive an oblast shape and fetch the proper data to determine and return fill color
 function findOblastFillColor(oblastShape) {
-  // console.log('finding oblast color for: ', d)
-  // normalize the oblast shape name to match the oblast data name
   if(!dataOblastNames.value) return 'purple'
   const shapeName1 = normalizeOblastName(oblastShape.properties.name_1);
   const oblastNameKeys = Object.keys(dataOblastNames.value);
   const oblastNameSet = new Set(oblastNameKeys);
+
   if (oblastNameKeys.length > 0 && !oblastNameSet.has(shapeName1)) {
-    console.log('MISMATCH', shapeName1, oblastNameKeys);
+    // console.log('MISMATCH', shapeName1, oblastNameKeys);
   }
 
   const oblastData = scaledDataOblastNames.value[shapeName1];
-  // return oblastData ? 'green' : 'red' // use this to debug data for oblast
+  // return oblastData ? 'green' : 'red' // use this to debug which oblasts are receiving data
 
   const shapeValue = oblastData ? oblastData[props.valueKey] : 0;
   if (shapeValue) return valueColorScale.value(+shapeValue);
   else return "#FFF";
 }
 
-// useSortedData({ oblastScales: props.oblastScales }).then((data) => {
-//   // console.log('🇺🇸', data)
-//   const oblastByEnglishRollup = d3.rollup(
-//     data,
-//     // there will be only one object per name, process it and return it
-//     (v, key) => {
-//       // createScaledOblastData takes oblastRaw as the first param,
-//       // and oblastScales as the second param
-//       // console.log('v', v[0])
-
-//       // this should be the oblast with the scalar applied
-//       return createScaledOblastData(v[0], props.oblastScales);
-//     },
-//     // group by the normalized english name
-//     (d) => {
-//       if (!d) return;
-//       // console.log(normalizeOblastName(d.oblastNameUkrainian));
-//       return normalizeOblastName(d.oblastNameUkrainian);
-//     }
-//   );
-//   // console.log("oblast by english rollup", oblastByEnglishRollup, 'from', data);
-//   oblastsByEnglish.value = oblastByEnglishRollup;
-// });
-
-// refactor to move this into a watcher that re-fires every time the oblastScales change
-// watch(props.oblastScales, (newScales) => {
-//   // console.log('newScales', newScales)
-//   if (props.oblastData) {
-//     const oblastByEnglishRollup = d3.rollup(
-//       props.oblastData,
-//       // there will be only one object per name, process it and return it
-//       (v, key) => {
-//         // createScaledOblastData takes oblastRaw as the first param,
-//         // and oblastScales as the second param
-//         // console.log('v', v[0])
-
-//         // this should be the oblast with the scalar applied
-//         return createScaledOblastData(v[0], newScales);
-//       },
-//       // group by the normalized english name
-//       (d) => {
-//         if (!d) return;
-//         // console.log(normalizeOblastName(d.oblastNameUkrainian));
-//         return normalizeOblastName(d.oblastNameUkrainian);
-//       }
-//     );
-//     // console.log("oblast by english rollup", oblastByEnglishRollup, 'from', data);
-//     // oblastsByEnglish.value = oblastByEnglishRollup;
-//   }
-// });
-
-/*
---------------------------------------------------------------
-Data processing
---------------------------------------------------------------
-*/
-// This function applies our formats and scales to oblast data
-
-// This function expects a single oblast object
-// function createScaledOblastData(oblastRaw, oblastScales) {
-//   const oblast = oblastRaw;
-//   // console.log('oblastRaw', oblastRaw)
-//   if (!oblast) return null;
-//   if (!oblastScales) return null;
-//   const oblastNameUkr = normalizeOblastName(oblast.oblastNameUkrainian);
-//   if (!oblastNameUkr) return null;
-
-//   return {
-//     ...oblast,
-//     harvestedAreaOriginal: formatValue(oblast.harvestedArea),
-//     grainYieldOriginal: formatValue(oblast.grainYield),
-//     volumeOriginal: formatValue(oblast.volume),
-//     harvestedArea: formatAndScaleValue(
-//       oblast.harvestedArea,
-//       oblastNameUkr,
-//       oblastScales
-//     ),
-//     grainYield: formatAndScaleValue(
-//       oblast.grainYield,
-//       oblastNameUkr,
-//       oblastScales
-//     ),
-//     volume: formatAndScaleValue(oblast.volume, oblastNameUkr, oblastScales),
-//   };
-// }
-
-// watch(() => props.oblastScales, processScales)
-// function processScales(newScales) {
-//   if (newScales) {
-//     processOblastData(props.oblastData, props.grainType, newScales)
-//     updateMap();
-//   }
-// }
-
-// // a similar watcher that watches the grain type and re-processes the data
-// watch(() => props.grainType, () => {
-//   processOblastData(props.oblastData, props.grainType, props.oblastScales)
-//   updateMap();
-// })
-
-// // a similar watcher that watches the oblast data and re-processes the data
-// watch(() => props.oblastData, (newOblastData) => {
-//   processOblastData(newOblastData, props.grainType, props.oblastScales)
-//   updateMap();
-// })
-
-// anytime oblastScales changes we want to re-process our data
-// watch(() => props.oblastScales, (newScales) => {
-//   console.log('do we have the prop?', props.oblastScales)
-//   processOblastData(props.oblastData, props.grainType, props.oblastScales)
-//   updateMap();
-// }, { immediate: true })
-
-// wait for oblastByEnglish to be populated
-// watch(
-//   () => oblastsByEnglish.value,
-//   (newOblastByEnglish) => {
-//     // console.log('oblast by english', newOblastByEnglish)
-//     processOblastData();
-//     // updateMap();
-//   },
-//   { immediate: true }
-// );
-
-// get the list of oblasts for the current graintype
-// const activeData = groupedByGrainType.get(grainType);
-// function processOblastData(oblastData, activeGrainType, oblastScales) {
-//   if (!oblastScales) oblastScales = {};
-//   if (!oblastData) {
-//     console.log("no oblast data?");
-//     return;
-//   }
-
-//   // console.log("processing oblast data", oblastData)
-//   // oblastData is the raw rows from our source data
-
-//   // group the new data by grain type
-//   let groupedByGrainType = d3.group(oblastData, (d) => d.metadata[0][0]);
-//   // console.log("grouped by grain type", groupedByGrainType)
-
-//   // TODO: have mapping from nice grain type names to the ones in the data
-//   // then we can accept a nice grain type as a parameter
-//   let grainTypes = Array.from(groupedByGrainType.keys());
-//   // console.log("grain types", grainTypes)
-//   // if(!grainType) grainType = grainTypes[1]
-//   const grainType = activeGrainType || grainTypes[1];
-//   console.log("grain type", grainType);
-
-//   // 'Збір урожаю пшениці ярої на 01 грудня 2021 року1 Harvesting of spring wheat as of 01 December 20211'
-
-//   // remove grain types where the key includes the word "dynamics"
-//   // because those are bad data
-//   groupedByGrainType.forEach((value, key) => {
-//     if (key.toLowerCase().includes("dynamics")) {
-//       groupedByGrainType.delete(key);
-//     }
-//   });
-// }
-
 </script>
 <style>
-#map {
-  /* width: 100%; */
-  /* height: 50vh; */
-  /* width: 50vw; */
-}
-
 path.focused-shape {
   stroke-width: 4 !important;
   stroke: black !important;
