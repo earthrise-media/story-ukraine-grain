@@ -6,17 +6,18 @@
       </div> -->
       <h3 class="w-100">Step: {{ stepIndex }}</h3>
       <UkraineOblastMap
-        v-show="/*oblastMapConfig.visibility*/true"
+        v-show="/*oblastMapConfig.visibility*/ true"
         class="fixed top-0 right-0"
         ref="oblastMap"
         :config="oblastMapConfig"
-        :scenario="scenario"
+        :oblastScales="scenario.oblastScales"
         :oblastData="oblastData"
+        :activeGrainType="grainType"
         :width="graphicWidth"
         :valueKey="oblastMapConfig.valueKey"
         :style="{
           // opacity: mapOpacity,
-          opacity: oblastMapConfig.visibility ? mapOpacity : 0,
+          //opacity: oblastMapConfig.visibility ? mapOpacity : 0,
         }"
       />
 
@@ -29,7 +30,7 @@
         :width="graphicWidth"
       /> -->
 
-      <SankeyChart
+      <!-- <SankeyChart
         v-if="sankeyConfig.visibility"
         ref="sankeyChart"
         class="fixed top-0 right-0"
@@ -37,7 +38,7 @@
         :importExportData="importExportData"
         :width="graphicWidth"
         :stepIndex="stepIndex"
-      />
+      /> -->
     </div>
 
     <div class="text-container w-50 center relative">
@@ -120,10 +121,16 @@
           However, if we switch to the large impact scenario, exports drop by a
           whopping TK%, with the majority of the losses being felt by TK, TK,
           and the TK.
-        </span>
-        <ScenarioControls
-          @scenario-change="scenarioChange"
-          :scenario="scenario"
+        </span>        
+      </p>
+
+      <p>
+
+      <DataTable
+          :activeScenarioScalar="scenario.oblastScales"
+          :activeGrainType="grainType"
+          class="w-100 bt b--light-gray mt2 fl"
+          @sliderChange="handleSliderChange"
         />
       </p>
 
@@ -155,14 +162,17 @@ const stepIndex = ref(0); // keep track of the index
 const stepProgress = ref(0); // keep track of the progress within a step
 // const pageProgress = ref(0) // keep track of the total page progress
 
+// const grainType = useActiveGrainType()
+const grainType = ref(
+  // "12 кукур-Table 1"
+  "10 пшенЯР-Table 1"
+);
+
 // create a d3 number format to always show 1 decimal place
 const numberFormat = d3.format(",.1f");
 
 // the tachyons classes we will use for the paragraphs
 const paragraphClasses = "pa4 measure f2 lh-copy";
-
-const scenarioIndex = ref(0);
-const scenario = computed(() => scenarioOptions[scenarioIndex.value]);
 
 const scenarioOptions = [
   { name: "Small Impact", scale: 0.5, oblastScales: {} },
@@ -170,16 +180,22 @@ const scenarioOptions = [
   { name: "Large Impact", scale: 0.9, oblastScales: {} },
 ];
 
-// load import/export data from public/data/ovuzpsg_1221/cleaned/all_data.json
+const scenarioIndex = ref(0);
+// const scenario = computed(() => scenarioOptions[scenarioIndex.value]);
+const scenario = ref(scenarioOptions[scenarioIndex.value]);
+// scenario looks like
+// { name: "Small Impact", scale: 0.5, oblastScales: {} }
 
-// Example of a config object for a scatterplot
-// const scatterplotConfig = ref({
-//   visibility: false, // true = show, false = hide
-//   xProperty: "harvestedArea",
-//   yProperty: "volume",
-//   rProperty: "grainYield",
-//   highlight: "oblastNameUkrainian",
-// });
+// When the slider emits a change, write those changes to the scenario
+function handleSliderChange(oblastScales) {
+  // oblastScales looks like
+  // {1250: 0.76, 7260: 0.5}
+  // where the key is the oblast id and the value is the scale
+  scenario.value = {
+    ...scenario.value,
+    oblastScales,
+  };
+}
 
 const oblastMapConfig = ref({
   visibility: true, // true = show, false = hide
@@ -190,11 +206,11 @@ const sankeyConfig = ref({
   visibility: true, // true = show, false = hide
 });
 
-const barChartConfig = ref({
-  visibility: false, // true = show, false = hide
-  xProperty: "oblastNameUkrainian",
-  yProperty: "harvestedArea",
-});
+// const barChartConfig = ref({
+//   visibility: false, // true = show, false = hide
+//   xProperty: "oblastNameUkrainian",
+//   yProperty: "harvestedArea",
+// });
 
 // create a computed to smoothly fade in the map opacity from 0 to 1 between step 3 and 4 and hide the map before step 3
 const mapOpacity = computed(() => {
@@ -216,12 +232,12 @@ const mapOpacity = computed(() => {
 //   // otherwise default to 500
 //   return stepContainer.value ? stepContainer.value.offsetWidth : 900;
 // });
-const graphicWidth = 900
+const graphicWidth = 900;
 
 // function to handle when a user changes the scenario
-const scenarioChange = (newScenario) => {
-  scenario.value = newScenario;
-};
+// const scenarioChange = (newScenario) => {
+//   scenario.value = newScenario;
+// };
 
 // watch for changes to stepIndex when a user scrolls
 watch(
@@ -305,6 +321,6 @@ h2 {
 
 .text-container {
   z-index: 10;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 </style>

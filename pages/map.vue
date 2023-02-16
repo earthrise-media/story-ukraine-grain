@@ -6,20 +6,19 @@
     <!-- make a table with a breakdown of the data by oblast for the active grain type -->
 
     <UkraineOblastMap
-        v-show="true"
-        class="w-two-thirds fl"
-        ref="oblastMap"
-        :scenario="scenario"
-        :oblastData="oblastData"
-        :grainType="'wheat'"
-        :width="600"
-        :valueKey="valueKey"
-        :style="{
-          opacity: 1
-          // opacity: mapOpacity,
-          // opacity: oblastMapConfig.visibility ? mapOpacity : 0,
-        }"
-      />
+      v-show="true"
+      class="w-two-thirds fl"
+      ref="oblastMap"
+      :scenario="scenario"
+      :oblastData="oblastData"
+      :width="600"
+      :valueKey="valueKey"
+      :style="{
+        opacity: 1,
+        // opacity: mapOpacity,
+        // opacity: oblastMapConfig.visibility ? mapOpacity : 0,
+      }"
+    />
 
     <div class="w-third fl vh-50 overflow-y-auto ba b--red">
       <h2>{{ activeGrainType }}</h2>
@@ -103,7 +102,7 @@
         :sorted-data-by-grain-type="sortedDataByGrainType"
         :scenario="{
           // sample scenario sets the first oblast to 50%
-          '7260': 0.5
+          '7260': 0.5,
         }"
         class="w-100 bt b--light-gray mt2 fl"
         @sliderChange="updateScaleByOblast"
@@ -137,7 +136,7 @@ const selectedOblasts = ref([]);
 function updateForecastScale(scaleValue) {
   selectedScaleValue.value = scaleValue;
   selectedOblasts.value.forEach((oblast) => {
-    oblastForecastScale.value[normalizeOblastName(oblast)] = scaleValue;
+    oblastForecastScale.value[oblast.oblastNameNormalized] = scaleValue;
   });
 }
 
@@ -159,49 +158,10 @@ function clearSelectedOblasts() {
   selectedOblasts.value = [];
 }
 
-
-function formatAndScaleValue(value, oblastNameUkrainian) {
-  // default to 100% if missing from scaleByOblast map
-  const scale = scaleByOblast.value[oblastNameUkrainian];
-  const sliderScale = (scale >= 0 ? scale : 1);
-  return formatValue(value * sliderScale);
-}
-
-function formatValue(value) {
-  return (+value).toFixed(1);
-}
-
 // Need a computed that applies the forecasts to the data and returns a forecasted version
 const forecastedDataByGrainType = computed(() => {
   if (dataByGrainType.value) {
-    const forecastedData = new Map();
-    for (const [grainType, oblasts] of dataByGrainType.value) {
-      forecastedData.set(
-        grainType,
-        oblasts.map((oblast) => {
-          // const forecastScale = oblastForecastScale[oblast.oblastNameEnglish] || forecastSelectOptions[0].scaleValue
-          return {
-            ...oblast,
-            harvestedAreaOriginal: formatValue(oblast.harvestedArea),
-            grainYieldOriginal: formatValue(oblast.grainYield),
-            volumeOriginal: formatValue(oblast.volume),
-            harvestedArea: formatAndScaleValue(
-              oblast.harvestedArea,
-              oblast.oblastNameUkrainian
-            ),
-            grainYield: formatAndScaleValue(
-              oblast.grainYield,
-              oblast.oblastNameUkrainian
-            ),
-            volume: formatAndScaleValue(
-              oblast.volume,
-              oblast.oblastNameUkrainian
-            ),
-          };
-        })
-      );
-    }
-    return forecastedData;
+    return forecastDataByGrainType(dataByGrainType.value);
   }
 });
 
@@ -215,7 +175,7 @@ const mapSvg = ref(null);
 
 // This is a reactive ref with a default value
 // For now set to oblast name since sliders will change sorting rank of values
-const sortKey = ref("oblastNameUkrainian");
+const sortKey = ref("oblastNameNormalized");
 const valueKey = ref("harvestedArea");
 
 // Make a D3 color scale for the values
@@ -263,15 +223,6 @@ const aggregate = (topology, objects, idProperty) => {
   };
 };
 
-
-function normalizeOblastName(key) {
-  if (!key) return key;
-  return slugify(key, {
-    strict: true,
-    lower: true,
-  });
-}
-
 // slugify('some string', {
 //   replacement: '-',  // replace spaces with replacement character, defaults to `-`
 //   remove: undefined, // remove characters that match regex, defaults to `undefined`
@@ -282,7 +233,6 @@ function normalizeOblastName(key) {
 // })
 
 onMounted(async () => {
-
   // load our oblast data from public/data/ovuzpsg_1221/cleaned/oblast_data.json
   fetch("/data/ovuzpsg_1221/cleaned/all_data.json")
     .then((response) => response.json())
@@ -325,9 +275,8 @@ onMounted(async () => {
 
     d3.json("/data/stanford-ukraine-geojson.json").then((geographicData) => {
       // create an object where the keys are the oblast names and the values are the data
-      parsedDataByName.value = allData.reduce((acc, d) => {
-        // console.log("key: ", d.oblastNameEnglish)
-        acc[normalizeOblastName(d.oblastNameEnglish)] = d;
+      parsedDataByName.value = allData.reduce((acc, oblast) => {
+        acc[oblast.oblastNameNormalized] = oblast;
         return acc;
       }, {});
 
@@ -344,7 +293,7 @@ watch(activeGrainType, (newGrainType) => {
 
   // create an object where the keys are the oblast names and the values are the data
   parsedDataByName.value = newData.reduce((acc, d) => {
-    acc[d.oblastNameEnglish] = d;
+    acc[d.oblastNameNormalized] = d;
     return acc;
   }, {});
 
@@ -355,8 +304,6 @@ watch(activeGrainType, (newGrainType) => {
 
   // redrawMap();
 });
-
-
 </script>
 <style scoped>
 #map {

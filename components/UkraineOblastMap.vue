@@ -1,16 +1,67 @@
 <template>
-  <svg id="map" ref="mapSvg" class="w-100 vh-100"></svg>
+  <svg id="map" ref="mapSvg" class="w-100 vh-100">
+    <path
+      v-if="featureCollection"
+      v-for="oblast in featureCollection.features"
+      :d="path(oblast)"
+      :fill="findOblastFillColor(oblast)"
+      stroke="#CCC"
+      stroke-width="0.2"
+      :class="{
+        'focused-shape': oblast.focused,
+        'selected-shape': oblast.selected,
+      }"
+      @mouseover="oblast.focused = true"
+      @mouseout="oblast.focused = false"
+      @click="oblast.selected = !oblast.selected"
+    />
+
+    <g v-if="oblastData">
+      <text
+      v-if="featureCollection"
+      v-for="oblast in featureCollection.features"
+      :x="path.centroid(oblast)[0]"
+      :y="path.centroid(oblast)[1]"
+      fill="red"
+      font-size="12"
+      :class="{
+        'focused-shape': oblast.focused,
+        'selected-shape': oblast.selected,
+      }"
+      @mouseover="oblast.focused = true"
+      @mouseout="oblast.focused = false"
+      @click="oblast.selected = !oblast.selected"
+      >
+        {{oblast.properties.name_1}}
+      </text>
+      <text
+      v-if="featureCollection"
+      v-for="oblast in featureCollection.features"
+      :x="path.centroid(oblast)[0]"
+      :y="path.centroid(oblast)[1] + 14"
+      fill="black"
+      font-size="12"
+      :class="{
+        'focused-shape': oblast.focused,
+        'selected-shape': oblast.selected,
+      }"
+      @mouseover="oblast.focused = true"
+      @mouseout="oblast.focused = false"
+      @click="oblast.selected = !oblast.selected"
+      >
+        {{findOblastValue(oblast)}} {{grainType}}
+      </text>     
+    </g>
+  </svg>
 </template>
 <script setup>
 import * as d3 from "d3";
 import * as topojson from "topojson";
-// import * as turf from "@turf/turf";
-import slugify from "slugify";
-import { formatAndScaleValue, formatValue } from "@/helpers.js";
+import { normalizeOblastName, formatAndScaleValue } from "@/helpers.js";
 
 // set up our props
 const props = defineProps({
-  scenario: {
+  oblastScales: {
     type: Object,
     required: true,
   },
@@ -20,7 +71,7 @@ const props = defineProps({
   },
   grainType: {
     type: String,
-    required: true,
+    required: false,
   },
   width: {
     type: Number,
@@ -32,39 +83,22 @@ const props = defineProps({
   },
 });
 
-// Set our refs- these are all automatically reactive
-// The only thing we need to do is get the value of the ref with .value
-const geographicData = ref(null); // We will fill this with our GeoJSON data
-
-// We will fill these later with d3 groupings of our data
-const oblastsByEnglish= ref(new Map());
+// watch for when oblastScales changes and console.log it
+watch(
+  () => props.oblastScales,
+  (oblastScales) => {
+    console.log("🌎 oblastScales", oblastScales);
+  }
+);
 
 // This is a template ref, so mapSvg.value is the actual SVG element
 // because we set ref="mapSvg" on the SVG element
 const mapSvg = ref(null);
 
-// This is a reactive ref with a default value
-// For now set to oblast name since sliders will change sorting rank of values
-const sortKey = ref("oblastNameUkrainian");
-// const valueKey = props.config.valueKey; //ref("harvestedArea");
-
 // Make a D3 color scale for the values
-const valueColorScale = ref(null);
-
-valueColorScale.value = d3
-  .scaleLinear()
-  .domain([0, 1000])
-  .range(["white", "red"]);
-
-
-
-
-/*
---------------------------------------------------------------
-Map rendering
---------------------------------------------------------------
-*/
-
+const valueColorScale = ref(
+  d3.scaleLinear().domain([0, 500]).range(["white", "red"])
+);
 // Merges geometries by shared ID.
 // Inspired by https://github.com/neocarto/geotoolbox/blob/cee58b6c45e3faa59ef680d8e3162c430077e80c/src/gis/aggregate.js
 const aggregate = (topology, objects, idProperty) => {
@@ -84,209 +118,125 @@ const aggregate = (topology, objects, idProperty) => {
   };
 };
 
-// A function to draw the map SVG
-function initMap(geographicData) {
-  // Merge geometries so we end up with Oblast-level shapes.
-  const featureCollection = aggregate(
-    geographicData,
-    geographicData.objects["stanford-pp624tm0074-geojson"],
-    "name_1"
-  );
+// Create a D3 projection
+const projection = ref(d3.geoMercator());
 
-  // get the width and height of the SVG
-  const width = mapSvg.value.clientWidth;
-  const height = mapSvg.value.clientHeight;
+// Create a D3 path generator
+const path = computed(() => d3.geoPath().projection(projection.value));
 
-  // create a projection
-  const projection = d3
-    .geoMercator()
-    .fitSize([width, height], featureCollection);
+// create a reactive ref to hold our raw geographic data
+const geographicData = ref(null);
 
-  // create a path generator
-  const path = d3.geoPath().projection(projection);
+// when the page is mounted fill it with the geographic data json
+onMounted(async () => {
+  d3.json("/data/stanford-ukraine-geojson.json").then((geoData) => {
+    geographicData.value = geoData;
+  });
+});
 
-  // clear SVG
-  // d3.select(mapSvg.value).selectAll('*').remove()
+// Create a reactive ref to hold our feature collection
+const featureCollection = ref(null);
 
-  // create a geojson layer
-  const geojsonLayer = d3
-    .select(mapSvg.value)
-    .selectAll("path")
-    .data(featureCollection.features)
-    .join("path")
-    .attr("d", path)
-    .attr("fill", "#white")
-    .attr("stroke", "#CCC")
-    .attr("stroke-width", "0.2")
-    .on("mouseover", (evt, d) => {
-      // console.log("🔖", d);
-      d3.select(evt.target).classed("focused-shape", true);
-    })
-    .on("mouseout", (evt, d) => {
-      d3.select(evt.target).classed("focused-shape", false);
+// Create a reactive ref to hold our width and height
+const width = ref(900);
+const height = ref(600);
+
+// watch geographic data and when it changes, set featureCollection to the aggregation of the data
+// and then fit the projection to the featureCollection
+watch(geographicData, (newData) => {
+  if (newData) {
+    // Merge geometries so we end up with Oblast-level shapes.
+    featureCollection.value = aggregate(
+      geographicData.value,
+      geographicData.value.objects["stanford-pp624tm0074-geojson"],
+      "name_1"
+    );
+
+    projection.value.fitSize(
+      [width.value, height.value],
+      featureCollection.value
+    );
+  }
+});
+
+const dataOblastNames = computed(() => {
+  if (props.oblastData) {
+    return props.oblastData.reduce((acc, oblast) => {
+      acc[oblast.oblastNameNormalized] = oblast;
+      return acc;
+    }, {});
+  }
+});
+
+const scaledDataOblastNames = computed(() => {
+  if (props.oblastData) {
+    // make a map so that we can look up the oblast data by oblast name
+    const oblastDataMap = new Map();
+    // now we can loop through the data and add it to the map
+    const oblastDataKeys = props.oblastData.map((oblast) => {
+      const oblastName = oblast.oblastNameNormalized;
+      oblastDataMap.set(oblastName, oblast);
+      return oblastName;
     });
+    // make a set so that we can check if the oblast name is in the data
+    const oblastDataKeysSet = new Set(oblastDataKeys);
+    
+    // now reduce the feature collection to an object with the oblast name as the key
+    return featureCollection.value.features.reduce((acc, oblast) => {
+      // normalize the oblast name
+      const oblastName = normalizeOblastName(oblast.properties.name_1);
+      // check if the oblast name is in the data
+      if (oblastDataKeysSet.has(oblastName)) {
+        // if it is in the data, get the oblast data from the map
+        const oblastData = oblastDataMap.get(oblastName);
+        acc[oblastName] = {
+          ...oblastData, // add the oblast data
+          [props.valueKey]: formatAndScaleValue(
+            oblastData[props.valueKey],
+            oblastName,
+            props.oblastScales
+          ), // add the scaled value
+        };
+      }
+      return acc;
+    }, {});
+  }
+});
+
+function findOblastValue(oblast) {
+  const oblastName = normalizeOblastName(oblast.properties.name_1);
+  const oblastData = scaledDataOblastNames.value[oblastName];
+  return oblastData ? oblastData[props.valueKey] : 0;
 }
 
 // a function to receive an oblast shape and fetch the proper data to determine and return fill color
-function findOblastFillColor(d) {
-  const shapeName1 = normalizeOblastName(d.properties.name_1);
-  const oblastData = oblastsByEnglish.value.get(shapeName1);
-  const shapeValue = oblastData ? oblastData[props.valueKey] : 0;
-  // console.log("oblast", oblastData, shapeValue)
+// function findOblastFillColor(oblastShape) {
+//   if(!dataOblastNames.value) return 'purple'
+//   const shapeName1 = normalizeOblastName(oblastShape.properties.name_1);
+//   const oblastNameKeys = Object.keys(dataOblastNames.value);
+//   const oblastNameSet = new Set(oblastNameKeys);
+
+//   if (oblastNameKeys.length > 0 && !oblastNameSet.has(shapeName1)) {
+//     // console.log('MISMATCH', shapeName1, oblastNameKeys);
+//   }
+
+//   const oblastData = scaledDataOblastNames.value[shapeName1];
+//   // return oblastData ? 'green' : 'red' // use this to debug which oblasts are receiving data
+
+//   const shapeValue = oblastData ? oblastData[props.valueKey] : 0;
+//   if (shapeValue) return valueColorScale.value(+shapeValue);
+//   else return "#FFF";
+// }
+
+// refactor to use findOblastValue
+function findOblastFillColor(oblastShape) {
+  const shapeValue = findOblastValue(oblastShape);
   if (shapeValue) return valueColorScale.value(+shapeValue);
   else return "#FFF";
 }
 
-function updateMap() {
-  // first we make sure our color scale is updated
-  const extent = d3.extent(oblastsByEnglish.value, (d) => +d[1][props.valueKey + "Original"]);
-  // Set the domain of the color scale to the extent
-  valueColorScale.value.domain(extent);
-
-  // get the map svg
-  const map = d3.select(mapSvg.value);
-  // select all of the paths
-  const paths = map.selectAll("path");
-  // update the paths
-  paths
-    .transition()
-    .duration(1000)
-    .attr("fill", (d, i) => {
-      return findOblastFillColor(d);
-    });
-}
-
-onMounted(async () => {
-  d3.json("/data/stanford-ukraine-geojson.json").then((geoData) => {
-    geographicData.value = geoData
-    // oblastData data is our raw Oblast-level grain data
-    // grainType is our currently active grain type
-    // scenario is the currently active scenario
-    initMap(geographicData.value);
-    processOblastData(props.oblastData, props.grainType, props.scenario)
-    updateMap()
-  })
-})
-
-/*
---------------------------------------------------------------
-Data processing
---------------------------------------------------------------
-*/
-// This function applies our formats and scales to oblast data
-function createScaledOblastData(oblast, scenario) {
-  return {
-    ...oblast,
-    harvestedAreaOriginal: formatValue(oblast.harvestedArea),
-    grainYieldOriginal: formatValue(oblast.grainYield),
-    volumeOriginal: formatValue(oblast.volume),
-    harvestedArea: formatAndScaleValue(
-      oblast.harvestedArea,
-      oblast.oblastNameUkrainian,
-      scenario
-    ),
-    grainYield: formatAndScaleValue(
-      oblast.grainYield,
-      oblast.oblastNameUkrainian,
-      scenario
-    ),
-    volume: formatAndScaleValue(
-      oblast.volume, 
-      oblast.oblastNameUkrainian, 
-      scenario),
-  };
-}
-
-
-
-watch(() => props.scenario, processScenario)
-// EJ: Me and the robot wrote this function to process & update on scenario change
-function processScenario(newScenario) {
-  console.log("processing scenario", newScenario)
-  // newScenario looks like??
-
-  if (newScenario) {
-    processOblastData(newScenario.oblastData, props.grainType, newScenario)
-    updateMap();
-  }  
-}
-
-// a similar watcher that watches the grain type and re-processes the data
-watch(() => props.grainType, (newGrainType) => {
-  processOblastData(props.oblastData, newGrainType, props.scenario)
-  updateMap();
-})
-
-// a similar watcher that watches the oblast data and re-processes the data
-watch(() => props.oblastData, (newOblastData) => {
-  processOblastData(newOblastData, props.grainType, props.scenario)
-  updateMap();
-})
-
-// EJ: Don't think this needs to be async anymore because it does not call the geojson
-function processOblastData(oblastData, grainType, scenario) {
-    // console.log("watch oblastData", oblastData, grainType, scenario)
-    
-    if(!scenario) scenario = {};
-    if(!oblastData) {
-      console.log("no oblast data?")
-      return;
-    }
-    
-    // group the new data by grain type
-    let groupedByGrainType = d3.group(oblastData, (d) => d.metadata[0][0]);
-
-    // TODO: have mapping from nice grain type names to the ones in the data
-    // then we can accept a nice grain type as a parameter
-    let grainTypes = Array.from(groupedByGrainType.keys());
-    // if(!grainType) grainType = grainTypes[1]
-    grainType = grainTypes[1]
-
-    // remove grain types where the key includes the word "dynamics"
-    // because those are bad data
-    groupedByGrainType.forEach((value, key) => {
-      if (key.toLowerCase().includes("dynamics")) {
-        groupedByGrainType.delete(key);
-      }
-    });
-
-    // get the list of oblasts for the current graintype
-    const activeData = groupedByGrainType.get(grainType);
-    if(!activeData) return;
-
-    // group the data by oblast's normalized english name
-    // and also process it with the forecast data
-    oblastsByEnglish.value = d3.rollup(activeData, 
-      // there will be only one object per name, process it and return it
-      v => createScaledOblastData(v[0], v[0].oblastNameUkrainian, scenario), 
-      // group by the normalized english name
-      d => normalizeOblastName(d.oblastNameEnglish)
-    );
-
-   
-    // get the oblast shapefile data
-    // d3.json("/data/stanford-ukraine-geojson.json").then((geographicData) => {
-    // });
-  }
-
-// Normalize our oblast name using slugify
-function normalizeOblastName(key) {
-  if (!key) return key;
-  return slugify(key, {
-    strict: true,
-    lower: true,
-  });
-}
-
-
 </script>
 <style>
-#map {
-  /* width: 100%; */
-  /* height: 50vh; */
-  /* width: 50vw; */
-}
-
 path.focused-shape {
   stroke-width: 4 !important;
   stroke: black !important;
