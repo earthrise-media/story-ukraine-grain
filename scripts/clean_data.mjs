@@ -15,6 +15,39 @@ Each of these files need to be cleaned up and saved as new files in /public/data
 import fs from "fs";
 import path from "path";
 import * as d3 from "d3";
+import slugify from "slugify";
+
+// We use the spelling from the data set - NOT the map property data
+function standardizeOblastSpelling(oblastName) {
+  switch (oblastName) {
+    // TODO crimea / sevastopal are missing due to russian occupation.
+    case "khmelnytskyy":
+      return "khmelnytskiy";
+    case "kiev":
+      return "kyiv";
+    case "kiev-city":
+      return "kyiv";
+    case "odessa":
+      return "odesa";
+    case "mykolayiv":
+      return "mikolayiv";
+    case "transcarpathia":
+      return "zakarpattya";
+    default:
+      return oblastName
+  }
+}
+
+// Normalize our oblast name using slugify
+function normalizeOblastName(key) {
+  if (!key) return key;
+  return standardizeOblastSpelling(
+    slugify(key, {
+      strict: true,
+      lower: true,
+    })
+  );
+}
 
 // First we need to get a list of files in the folder
 const files = fs.readdirSync(
@@ -80,6 +113,7 @@ files.forEach((file) => {
         grainYieldHousehold: +grainYieldHousehold,
         harvestedAreaHousehold: +harvestedAreaHousehold,
         oblastNameEnglish,
+        oblastNameNormalized: normalizeOblastName(oblastNameEnglish),
       };
     })
     .filter((d) => d.oblastNameUkrainian);

@@ -42,7 +42,7 @@ import * as d3 from "d3";
 import * as topojson from "topojson";
 // import * as turf from "@turf/turf";
 import slugify from "slugify";
-import { formatAndScaleValue, formatValue } from "@/helpers.js";
+import { normalizeOblastName, formatAndScaleValue, formatValue } from "@/helpers.js";
 
 // set up our props
 const props = defineProps({
@@ -164,7 +164,7 @@ const geoOblastNames = computed(() => {
 const dataOblastNames = computed(() => {
   if (props.oblastData) {
     return props.oblastData.reduce((acc, oblast) => {
-      acc[normalizeOblastName(oblast.oblastNameEnglish)] = oblast;
+      acc[oblast.oblastNameNormalized] = oblast;
       return acc;
     }, {});
   }
@@ -173,11 +173,13 @@ const dataOblastNames = computed(() => {
 const scaledDataOblastNames = computed(() => {
   if (props.oblastData) {
     return props.oblastData.reduce((acc, oblast) => {
-      acc[normalizeOblastName(oblast.oblastNameEnglish)] = {
+      const oblastName = oblast.oblastNameNormalized;
+      acc[oblastName] = {
         ...oblast,
         [props.valueKey]: formatAndScaleValue(
           oblast[props.valueKey],
-          props.oblastScales[props.valueKey]
+          oblastName,
+          props.oblastScales,
         ),
       };
       return acc;
@@ -186,19 +188,23 @@ const scaledDataOblastNames = computed(() => {
 });
 
 // a function to receive an oblast shape and fetch the proper data to determine and return fill color
-function findOblastFillColor(d) {
+function findOblastFillColor(oblastShape) {
   // console.log('finding oblast color for: ', d)
   // normalize the oblast shape name to match the oblast data name
-  const shapeName1 = normalizeOblastName(d.properties.name_1);
   if(!dataOblastNames.value) return 'purple'
+  const shapeName1 = normalizeOblastName(oblastShape.properties.name_1);
+  const oblastNameKeys = Object.keys(dataOblastNames.value);
+  const oblastNameSet = new Set(oblastNameKeys);
+  if (oblastNameKeys.length > 0 && !oblastNameSet.has(shapeName1)) {
+    console.log('MISMATCH', shapeName1, oblastNameKeys);
+  }
+
   const oblastData = scaledDataOblastNames.value[shapeName1];
   // return oblastData ? 'green' : 'red' // use this to debug data for oblast
 
   const shapeValue = oblastData ? oblastData[props.valueKey] : 0;
-  // console.log('shapeValue: ', shapeValue)
   if (shapeValue) return valueColorScale.value(+shapeValue);
   else return "#FFF";
-  
 }
 
 // useSortedData({ oblastScales: props.oblastScales }).then((data) => {
@@ -360,14 +366,6 @@ Data processing
 //   });
 // }
 
-// Normalize our oblast name using slugify
-function normalizeOblastName(key) {
-  if (!key) return key;
-  return slugify(key, {
-    strict: true,
-    lower: true,
-  });
-}
 </script>
 <style>
 #map {

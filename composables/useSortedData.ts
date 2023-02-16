@@ -2,7 +2,7 @@
 const sortKey = "oblastNameUkrainian"
 
 export async function useSortedData({ oblastScales, grainType }) {
-  console.log('✨ useSortedData')
+  // console.log('✨ useSortedData')
   // const activeGrainTypeIndex = 4
 
   // fetch the forecast data from the json file
@@ -23,11 +23,11 @@ export async function useSortedData({ oblastScales, grainType }) {
     }
   });
 
-  console.log("👉 dataByGrainType", dataByGrainType.keys())
+  // console.log("👉 dataByGrainType", dataByGrainType.keys())
 
   // figure out the active grain type index from the name (grainType)
   const activeGrainTypeIndex = Array.from(dataByGrainType.keys()).indexOf(grainType);
-  console.log(grainType, '---->', activeGrainTypeIndex)
+  // console.log(grainType, '---->', activeGrainTypeIndex)
   
   // Set the active grain type to the first grain type
   const activeGrainType = Array.from(dataByGrainType.keys())[activeGrainTypeIndex];
