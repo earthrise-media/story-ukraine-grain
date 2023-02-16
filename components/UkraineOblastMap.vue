@@ -145,11 +145,13 @@ const dataOblastNames = computed(() => {
 const scaledDataOblastNames = computed(() => {
   if (props.oblastData) {
     return props.oblastData.reduce((acc, oblast) => {
-      acc[normalizeOblastName(oblast.oblastNameEnglish)] = {
+      const oblastName = normalizeOblastName(oblast.oblastNameEnglish)
+      acc[oblastName] = {
         ...oblast,
         [props.valueKey]: formatAndScaleValue(
           oblast[props.valueKey],
-          props.oblastScales[props.valueKey]
+          oblastName,
+          props.oblastScales,
         ),
       };
       return acc;
@@ -168,11 +170,11 @@ function findOblastFillColor(d) {
   if (oblastNameKeys.length > 0 && !oblastNameSet.has(shapeName1)) {
     console.log('MISMATCH', shapeName1, oblastNameKeys);
   }
+
   const oblastData = scaledDataOblastNames.value[shapeName1];
   // return oblastData ? 'green' : 'red' // use this to debug data for oblast
 
   const shapeValue = oblastData ? oblastData[props.valueKey] : 0;
-  // console.log('shapeValue: ', shapeValue)
   if (shapeValue) return valueColorScale.value(+shapeValue);
   else return "#FFF";
 

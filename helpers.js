@@ -1,12 +1,11 @@
-export function formatAndScaleValue(value, oblastNameUkrainian, scaleByOblast) {
-  // default to 100% if missing from scaleByOblast map
+export function formatAndScaleValue(value, oblastKey, oblastScales) {
+  // Get the proper scale for this oblast name
+  const scale = oblastScales ? oblastScales[oblastKey] : 1;
 
-  let scale = 100
-  if(scaleByOblast) {
-    // scale = scaleByOblast.value[oblastNameUkrainian];
-    scale = scaleByOblast[oblastNameUkrainian];
-  }
-  const sliderScale = (scale >= 0 ? scale : 100) / 100;
+  // If the scale is undefined, set it to 1
+  const sliderScale = (scale >= 0 ? scale : 1);
+
+  // Return the value scaled by the sliderScale
   return formatValue(value * sliderScale);
 }
 
