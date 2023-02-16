@@ -1,8 +1,8 @@
 <template>
   <svg id="map" ref="mapSvg" class="w-100 vh-100">
     <path
-      v-if="geographicData"
-      v-for="oblast in geographicData.objects['stanford-pp624tm0074-geojson'].geometries"
+      v-if="featureCollection"
+      v-for="oblast in featureCollection.features"
       :d="path(oblast)"
       fill="salmon"
       stroke="#CCC"
@@ -95,6 +95,7 @@ const geographicData = ref(null);
 
 onMounted(async () => {
   d3.json("/data/stanford-ukraine-geojson.json").then((geoData) => {
+    console.log('geographic data received', geographicData)
     geographicData.value = geoData;
   });
 });
