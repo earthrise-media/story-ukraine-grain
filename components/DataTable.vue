@@ -11,10 +11,10 @@
     <tbody v-if="sortedDataByGrainType">
       <tr
         v-for="oblast in sortedDataByGrainType"
-        :key="oblast.oblastNameUkrainian"
+        :key="oblast.oblastNameNormalized"
       >
       <!-- <pre class="h3 overflow-y-auto ba b--red">{{oblast}}</pre> -->
-        <td class="w-20">{{ oblast.oblastNameUkrainian }}</td>
+        <td class="w-20">{{ oblast.oblastNameNormalized }}</td>
         <td class="w-20">{{ oblast.harvestedArea }}</td>
         <td class="w-20">{{ oblast.grainYield }}</td>
         <td class="w-20">{{ oblast.volume }}</td>
@@ -26,12 +26,12 @@
               max="150"
               class="slider"
               @change="
-                setOblastScale($event.target.value, oblast.oblastNameUkrainian)
+                setOblastScale($event.target.value, oblast.oblastNameNormalized)
               "
-              :value="getOblastPercentage(oblast.oblastNameUkrainian)"
-              :id="`range-${oblast.oblastNameUkrainian}`"
+              :value="getOblastPercentage(oblast.oblastNameNormalized)"
+              :id="`range-${oblast.oblastNameNormalized}`"
             />
-            {{ getOblastPercentage(oblast.oblastNameUkrainian) }}%
+            {{ getOblastPercentage(oblast.oblastNameNormalized) }}%
           </div>
         </td>
       </tr>

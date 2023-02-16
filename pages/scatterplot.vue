@@ -368,7 +368,7 @@ watch(activeGrainType, (newGrainType) => {
 
   // create an object where the keys are the oblast names and the values are the data
   parsedDataByName.value = newData.reduce((acc, d) => {
-    acc[d.oblastNameEnglish] = d;
+    acc[d.oblastNameNormalized] = d;
     return acc;
   }, {});
 

@@ -22,7 +22,7 @@ import * as d3 from "d3";
 import * as topojson from "topojson";
 // import * as turf from "@turf/turf";
 import slugify from "slugify";
-import { formatAndScaleValue, formatValue } from "@/helpers.js";
+import { normalizeOblastName, formatAndScaleValue, formatValue } from "@/helpers.js";
 
 // set up our props
 const props = defineProps({
@@ -128,7 +128,7 @@ watch(geographicData, (newData) => {
 const geoOblastNames = computed(() => {
   if (featureCollection.value) {
     return featureCollection.value.features.map((feature) => {
-      return normalizeOblastName(feature.properties.name_1);
+      return normalizeO(feature.properties.name_1);
     });
   }
 });
@@ -136,7 +136,7 @@ const geoOblastNames = computed(() => {
 const dataOblastNames = computed(() => {
   if (props.oblastData) {
     return props.oblastData.reduce((acc, oblast) => {
-      acc[normalizeOblastName(oblast.oblastNameEnglish)] = oblast;
+      acc[oblast.oblastNameNormalized] = oblast;
       return acc;
     }, {});
   }
@@ -145,7 +145,7 @@ const dataOblastNames = computed(() => {
 const scaledDataOblastNames = computed(() => {
   if (props.oblastData) {
     return props.oblastData.reduce((acc, oblast) => {
-      const oblastName = normalizeOblastName(oblast.oblastNameEnglish)
+      const oblastName = oblast.oblastNameNormalized;
       acc[oblastName] = {
         ...oblast,
         [props.valueKey]: formatAndScaleValue(
@@ -160,11 +160,11 @@ const scaledDataOblastNames = computed(() => {
 });
 
 // a function to receive an oblast shape and fetch the proper data to determine and return fill color
-function findOblastFillColor(d) {
+function findOblastFillColor(oblastShape) {
   // console.log('finding oblast color for: ', d)
   // normalize the oblast shape name to match the oblast data name
   if(!dataOblastNames.value) return 'purple'
-  const shapeName1 = normalizeOblastName(d.properties.name_1);
+  const shapeName1 = normalizeOblastName(oblastShape.properties.name_1);
   const oblastNameKeys = Object.keys(dataOblastNames.value);
   const oblastNameSet = new Set(oblastNameKeys);
   if (oblastNameKeys.length > 0 && !oblastNameSet.has(shapeName1)) {
@@ -177,7 +177,6 @@ function findOblastFillColor(d) {
   const shapeValue = oblastData ? oblastData[props.valueKey] : 0;
   if (shapeValue) return valueColorScale.value(+shapeValue);
   else return "#FFF";
-
 }
 
 // useSortedData({ oblastScales: props.oblastScales }).then((data) => {
@@ -339,37 +338,6 @@ Data processing
 //   });
 // }
 
-// We use the spelling from the data set - NOT the map property data
-function standardizeOblastSpelling(oblastName) {
-  switch (oblastName) {
-    // TODO crimea / sevastopal are missing due to russian occupation.
-    case "khmelnytskyy":
-      return "khmelnytskiy";
-    case "kiev":
-      return "kyiv";
-    case "kiev-city":
-      return "kyiv";
-    case "odessa":
-      return "odesa";
-    case "mykolayiv":
-      return "mikolayiv";
-    case "transcarpathia":
-      return "zakarpattya";
-    default:
-      return oblastName
-  }
-}
-
-// Normalize our oblast name using slugify
-function normalizeOblastName(key) {
-  if (!key) return key;
-  return standardizeOblastSpelling(
-    slugify(key, {
-      strict: true,
-      lower: true,
-    })
-  );
-}
 </script>
 <style>
 #map {

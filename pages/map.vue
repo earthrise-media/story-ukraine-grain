@@ -136,7 +136,7 @@ const selectedOblasts = ref([]);
 function updateForecastScale(scaleValue) {
   selectedScaleValue.value = scaleValue;
   selectedOblasts.value.forEach((oblast) => {
-    oblastForecastScale.value[normalizeOblastName(oblast)] = scaleValue;
+    oblastForecastScale.value[oblast.oblastNameNormalized] = scaleValue;
   });
 }
 
@@ -175,7 +175,7 @@ const mapSvg = ref(null);
 
 // This is a reactive ref with a default value
 // For now set to oblast name since sliders will change sorting rank of values
-const sortKey = ref("oblastNameUkrainian");
+const sortKey = ref("oblastNameNormalized");
 const valueKey = ref("harvestedArea");
 
 // Make a D3 color scale for the values
@@ -222,14 +222,6 @@ const aggregate = (topology, objects, idProperty) => {
     })),
   };
 };
-
-function normalizeOblastName(key) {
-  if (!key) return key;
-  return slugify(key, {
-    strict: true,
-    lower: true,
-  });
-}
 
 // slugify('some string', {
 //   replacement: '-',  // replace spaces with replacement character, defaults to `-`
@@ -283,9 +275,8 @@ onMounted(async () => {
 
     d3.json("/data/stanford-ukraine-geojson.json").then((geographicData) => {
       // create an object where the keys are the oblast names and the values are the data
-      parsedDataByName.value = allData.reduce((acc, d) => {
-        // console.log("key: ", d.oblastNameEnglish)
-        acc[normalizeOblastName(d.oblastNameEnglish)] = d;
+      parsedDataByName.value = allData.reduce((acc, oblast) => {
+        acc[oblast.oblastNameNormalized] = oblast;
         return acc;
       }, {});
 
@@ -302,7 +293,7 @@ watch(activeGrainType, (newGrainType) => {
 
   // create an object where the keys are the oblast names and the values are the data
   parsedDataByName.value = newData.reduce((acc, d) => {
-    acc[d.oblastNameEnglish] = d;
+    acc[d.oblastNameNormalized] = d;
     return acc;
   }, {});
 
