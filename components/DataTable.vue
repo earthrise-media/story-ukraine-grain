@@ -1,6 +1,5 @@
 <template>
   <table id="data-table" class="pa4 f6 w-100">
-    <!-- use a transition group to animate the table -->
     <thead>
       <tr class="tl">
         <th>Oblast</th>
@@ -9,11 +8,12 @@
         <th>Volume</th>
       </tr>
     </thead>
-    <TransitionGroup name="table" tag="tbody" v-if="sortedDataByGrainType">
+    <tbody v-if="sortedDataByGrainType">
       <tr
         v-for="oblast in sortedDataByGrainType"
         :key="oblast.oblastNameUkrainian"
       >
+      <!-- <pre class="h3 overflow-y-auto ba b--red">{{oblast}}</pre> -->
         <td class="w-20">{{ oblast.oblastNameUkrainian }}</td>
         <td class="w-20">{{ oblast.harvestedArea }}</td>
         <td class="w-20">{{ oblast.grainYield }}</td>
@@ -23,7 +23,7 @@
             <input
               type="range"
               min="0"
-              max="100"
+              max="150"
               class="slider"
               @change="
                 setOblastScale($event.target.value, oblast.oblastNameUkrainian)
@@ -35,7 +35,7 @@
           </div>
         </td>
       </tr>
-    </TransitionGroup>
+    </tbody>
 
     <tfoot>
       <tr class="bg-gray white">
@@ -65,13 +65,16 @@ const props = defineProps({
     //   "Kharkiv": 0.5,
     // }
   },
+  activeGrainType: {
+    type: String,
+    required: true,
+  },
 });
 
-const emit = defineEmits(["sliderChange"]);
+const sortedDataByGrainType = ref({});
+const numberFormat = format(",.0f");
 
-// when you load you have to emit default values
-// TODO: See if we need to emit default values
-// onMounted(() => emitSliderValues())
+const emit = defineEmits(["sliderChange"]);
 
 // keep track of user-set slider values
 const userSetSliderPercentages = ref({});
@@ -84,33 +87,44 @@ const oblastSliderPercentages = computed(() =>
 const emitSliderValues = () =>
   emit("sliderChange", oblastSliderPercentages.value);
 
-// // When the user changes a slider, update the userSetSliderPercentages
-// this causes an unhandled error
-const sortedDataByGrainType = await useSortedData({
-  scaleByOblast: oblastSliderPercentages.value,
-});
-
-// console.log('🚀 ~ file: DataTable.vue ~ line 80 ~ sortedDataByGrainType', sortedDataByGrainType)
-
-// // format numbers
-const numberFormat = format(",.0f");
+  // set the percentage for a given oblast based on a slider event
+function setOblastScale(percentage, oblastName) {
+  // convert to a scalar before storing in the map of user-set values
+  userSetSliderPercentages.value[oblastName] = +percentage / 100;
+  // merge scenario and user set sliders
+  emitSliderValues();
+}
 
 // sums up the values for a given column
 function computeTotal(columnKey) {
-  // console.log('💾 sortedDataByGrainType', sortedDataByGrainType)
+  // console.log('💾 sortedDataByGrainType', sortedDataByGrainType.value)
+  if(!sortedDataByGrainType.value) return 0;
   return numberFormat(
-    sortedDataByGrainType.reduce(
+    sortedDataByGrainType.value.reduce(
       (acc, { [columnKey]: value }) => acc + +value,
       0
     )
   );
 }
 
-// sums of the values for each column
-const totalHarvestedArea = computed(() => computeTotal("harvestedArea"));
-const totalYield = computed(() => computeTotal("grainYield"));
-const totalVolume = computed(() => computeTotal("volume"));
+const totalHarvestedArea = ref(0);
+const totalYield = ref(0);
+const totalVolume = ref(0);
 
+watch(props.activeScenarioScalar, async () => {
+  // request the data for the current scenario
+  sortedDataByGrainType.value = await useSortedData({
+    oblastScales: oblastSliderPercentages.value,
+    grainType: props.activeGrainType
+  });
+
+  // compute the totals based on the new data
+  totalHarvestedArea.value = computeTotal("harvestedArea");
+  totalYield.value = computeTotal("grainYield");
+  totalVolume.value = computeTotal("volume");
+}, { immediate: true });
+
+// a function to return the percentage for a given oblast
 // get the percentage for a given oblast
 function getOblastPercentage(oblastName) {
   const sliderScalar = oblastSliderPercentages.value[oblastName];
@@ -118,11 +132,4 @@ function getOblastPercentage(oblastName) {
   return (scalar * 100).toFixed();
 }
 
-// set the percentage for a given oblast
-function setOblastScale(percentage, oblastName) {
-  // convert to a scalar before storing in the map of user-set values
-  userSetSliderPercentages.value[oblastName] = +percentage / 100;
-  // merge scenario and user set sliders
-  emitSliderValues();
-}
 </script>

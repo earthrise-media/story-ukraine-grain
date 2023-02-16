@@ -10,14 +10,14 @@
         class="fixed top-0 right-0"
         ref="oblastMap"
         :config="oblastMapConfig"
-        :oblastScales="scenario.oblastScales"
+        :oblastScales="scenarioOblastScales"
         :oblastData="oblastData"
-        :grainType="grainType"
+        :activeGrainType="grainType"
         :width="graphicWidth"
         :valueKey="oblastMapConfig.valueKey"
         :style="{
           // opacity: mapOpacity,
-          opacity: oblastMapConfig.visibility ? mapOpacity : 0,
+          //opacity: oblastMapConfig.visibility ? mapOpacity : 0,
         }"
       />
 
@@ -30,7 +30,7 @@
         :width="graphicWidth"
       /> -->
 
-      <SankeyChart
+      <!-- <SankeyChart
         v-if="sankeyConfig.visibility"
         ref="sankeyChart"
         class="fixed top-0 right-0"
@@ -38,7 +38,7 @@
         :importExportData="importExportData"
         :width="graphicWidth"
         :stepIndex="stepIndex"
-      />
+      /> -->
     </div>
 
     <div class="text-container w-50 center relative">
@@ -121,12 +121,14 @@
           However, if we switch to the large impact scenario, exports drop by a
           whopping TK%, with the majority of the losses being felt by TK, TK,
           and the TK.
+
+          <pre class="f6 h5 overflow-y-auto">
+            {{scenario}}
+          </pre>
         </span>
         <DataTable
-          :activeScenarioScalar="{
-            // sample scenario sets the first oblast to 50%
-            '7260': 0.5,
-          }"
+          :activeScenarioScalar="scenarioOblastScales"
+          :activeGrainType="grainType"
           class="w-100 bt b--light-gray mt2 fl"
           @sliderChange="handleSliderChange"
         />
@@ -162,8 +164,7 @@ const stepProgress = ref(0); // keep track of the progress within a step
 
 // const grainType = useActiveGrainType()
 const grainType = ref(
-  "Збір урожаю пшениці ярої на 01 грудня 2021 року1\
-Harvesting of spring wheat as of 01 December 20211"
+  "12 кукур-Table 1"
 );
 
 // create a d3 number format to always show 1 decimal place
@@ -186,6 +187,7 @@ const scenario = ref(scenarioOptions[scenarioIndex.value]);
 
 // When the slider emits a change, write those changes to the scenario
 function handleSliderChange(oblastScales) {
+  console.log('slider changed', oblastScales)
   // oblastScales looks like
   // {1250: 0.76, 7260: 0.5}
   // where the key is the oblast id and the value is the scale
@@ -194,6 +196,11 @@ function handleSliderChange(oblastScales) {
     oblastScales,
   };
 }
+
+// make a computed to return the oblast scales for the active scenario
+const scenarioOblastScales = computed(() => {
+  return scenario.value.oblastScales;
+});
 
 const oblastMapConfig = ref({
   visibility: true, // true = show, false = hide
