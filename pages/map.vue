@@ -175,7 +175,7 @@ const mapSvg = ref(null);
 
 // This is a reactive ref with a default value
 // For now set to oblast name since sliders will change sorting rank of values
-const sortKey = ref("oblastNameUkrainian");
+const sortKey = ref("oblastNameEnglish");
 const valueKey = ref("harvestedArea");
 
 // Make a D3 color scale for the values

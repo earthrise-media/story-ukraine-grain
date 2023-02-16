@@ -33,17 +33,17 @@ function forecastDataByGrainType(dataByGrainType, oblastScales) {
           volumeOriginal: formatValue(oblast.volume),
           harvestedArea: formatAndScaleValue(
             oblast.harvestedArea,
-            oblast.oblastNameUkrainian,
+            oblast.oblastNameEnglish,
             oblastScales,
           ),
           grainYield: formatAndScaleValue(
             oblast.grainYield,
-            oblast.oblastNameUkrainian,
+            oblast.oblastNameEnglish,
             oblastScales
           ),
           volume: formatAndScaleValue(
             oblast.volume,
-            oblast.oblastNameUkrainian,
+            oblast.oblastNameEnglish,
             oblastScales
           ),
         };

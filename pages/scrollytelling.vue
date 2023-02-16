@@ -5,9 +5,9 @@
         <h2>World grain producer breakdown</h2>
       </div> -->
       <h3 class="w-100">Step: {{ stepIndex }}</h3>
-      <!-- <pre>
+      <pre>
         {{scenario.oblastScales}}
-      </pre> -->
+      </pre>
       <UkraineOblastMap
         v-show="/*oblastMapConfig.visibility*/ true"
         class="fixed top-0 right-0"
