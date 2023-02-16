@@ -1,5 +1,5 @@
 <template>
-  <table id="data-table" class="ba b--red">
+  <table id="data-table" class="pa4 f6 w-100">
     <!-- use a transition group to animate the table -->
     <thead>
       <tr class="tl">
