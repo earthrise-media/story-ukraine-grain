@@ -13,7 +13,6 @@
         v-for="oblast in sortedDataByGrainType"
         :key="oblast.oblastNameNormalized"
       >
-      <!-- <pre class="h3 overflow-y-auto ba b--red">{{oblast}}</pre> -->
         <td class="w-20">{{ oblast.oblastNameNormalized }}</td>
         <td class="w-20">{{ oblast.harvestedArea }}</td>
         <td class="w-20">{{ oblast.grainYield }}</td>
