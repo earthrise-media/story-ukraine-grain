@@ -173,6 +173,7 @@ const paragraphClasses = "pa4 measure f2 lh-copy";
 // USE COMPOSABLES FOR GLOBAL STATE AND PASS TO COMPONENTS
 
 const active = useActiveData()
+console.log('global data in scrollytelling:', active)
 const { activeGrainType } = useActiveGrainType();
 const { scenario, setOblastScale, setScenario } = useCurrentScenario()
 

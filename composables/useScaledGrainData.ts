@@ -17,6 +17,7 @@ function formatValue(value) {
 }
 
 const scaleGrainData = (grainData, oblastScales) => {
+  console.log('updating scale...', oblastScales)
   return grainData.map((oblast) => ({
     ...oblast,
     harvestedAreaOriginal: formatValue(oblast.harvestedArea),
@@ -44,5 +45,8 @@ export function useScaledGrainData() {
   const grainData = useGrainData();
   const { scenario } = useCurrentScenario();
 
-  return computed(() => scaleGrainData(grainData, scenario.value.oblastScales))
+  return computed(() => {
+    // TODO: this should rerun on every update to `scenario.value.oblastScales` but it isn't
+    return scaleGrainData(grainData, scenario.value.oblastScales)
+  })
 }

@@ -9,7 +9,6 @@ function computeTotal(columnKey, activeData) {
 }
 
 export function useActiveData() {
-  // fetch the forecast data from the json file
   const scaledDataByGrainType = useScaledDataByGrainType();
   const { activeGrainType } = useActiveGrainType();
 
