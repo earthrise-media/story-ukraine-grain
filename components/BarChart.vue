@@ -1,37 +1,34 @@
 <template>
+  <!-- {{props.oblastData}} -->
+  <!-- {{data}} -->
+
   <svg ref="svg" :width="width" :height="width / 2" class="ba bw3 b--purple">
-    <!-- use d3 scales and vue refs to create a responsive horizontal bar chart -->
+    <!-- use d3 scales and vue refs to create a responsive horizontal bar chart 
+      the xScale will determine width of the bars and x position of the bars
+      the yScale will determine the height of the bars and the y position of the bars
+    -->
     <!-- add a group for each bar -->
     <g
-      v-for="(oblast, i) in oblastData"
-      :key="i"
-      :transform="`translate(0, ${xScale(i)})`"
-      class="bar-group"
+      v-for="(oblast, i) in data"
+      :key="oblast.label"
     >
       <!-- add a rect for the bar -->
       <rect
-        :width="yScale(oblast[config.dataKey])"
-        :height="yScale.bandwidth()"
-        fill="black"
-        class="bar"
+        :width="xScale.bandwidth()"
+        :height="yScale(oblast.value)"
+        :fill="colorScale(oblast.value)"
+        :x="xScale(oblast.label)"
+        :y="height - yScale(oblast.value)"
       />
-      <!-- add a text for the label -->
+
+      <!-- add a text element for the label -->
       <text
-        :x="yScale(oblast[config.dataKey]) + 5"
-        :y="yScale.bandwidth() / 2"
-        :dy="0.32 + 'em'"
-        class="bar-label"
+        :x="xScale(oblast.label) + xScale.bandwidth() / 2"
+        :y="yScale(oblast.value) + 15"
+        text-anchor="middle"
+        fill="white"
       >
-        {{ oblast.oblast }}
-      </text>
-      <!-- add a text for the value -->
-      <text
-        :x="yScale(oblast[config.dataKey]) + 5"
-        :y="yScale.bandwidth() / 2"
-        :dy="1.32 + 'em'"
-        class="bar-value"
-      >
-        {{ oblast[config.dataKey] }}
+        {{oblast.label}}
       </text>
     </g>
   </svg>
@@ -62,11 +59,14 @@ const props = defineProps({
 // and it will show data from oblastData
 // the chart will be responsive to the width prop
 
+// make height a computed from props.width
+const height = computed(() => props.width / 2);
+
 // compute data from oblastData
 const data = computed(() => {
-  props.oblastData.map((d) => ({
-    label: d.oblast,
-    value: d[props.config.dataKey],
+  return props.oblastData.map((d) => ({
+    label: d.oblastNameNormalized,
+    value: d[props.config.yProperty],
   }));
 });
 
@@ -75,24 +75,20 @@ const dataKey = "harvestedArea";
 // find the extent of the data from the dataKey
 const extent = d3.extent(props.oblastData, (d) => d[dataKey]);
 
-// create a categorical scale for the x axis, so each bar is evenly spaces
+// create a categorical scale for the x axis, so each bar is evenly spaced on the x axis
 const xScale = d3
   .scaleBand()
-  .range([0, props.width / 2])
-  .padding(0.1);
+  .range([0, props.width])
 
-// create a scale for the y axis
-const yScale = d3
-  .scaleBand()
-  .range([0, props.width / 2])
-  .padding(0.1);
+const yScale = d3.scaleLinear().range([height, 0]);
 
 // set the domain of the y scale when the data changes props.oblastData changes
 watch(
   () => props.oblastData,
   () => {
-    yScale.domain(props.oblastData.map((d) => d.oblast));
+    yScale.domain(data.map((d) => d.oblast));
     // set the xScale domain to the oblast names
+    xScale.domain(props.oblastData.map((d) => d.oblast));
   }
 );
 

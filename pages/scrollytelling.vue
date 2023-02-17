@@ -6,7 +6,7 @@
       </div> -->
       <h3 class="w-100">Step: {{ stepIndex }}</h3>
       <UkraineOblastMap
-        v-show="/*oblastMapConfig.visibility*/ true"
+        v-show="/*oblastMapConfig.visibility*/ false"
         class="fixed top-0 right-0"
         ref="oblastMap"
         :config="oblastMapConfig"
@@ -21,14 +21,14 @@
         }"
       />
 
-      <!-- <BarChart
-        v-if="barChartConfig.visibility"
+      <BarChart
+        v-if="/*barChartConfig.visibility*/true"
         ref="barChart"
         :config="barChartConfig"
         :scenario="scenario"
         :oblastData="oblastData"
         :width="graphicWidth"
-      /> -->
+      />
 
       <!-- <SankeyChart
         v-if="sankeyConfig.visibility"
@@ -206,11 +206,11 @@ const sankeyConfig = ref({
   visibility: true, // true = show, false = hide
 });
 
-// const barChartConfig = ref({
-//   visibility: false, // true = show, false = hide
-//   xProperty: "oblastNameUkrainian",
-//   yProperty: "harvestedArea",
-// });
+const barChartConfig = ref({
+  visibility: false, // true = show, false = hide
+  xProperty: "oblastNameUkrainian",
+  yProperty: "harvestedArea",
+});
 
 // create a computed to smoothly fade in the map opacity from 0 to 1 between step 3 and 4 and hide the map before step 3
 const mapOpacity = computed(() => {
