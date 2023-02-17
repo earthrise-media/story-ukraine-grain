@@ -1,9 +1,6 @@
-// can also use: "12 кукур-Table 1"
-const DEFAULT_GRAIN_TYPE = "10 пшенЯР-Table 1";
+const activeGrainTypeState = ref(null);
 
-const activeGrainTypeState = ref(DEFAULT_GRAIN_TYPE);
-
-// make a stateful composable to hold the activeGrainType
+// stateful composable that holds the active fileName / grain type key that computes activeData from dataByGrainType
 export const useActiveGrainType = () => {
   // set active grain type
   const setActiveGrainType = (activeGrainType) => {

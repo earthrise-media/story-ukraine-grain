@@ -5,8 +5,9 @@
         <h2>World grain producer breakdown</h2>
       </div> -->
       <h3 class="w-100">Step: {{ stepIndex }}</h3>
-      <UkraineOblastMap
-        v-if="active.activeDataByOblast"
+      <pre class="bw4 ba b--red h5">active? {{active}}</pre>
+      <!-- <UkraineOblastMap
+        v-if="active"
         class="fixed top-0 right-0"
         ref="oblastMap"
         :config="oblastMapConfig"
@@ -18,7 +19,7 @@
           // opacity: mapOpacity,
           //opacity: oblastMapConfig.visibility ? mapOpacity : 0,
         }"
-      />
+      /> -->
 
       <!-- <BarChart
         v-if="barChartConfig.visibility"
@@ -124,16 +125,15 @@
       </p>
 
       <p>
-
-        <DataTable
+        <!-- <DataTable
           :activeData="active.activeData"
           :oblastScales="scenario.oblastScales"
           :totalHarvestedArea="active.totalHarvestedArea"
           :totalYield="active.totalYield"
           :totalVolume="active.totalVolume"
           class="w-100 bt b--light-gray mt2 fl"
-          @sliderChange="setOblastScale"
-        />
+          @sliderChange="handleSliderChange"
+        /> -->
       </p>
 
       <p :class="paragraphClasses">
@@ -172,10 +172,26 @@ const paragraphClasses = "pa4 measure f2 lh-copy";
 
 // USE COMPOSABLES FOR GLOBAL STATE AND PASS TO COMPONENTS
 
+
+// TODO: SOMETHING WEIRD HERE, NOT GETTING DATA
 const active = useActiveData()
+
+
+
+
 console.log('global data in scrollytelling:', active)
-const { activeGrainType } = useActiveGrainType();
+const { activeGrainType, setActiveGrainType } = useActiveGrainType();
+const DEFAULT_GRAIN_TYPE = "10 пшенЯР-Table 1";
+setActiveGrainType(DEFAULT_GRAIN_TYPE)
+// can also use: "12 кукур-Table 1"
+
 const { scenario, setOblastScale, setScenario } = useCurrentScenario()
+const handleSliderChange = ({ oblastName, percentage }) => {
+  const scale = +percentage / 100;
+  setOblastScale({ oblastName, scale })
+}
+setOblastScale({ oblastName: 'kharkiv', scale: 0.39 }) // test whether oblast scales are working
+
 
 // use setScenario to apply these
 const scenarioButtons = [
@@ -183,6 +199,15 @@ const scenarioButtons = [
   { name: "Medium Impact", scale: 0.75, oblastScales: {} },
   { name: "Large Impact", scale: 0.9, oblastScales: {} },
 ];
+// setScenario(scenarioButtons[1]) // this helps us see whether the scenario buttons are going through 
+
+console.log('ALL DATA IN SCROLLYTELLING', {
+  // activeGrainType,
+  // scenario,
+  // oblastScales: scenario.value.oblastScales,
+  active,
+  activeData: active.activeData,
+})
 
 const oblastMapConfig = ref({
   visibility: true, // true = show, false = hide
