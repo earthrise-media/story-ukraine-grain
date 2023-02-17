@@ -4,10 +4,18 @@
       <!-- <div id="step-0-graphic" v-if="stepIndex === 0">
         <h2>World grain producer breakdown</h2>
       </div> -->
-      <h3 class="w-100 bg-black white">Step: {{ stepIndex }}</h3>
-      <UkraineOblastMap v-show="/*oblastMapConfig.visibility*/ true" class="" ref="oblastMap"
-        :config="oblastMapConfig" :oblastScales="scenario.oblastScales" :oblastData="oblastData"
-        :activeGrainType="grainType" :width="graphicWidth" :valueKey="oblastMapConfig.valueKey" :style="{
+      <h3 class="w-100">Step: {{ stepIndex }}</h3>
+      <!-- <pre class="bw4 ba b--red h5">active? {{active}}</pre> -->
+      <UkraineOblastMap
+        v-if="active"
+        class=""
+        ref="oblastMap"
+        :config="oblastMapConfig"
+        :activeDataByOblast="active.activeDataByOblast"
+        :activeGrainType="activeGrainType"
+        :width="graphicWidth"
+        :valueKey="oblastMapConfig.valueKey"
+        :style="{
           // opacity: mapOpacity,
           //opacity: oblastMapConfig.visibility ? mapOpacity : 0,
         }" />
@@ -122,6 +130,16 @@
         </span>
       </p>
 
+      <p class="pa2 overflow-y-auto br1 mt2 bg-white-o-40">
+        <DataTable
+          :activeData="active.activeData"
+          :oblastScales="scenario.oblastScales"
+          :totalHarvestedArea="active.totalHarvestedArea"
+          :totalYield="active.totalYield"
+          :totalVolume="active.totalVolume"
+          class="w-100 bt b--light-gray mt2 fl"
+          @sliderChange="handleSliderChange"
+        />
       <!-- small impact -->
       <p :class="paragraphClasses">
         <span class="bg-white">
@@ -147,11 +165,6 @@
           how they might impact grain production in Ukraine in the future.
         </span>
       </p>
-
-      <div class="pa2 overflow-y-auto br1 mt2 bg-white-o-40">
-        <DataTable class="" :activeScenarioScalar="scenario.oblastScales" :activeGrainType="grainType"
-          @sliderChange="handleSliderChange" />
-      </div>
 
       <h2 class="f-subheadline pa2 pa5-ns">
         Who is affected downstream?
@@ -216,7 +229,6 @@ import anime from "animejs/lib/anime.es.js";
 const stepContainer = ref(null); // the html element for the container
 
 // we will fill these later with our data
-const oblastData = ref([]);
 const importExportData = ref([]);
 
 const animatedExportNumber = ref(0); // this will animate up to 27.8
@@ -225,11 +237,6 @@ const stepIndex = ref(0); // keep track of the index
 const stepProgress = ref(0); // keep track of the progress within a step
 // const pageProgress = ref(0) // keep track of the total page progress
 
-// const grainType = useActiveGrainType()
-const grainType = ref(
-  // "12 кукур-Table 1"
-  "10 пшенЯР-Table 1"
-);
 
 // create a d3 number format to always show 1 decimal place
 const numberFormat = d3.format(",.1f");
@@ -237,28 +244,57 @@ const numberFormat = d3.format(",.1f");
 // the tachyons classes we will use for the paragraphs
 const paragraphClasses = "pa4 measure f2 lh-copy w-50  ml2 ml5-ns";
 
-const scenarioOptions = [
+// USE COMPOSABLES FOR GLOBAL STATE AND PASS TO COMPONENTS
+
+
+// TODO: SOMETHING WEIRD HERE, NOT GETTING DATA
+const active = useActiveData()
+
+
+
+
+// console.log('global data in scrollytelling:', active)
+const { activeGrainType, setActiveGrainType } = useActiveGrainType();
+// const DEFAULT_GRAIN_TYPE = "10 пшенЯР-Table 1";
+const DEFAULT_GRAIN_TYPE = "12 кукур-Table 1";
+setActiveGrainType(DEFAULT_GRAIN_TYPE)
+// can also use: "12 кукур-Table 1"
+
+const { scenario, setOblastScale, setScenario } = useCurrentScenario()
+const handleSliderChange = ({ oblastName, percentage }) => {
+  const scale = +percentage / 100;
+  setOblastScale({ oblastName, scale })
+}
+setOblastScale({ oblastName: 'kharkiv', scale: 0.39 }) // test whether oblast scales are working
+
+
+// on mounted, after 2 seconds, set oblastScale for kiev
+// use to debug whether user-set scales are working or not
+// onMounted(() => {
+//   setTimeout(() => {
+//     setOblastScale({ oblastName: 'kiev', scale: 0.44 })
+//     console.log(scenario.value.oblastScales, 'oblastScales')
+//   }, 500)
+// })
+
+// do we need to probably maybe watch scenario?
+
+
+// use setScenario to apply these
+const scenarioButtons = [
   { name: "Small Impact", scale: 0.5, oblastScales: {} },
   { name: "Medium Impact", scale: 0.75, oblastScales: {} },
   { name: "Large Impact", scale: 0.9, oblastScales: {} },
 ];
+// setScenario(scenarioButtons[1]) // this helps us see whether the scenario buttons are going through 
 
-const scenarioIndex = ref(0);
-// const scenario = computed(() => scenarioOptions[scenarioIndex.value]);
-const scenario = ref(scenarioOptions[scenarioIndex.value]);
-// scenario looks like
-// { name: "Small Impact", scale: 0.5, oblastScales: {} }
-
-// When the slider emits a change, write those changes to the scenario
-function handleSliderChange(oblastScales) {
-  // oblastScales looks like
-  // {1250: 0.76, 7260: 0.5}
-  // where the key is the oblast id and the value is the scale
-  scenario.value = {
-    ...scenario.value,
-    oblastScales,
-  };
-}
+// console.log('ALL DATA IN SCROLLYTELLING', {
+//   // activeGrainType,
+//   scenario,
+//   oblastScales: scenario.value.oblastScales,
+//   // active,
+//   // activeData: active.activeData,
+// })
 
 const oblastMapConfig = ref({
   visibility: true, // true = show, false = hide
@@ -296,11 +332,6 @@ const mapOpacity = computed(() => {
 //   return stepContainer.value ? stepContainer.value.offsetWidth : 900;
 // });
 // const graphicWidth = 900;
-
-// function to handle when a user changes the scenario
-// const scenarioChange = (newScenario) => {
-//   scenario.value = newScenario;
-// };
 
 // watch for changes to stepIndex when a user scrolls
 watch(
@@ -349,13 +380,6 @@ onMounted(() => {
       stepProgress.value = response.progress;
     })
     .onStepExit((response) => { });
-
-  // load our oblast data from public/data/ovuzpsg_1221/cleaned/oblast_data.json
-  fetch("/data/ovuzpsg_1221/cleaned/all_data.json")
-    .then((response) => response.json())
-    .then((data) => {
-      oblastData.value = data;
-    });
 
   // load our import/export data from public/data/comtrade_imports/00_all_data_ukraine.csv as parse with d3.csvParse
   fetch("/data/comtrade_imports/00_all_data_ukraine.csv")

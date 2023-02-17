@@ -18,7 +18,7 @@
       @click="oblast.selected = !oblast.selected"
     />
 
-    <g v-if="oblastData">
+    <g v-if="activeDataByOblast">
       <text
       v-if="featureCollection"
       v-for="oblast in featureCollection.features"
@@ -51,7 +51,7 @@
       @mouseout="oblast.focused = false"
       @click="oblast.selected = !oblast.selected"
       >
-        {{findOblastValue(oblast)}} {{grainType}}
+        {{findOblastValue(oblast)}} {{activeGrainType}}
       </text>     
     </g>
   </svg>
@@ -59,19 +59,15 @@
 <script setup>
 import * as d3 from "d3";
 import * as topojson from "topojson";
-import { normalizeOblastName, formatAndScaleValue } from "@/helpers.js";
+import { normalizeOblastName } from "@/helpers.js";
 
 // set up our props
 const props = defineProps({
-  oblastScales: {
+  activeDataByOblast: {
     type: Object,
     required: true,
   },
-  oblastData: {
-    type: Array,
-    required: true,
-  },
-  grainType: {
+  activeGrainType: {
     type: String,
     required: false,
   },
@@ -84,14 +80,6 @@ const props = defineProps({
     required: true,
   },
 });
-
-// watch for when oblastScales changes and console.log it
-watch(
-  () => props.oblastScales,
-  (oblastScales) => {
-    console.log("🌎 oblastScales", oblastScales);
-  }
-);
 
 // This is a template ref, so mapSvg.value is the actual SVG element
 // because we set ref="mapSvg" on the SVG element
@@ -161,74 +149,11 @@ watch(geographicData, (newData) => {
   }
 });
 
-const dataOblastNames = computed(() => {
-  if (props.oblastData) {
-    return props.oblastData.reduce((acc, oblast) => {
-      acc[oblast.oblastNameNormalized] = oblast;
-      return acc;
-    }, {});
-  }
-});
-
-const scaledDataOblastNames = computed(() => {
-  if (props.oblastData) {
-    // make a map so that we can look up the oblast data by oblast name
-    const oblastDataMap = new Map();
-    // now we can loop through the data and add it to the map
-    const oblastDataKeys = props.oblastData.map((oblast) => {
-      const oblastName = oblast.oblastNameNormalized;
-      oblastDataMap.set(oblastName, oblast);
-      return oblastName;
-    });
-    // make a set so that we can check if the oblast name is in the data
-    const oblastDataKeysSet = new Set(oblastDataKeys);
-    
-    // now reduce the feature collection to an object with the oblast name as the key
-    return featureCollection.value.features.reduce((acc, oblast) => {
-      // normalize the oblast name
-      const oblastName = normalizeOblastName(oblast.properties.name_1);
-      // check if the oblast name is in the data
-      if (oblastDataKeysSet.has(oblastName)) {
-        // if it is in the data, get the oblast data from the map
-        const oblastData = oblastDataMap.get(oblastName);
-        acc[oblastName] = {
-          ...oblastData, // add the oblast data
-          [props.valueKey]: formatAndScaleValue(
-            oblastData[props.valueKey],
-            oblastName,
-            props.oblastScales
-          ), // add the scaled value
-        };
-      }
-      return acc;
-    }, {});
-  }
-});
-
 function findOblastValue(oblast) {
   const oblastName = normalizeOblastName(oblast.properties.name_1);
-  const oblastData = scaledDataOblastNames.value[oblastName];
+  const oblastData = props.activeDataByOblast[oblastName];
   return oblastData ? oblastData[props.valueKey] : 0;
 }
-
-// a function to receive an oblast shape and fetch the proper data to determine and return fill color
-// function findOblastFillColor(oblastShape) {
-//   if(!dataOblastNames.value) return 'purple'
-//   const shapeName1 = normalizeOblastName(oblastShape.properties.name_1);
-//   const oblastNameKeys = Object.keys(dataOblastNames.value);
-//   const oblastNameSet = new Set(oblastNameKeys);
-
-//   if (oblastNameKeys.length > 0 && !oblastNameSet.has(shapeName1)) {
-//     // console.log('MISMATCH', shapeName1, oblastNameKeys);
-//   }
-
-//   const oblastData = scaledDataOblastNames.value[shapeName1];
-//   // return oblastData ? 'green' : 'red' // use this to debug which oblasts are receiving data
-
-//   const shapeValue = oblastData ? oblastData[props.valueKey] : 0;
-//   if (shapeValue) return valueColorScale.value(+shapeValue);
-//   else return "#FFF";
-// }
 
 // refactor to use findOblastValue
 function findOblastFillColor(oblastShape) {
