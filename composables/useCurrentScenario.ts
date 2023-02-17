@@ -17,7 +17,12 @@ export const useCurrentScenario = () => {
   // set scalar for a specific oblast in state
   const setOblastScale = ({ oblastName, scale }) => {
     // convert to a scalar before storing in the map of user-set values
-    scenarioState.value.oblastScales[oblastName] = scale;
+    // scenarioState.value.oblastScales[oblastName] = scale;
+    const newScales = {
+      ...scenarioState.value.oblastScales,
+      [oblastName]: scale,
+    }
+    scenarioState.value.oblastScales = newScales;
   }
 
   // set entire scenario (i.e. projection buttons)
