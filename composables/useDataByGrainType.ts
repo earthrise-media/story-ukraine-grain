@@ -1,8 +1,13 @@
 import { group } from 'd3'
 
-export async function useDataByGrainType() {
-  const grainData = await useGrainData();
-  // const groupedData = group(grainData, (d) => d.metadata[0][0]);
+export function useDataByGrainType() {
+  const grainData = useGrainData();
   const groupedData = group(grainData, (d) => d.fileName);
-  return groupedData
+  // remove groupings where the key includes the word "dynamics"
+  groupedData.forEach((value, key) => {
+    if (key.includes("dynamics")) {
+      groupedData.delete(key);
+    }
+  });
+  return groupedData;
 }

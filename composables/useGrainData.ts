@@ -1,5 +1,5 @@
 import allData from '~/src/data/all_data.json'
 
-export async function useGrainData() {
+export function useGrainData() {
   return allData
 }

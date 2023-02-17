@@ -6,13 +6,12 @@
       </div> -->
       <h3 class="w-100">Step: {{ stepIndex }}</h3>
       <UkraineOblastMap
-        v-show="/*oblastMapConfig.visibility*/ true"
+        v-if="active.activeDataByOblast"
         class="fixed top-0 right-0"
         ref="oblastMap"
         :config="oblastMapConfig"
-        :oblastScales="scenario.oblastScales"
-        :oblastData="oblastData"
-        :activeGrainType="grainType"
+        :activeDataByOblast="active.activeDataByOblast"
+        :activeGrainType="activeGrainType"
         :width="graphicWidth"
         :valueKey="oblastMapConfig.valueKey"
         :style="{
@@ -126,11 +125,14 @@
 
       <p>
 
-      <DataTable
-          :activeScenarioScalar="scenario.oblastScales"
-          :activeGrainType="grainType"
+        <DataTable
+          :activeData="active.activeData"
+          :oblastScales="scenario.oblastScales"
+          :totalHarvestedArea="active.totalHarvestedArea"
+          :totalYield="active.totalYield"
+          :totalVolume="active.totalVolume"
           class="w-100 bt b--light-gray mt2 fl"
-          @sliderChange="handleSliderChange"
+          @sliderChange="setOblastScale"
         />
       </p>
 
@@ -153,7 +155,6 @@ import anime from "animejs/lib/anime.es.js";
 const stepContainer = ref(null); // the html element for the container
 
 // we will fill these later with our data
-const oblastData = ref([]);
 const importExportData = ref([]);
 
 const animatedExportNumber = ref(0); // this will animate up to 27.8
@@ -162,11 +163,6 @@ const stepIndex = ref(0); // keep track of the index
 const stepProgress = ref(0); // keep track of the progress within a step
 // const pageProgress = ref(0) // keep track of the total page progress
 
-// const grainType = useActiveGrainType()
-const grainType = ref(
-  // "12 кукур-Table 1"
-  "10 пшенЯР-Table 1"
-);
 
 // create a d3 number format to always show 1 decimal place
 const numberFormat = d3.format(",.1f");
@@ -174,28 +170,18 @@ const numberFormat = d3.format(",.1f");
 // the tachyons classes we will use for the paragraphs
 const paragraphClasses = "pa4 measure f2 lh-copy";
 
-const scenarioOptions = [
+// USE COMPOSABLES FOR GLOBAL STATE AND PASS TO COMPONENTS
+
+const active = useActiveData()
+const { activeGrainType } = useActiveGrainType();
+const { scenario, setOblastScale, setScenario } = useCurrentScenario()
+
+// use setScenario to apply these
+const scenarioButtons = [
   { name: "Small Impact", scale: 0.5, oblastScales: {} },
   { name: "Medium Impact", scale: 0.75, oblastScales: {} },
   { name: "Large Impact", scale: 0.9, oblastScales: {} },
 ];
-
-const scenarioIndex = ref(0);
-// const scenario = computed(() => scenarioOptions[scenarioIndex.value]);
-const scenario = ref(scenarioOptions[scenarioIndex.value]);
-// scenario looks like
-// { name: "Small Impact", scale: 0.5, oblastScales: {} }
-
-// When the slider emits a change, write those changes to the scenario
-function handleSliderChange(oblastScales) {
-  // oblastScales looks like
-  // {1250: 0.76, 7260: 0.5}
-  // where the key is the oblast id and the value is the scale
-  scenario.value = {
-    ...scenario.value,
-    oblastScales,
-  };
-}
 
 const oblastMapConfig = ref({
   visibility: true, // true = show, false = hide
@@ -233,11 +219,6 @@ const mapOpacity = computed(() => {
 //   return stepContainer.value ? stepContainer.value.offsetWidth : 900;
 // });
 const graphicWidth = 900;
-
-// function to handle when a user changes the scenario
-// const scenarioChange = (newScenario) => {
-//   scenario.value = newScenario;
-// };
 
 // watch for changes to stepIndex when a user scrolls
 watch(
@@ -286,13 +267,6 @@ onMounted(() => {
       stepProgress.value = response.progress;
     })
     .onStepExit((response) => {});
-
-  // load our oblast data from public/data/ovuzpsg_1221/cleaned/oblast_data.json
-  fetch("/data/ovuzpsg_1221/cleaned/all_data.json")
-    .then((response) => response.json())
-    .then((data) => {
-      oblastData.value = data;
-    });
 
   // load our import/export data from public/data/comtrade_imports/00_all_data_ukraine.csv as parse with d3.csvParse
   fetch("/data/comtrade_imports/00_all_data_ukraine.csv")
