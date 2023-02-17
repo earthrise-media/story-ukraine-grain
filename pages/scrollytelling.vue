@@ -5,21 +5,12 @@
         <h2>World grain producer breakdown</h2>
       </div> -->
       <h3 class="w-100">Step: {{ stepIndex }}</h3>
-      <UkraineOblastMap
-        v-show="/*oblastMapConfig.visibility*/ true"
-        class="fixed top-0 right-0"
-        ref="oblastMap"
-        :config="oblastMapConfig"
-        :oblastScales="scenario.oblastScales"
-        :oblastData="oblastData"
-        :activeGrainType="grainType"
-        :width="graphicWidth"
-        :valueKey="oblastMapConfig.valueKey"
-        :style="{
+      <UkraineOblastMap v-show="/*oblastMapConfig.visibility*/ true" class="fixed top-0 right-0" ref="oblastMap"
+        :config="oblastMapConfig" :oblastScales="scenario.oblastScales" :oblastData="oblastData"
+        :activeGrainType="grainType" :width="graphicWidth" :valueKey="oblastMapConfig.valueKey" :style="{
           // opacity: mapOpacity,
           //opacity: oblastMapConfig.visibility ? mapOpacity : 0,
-        }"
-      />
+        }" />
 
       <!-- <BarChart
         v-if="barChartConfig.visibility"
@@ -49,11 +40,8 @@
       <p :class="paragraphClasses">
         <span class="bg-white">
           Ukraine's agricultural exports in 2022 totaled <br />
-          <a
-            href="https://www.fas.usda.gov/sites/default/files/2022-04/Ukraine-Factsheet-April2022.pdf"
-            class="link black tc w-20 dib"
-            ><span class="">{{ numberFormat(animatedExportNumber) }}</span></a
-          >
+          <a href="https://www.fas.usda.gov/sites/default/files/2022-04/Ukraine-Factsheet-April2022.pdf"
+            class="link black tc w-20 dib"><span class="">{{ numberFormat(animatedExportNumber) }}</span></a>
           billion, making up 41% of the country's total exports.
         </span>
       </p>
@@ -70,6 +58,96 @@
         <span class="bg-white">
           But in the midst of the conflict with Russia, how is Ukraine's grain
           farming being impacted? Let's take a look.
+        </span>
+      </p>
+
+      <p :class="paragraphClasses">
+        <span class="bg-white">
+          Since the start of the war in 2014, it's estimated that TK Ukrainian soldiers have been killed, and TK
+          civilians have been displaced.
+        </span>
+      </p>
+
+      <p :class="paragraphClasses">
+        <span class="bg-white">
+          The war has taken a significant toll on the country's infrastructure, particularly in the eastern areas most
+          affected
+          by the conflict, where farming infrastructure has been destroyed.
+        </span>
+      </p>
+
+      <p :class="paragraphClasses">
+        <span class="bg-white">
+          The exact impact
+          of the war on grain production isn't possible to quantify, as the
+          ability to collect data has been severely limited by the conflict.
+        </span>
+      </p>
+
+      <!-- introduce oblast map -->
+      <p :class="paragraphClasses">
+        <span class="bg-white">
+          Ukraine's agricultural data is organized by Oblasts, which are like states. Here is a map of Ukraine's
+          Oblasts.
+        </span>
+      </p>
+
+      <!-- introduce oblast map with choropleth -->
+      <p :class="paragraphClasses">
+        <span class="bg-white">
+          We can use this map to visualize the impact of the war on grain production in Ukraine.
+        </span>
+      </p>
+
+      <p :class="paragraphClasses">
+        <span class="bg-white">
+          This map shows total grain production in Ukraine by Oblast before the war started. The more red, the more
+          grain production.
+        </span>
+      </p>
+
+
+      <p :class="paragraphClasses">
+        <span class="bg-white">
+          Using our forecasting tool, we can explore different scenarios and how they might impact grain
+          production in Ukraine in the future.
+        </span>
+      </p>
+
+        <DataTable :activeScenarioScalar="scenario.oblastScales" :activeGrainType="grainType"
+          class="w-100 br1 mt2 bg-white-o-40" @sliderChange="handleSliderChange" />
+
+      <!-- introduce the default small and high impact scenarios, before we open it up to the user to have complete control -->
+      <p :class="paragraphClasses">
+        <span class="bg-white">
+          To get started, take a look at the two scenarios below. The first is a small impact scenario, and the second
+          is a high impact scenario.
+        </span>
+      </p>
+
+      <!-- small impact -->
+      <p :class="paragraphClasses">
+        <span class="bg-white">
+          The small impact scenario predicts that grain production will only be effected by about 15% from normal levels
+          in 2022. This results in a deficit of <strong>TK million tons</strong> of grain, or TK% of Ukraine's total
+          grain production.
+        </span>
+      </p>
+
+      <!-- high impact -->
+      <p :class="paragraphClasses">
+        <span class="bg-white">
+          The high impact scenario predicts that grain production will be effected by as much as 50% from normal levels
+          in 2022. This results in a deficit of <strong>TK million tons</strong> of grain, or <strong>TK%</strong> of
+          Ukraine's total grain production.
+        </span>
+      </p>
+
+      <!-- introduce the slider and allow the user to make their own predictions -->
+      <p :class="paragraphClasses">
+        <span class="bg-white">
+          Now it's your turn to make your own predictions. Use the slider below to simulate different scenarios and see
+          how they might impact grain production in Ukraine in the future.
         </span>
       </p>
 
@@ -121,17 +199,12 @@
           However, if we switch to the large impact scenario, exports drop by a
           whopping TK%, with the majority of the losses being felt by TK, TK,
           and the TK.
-        </span>        
+        </span>
       </p>
 
       <p>
 
-      <DataTable
-          :activeScenarioScalar="scenario.oblastScales"
-          :activeGrainType="grainType"
-          class="w-100 bt b--light-gray mt2 fl"
-          @sliderChange="handleSliderChange"
-        />
+
       </p>
 
       <p :class="paragraphClasses">
@@ -285,7 +358,7 @@ onMounted(() => {
     .onStepProgress((response) => {
       stepProgress.value = response.progress;
     })
-    .onStepExit((response) => {});
+    .onStepExit((response) => { });
 
   // load our oblast data from public/data/ovuzpsg_1221/cleaned/oblast_data.json
   fetch("/data/ovuzpsg_1221/cleaned/all_data.json")
@@ -322,5 +395,13 @@ h2 {
 .text-container {
   z-index: 10;
   /* pointer-events: none; */
+}
+
+.bg-white-o-20 {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bg-white-o-40 {
+  background-color: rgba(255, 255, 255, 0.4);
 }
 </style>
