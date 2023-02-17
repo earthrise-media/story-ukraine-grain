@@ -1,29 +1,30 @@
 <template>
-  <table id="data-table" class="pa4 f6 w-100">
+  <table id="data-table" class="pa4 f6">
     <thead>
       <tr class="tl">
         <th>Oblast</th>
         <th>Harvested Area</th>
         <th>Yield</th>
         <th>Volume</th>
+        <th class="tc">Forecast</th>
       </tr>
     </thead>
-    <tbody v-if="sortedDataByGrainType">
+    <tbody v-if="sortedDataByGrainType" class="w-100">
       <tr
         v-for="oblast in sortedDataByGrainType"
         :key="oblast.oblastNameNormalized"
       >
-        <td class="w-20">{{ oblast.oblastNameNormalized }}</td>
-        <td class="w-20">{{ oblast.harvestedArea }}</td>
-        <td class="w-20">{{ oblast.grainYield }}</td>
-        <td class="w-20">{{ oblast.volume }}</td>
-        <td class="tl w-20">
+        <td class="w-30">{{ oblast.oblastNameNormalized }}</td>
+        <td class="w-10">{{ oblast.harvestedArea }}</td>
+        <td class="w-10">{{ oblast.grainYield }}</td>
+        <td class="w-10">{{ oblast.volume }}</td>
+        <td class="tl w-40">
           <div class="slider-cell">
             <input
               type="range"
               min="0"
               max="150"
-              class="slider"
+              class="slider w-two-thirds"
               @change="
                 setOblastScale($event.target.value, oblast.oblastNameNormalized)
               "

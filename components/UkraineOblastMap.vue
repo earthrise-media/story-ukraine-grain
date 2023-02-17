@@ -1,5 +1,7 @@
 <template>
-  <svg id="map" ref="mapSvg" class="w-100 vh-100">
+  <svg id="map" ref="mapSvg" class="w-100 vh-100"
+    :viewBox="`0 0 ${width} ${height}`"
+  >
     <path
       v-if="featureCollection"
       v-for="oblast in featureCollection.features"
