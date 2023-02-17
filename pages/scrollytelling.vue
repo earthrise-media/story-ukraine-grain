@@ -1,43 +1,33 @@
 <template>
   <div class="scrollytelling-container" ref="scrollytellingContainer">
     <div class="step-container w-two-thirds fixed top-0 right-0" ref="stepContainer">
-      <!-- <div id="step-0-graphic" v-if="stepIndex === 0">
-        <h2>World grain producer breakdown</h2>
-      </div> -->
       <h3 class="w-100">Step: {{ stepIndex }}</h3>
       <!-- <pre class="bw4 ba b--red h5">active? {{active}}</pre> -->
-      <UkraineOblastMap
-        v-if="active"
-        class=""
-        ref="oblastMap"
-        :config="oblastMapConfig"
-        :activeDataByOblast="active.activeDataByOblast"
-        :activeGrainType="activeGrainType"
-        :width="graphicWidth"
-        :valueKey="oblastMapConfig.valueKey"
-        :style="{
+      <UkraineOblastMap v-if="active" class="" ref="oblastMap" :config="oblastMapConfig"
+        :activeDataByOblast="active.activeDataByOblast" :activeGrainType="activeGrainType" :width="graphicWidth"
+        :valueKey="oblastMapConfig.valueKey" :style="{
           // opacity: mapOpacity,
           //opacity: oblastMapConfig.visibility ? mapOpacity : 0,
         }" />
 
       <!-- <BarChart
-        v-if="barChartConfig.visibility"
-        ref="barChart"
-        :config="barChartConfig"
-        :scenario="scenario"
-        :oblastData="oblastData"
-        :width="graphicWidth"
-      /> -->
+              v-if="barChartConfig.visibility"
+              ref="barChart"
+              :config="barChartConfig"
+              :scenario="scenario"
+              :oblastData="oblastData"
+              :width="graphicWidth"
+            /> -->
 
       <!-- <SankeyChart
-        v-if="sankeyConfig.visibility"
-        ref="sankeyChart"
-        class="fixed top-0 right-0"
-        :config="sankeyConfig"
-        :importExportData="importExportData"
-        :width="graphicWidth"
-        :stepIndex="stepIndex"
-      /> -->
+              v-if="sankeyConfig.visibility"
+              ref="sankeyChart"
+              class="fixed top-0 right-0"
+              :config="sankeyConfig"
+              :importExportData="importExportData"
+              :width="graphicWidth"
+              :stepIndex="stepIndex"
+            /> -->
     </div>
 
     <div class="text-container relative">
@@ -131,15 +121,12 @@
       </p>
 
       <p class="pa2 overflow-y-auto br1 mt2 bg-white-o-40">
-        <DataTable
-          :activeData="active.activeData"
-          :oblastScales="scenario.oblastScales"
-          :totalHarvestedArea="active.totalHarvestedArea"
-          :totalYield="active.totalYield"
-          :totalVolume="active.totalVolume"
-          class="w-100 bt b--light-gray mt2 fl"
-          @sliderChange="handleSliderChange"
-        />
+        <DataTable :activeData="active.activeData" :oblastScales="scenario.oblastScales"
+          :totalHarvestedArea="active.totalHarvestedArea" :totalYield="active.totalYield"
+          :totalVolume="active.totalVolume" class="w-100 bt b--light-gray mt2 fl" @sliderChange="handleSliderChange" />
+      </p>
+
+
       <!-- small impact -->
       <p :class="paragraphClasses">
         <span class="bg-white">
@@ -210,15 +197,8 @@
           how they might impact grain production in Ukraine in the future.
         </span>
       </p>
-
-      <!-- make a single slider that applies a country-level scalar to UKR export data -->
-      <div class="pa2 overflow-y-auto br1 mt2 bg-white-o-40">
-        COUNTRY-LEVEL SLIDER THAT UPDATES SANKEY TO SEE DOWNSTREAM EFFECTS
       </div>
-
-
     </div>
-  </div>
 </template>
 <script setup>
 import * as d3 from "d3";
