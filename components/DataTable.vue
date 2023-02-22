@@ -10,10 +10,7 @@
       </tr>
     </thead>
     <tbody v-if="activeData" class="w-100">
-      <tr
-        v-for="oblast in activeData"
-        :key="oblast.oblastNameNormalized"
-      >
+      <tr v-for="oblast in activeData" :key="oblast.oblastNameNormalized">
         <td class="w-30">{{ oblast.oblastNameNormalized }}</td>
         <td class="w-10">{{ oblast.harvestedArea }}</td>
         <td class="w-10">{{ oblast.grainYield }}</td>
@@ -26,7 +23,10 @@
               max="150"
               class="slider w-two-thirds"
               @change="
-                emitSliderEvent(oblast.oblastNameNormalized, $event.target.value)
+                emitSliderEvent(
+                  oblast.oblastNameNormalized,
+                  $event.target.value
+                )
               "
               :value="getOblastPercentage(oblast.oblastNameNormalized)"
               :id="`range-${oblast.oblastNameNormalized}`"
@@ -38,7 +38,7 @@
     </tbody>
 
     <tfoot>
-      <tr class="bg-gray white">
+      <tr class="bg-gray white f3 b">
         <td>Total</td>
         <td>{{ numberFormat(totalHarvestedArea) }}</td>
         <td>{{ numberFormat(totalYield) }}</td>
@@ -84,7 +84,7 @@ const props = defineProps({
 const emit = defineEmits(["sliderChange"]);
 
 const emitSliderEvent = (oblastName, percentage) =>
-  emit("sliderChange", { oblastName, percentage } );
+  emit("sliderChange", { oblastName, percentage });
 
 // a function to return the percentage for a given oblast
 // get the percentage for a given oblast
@@ -95,5 +95,4 @@ function getOblastPercentage(oblastName) {
 }
 
 const numberFormat = format(",.0f");
-
 </script>

@@ -1,5 +1,8 @@
 <template>
-  <svg id="map" ref="mapSvg" class="w-100 vh-100"
+  <svg
+    id="map"
+    ref="mapSvg"
+    class="w-100 vh-100"
     :viewBox="`0 0 ${width} ${height}`"
   >
     <path
@@ -20,39 +23,40 @@
 
     <g v-if="activeDataByOblast">
       <text
-      v-if="featureCollection"
-      v-for="oblast in featureCollection.features"
-      :x="path.centroid(oblast)[0]"
-      :y="path.centroid(oblast)[1]"
-      fill="red"
-      font-size="12"
-      :class="{
-        'focused-shape': oblast.focused,
-        'selected-shape': oblast.selected,
-      }"
-      @mouseover="oblast.focused = true"
-      @mouseout="oblast.focused = false"
-      @click="oblast.selected = !oblast.selected"
+        v-if="featureCollection"
+        v-for="oblast in featureCollection.features"
+        :x="path.centroid(oblast)[0]"
+        :y="path.centroid(oblast)[1]"
+        fill="red"
+        font-size="12"
+        :class="{
+          'focused-shape': oblast.focused,
+          'selected-shape': oblast.selected,
+        }"
+        @mouseover="oblast.focused = true"
+        @mouseout="oblast.focused = false"
+        @click="oblast.selected = !oblast.selected"
       >
-        {{oblast.properties.name_1}}
+        {{ oblast.properties.name_1 }}
       </text>
       <text
-      v-if="featureCollection"
-      v-for="oblast in featureCollection.features"
-      :x="path.centroid(oblast)[0]"
-      :y="path.centroid(oblast)[1] + 14"
-      fill="black"
-      font-size="12"
-      :class="{
-        'focused-shape': oblast.focused,
-        'selected-shape': oblast.selected,
-      }"
-      @mouseover="oblast.focused = true"
-      @mouseout="oblast.focused = false"
-      @click="oblast.selected = !oblast.selected"
+        v-if="featureCollection"
+        v-for="oblast in featureCollection.features"
+        :x="path.centroid(oblast)[0]"
+        :y="path.centroid(oblast)[1] + 14"
+        fill="black"
+        font-size="12"
+        :class="{
+          'focused-shape': oblast.focused,
+          'selected-shape': oblast.selected,
+        }"
+        @mouseover="oblast.focused = true"
+        @mouseout="oblast.focused = false"
+        @click="oblast.selected = !oblast.selected"
       >
-        {{findOblastValue(oblast)}} {{activeGrainType}}
-      </text>     
+        {{ findOblastValue(oblast) }}
+        <!-- {{activeGrainType}} -->
+      </text>
     </g>
   </svg>
 </template>
@@ -87,7 +91,7 @@ const mapSvg = ref(null);
 
 // Make a D3 color scale for the values
 const valueColorScale = ref(
-  d3.scaleLinear().domain([0, 500]).range(["white", "red"])
+  d3.scaleLinear().domain([0, 500]).range(["white", "#FFC500"])
 );
 // Merges geometries by shared ID.
 // Inspired by https://github.com/neocarto/geotoolbox/blob/cee58b6c45e3faa59ef680d8e3162c430077e80c/src/gis/aggregate.js
@@ -161,7 +165,6 @@ function findOblastFillColor(oblastShape) {
   if (shapeValue) return valueColorScale.value(+shapeValue);
   else return "#FFF";
 }
-
 </script>
 <style>
 path.focused-shape {
