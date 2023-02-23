@@ -67,8 +67,32 @@
       </div>
 
       <!-- <pre class="bw4 ba b--red h5">active? {{active}}</pre> -->
-      <UkraineOblastMap
-        v-if="active && (stepIndex >= 5 && stepIndex < 12)"
+
+      <div v-if="active && (stepIndex >= 5 && stepIndex < 12)">
+      <h2 class="fixed top-0 left-0 w-100 tc">Total yield:
+          {{numberFormat(active.totalYield)}} <a href="https://en.wiktionary.org/wiki/centner" class="link black">centner</a> ({{numberFormat(active.totalYield * 100)}} kilograms)
+
+          <!-- calculate the difference between the active totalYield and 1843 -->
+            <span
+              v-if="+active.totalYield > 1843"
+              class="green"
+            >
+              +{{ numberFormat(active.totalYield - 1843) }}
+            </span>
+
+            <span
+              v-else-if="active.totalYield < 1843"
+              class="red"
+            >
+              -{{ numberFormat(1843 - active.totalYield) }}
+            </span>
+        </h2>
+
+        <h2>
+          Projected UKR output %:
+          {{overallForecastPercent * 100}}
+        </h2>
+      <UkraineOblastMap        
         class="z-2"
         ref="oblastMap"
         :config="oblastMapConfig"
@@ -81,15 +105,7 @@
           opacity: oblastMapConfig.visibility ? mapOpacity : 0,
         }"
       />
-
-      <BarChart
-        v-if="barChartConfig.visibility"
-        ref="barChart"
-        :config="barChartConfig"
-        :scenario="scenario"
-        :oblastData="oblastData"
-        :width="graphicWidth"
-      />
+    </div>
 
       <SankeyChart
         v-if="/*sankeyConfig.visibility*/ true"
@@ -135,7 +151,7 @@
       <p :class="paragraphClasses">
         <span class="pa1 bg-white">
           In the midst of the conflict with Russia, how is Ukraine's grain
-          farming being impacted? Let's take a look.
+          farming being impacted? <a href="https://earthobservatory.nasa.gov/images/150025/measuring-wars-effect-on-a-global-breadbasket">NASA's Earth Observatory</a> produced this map looking at the location of Ukraine's crops and the areas impacted by the war.
         </span>
       </p>
 
@@ -179,11 +195,12 @@
 
       <!-- small impact -->
       <p :class="paragraphClasses">
-        <span class="pa1 bg-white">
-          The small impact scenario predicts that grain production will only be
-          effected by about <a href="https://hub.conflictobservatory.org/portal/apps/sites/#/home/pages/grain-1" class="black link underline b">15%</a> from normal levels in 2022. This results in a
+        <span class="pa1 bg-white">The small impact scenario predicts that grain production will only be
+          effected by about <a href="https://hub.conflictobservatory.org/portal/apps/sites/#/home/pages/grain-1" class="black link underline b">15%</a> from normal levels in 2022. 
+          
+          <!-- This results in a
           deficit of <strong>TK million tons</strong> of grain, or TK% of
-          Ukraine's total grain production.
+          Ukraine's total grain production. -->
         </span>
       </p>
 
@@ -243,6 +260,13 @@
           explored earlier might impact the countries that import Ukraine's
           grain.
         </span>
+
+        <BarChart
+        v-if="stepIndex >= 13 && stepIndex < 16"
+        ref="barChart"
+        :initScenario="overallForecastPercent"
+        :width="graphicWidth"
+      />
       </p>
 
       <!-- small impact -->
@@ -308,10 +332,18 @@ const DEFAULT_GRAIN_TYPE = "12 кукур-Table 1";
 setActiveGrainType(DEFAULT_GRAIN_TYPE);
 // can also use: "12 кукур-Table 1"
 
+const overallForecastPercent = ref(1);
+
 const { scenario, setOblastScale, setScenario } = useCurrentScenario();
 const handleSliderChange = ({ oblastName, percentage }) => {
   const scale = +percentage / 100;
   setOblastScale({ oblastName, scale });
+  const valueKey = oblastMapConfig.value.valueKey;
+  const originalTotal = active.value[`${valueKey}OriginalTotal`]
+  const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+  const newTotal = active.value[`total${cap(valueKey)}`]
+  overallForecastPercent.value = newTotal / originalTotal
+  console.log(overallForecastPercent.value)
 };
 // use setScenario to apply these
 // const scenarioButtons = [
