@@ -68,47 +68,47 @@ const props = defineProps({
 });
 
 // watch the stepIndex prop and if it changes to 2, animate in the sankey
-watch(
-  () => props.stepIndex,
-  (stepIndex) => {
-    if (stepIndex === 1) {
-      animateSankey(sankeyPaths, sankeyNodes);
-    }
-  }
-);
+// watch(
+//   () => props.stepIndex,
+//   (stepIndex) => {
+//     if (stepIndex === 1) {
+//       animateSankey(sankeyPaths, sankeyNodes);
+//     }
+//   }
+// );
 
 const staggerDelay = 70;
 const animateInDuration = 1800;
 
 // a function to animate in sankeyPaths and sankeyNodes one by one with anime.js
-const animateSankey = (sankeyPaths, sankeyNodes) => {
-  // animate in sankeyPaths
-  anime({
-    targets: ".sankey-paths path",
-    opacity: [0, 1],
-    duration: animateInDuration * 0.5,
-    easing: "easeInOutQuad",
-  });
+// const animateSankey = (sankeyPaths, sankeyNodes) => {
+//   // animate in sankeyPaths
+//   anime({
+//     targets: ".sankey-paths path",
+//     opacity: [0, 1],
+//     duration: animateInDuration * 0.5,
+//     easing: "easeInOutQuad",
+//   });
 
-  anime({
-    targets: ".sankey-paths path",
-    strokeDashoffset: [anime.setDashoffset, 0],
-    easing: "easeInOutQuad",
-    duration: animateInDuration,
-    delay: (el, i) => animateInDuration * 1.2 + i * staggerDelay,
-    loop: false,
-  });
+//   anime({
+//     targets: ".sankey-paths path",
+//     strokeDashoffset: [anime.setDashoffset, 0],
+//     easing: "easeInOutQuad",
+//     duration: animateInDuration,
+//     delay: (el, i) => animateInDuration * 1.2 + i * staggerDelay,
+//     loop: false,
+//   });
 
-  // animate in sankeyNodes
-  anime({
-    targets: ".sankey-nodes g",
-    opacity: [0, 1],
-    easing: "easeInOutQuad",
-    duration: animateInDuration,
-    delay: (el, i) => i * staggerDelay,
-    loop: false,
-  });
-};
+//   // animate in sankeyNodes
+//   anime({
+//     targets: ".sankey-nodes g",
+//     opacity: [0, 1],
+//     easing: "easeInOutQuad",
+//     duration: animateInDuration,
+//     delay: (el, i) => i * staggerDelay,
+//     loop: false,
+//   });
+// };
 
 // make height a computed 0.6 of props.width
 // const height = computed(() => props.width * 0.6);
@@ -140,7 +140,9 @@ const nodeWidth = 50;
 const sankey = d3Sankey
   .sankey()
   .nodeId((d) => d.name)
-  .nodeAlign(d3Sankey.sankeyJustify)
+  // .nodeAlign(d3Sankey.sankeyJustify)
+  // justify to top
+  .nodeAlign(d3Sankey.sankeyLeft)
   .nodeWidth(nodeWidth)
   // use .linkSort to sort by value
   .linkSort((a, b) => b.value - a.value)

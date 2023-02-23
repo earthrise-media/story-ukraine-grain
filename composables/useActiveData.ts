@@ -73,23 +73,28 @@ export function useActiveData() {
     const { scenario } = useCurrentScenario();
 
     // sort by the current sortKey
-    const sortedActiveData = oblastsForActive
+
+    // unsorted, unscaled data
+    const scaledSortedActiveData = oblastsForActive
       .map((oblast) => scaleOblast(oblast, scenario.value.oblastScales))
       .sort((a, b) => b[sortKey.value] - a[sortKey.value]);
 
     // converts this list into a map by oblast
-    const activeDataByOblast = sortedActiveData.reduce((acc, oblast) => {
+    const activeDataByOblast = scaledSortedActiveData.reduce((acc, oblast) => {
       acc[oblast.oblastNameNormalized] = oblast;
       return acc
     }, {})
 
     // compute totals and return object with activeData
     return {
-      activeData: sortedActiveData,
+      activeData: scaledSortedActiveData,
       activeDataByOblast,
-      totalHarvestedArea: computeTotal("harvestedArea", sortedActiveData),
-      totalYield: computeTotal("grainYield", sortedActiveData),
-      totalVolume: computeTotal("volume", sortedActiveData),
+      totalHarvestedArea: computeTotal("harvestedArea", scaledSortedActiveData),
+      totalYield: computeTotal("grainYield", scaledSortedActiveData),
+      totalVolume: computeTotal("volume", scaledSortedActiveData),
+      harvestedAreaOriginalTotal: computeTotal("harvestedArea", oblastsForActive),
+      yieldOriginalTotal: computeTotal("grainYield", oblastsForActive),
+      volumeOriginalTotal: computeTotal("volume", oblastsForActive),
     }
   })
 }
