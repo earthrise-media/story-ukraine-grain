@@ -3,41 +3,36 @@
     <thead>
       <tr class="tl">
         <th>Oblast</th>
-        <th>Harvested Area</th>
+        <th class="br1 ph1" style="background-color: #FFC500;">Harvested Area</th>
         <th>Yield</th>
         <th>Volume</th>
         <th class="tc">Forecast</th>
       </tr>
     </thead>
     <!-- <tbody v-if="activeData" class="w-100"> -->
-      <!-- use a transition-group instead for move animation -->
-      <TransitionGroup name="slide-fade" tag="tbody" class="w-100">
+    <!-- use a transition-group instead for move animation -->
+    <TransitionGroup name="slide-fade" tag="tbody" class="w-100">
       <tr v-for="oblast in activeData" :key="oblast.oblastNameNormalized">
-        <td class="w-30">{{ oblast.oblastNameNormalized }}</td>
-        <td class="w-10">{{ oblast.harvestedArea }}</td>
-        <td class="w-10">{{ oblast.grainYield }}</td>
-        <td class="w-10">{{ oblast.volume }}</td>
+        <td class="bg-white w-30">{{ oblast.oblastNameNormalized }}</td>
+        <td class="bg-white w-10">{{ oblast.harvestedArea }}</td>
+        <td class="bg-white w-10">{{ oblast.grainYield }}</td>
+        <td class="bg-white w-10">{{ oblast.volume }}</td>
         <td class="tl w-40">
           <div class="slider-cell">
-            <input
-              type="range"
-              min="0"
-              max="150"
-              class="slider w-two-thirds"
-              @change="
-                emitSliderEvent(
-                  oblast.oblastNameNormalized,
-                  $event.target.value
-                )
-              "
-              :value="getOblastPercentage(oblast.oblastNameNormalized)"
-              :id="`range-${oblast.oblastNameNormalized}`"
-            />
-            {{ getOblastPercentage(oblast.oblastNameNormalized) }}%
+            <input type="range" min="0" max="150" class="slider w-two-thirds" @change="
+              emitSliderEvent(
+                oblast.oblastNameNormalized,
+                $event.target.value
+              )
+            " :value="getOblastPercentage(oblast.oblastNameNormalized)"
+              :id="`range-${oblast.oblastNameNormalized}`" />
+            <span class="bg-white w3 tc br1">
+              {{ getOblastPercentage(oblast.oblastNameNormalized) }}%
+            </span>
           </div>
         </td>
       </tr>
-    <!-- </tbody> -->
+      <!-- </tbody> -->
     </TransitionGroup>
 
     <tfoot>
