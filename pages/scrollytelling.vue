@@ -88,12 +88,12 @@
             </span>
         </h2>
 
-        <h2>
+        <h2 class="w-100 fixed top-2 left-0 tc">
           Projected UKR output %:
           {{overallForecastPercent * 100}}
         </h2>
       <UkraineOblastMap        
-        class="z-2"
+        class="z-2 w-100 vh-100"
         ref="oblastMap"
         :config="oblastMapConfig"
         :activeDataByOblast="active.activeDataByOblast"
@@ -234,6 +234,7 @@
         </button>
 
         <DataTable
+          v-if="scenario"
           :activeData="active.activeData"
           :oblastScales="scenario.oblastScales"
           :totalHarvestedArea="active.totalHarvestedArea"
@@ -244,7 +245,7 @@
         />
       </p>
 
-      <h2 class="f-subheadline pa2 pa5-ns">Who is affected downstream?</h2>
+      <p><h2 class="f-subheadline pa2 pa5-ns">Who is affected downstream?</h2></p>
 
       <p :class="paragraphClasses">
         <span class="pa1 bg-white">
@@ -335,6 +336,7 @@ setActiveGrainType(DEFAULT_GRAIN_TYPE);
 const overallForecastPercent = ref(1);
 
 const { scenario, setOblastScale, setScenario } = useCurrentScenario();
+
 const handleSliderChange = ({ oblastName, percentage }) => {
   const scale = +percentage / 100;
   setOblastScale({ oblastName, scale });
