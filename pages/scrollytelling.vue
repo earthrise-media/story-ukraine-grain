@@ -26,7 +26,7 @@
         </div>
 
         <div
-          v-if="stepIndex >= 2 && stepIndex < 5"
+          v-if="stepIndex >= 2 && stepIndex < 4"
           id="step-graphic-0"
           class="step-graphic-container"
           step="0"
@@ -39,7 +39,7 @@
         </div>
 
         <div
-          v-if="stepIndex >= 12 && stepIndex < 13"
+          v-if="stepIndex >= 4 && stepIndex < 5"
           id="step-graphic-12"
           class="step-graphic-container"
           step="0"
@@ -88,12 +88,12 @@
             </span>
         </h2>
 
-        <h2>
-          Projected UKR output %:
-          {{overallForecastPercent * 100}}
+        <h2 class="w-100 fixed top-2 left-0 tc">
+          Projected UKR output:
+          {{pctFormat(overallForecastPercent)}}
         </h2>
       <UkraineOblastMap        
-        class="z-2"
+        class="z-2 w-100 vh-100"
         ref="oblastMap"
         :config="oblastMapConfig"
         :activeDataByOblast="active.activeDataByOblast"
@@ -217,13 +217,13 @@
       <!-- introduce the slider and allow the user to make their own predictions -->
       <p :class="paragraphClasses">
         <span class="pa1 bg-white">
-          Now it's your turn to make your own predictions. Use the slider below
+          Now it's your turn to make your own predictions. Use the sliders and buttons below
           to simulate different scenarios and see how they might impact grain
           production in Ukraine in the future.
         </span>
       </p>
 
-      <p class="pa2 overflow-y-auto br1 mt2 pa1 bg-white-o-40">
+      <p class="pa2 overflow-y-auto br1 mt2 pa1">
 
         <!-- make a button to set all oblasts to 15% -->
         <button
@@ -234,17 +234,20 @@
         </button>
 
         <DataTable
+          v-if="scenario"
           :activeData="active.activeData"
           :oblastScales="scenario.oblastScales"
           :totalHarvestedArea="active.totalHarvestedArea"
           :totalYield="active.totalYield"
           :totalVolume="active.totalVolume"
-          class="w-100 bt b--light-gray mt2 fl"
+          class="w-50"
           @sliderChange="handleSliderChange"
         />
       </p>
 
-      <h2 class="f-subheadline pa2 pa5-ns">Who is affected downstream?</h2>
+      <p>
+        <h2 class="f-subheadline pa2 pa5-ns">Who is affected downstream?</h2>
+      </p>
 
       <p :class="paragraphClasses">
         <span class="pa1 bg-white">
@@ -260,13 +263,18 @@
           explored earlier might impact the countries that import Ukraine's
           grain.
         </span>
+      </p>
 
-        <BarChart
+      <p :class="paragraphClasses">
+        <span class="pa1 bg-white">
+          This slider controls the amount of grain that is exported from Ukraine. As less is exported, the countries downstream are affected differently depending on how much they depend on Ukraine's grain.
+          <BarChart
         v-if="stepIndex >= 13 && stepIndex < 16"
         ref="barChart"
         :initScenario="overallForecastPercent"
         :width="graphicWidth"
       />
+        </span>
       </p>
 
       <!-- small impact -->
@@ -320,6 +328,7 @@ const stepProgress = ref(0); // keep track of the progress within a step
 
 // create a d3 number format to always show 1 decimal place
 const numberFormat = d3.format(",.1f");
+const pctFormat = d3.format(",.1%");
 
 // the tachyons classes we will use for the paragraphs
 const paragraphClasses = "pa4 f2 lh-copy measure w-80 center ml2 ml5-ns";
@@ -335,6 +344,7 @@ setActiveGrainType(DEFAULT_GRAIN_TYPE);
 const overallForecastPercent = ref(1);
 
 const { scenario, setOblastScale, setScenario } = useCurrentScenario();
+
 const handleSliderChange = ({ oblastName, percentage }) => {
   const scale = +percentage / 100;
   setOblastScale({ oblastName, scale });

@@ -7,8 +7,8 @@
     <p class="smart-sentences" v-if="selectedCountry">
       {{selectedCountry.countryName}} depends on Ukraine for
       {{formatNumber(selectedCountry.percent)}} of its grain imports.
-      If Ukraine's output is reduced to {{formatNumber(scenario)}}, {{selectedCountry.countryName}}
-      will have {{formatNumber(1 - (1 - scenario) * selectedCountry.percent)}} of it's expected grain.
+      If Ukraine's output is reduced to <strong style="background-color: #FFC500">{{formatNumber(scenario)}}</strong>, {{selectedCountry.countryName}}
+      will have <strong class="gray">{{formatNumber(1 - (1 - scenario) * selectedCountry.percent)}}</strong> of it's expected grain and <strong class="bg-moon-gray ph1 br1">missing {{formatNumber((1 - scenario) * selectedCountry.percent)}}</strong> of it's expected grain.
     </p>
 
     <svg ref="svg" :width="props.width" :height="height" class="" 
@@ -105,7 +105,9 @@ const onScenarioChange = (value) => {
   scenario.value = value;
 }
 
-const countryFilterPct = ref(0.1) // Only show countries that import more than this 
+// const countryFilterPct = ref(0.1) // Only show countries that import more than this 
+
+const countryFilterPct = ref(0.08)
 
 const dataKey = ref("harvestedArea")
 
@@ -138,7 +140,7 @@ fetch("/data/comtrade_imports/00_all_data_ukraine.csv")
   .then((response) => response.text())
   .then((data) => {
     const parsed = d3.csvParse(data, d3.autoType)
-      .filter(d => d.percent >= 0.1)
+      .filter(d => d.percent >= countryFilterPct.value)
       .sort((a, b) => b.percent - a.percent)
 
     yScale.domain(parsed.map(d => d.countryName));

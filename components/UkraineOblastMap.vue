@@ -2,7 +2,7 @@
   <svg
     id="map"
     ref="mapSvg"
-    class="w-100 vh-100"
+    class=""
     :viewBox="`0 0 ${width} ${height}`"
   >
     <path
@@ -27,7 +27,7 @@
         v-for="oblast in featureCollection.features"
         :x="path.centroid(oblast)[0]"
         :y="path.centroid(oblast)[1]"
-        fill="red"
+        fill="black"
         font-size="12"
         :class="{
           'focused-shape': oblast.focused,

@@ -1,6 +1,7 @@
 import { normalizeOblastName } from "~~/helpers";
 
-const sortKey = ref("oblastNameNormalized")
+// const sortKey = ref("oblastNameNormalized")
+const sortKey = ref("harvestedArea")
 
 function computeTotal(columnKey, activeData) {
   if (!activeData) return 0;
