@@ -24,6 +24,7 @@
         :y="path.centroid(oblast)[1]"
         fill="black"
         font-size="12"
+        text-anchor="middle"
         :class="{
           'focused-shape': oblast.focused,
           'selected-shape': oblast.selected,
@@ -41,6 +42,7 @@
         :y="path.centroid(oblast)[1] + 14"
         fill="black"
         font-size="12"
+        text-anchor="middle"
         :class="{
           'focused-shape': oblast.focused,
           'selected-shape': oblast.selected,
