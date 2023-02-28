@@ -232,10 +232,18 @@
         <!-- make a button to set all oblasts to 15% -->
         <button
           v-for="percent in [15, 25, 50]"
-          class="f6 link dim br1 ph3 pv2 mb2 dib white bg-dark-blue"
+          class="dim dib ma1"
           @click="setAllOblastOutput(percent)"
         >
           Set all Oblasts to {{ percent }}%
+        </button>
+
+        <!-- make a button to reset everything to 100% -->
+        <button
+        class="dim db ma1"
+          @click="setAllOblastOutput(100)"
+        >
+          Reset all Oblasts to 100%
         </button>
 
         <DataTable
