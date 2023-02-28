@@ -1,52 +1,27 @@
 <template>
   <div class="scrollytelling-container" ref="scrollytellingContainer">
-    <div
-      class="step-container w-two-thirds fixed top-0 right-0 z-2"
-      ref="stepContainer"
-    >
+    <div class="step-container w-two-thirds fixed top-0 right-0 z-2" ref="stepContainer">
       <h3 class="w-100">Step: {{ stepIndex }}</h3>
 
-      <div
-        id="step-graphics"
-        ref="stepGraphics"
-        class="fixed top-0 right-0 w-100 vh-100 z-0"
-      >
-        <div
-          v-if="stepIndex < 2"
-          id="step-graphic-0"
-          class="step-graphic-container"
-          step="0"
-          :style="{
-            opacity: 0.75,
-            backgroundImage: 'url(images/intro-satellite-animation.gif)',
-          }"
-        ></div>
+      <div id="step-graphics" ref="stepGraphics" class="fixed top-0 right-0 w-100 vh-100 z-0">
+        <div v-if="stepIndex < 2" id="step-graphic-0" class="step-graphic-container" step="0" :style="{
+          opacity: 0.75,
+          backgroundImage: 'url(images/intro-satellite-animation.gif)',
+        }"></div>
 
-        <div
-          v-if="stepIndex >= 2 && stepIndex < 4"
-          id="step-graphic-0"
-          class="step-graphic-container"
-          step="0"
-          :style="{
-            opacity: 0.75,
-            backgroundRepeat: 'no-repeat',
-            backgroundImage:
-              'url(images/nasa_landsat_ukraine_plnt_2022_lrg.jpg)',
-          }"
-        ></div>
+        <div v-if="stepIndex >= 2 && stepIndex < 4" id="step-graphic-0" class="step-graphic-container" step="0" :style="{
+          opacity: 0.75,
+          backgroundRepeat: 'no-repeat',
+          backgroundImage:
+            'url(images/nasa_landsat_ukraine_plnt_2022_lrg.jpg)',
+        }"></div>
 
-        <div
-          v-if="stepIndex >= 4 && stepIndex < 5"
-          id="step-graphic-12"
-          class="step-graphic-container"
-          step="0"
-          :style="{
-            opacity: 0.75,
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-            backgroundImage: 'url(images/ukraine-placement-map.png)',
-          }"
-        ></div>
+        <!-- <div v-if="stepIndex >= 4 && stepIndex < 5" id="step-graphic-12" class="step-graphic-container" step="0" :style="{
+          opacity: 0.75,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
+          backgroundImage: 'url(images/ukraine-placement-map.png)',
+        }"></div> -->
 
         <!-- <div
           id="step-graphic-3"
@@ -65,9 +40,7 @@
       <div v-if="active && stepIndex >= 5 && stepIndex < 12">
         <h2 class="fixed top-0 left-0 w-100 tc">
           Total yield: {{ numberFormat(active.totalYield) }}
-          <a href="https://en.wiktionary.org/wiki/centner" class="link black"
-            >centner</a
-          >
+          <a href="https://en.wiktionary.org/wiki/centner" class="link black">centner</a>
           ({{ numberFormat(active.totalYield * 100) }} kilograms)
 
           <!-- calculate the difference between the active totalYield and 1843 -->
@@ -84,30 +57,16 @@
           Projected UKR output:
           {{ pctFormat(overallForecastPercent) }}
         </h2>
-        <UkraineOblastMap
-          class="z-2 w-100 vh-100"
-          ref="oblastMap"
-          :config="oblastMapConfig"
-          :activeDataByOblast="active.activeDataByOblast"
-          :activeGrainType="activeGrainType"
-          :width="graphicWidth"
-          :valueKey="oblastMapConfig.valueKey"
-          :style="{
+        <UkraineOblastMap class="z-2 w-100 vh-100" ref="oblastMap" :config="oblastMapConfig"
+          :activeDataByOblast="active.activeDataByOblast" :activeGrainType="activeGrainType" :width="graphicWidth"
+          :valueKey="oblastMapConfig.valueKey" :style="{
             // opacity: mapOpacity,
             opacity: oblastMapConfig.visibility ? mapOpacity : 0,
-          }"
-        />
+          }" />
       </div>
 
-      <SankeyChart
-        v-if="/*sankeyConfig.visibility*/ true"
-        ref="sankeyChart"
-        class="fixed top-0 right-0"
-        :config="sankeyConfig"
-        :importExportData="importExportData"
-        :width="graphicWidth"
-        :stepIndex="stepIndex"
-      />
+      <SankeyChart v-show="(stepIndex === 12) || (stepIndex === 13)" ref="sankeyChart" class="fixed vh-100 w-100 top-0 right-0 ba b--red"
+        :importExportData="importExportData" :width="graphicWidth" :stepIndex="stepIndex" />
     </div>
 
     <div class="text-container relative">
@@ -143,10 +102,8 @@
         <span class="pa1 bg-white">
           In the midst of the conflict with Russia, how is Ukraine's grain
           farming being impacted?
-          <a
-            href="https://earthobservatory.nasa.gov/images/150025/measuring-wars-effect-on-a-global-breadbasket"
-            >NASA's Earth Observatory</a
-          >
+          <a href="https://earthobservatory.nasa.gov/images/150025/measuring-wars-effect-on-a-global-breadbasket">NASA's
+            Earth Observatory</a>
           produced this map looking at the location of Ukraine's crops and the
           areas impacted by the war.
         </span>
@@ -193,14 +150,10 @@
 
       <!-- small impact -->
       <p :class="paragraphClasses">
-        <span class="pa1 bg-white"
-          >The small impact scenario predicts that grain production will only be
+        <span class="pa1 bg-white">The small impact scenario predicts that grain production will only be
           effected by about
-          <a
-            href="https://hub.conflictobservatory.org/portal/apps/sites/#/home/pages/grain-1"
-            class="black link underline b"
-            >15%</a
-          >
+          <a href="https://hub.conflictobservatory.org/portal/apps/sites/#/home/pages/grain-1"
+            class="black link underline b">15%</a>
           from normal levels in 2022.
 
           <!-- This results in a
@@ -214,8 +167,7 @@
         <span class="pa1 bg-white">
           The high impact scenario predicts that grain production will be
           effected by as much as 50% from normal levels in 2022. This results in
-          a deficit of <strong>TK million tons</strong> of grain, or
-          <strong>TK%</strong> of Ukraine's total grain production.
+          a deficit of <strong>TK kilograms</strong> of grain.
         </span>
       </p>
 
@@ -228,34 +180,20 @@
         </span>
       </p>
 
-      <p class="pa2 overflow-y-auto br1 mt2 pa1">
+      <p class="pa4 overflow-y-auto br1">
+        <DataTable v-if="scenario" :activeData="active.activeData" :oblastScales="scenario.oblastScales"
+          :totalHarvestedArea="active.totalHarvestedArea" :totalYield="active.totalYield"
+          :totalVolume="active.totalVolume" class="w-50" @sliderChange="handleSliderChange" />
+
         <!-- make a button to set all oblasts to 15% -->
-        <button
-          v-for="percent in [15, 25, 50]"
-          class="dim dib ma1"
-          @click="setAllOblastOutput(percent)"
-        >
+        <button v-for="percent in [15, 25, 50]" class="dim dib ma1" @click="setAllOblastOutput(percent)">
           Set all Oblasts to {{ percent }}%
         </button>
 
         <!-- make a button to reset everything to 100% -->
-        <button
-        class="dim db ma1"
-          @click="setAllOblastOutput(100)"
-        >
+        <button class="dim db ma1" @click="setAllOblastOutput(100)">
           Reset all Oblasts to 100%
         </button>
-
-        <DataTable
-          v-if="scenario"
-          :activeData="active.activeData"
-          :oblastScales="scenario.oblastScales"
-          :totalHarvestedArea="active.totalHarvestedArea"
-          :totalYield="active.totalYield"
-          :totalVolume="active.totalVolume"
-          class="w-50"
-          @sliderChange="handleSliderChange"
-        />
       </p>
 
       <h2 class="f-subheadline pa2 pa5-ns">Who is affected downstream?</h2>
@@ -281,12 +219,8 @@
           This slider controls the amount of grain that is exported from
           Ukraine. As less is exported, the countries downstream are affected
           differently depending on how much they depend on Ukraine's grain.
-          <BarChart
-            v-if="stepIndex >= 13 && stepIndex < 16"
-            ref="barChart"
-            :initScenario="overallForecastPercent"
-            :width="graphicWidth"
-          />
+          <BarChart v-if="stepIndex >= 13 && stepIndex < 16" ref="barChart" :initScenario="overallForecastPercent"
+            :width="graphicWidth" />
         </span>
       </p>
 
@@ -397,9 +331,9 @@ const oblastMapConfig = ref({
   valueKey: "harvestedArea",
 });
 
-const sankeyConfig = ref({
-  visibility: false, // true = show, false = hide
-});
+// const sankeyConfig = ref({
+//   visibility: false, // true = show, false = hide
+// });
 
 const barChartConfig = ref({
   visibility: false, // true = show, false = hide
@@ -425,13 +359,13 @@ const barChartConfig = ref({
 const graphicWidth = computed(() => {
   // if the stepContainer ref exists, use its width
   // otherwise default to 500
-  return stepContainer.value ? stepContainer.value.offsetWidth : 900;
+  return stepContainer.value ? stepContainer.value.offsetWidth : 1200;
 });
 // const graphicWidth = 900;
 
 function resetVisualVisibility() {
   oblastMapConfig.value.visibility = false;
-  sankeyConfig.value.visibility = false;
+  // sankeyConfig.value.visibility = false;
   barChartConfig.value.visibility = false;
 }
 
@@ -468,7 +402,7 @@ watch(
 
     if (newIndex === 0) {
       oblastMapConfig.value.visibility = false;
-      sankeyConfig.value.visibility = true;
+      // sankeyConfig.value.visibility = true;
       oblastMapConfig.value.visibility = false;
     } else if (newIndex === 1) {
       // sankeyConfig.value.visibility = true;
@@ -484,6 +418,12 @@ watch(
     } else if (newIndex === 4) {
       // sankeyConfig.value.visibility = false;
       // oblastMapConfig.value.visibility = true;
+    } else if (newIndex <= 7) {
+      setAllOblastOutput(100)  
+    } else if (newIndex === 8) {
+      setAllOblastOutput(85)
+    } else if (newIndex === 9) {
+      setAllOblastOutput(50)
     }
 
     // the map is visible on all steps after 7
@@ -493,12 +433,7 @@ watch(
       oblastMapConfig.value.visibility = false;
     }
 
-    // the sankey is visible all steps after 17
-    if (newIndex >= 17) {
-      sankeyConfig.value.visibility = true;
-    } else {
-      sankeyConfig.value.visibility = false;
-    }
+  
   },
   { immediate: true }
 );
@@ -509,7 +444,7 @@ onMounted(() => {
 
   // set the visibility of al the visual forms to false
   oblastMapConfig.value.visibility = false;
-  sankeyConfig.value.visibility = false;
+  // sankeyConfig.value.visibility = false;
   oblastMapConfig.value.visibility = false;
 
   // set every step style to opacity 0
@@ -592,8 +527,7 @@ h2 {
   /* pointer-events: none; */
 }
 
-.text-container p {
-}
+.text-container p {}
 
 .bg-white-o-20 {
   background-color: rgba(255, 255, 255, 0.2);

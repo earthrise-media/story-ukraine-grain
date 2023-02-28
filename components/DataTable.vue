@@ -1,5 +1,5 @@
 <template>
-  <table id="data-table" class="pa4 f6">
+  <table id="data-table" class="f6">
     <thead>
       <tr class="tl">
         <th>Oblast</th>

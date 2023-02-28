@@ -1,0 +1,4 @@
+<template>
+
+  <SankeyChart />
+</template>
