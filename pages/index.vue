@@ -9,5 +9,5 @@
   </main>
 </template>
 <script setup>
-const prototypes = ["map", "scatterplot", "scrollytelling"];
+const prototypes = ["map", "scatterplot", "scrollytelling", "tool"];
 </script>

@@ -6,24 +6,21 @@
     >
       <h3 class="w-100">Step: {{ stepIndex }}</h3>
 
-
       <div
         id="step-graphics"
         ref="stepGraphics"
         class="fixed top-0 right-0 w-100 vh-100 z-0"
       >
-
-      <div
+        <div
           v-if="stepIndex < 2"
           id="step-graphic-0"
           class="step-graphic-container"
           step="0"
           :style="{
             opacity: 0.75,
-            backgroundImage: 'url(images/intro-satellite-animation.gif)'
+            backgroundImage: 'url(images/intro-satellite-animation.gif)',
           }"
-        >
-        </div>
+        ></div>
 
         <div
           v-if="stepIndex >= 2 && stepIndex < 4"
@@ -33,10 +30,10 @@
           :style="{
             opacity: 0.75,
             backgroundRepeat: 'no-repeat',
-            backgroundImage: 'url(images/nasa_landsat_ukraine_plnt_2022_lrg.jpg)'
+            backgroundImage:
+              'url(images/nasa_landsat_ukraine_plnt_2022_lrg.jpg)',
           }"
-        >
-        </div>
+        ></div>
 
         <div
           v-if="stepIndex >= 4 && stepIndex < 5"
@@ -47,12 +44,9 @@
             opacity: 0.75,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
-            backgroundImage: 'url(images/ukraine-placement-map.png)'
+            backgroundImage: 'url(images/ukraine-placement-map.png)',
           }"
-        >
-        </div>
-
-
+        ></div>
 
         <!-- <div
           id="step-graphic-3"
@@ -68,44 +62,42 @@
 
       <!-- <pre class="bw4 ba b--red h5">active? {{active}}</pre> -->
 
-      <div v-if="active && (stepIndex >= 5 && stepIndex < 12)">
-      <h2 class="fixed top-0 left-0 w-100 tc">Total yield:
-          {{numberFormat(active.totalYield)}} <a href="https://en.wiktionary.org/wiki/centner" class="link black">centner</a> ({{numberFormat(active.totalYield * 100)}} kilograms)
+      <div v-if="active && stepIndex >= 5 && stepIndex < 12">
+        <h2 class="fixed top-0 left-0 w-100 tc">
+          Total yield: {{ numberFormat(active.totalYield) }}
+          <a href="https://en.wiktionary.org/wiki/centner" class="link black"
+            >centner</a
+          >
+          ({{ numberFormat(active.totalYield * 100) }} kilograms)
 
           <!-- calculate the difference between the active totalYield and 1843 -->
-            <span
-              v-if="+active.totalYield > 1843"
-              class="green"
-            >
-              +{{ numberFormat(active.totalYield - 1843) }}
-            </span>
+          <span v-if="+active.totalYield > 1843" class="green">
+            +{{ numberFormat(active.totalYield - 1843) }}
+          </span>
 
-            <span
-              v-else-if="active.totalYield < 1843"
-              class="red"
-            >
-              -{{ numberFormat(1843 - active.totalYield) }}
-            </span>
+          <span v-else-if="active.totalYield < 1843" class="red">
+            -{{ numberFormat(1843 - active.totalYield) }}
+          </span>
         </h2>
 
         <h2 class="w-100 fixed top-2 left-0 tc">
           Projected UKR output:
-          {{pctFormat(overallForecastPercent)}}
+          {{ pctFormat(overallForecastPercent) }}
         </h2>
-      <UkraineOblastMap        
-        class="z-2 w-100 vh-100"
-        ref="oblastMap"
-        :config="oblastMapConfig"
-        :activeDataByOblast="active.activeDataByOblast"
-        :activeGrainType="activeGrainType"
-        :width="graphicWidth"
-        :valueKey="oblastMapConfig.valueKey"
-        :style="{
-          // opacity: mapOpacity,
-          opacity: oblastMapConfig.visibility ? mapOpacity : 0,
-        }"
-      />
-    </div>
+        <UkraineOblastMap
+          class="z-2 w-100 vh-100"
+          ref="oblastMap"
+          :config="oblastMapConfig"
+          :activeDataByOblast="active.activeDataByOblast"
+          :activeGrainType="activeGrainType"
+          :width="graphicWidth"
+          :valueKey="oblastMapConfig.valueKey"
+          :style="{
+            // opacity: mapOpacity,
+            opacity: oblastMapConfig.visibility ? mapOpacity : 0,
+          }"
+        />
+      </div>
 
       <SankeyChart
         v-if="/*sankeyConfig.visibility*/ true"
@@ -122,8 +114,8 @@
       <h2 class="f-headline lh-title mt0 mb3 pa4">
         <p class="">
           <span class="bg-yellow">
-          Ukraine's grain farming in the midst of the conflict with Russia
-        </span>
+            Ukraine's grain farming in the midst of the conflict with Russia
+          </span>
         </p>
       </h2>
 
@@ -135,8 +127,7 @@
             class="link black tc w-20 dib"
             ><span class="">{{ numberFormat(animatedExportNumber) }}</span></a
           > -->
-          $28
-          billion, making up 41% of the country's total exports.
+          $28 billion, making up 41% of the country's total exports.
         </span>
       </p>
 
@@ -151,7 +142,13 @@
       <p :class="paragraphClasses">
         <span class="pa1 bg-white">
           In the midst of the conflict with Russia, how is Ukraine's grain
-          farming being impacted? <a href="https://earthobservatory.nasa.gov/images/150025/measuring-wars-effect-on-a-global-breadbasket">NASA's Earth Observatory</a> produced this map looking at the location of Ukraine's crops and the areas impacted by the war.
+          farming being impacted?
+          <a
+            href="https://earthobservatory.nasa.gov/images/150025/measuring-wars-effect-on-a-global-breadbasket"
+            >NASA's Earth Observatory</a
+          >
+          produced this map looking at the location of Ukraine's crops and the
+          areas impacted by the war.
         </span>
       </p>
 
@@ -181,8 +178,9 @@
 
       <p :class="paragraphClasses">
         <span class="pa1 bg-white">
-          This map shows Ukraine's total grain production in 2021 by Oblast before the
-          war started. The more yellow, the more grain production was produced there. 
+          This map shows Ukraine's total grain production in 2021 by Oblast
+          before the war started. The more yellow, the more grain production was
+          produced there.
         </span>
       </p>
 
@@ -195,9 +193,16 @@
 
       <!-- small impact -->
       <p :class="paragraphClasses">
-        <span class="pa1 bg-white">The small impact scenario predicts that grain production will only be
-          effected by about <a href="https://hub.conflictobservatory.org/portal/apps/sites/#/home/pages/grain-1" class="black link underline b">15%</a> from normal levels in 2022. 
-          
+        <span class="pa1 bg-white"
+          >The small impact scenario predicts that grain production will only be
+          effected by about
+          <a
+            href="https://hub.conflictobservatory.org/portal/apps/sites/#/home/pages/grain-1"
+            class="black link underline b"
+            >15%</a
+          >
+          from normal levels in 2022.
+
           <!-- This results in a
           deficit of <strong>TK million tons</strong> of grain, or TK% of
           Ukraine's total grain production. -->
@@ -217,20 +222,20 @@
       <!-- introduce the slider and allow the user to make their own predictions -->
       <p :class="paragraphClasses">
         <span class="pa1 bg-white">
-          Now it's your turn to make your own predictions. Use the sliders and buttons below
-          to simulate different scenarios and see how they might impact grain
-          production in Ukraine in the future.
+          Now it's your turn to make your own predictions. Use the sliders and
+          buttons below to simulate different scenarios and see how they might
+          impact grain production in Ukraine in the future.
         </span>
       </p>
 
       <p class="pa2 overflow-y-auto br1 mt2 pa1">
-
         <!-- make a button to set all oblasts to 15% -->
         <button
+          v-for="percent in [15, 25, 50]"
           class="f6 link dim br1 ph3 pv2 mb2 dib white bg-dark-blue"
-          @click="setAllOblastOutput(0.15)"
+          @click="setAllOblastOutput(percent)"
         >
-          Set all Oblasts to 15%
+          Set all Oblasts to {{ percent }}%
         </button>
 
         <DataTable
@@ -245,9 +250,7 @@
         />
       </p>
 
-      <p>
-        <h2 class="f-subheadline pa2 pa5-ns">Who is affected downstream?</h2>
-      </p>
+      <h2 class="f-subheadline pa2 pa5-ns">Who is affected downstream?</h2>
 
       <p :class="paragraphClasses">
         <span class="pa1 bg-white">
@@ -267,13 +270,15 @@
 
       <p :class="paragraphClasses">
         <span class="pa1 bg-white">
-          This slider controls the amount of grain that is exported from Ukraine. As less is exported, the countries downstream are affected differently depending on how much they depend on Ukraine's grain.
+          This slider controls the amount of grain that is exported from
+          Ukraine. As less is exported, the countries downstream are affected
+          differently depending on how much they depend on Ukraine's grain.
           <BarChart
-        v-if="stepIndex >= 13 && stepIndex < 16"
-        ref="barChart"
-        :initScenario="overallForecastPercent"
-        :width="graphicWidth"
-      />
+            v-if="stepIndex >= 13 && stepIndex < 16"
+            ref="barChart"
+            :initScenario="overallForecastPercent"
+            :width="graphicWidth"
+          />
         </span>
       </p>
 
@@ -311,7 +316,7 @@
 <script setup>
 import * as d3 from "d3";
 import scrollama from "scrollama";
-import { normalizeOblastName } from '@/helpers'
+import { normalizeOblastName } from "@/helpers";
 // import anime.js
 import anime from "animejs/lib/anime.es.js";
 
@@ -349,12 +354,28 @@ const handleSliderChange = ({ oblastName, percentage }) => {
   const scale = +percentage / 100;
   setOblastScale({ oblastName, scale });
   const valueKey = oblastMapConfig.value.valueKey;
-  const originalTotal = active.value[`${valueKey}OriginalTotal`]
+  const originalTotal = active.value[`${valueKey}OriginalTotal`];
   const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
-  const newTotal = active.value[`total${cap(valueKey)}`]
-  overallForecastPercent.value = newTotal / originalTotal
-  console.log(overallForecastPercent.value)
+  const newTotal = active.value[`total${cap(valueKey)}`];
+  overallForecastPercent.value = newTotal / originalTotal;
+  console.log(overallForecastPercent.value);
 };
+
+// set all oblasts to a certain percentage
+// reusing the handleSliderChange function
+const setAllOblastOutput = (percentage) => {
+  // TODO: For this to work, we need an actual list of normalized oblast names
+  // We can get this from the data, but we need to make sure it's normalized
+  // active.activeDataByOblast is a map of oblast name to data
+  // so we can get the keys of that map
+  const normalizedOblastNames = Object.keys(
+    active.value.activeDataByOblast
+  ).map(normalizeOblastName);
+  normalizedOblastNames.forEach((oblastName) => {
+    handleSliderChange({ oblastName, percentage });
+  });
+};
+
 // use setScenario to apply these
 // const scenarioButtons = [
 //   { name: "Small Impact", scale: 0.5, oblastScales: {} },
@@ -362,23 +383,6 @@ const handleSliderChange = ({ oblastName, percentage }) => {
 //   { name: "Large Impact", scale: 0.9, oblastScales: {} },
 // ];
 // setScenario(scenarioButtons[1]) // this helps us see whether the scenario buttons are going through
-
-function setAllOblastOutput(percentage) {
-  console.log({percentage})
-  // first we need to get a list of the available oblast names
-  if(!active) return;
-  console.log(active.value.activeData)
-  if(!active.value.activeData) return;
-  const oblastNames = active.value.activeData.map((d) => normalizeOblastName(d.oblastNameUkrainian));
-
-  console.log(oblastNames)
-
-  // then we can loop through them and set the scale for each
-  oblastNames.forEach((oblastName) => {
-    const scale = +percentage / 100;
-    setOblastScale({ oblastName, scale });
-  });
-}
 
 const oblastMapConfig = ref({
   visibility: false, // true = show, false = hide
@@ -423,7 +427,6 @@ function resetVisualVisibility() {
   barChartConfig.value.visibility = false;
 }
 
-
 // watch for changes to stepIndex when a user scrolls
 watch(
   stepIndex,
@@ -438,8 +441,6 @@ watch(
     //     graphic.classList.add("hidden");
     //   }
     // });
-
-
 
     // if the step is 3, make step-graphic-3 visible with anime
     // if (newIndex === 3) {
@@ -475,10 +476,7 @@ watch(
     } else if (newIndex === 4) {
       // sankeyConfig.value.visibility = false;
       // oblastMapConfig.value.visibility = true;
-      
     }
-
-
 
     // the map is visible on all steps after 7
     if (newIndex >= 5) {
@@ -503,8 +501,8 @@ onMounted(() => {
 
   // set the visibility of al the visual forms to false
   oblastMapConfig.value.visibility = false;
-      sankeyConfig.value.visibility = false;
-      oblastMapConfig.value.visibility = false;
+  sankeyConfig.value.visibility = false;
+  oblastMapConfig.value.visibility = false;
 
   // set every step style to opacity 0
   // d3.selectAll(".text-container p").style("opacity", 0);
@@ -551,7 +549,6 @@ onMounted(() => {
 });
 </script>
 <style scoped>
-
 .step-graphic-container {
   height: 100vh;
   width: 100vw;
@@ -588,7 +585,6 @@ h2 {
 }
 
 .text-container p {
-
 }
 
 .bg-white-o-20 {

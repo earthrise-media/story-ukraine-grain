@@ -3,7 +3,9 @@
     <thead>
       <tr class="tl">
         <th>Oblast</th>
-        <th class="br1 ph1" style="background-color: #FFC500;">Harvested Area</th>
+        <th class="br1 ph1" style="background-color: #ffc500">
+          Harvested Area
+        </th>
         <th>Yield</th>
         <th>Volume</th>
         <th class="tc">Forecast</th>
@@ -19,13 +21,20 @@
         <td class="bg-white w-10">{{ oblast.volume }}</td>
         <td class="tl w-40">
           <div class="slider-cell">
-            <input type="range" min="0" max="150" class="slider w-two-thirds" @change="
-              emitSliderEvent(
-                oblast.oblastNameNormalized,
-                $event.target.value
-              )
-            " :value="getOblastPercentage(oblast.oblastNameNormalized)"
-              :id="`range-${oblast.oblastNameNormalized}`" />
+            <input
+              type="range"
+              min="0"
+              max="150"
+              class="slider w-two-thirds"
+              @change="
+                emitSliderEvent(
+                  oblast.oblastNameNormalized,
+                  $event.target.value
+                )
+              "
+              :value="getOblastPercentage(oblast.oblastNameNormalized)"
+              :id="`range-${oblast.oblastNameNormalized}`"
+            />
             <span class="bg-white w3 tc br1">
               {{ getOblastPercentage(oblast.oblastNameNormalized) }}%
             </span>
