@@ -24,7 +24,7 @@
             <input
               type="range"
               min="0"
-              max="150"
+              max="125"
               class="slider w-two-thirds"
               @change="
                 emitSliderEvent(
