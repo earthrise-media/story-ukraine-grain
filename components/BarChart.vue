@@ -19,10 +19,26 @@
       <g v-if="importExportData.length > 0" v-for="(d, i) in importExportData" :key="d.countryName"
         :transform="`translate(0, ${yScale(d.countryName)})`" class="bar-group">
         <!-- add a rect for the bar -->
-        <rect :width="xScale(1 - (1 - scenario) * d.percent)" :height="yScale.bandwidth()" fill="none" stroke="lightgray"
-          class="bar" />
-        <rect :width="xScale(d.percent)" :height="yScale.bandwidth()" fill="none" stroke="gray" class="bar" />
-        <rect :width="xScale(scenario * d.percent)" :height="yScale.bandwidth()" fill="#FFC500" class="bar" />
+        <rect
+          :width="xScale(1 - (1 - scenario) * d.percent)"
+          :height="yScale.bandwidth()"
+          fill="none"
+          stroke="lightgray"
+          class="bar"
+        />
+        <!-- <rect
+          :width="xScale(d.percent)"
+          :height="yScale.bandwidth()"
+          fill="none"
+          stroke="gray"
+          class="bar"
+        /> -->
+        <rect
+          :width="xScale(scenario * d.percent)"
+          :height="yScale.bandwidth()"
+          fill="#FFC500"
+          class="bar"
+        />
 
         <text
         :x="0"
