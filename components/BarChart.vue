@@ -1,18 +1,22 @@
 <template>
   <div>
-    <input
-      type="range"
-      min="0"
-      max="1"
-      step="0.01"
-      :value="scenario"
-      @change="onScenarioChange($event.target.value)"
-      class="slider w-100"
-      id="myRange"
-    />
-    <span>{{ formatNumber(scenario) }}</span>
+    <div v-if="props.showSlider">
+      <input
+        type="range"
+        min="0"
+        max="1"
+        step="0.01"
+        :value="scenario"
+        @change="onScenarioChange($event.target.value)"
+        class="slider w-100"
+        id="myRange"
+      />
+      <strong class="w-100 tc db f3"
+        >{{ formatNumber(scenario) }} of normal output</strong
+      >
+    </div>
 
-    <p class="smart-sentences" v-if="selectedCountry">
+    <p class="smart-sentences" v-if="selectedCountry && props.showSentence">
       {{ selectedCountry.countryName }} depends on Ukraine for
       {{ formatNumber(selectedCountry.percent) }} of its grain imports. If
       Ukraine's output is reduced to
@@ -57,13 +61,13 @@
           stroke="lightgray"
           class="bar"
         />
-        <rect
+        <!-- <rect
           :width="xScale(d.percent)"
           :height="yScale.bandwidth()"
           fill="none"
           stroke="gray"
           class="bar"
-        />
+        /> -->
         <rect
           :width="xScale(scenario * d.percent)"
           :height="yScale.bandwidth()"
@@ -78,7 +82,8 @@
           :dy="0.32 + 'em'"
           class="bar-label"
         >
-          {{ d.countryName }}
+          {{ d.countryName }} missing
+          {{ formatNumber((1 - scenario) * d.percent) }}
         </text>
 
         <text
@@ -149,6 +154,14 @@ const props = defineProps({
     type: Number,
     default: 0.85,
   },
+  showSlider: {
+    type: Boolean,
+    default: true,
+  },
+  showSentence: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const graphicHeight = 400;
@@ -194,6 +207,23 @@ const xScale = d3.scaleLinear().domain([0, 1]).range([0, props.width]);
 
 // create a scale for the y axis
 const yScale = d3.scaleBand().range([0, props.height]).padding(0.1);
+
+// make watchers that when the width / height changes, we update the range in our scales
+watch(
+  () => props.width,
+  (value) => {
+    xScale.range([0, value]);
+  },
+  { immediate: true }
+);
+
+watch(
+  () => props.height,
+  (value) => {
+    yScale.range([0, value]);
+  },
+  { immediate: true }
+);
 
 // set the domain of the y scale when the data changes props.oblastData changes
 

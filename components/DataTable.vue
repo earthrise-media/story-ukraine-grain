@@ -1,61 +1,85 @@
 <template>
-  <table id="data-table" class="f6">
-    <thead>
-      <tr class="tl">
-        <th>Oblast</th>
-        <th class="br1 ph1" style="background-color: #ffc500">
-          Harvested Area
-        </th>
-        <th>Yield</th>
-        <th>Volume</th>
-        <th class="tc">Forecast</th>
-      </tr>
-    </thead>
-    <!-- <tbody v-if="activeData" class="w-100"> -->
-    <!-- use a transition-group instead for move animation -->
-    <TransitionGroup name="slide-fade" tag="tbody" class="w-100">
-      <tr v-for="oblast in activeData" :key="oblast.oblastNameNormalized">
-        <td class="bg-white w-30">{{ oblast.oblastNameNormalized }}</td>
-        <td class="bg-white w-10">{{ oblast.harvestedArea }}</td>
-        <td class="bg-white w-10">{{ oblast.grainYield }}</td>
-        <td class="bg-white w-10">{{ oblast.volume }}</td>
-        <td class="tl w-40">
-          <div class="slider-cell">
-            <input
-              type="range"
-              min="0"
-              max="125"
-              class="slider w-two-thirds"
-              @change="
-                emitSliderEvent(
-                  oblast.oblastNameNormalized,
-                  $event.target.value
-                )
-              "
-              :value="getOblastPercentage(oblast.oblastNameNormalized)"
-              :id="`range-${oblast.oblastNameNormalized}`"
-            />
-            <span class="bg-white w3 tc br1">
-              {{ getOblastPercentage(oblast.oblastNameNormalized) }}%
-            </span>
-          </div>
-        </td>
-      </tr>
-      <!-- </tbody> -->
-    </TransitionGroup>
+  <div>
+    <table id="data-table" class="f6 collapse pa1">
+      <thead>
+        <tr class="tl">
+          <th>Oblast</th>
+          <th class="br1 ph1" style="background-color: #ffc500">
+            Harvested Area
+          </th>
+          <!-- <th>Yield</th> -->
+          <!-- <th>Volume</th> -->
+          <th class="tc">Forecast</th>
+        </tr>
+      </thead>
+      <tbody v-if="activeData" class="w-100 bg-white">
+        <!-- use a transition-group instead for move animation -->
+        <!-- set animating to true when the transition starts -->
+        <!-- set animating to false when the transition ends -->
+        <TransitionGroup
+          name="slide-fade"
+          @enter="setAnimating(true)"
+          @leave="setAnimating(false)"
+        >
+          <tr
+            v-for="oblast in activeData"
+            :key="oblast.oblastNameNormalized"
+            @mouseover="handleOblastHover(oblast)"
+            @mouseout="handleOblastHover(null)"
+            :class="{
+              'stripe-dark': true,
+              black: isOblastFocused(oblast.oblastNameNormalized),
+              'dark-gray': !isOblastFocused(oblast.oblastNameNormalized),
+            }"
+          >
+            <td class="w-30 ph1 ttc lh-copy">
+              {{ oblast.oblastNameNormalized }}
+              <span class="o-50 f7"> {{ oblast.oblastNameUkrainian }}</span>
+            </td>
+            <td class="">{{ numberFormat(oblast.harvestedArea * 100) }}</td>
+            <!-- <td class=" w-10">{{ oblast.grainYield }}</td> -->
+            <!-- <td class=" w-10 ba b--blue">{{ oblast.volume }}</td> -->
+            <td class="tl">
+              <div class="slider-cell">
+                <input
+                  type="range"
+                  min="0"
+                  max="125"
+                  class="slider w-two-thirds"
+                  @change="
+                    emitSliderEvent(
+                      oblast.oblastNameNormalized,
+                      $event.target.value
+                    )
+                  "
+                  :value="getOblastPercentage(oblast.oblastNameNormalized)"
+                  :id="`range-${oblast.oblastNameNormalized}`"
+                />
+                <span class="w3 tc br1 f6">
+                  {{ getOblastPercentage(oblast.oblastNameNormalized) }}%
+                </span>
+              </div>
+            </td>
+          </tr>
+        </TransitionGroup>
+      </tbody>
 
-    <tfoot>
-      <tr class="bg-gray white f3 b">
-        <td>Total</td>
-        <td>{{ numberFormat(totalHarvestedArea) }}</td>
-        <td>{{ numberFormat(totalYield) }}</td>
-        <td>{{ numberFormat(totalVolume) }}</td>
-      </tr>
-    </tfoot>
-  </table>
+      <tfoot>
+        <tr class="bg-gray white f3 b">
+          <td>Total Harvested:</td>
+          <td>{{ numberFormat(totalHarvestedArea * 100) }} kilograms</td>
+          <!-- <td>{{ numberFormat(totalYield) }}</td> -->
+          <!-- <td>{{ numberFormat(totalVolume) }}</td> -->
+        </tr>
+      </tfoot>
+    </table>
+  </div>
 </template>
 <script setup>
 import { format } from "d3";
+import { normalizeOblastName } from "~~/helpers";
+
+const animating = ref(false); // will help us not overwrite focus when animating the transition
 
 // we expect a scenario object to be passed in via props
 // what is the difference between scenario and oblastSliderPercentages?
@@ -86,9 +110,33 @@ const props = defineProps({
     type: Number,
     required: true,
   },
+  focusedOblastName: {
+    type: String,
+  },
 });
 
-const emit = defineEmits(["sliderChange"]);
+function setAnimating(value) {
+  console.log("set animating", value);
+  animating.value = value;
+}
+
+const emit = defineEmits(["sliderChange", "setFocusedOblast"]);
+
+function handleOblastHover(oblast) {
+  // don't bubble hovers when animating
+  if (animating.value) return console.error("not hovering, we are animating");
+  // console.log('data table hover', oblast)
+  // get the normalized oblast name from the oblast object
+  if (!oblast) return;
+  const oblastName = oblast.oblastNameNormalized;
+
+  // emit the oblast name to the parent component
+  emit("setFocusedOblast", oblastName);
+}
+
+function isOblastFocused(oblastName) {
+  return oblastName === props.focusedOblastName;
+}
 
 const emitSliderEvent = (oblastName, percentage) =>
   emit("sliderChange", { oblastName, percentage });
@@ -106,7 +154,8 @@ const numberFormat = format(",.0f");
 <style>
 /* make move and fade transition animations for 'slide-fade' */
 .slide-fade-move {
-  transition: transform 2s;
+  transition: transform 1.2s cubic-bezier(0.45, 0, 0.55, 1);
+  pointer-events: none;
 }
 
 /* make the table responsive */

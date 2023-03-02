@@ -4,6 +4,7 @@
       v-if="featureCollection"
       v-for="oblast in featureCollection.features"
       :d="path(oblast)"
+      :key="oblast.properties.name_1"
       :fill="findOblastFillColor(oblast)"
       stroke="#CCC"
       stroke-width="0.2"
@@ -11,9 +12,8 @@
         'focused-shape': oblast.focused,
         'selected-shape': oblast.selected,
       }"
-      @mouseover="oblast.focused = true"
-      @mouseout="oblast.focused = false"
-      @click="oblast.selected = !oblast.selected"
+      @mouseover="handleOblastHover(oblast)"
+      @mouseout="handleOblastHover(null)"
     />
 
     <g v-if="activeDataByOblast">
@@ -29,9 +29,8 @@
           'focused-shape': oblast.focused,
           'selected-shape': oblast.selected,
         }"
-        @mouseover="oblast.focused = true"
-        @mouseout="oblast.focused = false"
-        @click="oblast.selected = !oblast.selected"
+        @mouseover="handleOblastHover(oblast)"
+        @mouseout="handleOblastHover(null)"
       >
         {{ oblast.properties.name_1 }}
       </text>
@@ -47,11 +46,10 @@
           'focused-shape': oblast.focused,
           'selected-shape': oblast.selected,
         }"
-        @mouseover="oblast.focused = true"
-        @mouseout="oblast.focused = false"
-        @click="oblast.selected = !oblast.selected"
+        @mouseover="handleOblastHover(oblast)"
+        @mouseout="handleOblastHover(null)"
       >
-        {{ findOblastValue(oblast) }}
+        {{ labelNumberFormat(findOblastValue(oblast) * 100) }}
         <!-- {{activeGrainType}} -->
       </text>
     </g>
@@ -61,6 +59,58 @@
 import * as d3 from "d3";
 import * as topojson from "topojson";
 import { normalizeOblastName } from "@/helpers.js";
+
+const emits = ["setFocusedOblast"];
+
+function handleOblastHover(oblast) {
+  console.log("map oblast hover", oblast);
+  // get the normalized oblast name from the oblast object
+  const oblastName = normalizeOblastName(oblast.properties.name_1);
+
+  // emit the oblast name to the parent component
+  emits("setFocusedOblast", oblastName);
+}
+
+// watch focusedOblastName and if it changes, update the focused oblast so it has a .focused value of true
+watch(
+  () => props.focusedOblastName,
+  (focusedOblastName) => {
+    // console.log('focused oblast name changed to', focusedOblastName);
+    if (featureCollection.value) {
+      const newFeatureCollection = {
+        ...featureCollection.value,
+        features: featureCollection.value.features.map((oblast) => {
+          if (
+            normalizeOblastName(oblast.properties.name_1) === focusedOblastName
+          ) {
+            return {
+              ...oblast,
+              focused: true,
+            };
+          } else {
+            return {
+              ...oblast,
+              focused: false,
+            };
+          }
+        }),
+      };
+
+      // sort the newFeatureCollection so focused oblasts are on top
+      newFeatureCollection.features.sort((a, b) => {
+        if (a.focused) {
+          return 1;
+        } else if (b.focused) {
+          return -1;
+        } else {
+          return 0;
+        }
+      });
+
+      featureCollection.value = newFeatureCollection;
+    }
+  }
+);
 
 // set up our props
 const props = defineProps({
@@ -80,11 +130,17 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  focusedOblastName: {
+    type: String,
+    required: false,
+  },
 });
 
 // This is a template ref, so mapSvg.value is the actual SVG element
 // because we set ref="mapSvg" on the SVG element
 const mapSvg = ref(null);
+
+const labelNumberFormat = d3.format(",.0f");
 
 // Make a D3 color scale for the values
 const valueColorScale = ref(
@@ -165,8 +221,14 @@ function findOblastFillColor(oblastShape) {
 </script>
 <style>
 path.focused-shape {
-  stroke-width: 4 !important;
+  stroke-width: 2.25 !important;
   stroke: black !important;
-  fill: yellow !important;
+  /* fill: yellow !important; */
+  transition: all 0.12s cubic-bezier(0.45, 0, 0.55, 1);
+  /* transition-delay: 50ms; */
+}
+
+path {
+  transition: all 1200ms cubic-bezier(0.45, 0, 0.55, 1);
 }
 </style>

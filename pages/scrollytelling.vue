@@ -1,84 +1,48 @@
 <template>
   <div class="scrollytelling-container" ref="scrollytellingContainer">
-    <div class="step-container w-two-thirds fixed top-0 right-0 z-2" ref="stepContainer">
-      <h3 class="w-100">Step: {{ stepIndex }}</h3>
+    <h3 class="w-100 fixed top-0 z-3">Step: {{ stepIndex }}</h3>
 
+    <div class="step-container w-two-thirds vh-100 fixed top-0 right-0 z-2" ref="stepContainer">
       <div id="step-graphics" ref="stepGraphics" class="fixed top-0 right-0 w-100 vh-100 z-0">
-        <div v-if="stepIndex < 2" id="step-graphic-0" class="step-graphic-container" step="0" :style="{
-          opacity: 0.75,
-          backgroundImage: 'url(images/intro-satellite-animation.gif)',
-        }"></div>
+        <TransitionGroup name="fade" mode="out-in">
+          <div v-show="stepIndex < 1" id="step-graphic-0" :key="0" class="step-graphic-container" step="0" :style="{
+            backgroundImage: 'url(images/intro-satellite-animation.gif)',
+          }"></div>
 
-        <div v-if="stepIndex >= 2 && stepIndex < 4" id="step-graphic-0" class="step-graphic-container" step="0" :style="{
-          opacity: 0.75,
-          backgroundRepeat: 'no-repeat',
-          backgroundImage:
-            'url(images/nasa_landsat_ukraine_plnt_2022_lrg.jpg)',
-        }"></div>
+          <div v-show="stepIndex >= 1 && stepIndex < 5" :key="1" id="step-graphic-0" class="step-graphic-container"
+            step="0" :style="{
+              backgroundRepeat: 'no-repeat',
+              backgroundImage:
+                'url(images/nasa_landsat_ukraine_plnt_2022_lrg.jpg)',
+            }"></div>
 
-        <!-- <div v-if="stepIndex >= 4 && stepIndex < 5" id="step-graphic-12" class="step-graphic-container" step="0" :style="{
-          opacity: 0.75,
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover',
-          backgroundImage: 'url(images/ukraine-placement-map.png)',
-        }"></div> -->
+          <div v-show="active && stepIndex >= 5 && stepIndex < 11" :key="2" class=" f2 h5 fixed top-0 left-0">
+            <UkraineOblastMap class="z-2 w-100 vh-90" ref="oblastMap" :activeDataByOblast="active.activeDataByOblast"
+              :activeGrainType="activeGrainType" :width="graphicWidth" :valueKey="'harvestedArea'"
+              :focusedOblastName="focusedOblastName" @setFocusedOblast="setFocusedOblast($event)" />
+          </div>
 
-        <!-- <div
-          id="step-graphic-3"
-          class="step-graphic-container"
-          step="3"
-          :style="{
-            opacity: 0,
-          }"
-        >
-          <img src="https://source.unsplash.com/random" />
-        </div> -->
+          <SankeyChart v-if="importExportData.length > 1" v-show="stepIndex === 11 || stepIndex === 12" ref="sankeyChart"
+            :key="3" :importExportData="importExportData" class="fixed vh-100 w-100 top-0 right-0 ba b--red"
+            :width="graphicWidth" :height="graphicHeight" :stepIndex="stepIndex" />
+        </TransitionGroup>
       </div>
 
-      <!-- <pre class="bw4 ba b--red h5">active? {{active}}</pre> -->
 
-      <div v-if="active && stepIndex >= 5 && stepIndex < 12">
-        <h2 class="fixed top-0 left-0 w-100 tc">
-          Total yield: {{ numberFormat(active.totalYield) }}
-          <a href="https://en.wiktionary.org/wiki/centner" class="link black">centner</a>
-          ({{ numberFormat(active.totalYield * 100) }} kilograms)
-
-          <!-- calculate the difference between the active totalYield and 1843 -->
-          <span v-if="+active.totalYield > 1843" class="green">
-            +{{ numberFormat(active.totalYield - 1843) }}
-          </span>
-
-          <span v-else-if="active.totalYield < 1843" class="red">
-            -{{ numberFormat(1843 - active.totalYield) }}
-          </span>
-        </h2>
-
-        <h2 class="w-100 fixed top-2 left-0 tc">
-          Projected UKR output:
-          {{ pctFormat(overallForecastPercent) }}
-        </h2>
-        <UkraineOblastMap class="z-2 w-100 vh-100" ref="oblastMap" :config="oblastMapConfig"
-          :activeDataByOblast="active.activeDataByOblast" :activeGrainType="activeGrainType" :width="graphicWidth"
-          :valueKey="oblastMapConfig.valueKey" :style="{
-            // opacity: mapOpacity,
-            opacity: oblastMapConfig.visibility ? mapOpacity : 0,
-          }" />
-      </div>
-
-      <SankeyChart v-show="(stepIndex === 12) || (stepIndex === 13)" ref="sankeyChart" class="fixed vh-100 w-100 top-0 right-0 ba b--red"
-        :importExportData="importExportData" :width="graphicWidth" :stepIndex="stepIndex" />
     </div>
 
-    <div class="text-container relative">
-      <h2 class="f-headline lh-title mt0 mb3 pa4">
-        <p class="">
-          <span class="bg-yellow">
-            Ukraine's grain farming in the midst of the conflict with Russia
-          </span>
-        </p>
-      </h2>
+    <div class="text-container relative z1">
+      <div>
+        <h2 class="f-headline lh-title mt0 mb3 pa4">
+          <div class="tc">
+            <span class="animated-intro-header">
+              Ukraine's grain farming in the midst of the conflict with Russia
+            </span>
+          </div>
+        </h2>
+      </div>
 
-      <p :class="paragraphClasses">
+      <div :class="paragraphClasses">
         <span class="pa1 bg-white">
           In 2022 Ukraine's agricultural exports totaled <br />
           <!-- <a
@@ -88,17 +52,11 @@
           > -->
           $28 billion, making up 41% of the country's total exports.
         </span>
-      </p>
+      </div>
 
-      <!-- <p :class="paragraphClasses">
-        <span class="pa1 bg-white">
-          Ukraine is the world's top global producer of Sunflower, #2 global
-          producer of Sunflower Oil and Sunflower Meal, and the #7 producer of
-          Wheat.
-        </span>
-      </p> -->
 
-      <p :class="paragraphClasses">
+
+      <div :class="paragraphClasses">
         <span class="pa1 bg-white">
           In the midst of the conflict with Russia, how is Ukraine's grain
           farming being impacted?
@@ -107,152 +65,178 @@
           produced this map looking at the location of Ukraine's crops and the
           areas impacted by the war.
         </span>
-      </p>
+      </div>
 
-      <p :class="paragraphClasses">
+      <div :class="paragraphClasses">
         <span class="pa1 bg-white">
           The war has taken a significant toll on the country's infrastructure,
           particularly in the eastern areas most affected by the conflict, where
           farming infrastructure has been destroyed.
         </span>
-      </p>
+      </div>
 
-      <p :class="paragraphClasses">
+      <div :class="paragraphClasses">
         <span class="pa1 bg-white">
           The exact impact of the war on grain production isn't possible to
           quantify, as the ability to collect data has been severely limited by
           the conflict.
         </span>
-      </p>
+      </div>
 
       <!-- introduce oblast map -->
-      <p :class="paragraphClasses">
+      <div :class="paragraphClasses">
         <span class="pa1 bg-white">
           Ukraine's agricultural data is organized by Oblasts, which are like
-          states. Here is a map of Ukraine's Oblasts.
+          states.
         </span>
-      </p>
+      </div>
 
-      <p :class="paragraphClasses">
+      <div :class="paragraphClasses">
         <span class="pa1 bg-white">
           This map shows Ukraine's total grain production in 2021 by Oblast
           before the war started. The more yellow, the more grain production was
           produced there.
         </span>
-      </p>
+      </div>
 
-      <p :class="paragraphClasses">
+      <div :class="paragraphClasses">
         <span class="pa1 bg-white">
           Using our forecasting tool, we can explore different scenarios and how
           they might impact grain production in Ukraine in the future.
         </span>
-      </p>
+      </div>
 
       <!-- small impact -->
-      <p :class="paragraphClasses">
+      <div :class="paragraphClasses">
         <span class="pa1 bg-white">The small impact scenario predicts that grain production will only be
           effected by about
           <a href="https://hub.conflictobservatory.org/portal/apps/sites/#/home/pages/grain-1"
             class="black link underline b">15%</a>
           from normal levels in 2022.
-
-          <!-- This results in a
-          deficit of <strong>TK million tons</strong> of grain, or TK% of
-          Ukraine's total grain production. -->
         </span>
-      </p>
+      </div>
 
-      <!-- high impact -->
-      <p :class="paragraphClasses">
-        <span class="pa1 bg-white">
+      <div :class="paragraphClasses">
+        <span class="pa1 bg-white black">
           The high impact scenario predicts that grain production will be
-          effected by as much as 50% from normal levels in 2022. This results in
-          a deficit of <strong>TK kilograms</strong> of grain.
+          effected by as much as 50% from normal levels in 2022.
+          <!-- This results in
+          a deficit of <strong>TK kilograms</strong> of grain. -->
         </span>
-      </p>
+      </div>
 
-      <!-- introduce the slider and allow the user to make their own predictions -->
-      <p :class="paragraphClasses">
+      <div :class="paragraphClasses">
         <span class="pa1 bg-white">
           Now it's your turn to make your own predictions. Use the sliders and
           buttons below to simulate different scenarios and see how they might
           impact grain production in Ukraine in the future.
         </span>
-      </p>
+      </div>
 
-      <p class="pa4 overflow-y-auto br1">
-        <DataTable v-if="scenario" :activeData="active.activeData" :oblastScales="scenario.oblastScales"
-          :totalHarvestedArea="active.totalHarvestedArea" :totalYield="active.totalYield"
-          :totalVolume="active.totalVolume" class="w-50" @sliderChange="handleSliderChange" />
+      <div class="step pa4 overflow-y-auto br1" style="pointer-events: default !important;">
+        <DataTable v-show="scenario" :activeData="active.activeData" :oblastScales="scenario.oblastScales"
+          :focusedOblastName="focusedOblastName" :totalHarvestedArea="active.totalHarvestedArea"
+          :totalYield="active.totalYield" :totalVolume="active.totalVolume" @sliderChange="handleSliderChange"
+          @setFocusedOblast="setFocusedOblast($event)" />
 
-        <!-- make a button to set all oblasts to 15% -->
-        <button v-for="percent in [15, 25, 50]" class="dim dib ma1" @click="setAllOblastOutput(percent)">
-          Set all Oblasts to {{ percent }}%
-        </button>
+        <div class="buttons f5 flex flex-wrap">
+          <!-- make a button to set all oblasts to 15% -->
+          <button v-for="percent in [15, 25, 50]" class="dim dib ma1" @click="setAllOblastOutput(percent)">
+            Set all Oblasts to {{ percent }}%
+          </button>
 
-        <!-- make a button to reset everything to 100% -->
-        <button class="dim db ma1" @click="setAllOblastOutput(100)">
-          Reset all Oblasts to 100%
-        </button>
-      </p>
+          <!-- make a button to reset everything to 100% -->
+          <button class="b dim db ma1" @click="setAllOblastOutput(100)">
+            Reset all Oblasts to 100%
+          </button>
+        </div>
+      </div>
 
-      <h2 class="f-subheadline pa2 pa5-ns">Who is affected downstream?</h2>
+      <div :class="paragraphClasses">
+        <h2 class="f-subheadline pa2 pa5-ns">Who is affected downstream?</h2>
 
-      <p :class="paragraphClasses">
         <span class="pa1 bg-white">
           Where does Ukraine's grain usually end up? In a normal trade year, the
           bulk of Ukraine's exports go to African and Southeast Asian countries.
         </span>
-      </p>
+      </div>
+
+      <!-- <div :class="paragraphClasses">
+        <span class="pa1 bg-white">
+          Where does Ukraine's grain usually end up? In a normal trade year, the
+          bulk of Ukraine's exports go to African and Southeast Asian countries.
+        </span>
+      </div> -->
 
       <!-- introduce small/large impact scenarios that will be shown on Sankey chart -->
-      <p :class="paragraphClasses">
+      <div :class="paragraphClasses">
         <span class="pa1 bg-white">
           Let's take a look at how the small and high impact scenarios we
           explored earlier might impact the countries that import Ukraine's
           grain.
         </span>
-      </p>
+      </div>
 
-      <p :class="paragraphClasses">
+      <div :class="paragraphClasses">
         <span class="pa1 bg-white">
-          This slider controls the amount of grain that is exported from
-          Ukraine. As less is exported, the countries downstream are affected
-          differently depending on how much they depend on Ukraine's grain.
-          <BarChart v-if="stepIndex >= 13 && stepIndex < 16" ref="barChart" :initScenario="overallForecastPercent"
-            :width="graphicWidth" />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </span>
-      </p>
+      </div>
 
       <!-- small impact -->
-      <p :class="paragraphClasses">
+      <div :class="paragraphClasses">
         <span class="pa1 bg-white">
           The small impact scenario predicts that grain production will only be
-          effected by about 15% from normal levels in 2022. This results in a
+          effected by about 15% from normal levels in 2022.
+          <!-- This results in a
           deficit of <strong>TK million tons</strong> of grain, or TK% of
-          Ukraine's total grain production.
+          Ukraine's total grain production. -->
         </span>
-      </p>
+        <BarChart class="f6" ref="barChart" :showSentence="true" :showSlider="false" :initScenario="0.85"
+          :width="graphicWidth * 0.8" />
+      </div>
 
       <!-- high impact -->
-      <p :class="paragraphClasses">
+      <div :class="paragraphClasses">
         <span class="pa1 bg-white">
           The high impact scenario predicts that grain production will be
-          effected by as much as 50% from normal levels in 2022. This results in
+          effected by as much as 50% from normal levels in 2022.
+          <!-- This results in
           a deficit of <strong>TK million tons</strong> of grain, or
-          <strong>TK%</strong> of Ukraine's total grain production.
+          <strong>TK%</strong> of Ukraine's total grain production. -->
         </span>
-      </p>
+        <BarChart class="f6" ref="barChart" :showSlider="false" :showSentence="true" :initScenario="0.50"
+          :width="graphicWidth * 0.8" />
+      </div>
 
       <!-- introduce the slider and allow the user to make their own predictions -->
-      <p :class="paragraphClasses">
-        <span class="pa1 bg-white">
+      <div :class="paragraphClasses">
+        <span class="pa1 bg-white f3 lh-copy measure  dib">
           Now it's your turn to make your own predictions. Use the slider below
           to simulate different scenarios and see how they might impact grain
           production in Ukraine in the future.
         </span>
-      </p>
+
+        <BarChart class="f6" ref="barChart" :showSlider="true" :showSentence="true" :initScenario="overallForecastPercent"
+          :width="graphicWidth * 0.8" />
+      </div>
     </div>
+
+    <div class="fixed top-0 right-0 z-3 w-100 flex justify-center items-center">
+      <h2 class="pa2 f-subheadline w-50">
+        Harvest:<br />
+        {{ numberFormat(animatedYieldNumber * 100) }}kg
+      </h2>
+
+      <h2 class="pa2 f-subheadline tr w-50">
+        Output:<br />
+        {{ pctFormat(animatedOutputNumber) }}
+        <!-- {{ animatedOutputNumber }} -->
+      </h2>
+    </div>
+
+
   </div>
 </template>
 <script setup>
@@ -261,26 +245,53 @@ import scrollama from "scrollama";
 import { normalizeOblastName } from "@/helpers";
 // import anime.js
 import anime from "animejs/lib/anime.es.js";
+import { useWindowSize, useElementSize } from "@vueuse/core";
 
-const stepContainer = ref(null); // the html element for the container
+const { width, height: graphicHeight } = useWindowSize();
+
+// const stepContainer = ref(null); // the html element for the container
+const scrollytellingContainer = ref(null); // the html element for the container
+
+// const graphicWidth = computed(() => {
+//   // if the stepContainer ref exists, use its width
+//   // otherwise default to 500
+//   return stepContainer.value ? stepContainer.value.offsetWidth : 1200;
+// });
+
+const { width: graphicWidth } =
+  useElementSize(scrollytellingContainer);
 
 // we will fill these later with our data
-const importExportData = ref([]);
-
-const animatedExportNumber = ref(0); // this will animate up to 27.8
+// const importExportData = ref([]);
 
 const stepIndex = ref(0); // keep track of the index
 const stepProgress = ref(0); // keep track of the progress within a step
 // const pageProgress = ref(0) // keep track of the total page progress
 
+const importExportData = ref([]);
+
+onMounted(() => {
+  fetch("data/comtrade_imports/00_all_data_ukraine.csv")
+    .then((response) => response.text())
+    .then((data) => {
+      importExportData.value = d3.csvParse(data);
+    });
+})
+
+const valueKey = ref("harvestedArea"); // the key we will use to get the value from the data
+
 // create a d3 number format to always show 1 decimal place
-const numberFormat = d3.format(",.1f");
+const numberFormat = d3.format(",.0f");
 const pctFormat = d3.format(",.1%");
 
 // the tachyons classes we will use for the paragraphs
-const paragraphClasses = "pa4 f2 lh-copy measure w-80 center ml2 ml5-ns";
+const paragraphClasses = "step pa4 f2 lh-copy measure w-80 center ml2 ml5-ns z1";
 
 const active = useActiveData();
+
+
+
+
 
 const { activeGrainType, setActiveGrainType } = useActiveGrainType();
 // const DEFAULT_GRAIN_TYPE = "10 пшенЯР-Table 1";
@@ -290,17 +301,58 @@ setActiveGrainType(DEFAULT_GRAIN_TYPE);
 
 const overallForecastPercent = ref(1);
 
+
+const animatedExportNumber = ref(0); // this will animate up to 27.8
+
+const animatedOutputNumber = ref(0)
+const animatedYieldNumber = ref(0)
+
+
+onMounted(() => {
+  // when active.totalYield changes, animate the animatedYieldNumber to the new value with anime
+  watch(active, (newActive) => {
+    const newValue = newActive.totalYield
+    anime({
+      targets: animatedYieldNumber,
+      value: [animatedYieldNumber.value, newValue],
+      round: 100,
+      easing: "linear",
+      duration: 1200,
+    });
+  }, { immediate: true });
+
+  // watch overallForecastPercent and update animatedOutputNumberr
+  watch(overallForecastPercent, (newValue) => {
+    console.log('overallForecastPercent changed to', newValue)
+    anime({
+      targets: animatedOutputNumber,
+      value: [animatedOutputNumber.value, newValue],
+      round: 100,
+      easing: "linear",
+      duration: 1200,
+    });
+  }, { immediate: true });
+})
+
+const focusedOblastName = ref(null)
+
+function setFocusedOblast(oblastName) {
+  // console.log('focusing on', oblastName)
+  // if oblastName is null, remove the focus
+  focusedOblastName.value = oblastName
+}
+
 const { scenario, setOblastScale, setScenario } = useCurrentScenario();
 
 const handleSliderChange = ({ oblastName, percentage }) => {
   const scale = +percentage / 100;
   setOblastScale({ oblastName, scale });
-  const valueKey = oblastMapConfig.value.valueKey;
-  const originalTotal = active.value[`${valueKey}OriginalTotal`];
+  // const valueKey = oblastMapConfig.value.valueKey;
+  const originalTotal = active.value[`${valueKey.value}OriginalTotal`];
   const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
-  const newTotal = active.value[`total${cap(valueKey)}`];
+  const newTotal = active.value[`total${cap(valueKey.value)}`];
   overallForecastPercent.value = newTotal / originalTotal;
-  console.log(overallForecastPercent.value);
+  // console.log(overallForecastPercent.value);
 };
 
 // set all oblasts to a certain percentage
@@ -326,84 +378,11 @@ const setAllOblastOutput = (percentage) => {
 // ];
 // setScenario(scenarioButtons[1]) // this helps us see whether the scenario buttons are going through
 
-const oblastMapConfig = ref({
-  visibility: false, // true = show, false = hide
-  valueKey: "harvestedArea",
-});
-
-// const sankeyConfig = ref({
-//   visibility: false, // true = show, false = hide
-// });
-
-const barChartConfig = ref({
-  visibility: false, // true = show, false = hide
-  xProperty: "oblastNameUkrainian",
-  yProperty: "harvestedArea",
-});
-
-// create a computed to smoothly fade in the map opacity from 0 to 1 between step 3 and 4 and hide the map before step 3
-// const mapOpacity = computed(() => {
-//   if (stepIndex.value < 3) {
-//     return 0;
-//   } else if (stepIndex.value === 3) {
-//     return stepProgress.value;
-//   } else if (stepIndex.value === 4) {
-//     return 1;
-//   } else if (stepIndex.value > 4) {
-//     return 1;
-//   } else {
-//     return 0;
-//   }
-// });
-
-const graphicWidth = computed(() => {
-  // if the stepContainer ref exists, use its width
-  // otherwise default to 500
-  return stepContainer.value ? stepContainer.value.offsetWidth : 1200;
-});
-// const graphicWidth = 900;
-
-function resetVisualVisibility() {
-  oblastMapConfig.value.visibility = false;
-  // sankeyConfig.value.visibility = false;
-  barChartConfig.value.visibility = false;
-}
-
 // watch for changes to stepIndex when a user scrolls
 watch(
   stepIndex,
   (newIndex) => {
-    // look for a relevant step graphic in step graphics, and if it exists, make it visible
-    // const stepGraphics = document ? document.querySelectorAll(".step__graphic") : []
-    // use refs to get the step graphics
-    // stepGraphics.forEach((graphic) => {
-    //   if (graphic.dataset.step === newIndex.toString()) {
-    //     graphic.classList.remove("hidden");
-    //   } else {
-    //     graphic.classList.add("hidden");
-    //   }
-    // });
-
-    // if the step is 3, make step-graphic-3 visible with anime
-    // if (newIndex === 3) {
-    //   anime({
-    //     targets: ".step-graphic-3",
-    //     opacity: [0, 1],
-    //     duration: 1000,
-    //     easing: "easeInOutQuad",
-    //   });
-    // }
-
-    // if(newIndex < 4) {
-    //   d3.select('#step-graphic-0').classed('hidden', false)
-    // } else {
-    //   d3.select('#step-graphic-0').classed('hidden', true)
-    // }
-
     if (newIndex === 0) {
-      oblastMapConfig.value.visibility = false;
-      // sankeyConfig.value.visibility = true;
-      oblastMapConfig.value.visibility = false;
     } else if (newIndex === 1) {
       // sankeyConfig.value.visibility = true;
       // oblastMapConfig.value.visibility = false;
@@ -418,22 +397,13 @@ watch(
     } else if (newIndex === 4) {
       // sankeyConfig.value.visibility = false;
       // oblastMapConfig.value.visibility = true;
-    } else if (newIndex <= 7) {
-      setAllOblastOutput(100)  
+    } else if (newIndex <= 6) {
+      setAllOblastOutput(100);
+    } else if (newIndex === 7) {
+      setAllOblastOutput(85);
     } else if (newIndex === 8) {
-      setAllOblastOutput(85)
-    } else if (newIndex === 9) {
-      setAllOblastOutput(50)
+      setAllOblastOutput(50);
     }
-
-    // the map is visible on all steps after 7
-    if (newIndex >= 5) {
-      oblastMapConfig.value.visibility = true;
-    } else {
-      oblastMapConfig.value.visibility = false;
-    }
-
-  
   },
   { immediate: true }
 );
@@ -442,19 +412,14 @@ onMounted(() => {
   // set up scrollama
   const scroller = scrollama();
 
-  // set the visibility of al the visual forms to false
-  oblastMapConfig.value.visibility = false;
-  // sankeyConfig.value.visibility = false;
-  oblastMapConfig.value.visibility = false;
-
   // set every step style to opacity 0
   // d3.selectAll(".text-container p").style("opacity", 0);
 
   // setup the instance, pass callback functions
   scroller
     .setup({
-      step: ".text-container p",
-      offset: 0.55,
+      step: ".text-container .step",
+      offset: 0.4,
       progress: true,
       // debug: true,
     })
@@ -483,12 +448,57 @@ onMounted(() => {
       // });
     });
 
+  // take .animated-intro-header and split it into words, then animate it in with anime js with a stagger
+  const animatedIntroHeader = document.querySelector(
+    ".animated-intro-header"
+  );
+
+  // split the text into words
+  const words = animatedIntroHeader.innerHTML.split(" ");
+
+  // create a new span for each word
+  const newWords = words.map((word) => {
+    const span = document.createElement("span");
+    span.innerHTML = word;
+    // add some tachyons classes to the span
+    span.classList.add("dib", "ma0", "pl1", "pr3", "bg-yellow");
+    return span;
+  });
+
+  // replace the text with the new spans
+  animatedIntroHeader.innerHTML = "";
+
+  newWords.forEach((word) => {
+    animatedIntroHeader.appendChild(word);
+  });
+
+  // animate the new spans in
+  anime({
+    targets: ".animated-intro-header span",
+    opacity: [0, 1],
+    // starts out flipped vertically so it is basically invisible, then unfolds
+    // translateY: ["-100%", 0],
+    // rotateX: [90, 0],
+    // rotateZ: [90, 0],
+    // do some cool 3d transforms
+    // translateZ: [20, 0],
+    translateY: ['8vh', 0],
+    // translateX: [40, 0],
+    // skewY: [5, 0],
+    // easing: "easeInOutQuad",
+    // linear easing
+    // easing: "linear",
+    easing: "easeOutExpo",
+    duration: 800,
+    delay: anime.stagger(220),
+  });
+
   // load our import/export data from public/data/comtrade_imports/00_all_data_ukraine.csv as parse with d3.csvParse
-  fetch("/data/comtrade_imports/00_all_data_ukraine.csv")
-    .then((response) => response.text())
-    .then((data) => {
-      importExportData.value = d3.csvParse(data);
-    });
+  // fetch("/data/comtrade_imports/00_all_data_ukraine.csv")
+  //   .then((response) => response.text())
+  //   .then((data) => {
+  //     importExportData.value = d3.csvParse(data);
+  //   });
 });
 </script>
 <style scoped>
@@ -496,7 +506,7 @@ onMounted(() => {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  pointer-events: none;
+  /* pointer-events: none; */
   background-position: center center;
   /* background-repeat: no-repeat; */
   background-size: contain;
@@ -506,10 +516,17 @@ onMounted(() => {
   display: none;
 }
 
-.text-container p {
+.text-container .step {
   /* margin-top: 33vh; */
   margin-bottom: 50vh;
   min-height: 40vh;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left; */
+
+  /* pointer-events: none; */
+
 }
 
 h2 {
@@ -535,5 +552,29 @@ h2 {
 
 .bg-white-o-40 {
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* add styles for vue fade transition */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 720ms cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+}
+
+.top-4 {
+  top: 4rem;
+}
+
+.vh-90 {
+  height: 90vh;
 }
 </style>

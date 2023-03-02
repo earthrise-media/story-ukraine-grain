@@ -1,5 +1,5 @@
 <template>
-  <svg class="w-100" :height="height">
+  <svg class="w-100" :height="props.height" :width="props.width">
     <!-- draw a sankey diagram using sankeyPaths and sankeyNodes -->
     <g class="sankey-paths" v-if="sankeyPaths">
       <path
@@ -34,10 +34,24 @@
           :fill="/*node.fill*/ 'white'"
           :font-size="Math.max(Math.sqrt(node.value) * 0.0009, 7)"
           transform="translate(-10, 0)"
+          :data-json="node"
         >
           {{ node.name }}
         </text>
       </g>
+
+      <!-- add a label for ukraine on the left side of the screen, rotated 90 degrees -->
+      <text
+        x="0"
+        y="0"
+        dy="0.32em"
+        text-anchor="start"
+        fill="white"
+        font-size="14"
+        transform="translate(15, 15) rotate(90)"
+      >
+        Ukraine
+      </text>
     </g>
   </svg>
 </template>
@@ -48,13 +62,14 @@ import * as d3Sankey from "d3-sankey";
 import anime from "animejs/lib/anime.es.js";
 
 const props = defineProps({
-  config: {
-    type: Object,
-    required: true,
-  },
   importExportData: {
     type: Array,
     required: true,
+  },
+  height: {
+    type: Number,
+    required: true,
+    default: 900,
   },
   width: {
     type: Number,
@@ -71,7 +86,7 @@ const props = defineProps({
 watch(
   () => props.stepIndex,
   (stepIndex) => {
-    if (stepIndex === 12) {
+    if (stepIndex === 11) {
       animateSankey();
     }
   }
@@ -112,7 +127,7 @@ const animateSankey = () => {
 
 // make height a computed 0.6 of props.width
 // const height = computed(() => props.width * 0.6);
-const height = 1100;
+// const height = 1100;
 /*
 each row of importExportData looks like this:
 {
@@ -137,38 +152,61 @@ the value will always be the ukrTradeValue
 const nodeWidth = 50;
 
 // First we set up our sankey
+// const sankey = d3Sankey
+//   .sankey()
+//   .nodeId((d) => d.name)
+//   // .nodeAlign(d3Sankey.sankeyJustify)
+//   // justify to top
+//   .nodeAlign(d3Sankey.sankeyLeft)
+//   .nodeWidth(nodeWidth)
+//   // use .linkSort to sort by value
+//   .linkSort((a, b) => b.value - a.value)
+//   .nodePadding(2)
+//   .extent([
+//     [1, 1],
+//     [props.width - 1, props.height - 6],
+//   ]);
+
+// refactor to make links align to the top of nodes
 const sankey = d3Sankey
   .sankey()
   .nodeId((d) => d.name)
-  // .nodeAlign(d3Sankey.sankeyJustify)
-  // justify to top
-  .nodeAlign(d3Sankey.sankeyLeft)
+  .nodeAlign(d3Sankey.sankeyRight)
   .nodeWidth(nodeWidth)
-  // use .linkSort to sort by value
   .linkSort((a, b) => b.value - a.value)
   .nodePadding(2)
   .extent([
     [1, 1],
-    [props.width - 1, height - 6],
+    [props.width - 1, props.height - 6],
   ]);
 
 // then we feed the sankey our nodes and links and get back a sankey diagram
-const sankeyDiagram = computed(() =>
-  sankey({
+const sankeyDiagram = computed(() => {
+  // sort the data by ukrTradeValue
+  // and filter to the top 10
+  const filteredData = props.importExportData
+    .sort((a, b) => b.ukrTradeValue - a.ukrTradeValue)
+    .slice(0, 10);
+
+  return sankey({
     nodes: [
       { name: "Ukraine" },
-      ...props.importExportData.map((d) => ({ name: d.countryName })),
+      ...filteredData.map((d) => ({ name: d.countryName })),
     ],
-    links: props.importExportData.map((d) => ({
+    links: filteredData.map((d) => ({
       source: "Ukraine",
       target: d.countryName,
       value: +d.ukrTradeValue,
     })),
-  })
-);
+  });
+});
 
 // create a categorical scale for countries
-const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+const colorScale = d3.scaleOrdinal(d3.schemeSet2);
+// use a way cooler built in d3 scheme
+// const colorScale = d3.scaleOrdinal(d3.schemeTableau10);
+// use d3 turbo instead
+// const colorScale = d3.scaleOrdinal(d3.schemeTurbo);
 
 // then we can use the sankey diagram to make sankeyPaths and sankeyNodes
 // const sankeyPaths = computed(() => sankeyDiagram.value.links.map(link => ({
