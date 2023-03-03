@@ -315,7 +315,7 @@ const numberFormat = d3.format(",.0f");
 const pctFormat = d3.format(",.1%");
 
 // the tachyons classes we will use for the paragraphs
-const paragraphClasses = "step pa1 pa4-l f2 lh-copy measure w-100 w-80-l center ml2 ml5-ns z1";
+const paragraphClasses = "step pa1 pa4-l f3 lh-copy measure w-100 w-80-l center ml2 ml5-ns z1";
 
 const active = useActiveData();
 

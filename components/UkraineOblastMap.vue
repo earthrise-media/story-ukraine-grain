@@ -151,8 +151,25 @@ const labelNumberFormat = d3.format(",.0f");
 const valueColorScale = ref(
   d3
     .scaleLinear()
-    .domain([0, 500])
-    .range(["white", "#FFC500"])
+    // .domain([0, 250, 600])
+    // .range(["white", "#FFC500", "#E49344"])
+    // .range(["white", "#FFC500", "#418CC3"])
+//     #ffeda0
+// #feb24c
+// #f03b20
+// make a new range with these colors
+  // .range(["#ffeda0", "#feb24c", "#f03b20"])
+//   #f7fcb9
+// #addd8e
+// #31a354
+// .range(["#f7fcb9", "#addd8e", "#31a354"])
+// #146E37 #45A658 #98D37F #E0F1A2 #FFFFE0
+// .range(["#146E37", "#45A658", "#98D37F", "#E0F1A2", "#FFFFE0"])
+// invert
+    .range(["#FFFFE0", "#E0F1A2", "#98D37F", "#45A658", "#146E37"])
+    .domain([50, 100, 200, 300, 800])
+    // #FEA141 #FEA141
+    // .range(["#FFFFE0", "#FFC500",  "#FEA141"])
     .interpolate(d3.interpolateHslLong)
 );
 
