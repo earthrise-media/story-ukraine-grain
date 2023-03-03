@@ -196,8 +196,8 @@ onMounted(async () => {
 const featureCollection = ref(null);
 
 // Create a reactive ref to hold our width and height
-const width = ref(900);
-const height = ref(600);
+const width = ref(1267);
+const height = ref(900);
 
 // watch geographic data and when it changes, set featureCollection to the aggregation of the data
 // and then fit the projection to the featureCollection

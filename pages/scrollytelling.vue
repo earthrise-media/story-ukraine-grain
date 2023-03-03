@@ -2,7 +2,7 @@
   <div class="scrollytelling-container" ref="scrollytellingContainer">
     <h3 class="w-100 fixed top-0 z-3">Step: {{ stepIndex }}</h3>
 
-    <div class="step-container w-two-thirds vh-100 fixed top-0 right-0 z-2" ref="stepContainer">
+    <div class="step-container w-100 w-two-thirds-ns vh-100 fixed top-0 right-0 z-2" ref="stepContainer">
       <div id="step-graphics" ref="stepGraphics" class="fixed top-0 right-0 w-100 vh-100 z-0">
         <TransitionGroup name="fade" mode="out-in">
           <!-- <div v-show="stepIndex < 1" id="step-graphic-0" :key="0" class="step-graphic-container" step="0" :style="{
@@ -17,7 +17,7 @@
           </div> -->
 
           <!-- refactor to make sure the video covers the entire screen, even if it cuts the edges off a bit -->
-          <div v-show="stepIndex < 1" id="step-graphic-0" :key="0" class="step-graphic-container flex" step="0">
+          <div v-show="stepIndex < 1" id="step-graphic-0" :key="0" class="step-graphic-container bg-black tc" step="0">
             <video autoplay loop muted playsinline class="vh-100 items-center justify-center">
               <source src="intro-video-hires.mp4" type="video/mp4">
             </video>
@@ -33,7 +33,9 @@
             }"></div>
 
           <div v-show="active && stepIndex >= 4 && stepIndex < 11" :key="2" class=" f2 h5 fixed top-0 right-0">
-            <UkraineOblastMap :class="['z-2 vh-90 fixed right-0', stepIndex < 10 ? 'w-100' : 'w-50']" ref="oblastMap" :activeDataByOblast="active.activeDataByOblast"
+            <UkraineOblastMap :class="['z-2 vh-90 fixed right-0', stepIndex < 10 ? 'w-100' : 'w-50-ns']" ref="oblastMap" 
+            id="oblast-map"
+            :activeDataByOblast="active.activeDataByOblast"
               :activeGrainType="activeGrainType" :width="graphicWidth" :valueKey="'harvestedArea'"
               :focusedOblastName="focusedOblastName" @setFocusedOblast="setFocusedOblast($event)" />
           </div>
@@ -49,7 +51,7 @@
 
     <div class="text-container relative z1">
       <div>
-        <h2 class="f-headline lh-title mt0 mb3 pa4">
+        <h2 class="f1 f-headline-l lh-title mt0 mb3 pa4">
           <div class="tc">
             <span class="animated-intro-header">
               Ukraine's grain farming in the midst of the conflict with Russia
@@ -142,7 +144,7 @@
         </span>
       </div>
 
-      <div :class="['step pa4 overflow-y-auto br1 ba', stepIndex === 10 ? 'w-50 b--blue' : 'w-100 b--red']" style="pointer-events: default !important;">
+      <div :class="['step pa4 overflow-y-auto br1', stepIndex === 10 ? 'w-50' : 'w-100']" style="pointer-events: default !important;">
         <DataTable v-show="scenario" :activeData="active.activeData" :oblastScales="scenario.oblastScales"
           :focusedOblastName="focusedOblastName" :totalHarvestedArea="active.totalHarvestedArea"
           :totalYield="active.totalYield" :totalVolume="active.totalVolume" @sliderChange="handleSliderChange"
@@ -311,7 +313,7 @@ const numberFormat = d3.format(",.0f");
 const pctFormat = d3.format(",.1%");
 
 // the tachyons classes we will use for the paragraphs
-const paragraphClasses = "step pa4 f2 lh-copy measure w-80 center ml2 ml5-ns z1";
+const paragraphClasses = "step pa1 pa4-l f2 lh-copy measure w-100 w-80-l center ml2 ml5-ns z1";
 
 const active = useActiveData();
 
@@ -639,5 +641,7 @@ h2 {
   transform: translateX(100%);
 }
 
-
+#oblast-map {
+  transition: all 1.2s cubic-bezier(0.45, 0, 0.55, 1);
+}
 </style>

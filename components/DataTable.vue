@@ -34,9 +34,9 @@
           >
             <td class="w-30 ph1 ttc lh-copy">
               {{ oblast.oblastNameNormalized }}
-              <span class="o-50 f7"> {{ oblast.oblastNameUkrainian }}</span>
+              <span class="o-50 f7 dn dib-l"> {{ oblast.oblastNameUkrainian }}</span>
             </td>
-            <td class="">{{ numberFormat(oblast.harvestedArea * 100) }}</td>
+            <td class="w-10">{{ numberFormat(oblast.harvestedArea * 100) }}</td>
             <!-- <td class=" w-10">{{ oblast.grainYield }}</td> -->
             <!-- <td class=" w-10 ba b--blue">{{ oblast.volume }}</td> -->
             <td class="tl">
@@ -65,9 +65,9 @@
       </tbody>
 
       <tfoot>
-        <tr class="bg-gray white f3 b">
+        <tr class="bg-gray white f4-l b">
           <td>Total Harvested:</td>
-          <td>{{ numberFormat(totalHarvestedArea * 100) }} kilograms</td>
+          <td class="">{{ numberFormat(totalHarvestedArea * 100) }}kg</td>
           <!-- <td>{{ numberFormat(totalYield) }}</td> -->
           <!-- <td>{{ numberFormat(totalVolume) }}</td> -->
         </tr>
