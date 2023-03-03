@@ -143,9 +143,20 @@ const mapSvg = ref(null);
 const labelNumberFormat = d3.format(",.0f");
 
 // Make a D3 color scale for the values
+// const valueColorScale = ref(
+//   d3.scaleLinear().domain([0, 500]).range(["white", "#FFC500"])
+// );
+
+// use d3 interpolateHslLong to interpolate between two colors
 const valueColorScale = ref(
-  d3.scaleLinear().domain([0, 500]).range(["white", "#FFC500"])
+  d3
+    .scaleLinear()
+    .domain([0, 500])
+    .range(["white", "#FFC500"])
+    .interpolate(d3.interpolateHslLong)
 );
+
+
 // Merges geometries by shared ID.
 // Inspired by https://github.com/neocarto/geotoolbox/blob/cee58b6c45e3faa59ef680d8e3162c430077e80c/src/gis/aggregate.js
 const aggregate = (topology, objects, idProperty) => {

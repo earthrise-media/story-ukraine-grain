@@ -93,7 +93,7 @@ watch(
 );
 
 const staggerDelay = 40;
-const animateInDuration = 900;
+const animateInDuration = 500;
 
 // a function to animate in sankeyPaths and sankeyNodes one by one with anime.js
 const animateSankey = () => {
@@ -110,7 +110,7 @@ const animateSankey = () => {
     strokeDashoffset: [anime.setDashoffset, 0],
     easing: "easeInOutQuad",
     duration: animateInDuration,
-    delay: (el, i) => animateInDuration * 1.2 + i * staggerDelay,
+    delay: (el, i) => animateInDuration * 0.9 + i * staggerDelay,
     loop: false,
   });
 

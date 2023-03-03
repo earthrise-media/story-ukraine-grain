@@ -78,6 +78,7 @@
 <script setup>
 import { format } from "d3";
 import { normalizeOblastName } from "~~/helpers";
+import { debounce } from "lodash";
 
 const animating = ref(false); // will help us not overwrite focus when animating the transition
 
@@ -122,7 +123,19 @@ function setAnimating(value) {
 
 const emit = defineEmits(["sliderChange", "setFocusedOblast"]);
 
-function handleOblastHover(oblast) {
+// function handleOblastHover(oblast) {
+//   // don't bubble hovers when animating
+//   if (animating.value) return console.error("not hovering, we are animating");
+//   // console.log('data table hover', oblast)
+//   // get the normalized oblast name from the oblast object
+//   if (!oblast) return;
+//   const oblastName = oblast.oblastNameNormalized;
+
+//   // emit the oblast name to the parent component
+//   emit("setFocusedOblast", oblastName);
+// }
+// refactor to add debounce of 100ms
+const handleOblastHover = debounce((oblast) => {
   // don't bubble hovers when animating
   if (animating.value) return console.error("not hovering, we are animating");
   // console.log('data table hover', oblast)
@@ -132,7 +145,7 @@ function handleOblastHover(oblast) {
 
   // emit the oblast name to the parent component
   emit("setFocusedOblast", oblastName);
-}
+}, 100);
 
 function isOblastFocused(oblastName) {
   return oblastName === props.focusedOblastName;

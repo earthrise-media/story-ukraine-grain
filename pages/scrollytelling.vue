@@ -5,25 +5,41 @@
     <div class="step-container w-two-thirds vh-100 fixed top-0 right-0 z-2" ref="stepContainer">
       <div id="step-graphics" ref="stepGraphics" class="fixed top-0 right-0 w-100 vh-100 z-0">
         <TransitionGroup name="fade" mode="out-in">
-          <div v-show="stepIndex < 1" id="step-graphic-0" :key="0" class="step-graphic-container" step="0" :style="{
+          <!-- <div v-show="stepIndex < 1" id="step-graphic-0" :key="0" class="step-graphic-container" step="0" :style="{
             backgroundImage: 'url(images/intro-satellite-animation.gif)',
-          }"></div>
+          }"></div> -->
 
-          <div v-show="stepIndex >= 1 && stepIndex < 5" :key="1" id="step-graphic-0" class="step-graphic-container"
+          <!-- We are going to replace the first graphic with a looping video from public/intro-video.mp4 -->
+          <!-- <div v-show="stepIndex < 1" id="step-graphic-0" :key="0" class="step-graphic-container" step="0">
+            <video autoplay loop muted playsinline class="w-100 h-100">
+              <source src="intro-video.mp4" type="video/mp4">
+            </video>
+          </div> -->
+
+          <!-- refactor to make sure the video covers the entire screen, even if it cuts the edges off a bit -->
+          <div v-show="stepIndex < 1" id="step-graphic-0" :key="0" class="step-graphic-container flex" step="0">
+            <video autoplay loop muted playsinline class="vh-100 items-center justify-center">
+              <source src="intro-video-hires.mp4" type="video/mp4">
+            </video>
+          </div>
+
+
+
+          <div v-show="stepIndex >= 1 && stepIndex < 4" :key="1" class="step-graphic-container"
             step="0" :style="{
               backgroundRepeat: 'no-repeat',
               backgroundImage:
                 'url(images/nasa_landsat_ukraine_plnt_2022_lrg.jpg)',
             }"></div>
 
-          <div v-show="active && stepIndex >= 5 && stepIndex < 11" :key="2" class=" f2 h5 fixed top-0 left-0">
-            <UkraineOblastMap class="z-2 w-100 vh-90" ref="oblastMap" :activeDataByOblast="active.activeDataByOblast"
+          <div v-show="active && stepIndex >= 4 && stepIndex < 11" :key="2" class=" f2 h5 fixed top-0 right-0">
+            <UkraineOblastMap :class="['z-2 vh-90 fixed right-0', stepIndex < 10 ? 'w-100' : 'w-50']" ref="oblastMap" :activeDataByOblast="active.activeDataByOblast"
               :activeGrainType="activeGrainType" :width="graphicWidth" :valueKey="'harvestedArea'"
               :focusedOblastName="focusedOblastName" @setFocusedOblast="setFocusedOblast($event)" />
           </div>
 
           <SankeyChart v-if="importExportData.length > 1" v-show="stepIndex === 11 || stepIndex === 12" ref="sankeyChart"
-            :key="3" :importExportData="importExportData" class="fixed vh-100 w-100 top-0 right-0 ba b--red"
+            :key="3" :importExportData="importExportData" class="fixed vh-100 w-100 top-0 right-0"
             :width="graphicWidth" :height="graphicHeight" :stepIndex="stepIndex" />
         </TransitionGroup>
       </div>
@@ -44,12 +60,7 @@
 
       <div :class="paragraphClasses">
         <span class="pa1 bg-white">
-          In 2022 Ukraine's agricultural exports totaled <br />
-          <!-- <a
-            href="https://www.fas.usda.gov/sites/default/files/2022-04/Ukraine-Factsheet-April2022.pdf"
-            class="link black tc w-20 dib"
-            ><span class="">{{ numberFormat(animatedExportNumber) }}</span></a
-          > -->
+          In 2022 Ukraine's agricultural exports totaled 
           $28 billion, making up 41% of the country's total exports.
         </span>
       </div>
@@ -58,11 +69,11 @@
 
       <div :class="paragraphClasses">
         <span class="pa1 bg-white">
-          In the midst of the conflict with Russia, how is Ukraine's grain
-          farming being impacted?
+          How is Ukraine's grain
+          farming being impacted by the conflict? 
           <a href="https://earthobservatory.nasa.gov/images/150025/measuring-wars-effect-on-a-global-breadbasket">NASA's
             Earth Observatory</a>
-          produced this map looking at the location of Ukraine's crops and the
+          produced a map looking at the location of Ukraine's crops and the
           areas impacted by the war.
         </span>
       </div>
@@ -102,24 +113,22 @@
       <div :class="paragraphClasses">
         <span class="pa1 bg-white">
           Using our forecasting tool, we can explore different scenarios and how
-          they might impact grain production in Ukraine in the future.
+          they might impact grain production in Ukraine in the future. We use 2021 as our baseline year, 100% of normal production.
         </span>
       </div>
 
       <!-- small impact -->
       <div :class="paragraphClasses">
-        <span class="pa1 bg-white">The small impact scenario predicts that grain production will only be
-          effected by about
+        <span class="pa1 bg-white">In one scenario,
           <a href="https://hub.conflictobservatory.org/portal/apps/sites/#/home/pages/grain-1"
-            class="black link underline b">15%</a>
-          from normal levels in 2022.
+            class="black link underline b">experts predict a ~15% reduction</a>
+          from normal levels.
         </span>
       </div>
 
       <div :class="paragraphClasses">
         <span class="pa1 bg-white black">
-          The high impact scenario predicts that grain production will be
-          effected by as much as 50% from normal levels in 2022.
+          If the impact of the war continues to rise and farmers are unable to plant new crops, what if only <strong>half</strong> of the expected crop is harvested?
           <!-- This results in
           a deficit of <strong>TK kilograms</strong> of grain. -->
         </span>
@@ -127,13 +136,13 @@
 
       <div :class="paragraphClasses">
         <span class="pa1 bg-white">
-          Now it's your turn to make your own predictions. Use the sliders and
+          No one knows the true impact, but we have made it easy to see the outcomes of various scenarios. Use the sliders and
           buttons below to simulate different scenarios and see how they might
           impact grain production in Ukraine in the future.
         </span>
       </div>
 
-      <div class="step pa4 overflow-y-auto br1" style="pointer-events: default !important;">
+      <div :class="['step pa4 overflow-y-auto br1 ba', stepIndex === 10 ? 'w-50 b--blue' : 'w-100 b--red']" style="pointer-events: default !important;">
         <DataTable v-show="scenario" :activeData="active.activeData" :oblastScales="scenario.oblastScales"
           :focusedOblastName="focusedOblastName" :totalHarvestedArea="active.totalHarvestedArea"
           :totalYield="active.totalYield" :totalVolume="active.totalVolume" @sliderChange="handleSliderChange"
@@ -144,6 +153,13 @@
           <button v-for="percent in [15, 25, 50]" class="dim dib ma1" @click="setAllOblastOutput(percent)">
             Set all Oblasts to {{ percent }}%
           </button>
+
+          <!-- a button to set only eastern oblasts to 15%, all others remain the same --> 
+          <button class="dim dib ma1" @click="setEasternOblastOutput(15)">
+            Set Eastern Oblasts to 15%
+          </button>
+
+
 
           <!-- make a button to reset everything to 100% -->
           <button class="b dim db ma1" @click="setAllOblastOutput(100)">
@@ -157,7 +173,7 @@
 
         <span class="pa1 bg-white">
           Where does Ukraine's grain usually end up? In a normal trade year, the
-          bulk of Ukraine's exports go to African and Southeast Asian countries.
+          bulk of Ukraine's exports go to China, Africa, and Southeast Asian countries.
         </span>
       </div>
 
@@ -179,8 +195,7 @@
 
       <div :class="paragraphClasses">
         <span class="pa1 bg-white">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          We analyzed COMTRADE data to determine which countries import Ukrainian grain. You can find the detailed methodology and source data in <a href="https://observablehq.com/@codingwithfire/ukraine-grain-importers" class="black link underline b">our methodology notebook</a>.
         </span>
       </div>
 
@@ -188,7 +203,7 @@
       <div :class="paragraphClasses">
         <span class="pa1 bg-white">
           The small impact scenario predicts that grain production will only be
-          effected by about 15% from normal levels in 2022.
+          effected by about 15% from normal levels in 2022. Let's see what that looks like for the countries that import Ukraine's grain.
           <!-- This results in a
           deficit of <strong>TK million tons</strong> of grain, or TK% of
           Ukraine's total grain production. -->
@@ -219,22 +234,33 @@
         </span>
 
         <BarChart class="f6" ref="barChart" :showSlider="true" :showSentence="true" :initScenario="overallForecastPercent"
+        @scenarioChange="handleScenarioChange"
           :width="graphicWidth * 0.8" />
       </div>
     </div>
 
-    <div class="fixed top-0 right-0 z-3 w-100 flex justify-center items-center">
-      <h2 class="pa2 f-subheadline w-50">
-        Harvest:<br />
-        {{ numberFormat(animatedYieldNumber * 100) }}kg
+    <!-- use flex to stack the h2s vertically -->
+    <!-- slide transition -->
+    <Transition
+      name="slide"
+      mode="out-in">
+    <div class="fixed top-0 right-0 z-3 w-100 flex flex-column"
+      v-show="stepIndex > 5 && stepIndex < 11"
+    >
+      <h2 class="pa2 f1 tr db  w-100">
+        <span class="db pv4">Harvest:<br />
+        {{ numberFormat(animatedYieldNumber * 100) }}kg</span>
+
+                <span class="db pv4">Output:<br />
+        {{ pctFormat(animatedOutputNumber) }}</span>
       </h2>
 
-      <h2 class="pa2 f-subheadline tr w-50">
-        Output:<br />
-        {{ pctFormat(animatedOutputNumber) }}
+      <h2 class="pa2 f1 tr db ba b--blue w-100">
+
         <!-- {{ animatedOutputNumber }} -->
       </h2>
     </div>
+    </Transition>
 
 
   </div>
@@ -307,6 +333,10 @@ const animatedExportNumber = ref(0); // this will animate up to 27.8
 const animatedOutputNumber = ref(0)
 const animatedYieldNumber = ref(0)
 
+function handleScenarioChange(newScenario) {
+  setAllOblastOutput(newScenario * 100);
+}
+
 
 onMounted(() => {
   // when active.totalYield changes, animate the animatedYieldNumber to the new value with anime
@@ -323,7 +353,7 @@ onMounted(() => {
 
   // watch overallForecastPercent and update animatedOutputNumberr
   watch(overallForecastPercent, (newValue) => {
-    console.log('overallForecastPercent changed to', newValue)
+    // console.log('overallForecastPercent changed to', newValue)
     anime({
       targets: animatedOutputNumber,
       value: [animatedOutputNumber.value, newValue],
@@ -404,6 +434,15 @@ watch(
     } else if (newIndex === 8) {
       setAllOblastOutput(50);
     }
+
+    // else if step 14, set all oblasts to 85
+    // else if step 15, set all oblasts to 50
+
+    else if (newIndex === 14) {
+      setAllOblastOutput(85);
+    } else if (newIndex === 15) {
+      setAllOblastOutput(50);
+    }
   },
   { immediate: true }
 );
@@ -419,7 +458,7 @@ onMounted(() => {
   scroller
     .setup({
       step: ".text-container .step",
-      offset: 0.4,
+      offset: 0.6,
       progress: true,
       // debug: true,
     })
@@ -502,8 +541,10 @@ onMounted(() => {
 });
 </script>
 <style scoped>
+
+
 .step-graphic-container {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   overflow: hidden;
   /* pointer-events: none; */
@@ -520,6 +561,7 @@ onMounted(() => {
   /* margin-top: 33vh; */
   margin-bottom: 50vh;
   min-height: 40vh;
+  max-width: 50vw;
   /* display: flex;
   flex-direction: column;
   justify-content: center;
@@ -577,4 +619,25 @@ h2 {
 .vh-90 {
   height: 90vh;
 }
+
+
+
+/* make a slide transition to slide in and out from the right side of the screen*/
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 720ms cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.slide-enter-to,
+.slide-leave-from {
+  transform: translateX(0);
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  transform: translateX(100%);
+}
+
+
 </style>

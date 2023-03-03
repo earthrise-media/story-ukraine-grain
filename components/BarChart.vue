@@ -169,6 +169,9 @@ const graphicWidth = 400;
 
 const scenario = ref(0.85); // Ukraine's exports are REDUCED to this amount
 
+// make an emit to bubble up the scenario value
+const emit = defineEmits(["scenarioChange"]);;
+
 // const onActivated = () => {
 //   scenario.value = props.initScenario;
 // }
@@ -183,6 +186,7 @@ watch(
 );
 
 const onScenarioChange = (value) => {
+  emit("scenarioChange", value);
   scenario.value = value;
 };
 
