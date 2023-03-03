@@ -123,19 +123,7 @@ function setAnimating(value) {
 
 const emit = defineEmits(["sliderChange", "setFocusedOblast"]);
 
-// function handleOblastHover(oblast) {
-//   // don't bubble hovers when animating
-//   if (animating.value) return console.error("not hovering, we are animating");
-//   // console.log('data table hover', oblast)
-//   // get the normalized oblast name from the oblast object
-//   if (!oblast) return;
-//   const oblastName = oblast.oblastNameNormalized;
-
-//   // emit the oblast name to the parent component
-//   emit("setFocusedOblast", oblastName);
-// }
-// refactor to add debounce of 100ms
-const handleOblastHover = debounce((oblast) => {
+function handleOblastHover(oblast) {
   // don't bubble hovers when animating
   if (animating.value) return console.error("not hovering, we are animating");
   // console.log('data table hover', oblast)
@@ -145,7 +133,20 @@ const handleOblastHover = debounce((oblast) => {
 
   // emit the oblast name to the parent component
   emit("setFocusedOblast", oblastName);
-}, 100);
+}
+
+// refactor to add debounce of 100ms
+// const handleOblastHover = debounce((oblast) => {
+//   // don't bubble hovers when animating
+//   if (animating.value) return console.error("not hovering, we are animating");
+//   // console.log('data table hover', oblast)
+//   // get the normalized oblast name from the oblast object
+//   if (!oblast) return;
+//   const oblastName = oblast.oblastNameNormalized;
+
+//   // emit the oblast name to the parent component
+//   emit("setFocusedOblast", oblastName);
+// }, 100);
 
 function isOblastFocused(oblastName) {
   return oblastName === props.focusedOblastName;
