@@ -1,18 +1,9 @@
 <template>
   <div>
     <div v-if="props.showSlider">
-      <input
-        type="range"
-        min="0"
-        max="1"
-        step="0.01"
-        :value="scenario"
-        @change="onScenarioChange($event.target.value)"
-        class="slider w-100"
-      />
-      <strong class="w-100 tc db f3"
-        >{{ formatNumber(scenario) }} of normal output</strong
-      >
+      <input type="range" min="0" max="1" step="0.01" :value="scenario" @change="onScenarioChange($event.target.value)"
+        class="slider w-100" />
+      <strong class="w-100 tc db f3">{{ formatNumber(scenario) }} of normal output</strong>
     </div>
 
     <p class="smart-sentences" v-if="selectedCountry && props.showSentence">
@@ -21,45 +12,25 @@
       Ukraine's output is reduced to
       <strong style="background-color: #ffc500">{{
         formatNumber(scenario)
-      }}</strong
-      >, {{ selectedCountry.countryName }} will have
+      }}</strong>, {{ selectedCountry.countryName }} will have
       <strong class="gray">{{
         formatNumber(1 - (1 - scenario) * selectedCountry.percent)
       }}</strong>
       of it's expected grain and
-      <strong class="bg-moon-gray ph1 br1"
-        >missing
-        {{ formatNumber((1 - scenario) * selectedCountry.percent) }}</strong
-      >
+      <strong class="bg-moon-gray ph1 br1">missing
+        {{ formatNumber((1 - scenario) * selectedCountry.percent) }}</strong>
       of it's expected grain.
     </p>
 
-    <svg
-      ref="svg"
-      :width="props.width"
-      :height="height"
-      class=""
-      :viewBox="`-40 0 ${props.width + chartPadding} ${
-        props.height + chartPadding
-      }`"
-    >
+    <svg ref="svg" :width="props.width" :height="height" class="" :viewBox="`-40 0 ${props.width + chartPadding} ${props.height + chartPadding
+      }`">
       <!-- use d3 scales and vue refs to create a responsive horizontal bar chart -->
       <!-- add a group for each bar -->
-      <g
-        v-if="importExportData.length > 0"
-        v-for="(d, i) in importExportData"
-        :key="d.countryName"
-        :transform="`translate(0, ${yScale(d.countryName)})`"
-        class="bar-group"
-      >
+      <g v-if="importExportData.length > 0" v-for="(d, i) in importExportData" :key="d.countryName"
+        :transform="`translate(0, ${yScale(d.countryName)})`" class="bar-group">
         <!-- add a rect for the bar -->
-        <rect
-          :width="xScale(1 - (1 - scenario) * d.percent)"
-          :height="yScale.bandwidth()"
-          fill="none"
-          stroke="lightgray"
-          class="bar"
-        />
+        <rect :width="xScale(1 - (1 - scenario) * d.percent)" :height="yScale.bandwidth()" fill="none" stroke="lightgray"
+          class="bar" />
         <!-- <rect
           :width="xScale(d.percent)"
           :height="yScale.bandwidth()"
@@ -67,31 +38,15 @@
           stroke="gray"
           class="bar"
         /> -->
-        <rect
-          :width="xScale(scenario * d.percent)"
-          :height="yScale.bandwidth()"
-          fill="#FFC500"
-          class="bar"
-        />
+        <rect :width="xScale(scenario * d.percent)" :height="yScale.bandwidth()" fill="#FFC500" class="bar" />
 
-        <text
-          :x="0"
-          :y="yScale.bandwidth() / 2"
-          dx="5"
-          :dy="0.32 + 'em'"
-          class="bar-label"
-        >
+        <text :x="0" :y="yScale.bandwidth() / 2" dx="5" :dy="0.32 + 'em'" class="bar-label">
           {{ d.countryName }} missing
           {{ formatNumber((1 - scenario) * d.percent) }}
         </text>
 
-        <text
-          :x="xScale(1 - (1 - scenario) * d.percent)"
-          :y="yScale.bandwidth() / 2"
-          dx="20"
-          :dy="0.32 + 'em'"
-          class="bar-label"
-        >
+        <text :x="xScale(1 - (1 - scenario) * d.percent)" :y="yScale.bandwidth() / 2" dx="20" :dy="0.32 + 'em'"
+          class="bar-label">
           {{ formatNumber(1 - (1 - scenario) * d.percent) }}
         </text>
       </g>
@@ -99,26 +54,9 @@
       <!-- draw an x axis that labels each percent -->
       <g :transform="`translate(0, 0)`" class="x-axis">
         <!-- fill with ticks based on a d3 range from 0.0 to 1.0 in 0.1 increments -->
-        <g
-          v-for="tick in d3.range(0.0, 1.1, 0.25)"
-          :key="tick"
-          :transform="`translate(${xScale(tick)}, 0)`"
-        >
-          <line
-            x1="0"
-            x2="0"
-            y1="0"
-            :y2="props.height"
-            stroke="lightgray"
-            stroke-dasharray="2,2"
-          />
-          <text
-            x="0"
-            :y="props.height + 20"
-            :dy="0.32 + 'em'"
-            text-anchor="middle"
-            class="tick-label"
-          >
+        <g v-for="tick in d3.range(0.0, 1.1, 0.25)" :key="tick" :transform="`translate(${xScale(tick)}, 0)`">
+          <line x1="0" x2="0" y1="0" :y2="props.height" stroke="lightgray" stroke-dasharray="2,2" />
+          <text x="0" :y="props.height + 20" :dy="0.32 + 'em'" text-anchor="middle" class="tick-label">
             {{ Math.floor(tick * 100) }}%
           </text>
         </g>
@@ -234,22 +172,23 @@ watch(
 );
 
 // set the domain of the y scale when the data changes props.oblastData changes
-
-fetch("/data/comtrade_imports/00_all_data_ukraine.csv")
-  .then((response) => response.text())
-  .then((data) => {
-    let parsed = d3
-      .csvParse(data, d3.autoType)      
-      .sort((a, b) => b.percent - a.percent)
+onMounted(() => {
+  fetch("/data/comtrade_imports/00_all_data_ukraine.csv")
+    .then((response) => response.text())
+    .then((data) => {
+      let parsed = d3
+        .csvParse(data, d3.autoType)
+        .sort((a, b) => b.percent - a.percent)
 
       parsed = parsed.filter((d) => d.percent > props.countryFilterPct);
 
-    yScale.domain(parsed.map((d) => d.countryName));
+      yScale.domain(parsed.map((d) => d.countryName));
 
-    selectedCountry.value = parsed[0];
+      selectedCountry.value = parsed[0];
 
-    importExportData.value = parsed;
-  });
+      importExportData.value = parsed;
+    });
+})
 </script>
 <style>
 rect,
