@@ -19,7 +19,7 @@
           <!-- refactor to make sure the video covers the entire screen, even if it cuts the edges off a bit -->
           <div v-show="stepIndex < 1" id="step-graphic-0" :key="0" class="step-graphic-container bg-black tc" step="0">
             <video autoplay loop muted playsinline class="vh-100 items-center justify-center">
-              <source src="intro-video-hires.mp4" type="video/mp4">
+              <source src="~/assets/intro-video-hires.mp4" type="video/mp4">
             </video>
           </div>
 
