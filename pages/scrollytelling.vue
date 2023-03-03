@@ -99,14 +99,14 @@
       <!-- introduce oblast map -->
       <div :class="paragraphClasses">
         <span class="pa1 bg-white">
-          Ukraine's agricultural data is organized by Oblasts, which are like
+          Ukraine's agricultural data is organized by oblasts, which are like
           states.
         </span>
       </div>
 
       <div :class="paragraphClasses">
         <span class="pa1 bg-white">
-          This map shows Ukraine's total grain production in 2021 by Oblast
+          This map shows Ukraine's total grain production in 2021 by oblast
           before the war started. The more yellow, the more grain production was
           produced there.
         </span>
@@ -237,6 +237,8 @@
 
         <BarChart class="f6" ref="barChart" :showSlider="true" :showSentence="true" :initScenario="overallForecastPercent"
         @scenarioChange="handleScenarioChange"
+        :countryFilter="false"
+        :countryFilterPct="0.02"
           :width="graphicWidth * 0.8" />
       </div>
     </div>
@@ -247,7 +249,7 @@
       name="slide"
       mode="out-in">
     <div class="fixed top-0 right-0 z-3 w-100 flex flex-column"
-      v-show="stepIndex > 5 && stepIndex < 11"
+      v-show="(stepIndex > 5 && stepIndex < 11) || stepIndex > 13"
     >
       <h2 class="pa2 f1 tr db  w-100">
         <span class="db pv4">Harvest:<br />

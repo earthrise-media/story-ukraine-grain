@@ -231,15 +231,17 @@ function findOblastFillColor(oblastShape) {
 }
 </script>
 <style>
+
+
+path {
+  transition: all 1200ms cubic-bezier(0.45, 0, 0.55, 1);
+}
+
 path.focused-shape {
   stroke-width: 2.25 !important;
   stroke: black !important;
   /* fill: yellow !important; */
   transition: all 0.12s cubic-bezier(0.45, 0, 0.55, 1);
   /* transition-delay: 50ms; */
-}
-
-path {
-  transition: all 1200ms cubic-bezier(0.45, 0, 0.55, 1);
 }
 </style>

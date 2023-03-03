@@ -9,7 +9,6 @@
         :value="scenario"
         @change="onScenarioChange($event.target.value)"
         class="slider w-100"
-        id="myRange"
       />
       <strong class="w-100 tc db f3"
         >{{ formatNumber(scenario) }} of normal output</strong
@@ -162,6 +161,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  countryFilterPct: {
+    type: Number,
+    default: 0.1,
+  },
 });
 
 const graphicHeight = 400;
@@ -192,7 +195,8 @@ const onScenarioChange = (value) => {
 
 // const countryFilterPct = ref(0.1) // Only show countries that import more than this
 
-const countryFilterPct = ref(0.08);
+// const countryFilterPct = ref(0.08);
+// make countryFilterPct a computed off props
 
 const dataKey = ref("harvestedArea");
 
@@ -234,10 +238,11 @@ watch(
 fetch("/data/comtrade_imports/00_all_data_ukraine.csv")
   .then((response) => response.text())
   .then((data) => {
-    const parsed = d3
-      .csvParse(data, d3.autoType)
-      .filter((d) => d.percent >= countryFilterPct.value)
-      .sort((a, b) => b.percent - a.percent);
+    let parsed = d3
+      .csvParse(data, d3.autoType)      
+      .sort((a, b) => b.percent - a.percent)
+
+      parsed = parsed.filter((d) => d.percent > props.countryFilterPct);
 
     yScale.domain(parsed.map((d) => d.countryName));
 
