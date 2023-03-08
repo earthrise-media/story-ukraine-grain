@@ -1,5 +1,5 @@
 <template>
-  <svg class="w-100" :height="height">
+  <svg class="w-100" :height="props.height" :width="props.width">
     <!-- draw a sankey diagram using sankeyPaths and sankeyNodes -->
     <g class="sankey-paths" v-if="sankeyPaths">
       <path
@@ -8,7 +8,7 @@
         :fill="path.fill"
         :stroke="path.stroke"
         :stroke-width="path.strokeWidth"
-        opacity="0"
+        style="opacity: 0"
       />
     </g>
 
@@ -31,13 +31,27 @@
           :y="node.y1 / 2 - node.y0 / 2"
           :dy="0.32 + 'em'"
           text-anchor="end"
-          :fill="/*node.fill*/ 'white'"
+          :fill="/*node.fill*/ 'black'"
           :font-size="Math.max(Math.sqrt(node.value) * 0.0009, 7)"
           transform="translate(-10, 0)"
+          :data-json="node"
         >
           {{ node.name }}
         </text>
       </g>
+
+      <!-- add a label for ukraine on the left side of the screen, rotated 90 degrees -->
+      <text
+        x="0"
+        y="0"
+        dy="0.32em"
+        text-anchor="start"
+        fill="white"
+        font-size="14"
+        transform="translate(15, 15) rotate(90)"
+      >
+        Ukraine
+      </text>
     </g>
   </svg>
 </template>
@@ -48,13 +62,14 @@ import * as d3Sankey from "d3-sankey";
 import anime from "animejs/lib/anime.es.js";
 
 const props = defineProps({
-  config: {
-    type: Object,
-    required: true,
-  },
   importExportData: {
     type: Array,
     required: true,
+  },
+  height: {
+    type: Number,
+    required: true,
+    default: 900,
   },
   width: {
     type: Number,
@@ -68,51 +83,51 @@ const props = defineProps({
 });
 
 // watch the stepIndex prop and if it changes to 2, animate in the sankey
-// watch(
-//   () => props.stepIndex,
-//   (stepIndex) => {
-//     if (stepIndex === 1) {
-//       animateSankey(sankeyPaths, sankeyNodes);
-//     }
-//   }
-// );
+watch(
+  () => props.stepIndex,
+  (stepIndex) => {
+    if (stepIndex === 11) {
+      animateSankey();
+    }
+  }
+);
 
-const staggerDelay = 70;
-const animateInDuration = 1800;
+const staggerDelay = 55;
+const animateInDuration = 720;
 
 // a function to animate in sankeyPaths and sankeyNodes one by one with anime.js
-// const animateSankey = (sankeyPaths, sankeyNodes) => {
-//   // animate in sankeyPaths
-//   anime({
-//     targets: ".sankey-paths path",
-//     opacity: [0, 1],
-//     duration: animateInDuration * 0.5,
-//     easing: "easeInOutQuad",
-//   });
+const animateSankey = () => {
+  // animate in sankeyPaths
+  anime({
+    targets: ".sankey-paths path",
+    opacity: [0, 1],
+    duration: animateInDuration * 0.75,
+    easing: "easeInOutQuad",
+  });
 
-//   anime({
-//     targets: ".sankey-paths path",
-//     strokeDashoffset: [anime.setDashoffset, 0],
-//     easing: "easeInOutQuad",
-//     duration: animateInDuration,
-//     delay: (el, i) => animateInDuration * 1.2 + i * staggerDelay,
-//     loop: false,
-//   });
+  anime({
+    targets: ".sankey-paths path",
+    strokeDashoffset: [anime.setDashoffset, 0],
+    easing: "easeInOutQuad",
+    duration: animateInDuration,
+    delay: (el, i) => animateInDuration * 0.5 + i * staggerDelay,
+    loop: false,
+  });
 
-//   // animate in sankeyNodes
-//   anime({
-//     targets: ".sankey-nodes g",
-//     opacity: [0, 1],
-//     easing: "easeInOutQuad",
-//     duration: animateInDuration,
-//     delay: (el, i) => i * staggerDelay,
-//     loop: false,
-//   });
-// };
+  // animate in sankeyNodes
+  anime({
+    targets: ".sankey-nodes g",
+    opacity: [0, 1],
+    easing: "easeInOutQuad",
+    duration: animateInDuration,
+    delay: (el, i) => i * staggerDelay,
+    loop: false,
+  });
+};
 
 // make height a computed 0.6 of props.width
 // const height = computed(() => props.width * 0.6);
-const height = 1000;
+// const height = 1100;
 /*
 each row of importExportData looks like this:
 {
@@ -134,41 +149,95 @@ the value will always be the ukrTradeValue
 
 // now we will make a computed sankeyPaths and sankeyNodes that will run importExportData through the sankey and return sankeyPaths with values we can draw in SVG
 
-const nodeWidth = 50;
+const nodeWidth = 25;
+
+const maxValue = 1000000000
 
 // First we set up our sankey
+// const sankey = d3Sankey
+//   .sankey()
+//   .nodeId((d) => d.name)
+//   // .nodeAlign(d3Sankey.sankeyJustify)
+//   // justify to top
+//   .nodeAlign(d3Sankey.sankeyLeft)
+//   .nodeWidth(nodeWidth)
+//   // use .linkSort to sort by value
+//   .linkSort((a, b) => b.value - a.value)
+//   .nodePadding(2)
+//   .extent([
+//     [1, 1],
+//     [props.width - 1, props.height - 6],
+//   ]);
+
+// refactor to make links align to the top of nodes
 const sankey = d3Sankey
   .sankey()
   .nodeId((d) => d.name)
-  // .nodeAlign(d3Sankey.sankeyJustify)
-  // justify to top
-  .nodeAlign(d3Sankey.sankeyLeft)
+  .nodeAlign(d3Sankey.sankeyRight)
   .nodeWidth(nodeWidth)
-  // use .linkSort to sort by value
   .linkSort((a, b) => b.value - a.value)
-  .nodePadding(2)
+  .nodePadding(props.width * 0.01)
   .extent([
     [1, 1],
-    [props.width - 1, height - 6],
+    [props.width - 1, props.height - 6],
   ]);
 
 // then we feed the sankey our nodes and links and get back a sankey diagram
-const sankeyDiagram = computed(() =>
-  sankey({
+const sankeyDiagram = computed(() => {
+  // sort the data by ukrTradeValue
+  // and filter to the top 10
+  const filteredData = props.importExportData
+    .sort((a, b) => b.ukrTradeValue - a.ukrTradeValue)
+    .slice(0, 30);
+
+  return sankey({
     nodes: [
       { name: "Ukraine" },
-      ...props.importExportData.map((d) => ({ name: d.countryName })),
+      ...filteredData.map((d) => ({ name: d.countryName })),
     ],
-    links: props.importExportData.map((d) => ({
+    links: filteredData.map((d) => ({
       source: "Ukraine",
       target: d.countryName,
       value: +d.ukrTradeValue,
     })),
-  })
-);
+  });
+});
 
 // create a categorical scale for countries
-const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+// const colorScale = d3.scaleOrdinal(d3.schemeSet2);
+// use a way cooler built in d3 scheme
+// const colorScale = d3.scaleOrdinal(d3.schemeTableau10);
+// use d3 turbo instead
+// const colorScale = d3.scaleOrdinal(d3.schemeTurbo);
+
+// make a custom ordinal color scale
+const colorScale = d3.scaleOrdinal([
+  // 10 different dark grays
+  // "#1f1f1f",
+  // "#2d2d2d",
+  // "#3b3b3b",
+  // "#494949",
+  // "#575757",
+  // "#656565",
+  // "#737373",
+  // "#818181",
+  // "#8f8f8f",
+  // "#9d9d9d",  
+  // 10 different light grays
+  "#ababab",
+  "#b9b9b9",
+  "#c7c7c7",
+  "#d5d5d5",
+  "#e3e3e3",
+  "#f1f1f1",
+]);
+
+const valueColorScale = d3.scaleLinear()
+  .domain([0, maxValue])
+  // .range(["#ccc", "#999"]);
+  // even lighter gray
+  .range(["#f1f1f1", "#ababab"]);
+
 
 // then we can use the sankey diagram to make sankeyPaths and sankeyNodes
 // const sankeyPaths = computed(() => sankeyDiagram.value.links.map(link => ({
@@ -177,6 +246,19 @@ const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 //   // stroke: '#000',
 //   stroke: colorScale(link.target.name),
 // })));
+
+const strokeWidthScale = d3.scaleLinear()
+    .domain([0, maxValue])
+    .range([0.5, nodeWidth]);
+
+function calculateStrokeWidth(value) {
+  // use value to calculate strokeWidth
+  //return Math.max(Math.sqrt(value) * 0.001, 0.5);
+  // instead we will use a custom d3 linear scale
+  return strokeWidthScale(value);
+
+  // make the strokeWidth match the node size of the sankey
+}
 
 // sankey paths but sorted by value
 const sankeyPaths = computed(() =>
@@ -187,8 +269,10 @@ const sankeyPaths = computed(() =>
       fill: "none",
       // stroke: '#000',
       // use value to calculate strokeWidth
-      strokeWidth: Math.max(Math.sqrt(link.value) * 0.0008, 0.5),
-      stroke: colorScale(link.target.name),
+      // strokeWidth: Math.max(Math.sqrt(link.value) * 0.001, 0.5),
+      strokeWidth: calculateStrokeWidth(link.value),
+      // stroke: colorScale(link.target.name),
+      stroke: valueColorScale(link.value),
     }))
 );
 
@@ -199,7 +283,8 @@ const sankeyNodes = computed(() =>
     .map((node) => ({
       ...node,
       // fill: node.name === 'Ukraine' ? '#000' : '#fff',
-      fill: colorScale(node.name),
+      // fill: colorScale(node.name),
+      fill: valueColorScale(node.value),
       stroke: "#000",
       textFill: node.name === "Ukraine" ? "#fff" : "#000",
     }))
