@@ -54,7 +54,7 @@
         <h2 class="f1 f-headline-l lh-title mt0 mb3 pa4">
           <div class="tc">
             <span class="animated-intro-header">
-              Ukraine's grain farming in the midst of the conflict with Russia
+              Ukraine's grain farming amidst the conflict with Russia
             </span>
           </div>
         </h2>
@@ -62,8 +62,7 @@
 
       <div :class="paragraphClasses">
         <span class="pa1 bg-white">
-          In 2022 Ukraine's agricultural exports totaled 
-          $28 billion, making up 41% of the country's total exports.
+          Ukraine is one of the world's top ten wheat producing countries. In 2022 Ukraine's agricultural exports alone totaled $28 billion.
         </span>
       </div>
 
@@ -75,40 +74,32 @@
           farming being impacted by the conflict? 
           <a href="https://earthobservatory.nasa.gov/images/150025/measuring-wars-effect-on-a-global-breadbasket">NASA's
             Earth Observatory</a>
-          produced a map looking at the location of Ukraine's crops and the
-          areas impacted by the war.
+            produced a map looking at the location of Ukraine's crops cross referenced against the areas impacted by the war.
         </span>
       </div>
 
       <div :class="paragraphClasses">
         <span class="pa1 bg-white">
-          The war has taken a significant toll on the country's infrastructure,
-          particularly in the eastern areas most affected by the conflict, where
-          farming infrastructure has been destroyed.
+          The conflict has taken a significant toll on the country's infrastructure, particularly in the eastern areas most affected by the conflict, where agricultural infrastructure has been destroyed.
         </span>
       </div>
 
       <div :class="paragraphClasses">
         <span class="pa1 bg-white">
-          The exact impact of the war on grain production isn't possible to
-          quantify, as the ability to collect data has been severely limited by
-          the conflict.
+          The exact impact of the war on grain production hasn't been quantified, as the ability to collect data has been severely limited, but how might the conflict be impacting Ukraine's grain production and who is going to be impacted downstream?
         </span>
       </div>
 
       <!-- introduce oblast map -->
       <div :class="paragraphClasses">
         <span class="pa1 bg-white">
-          Ukraine's agricultural data is organized by oblasts, which are like
-          states.
+          Ukraine's agricultural data is organized by oblast. Oblasts are similar to states in the US.
         </span>
       </div>
 
       <div :class="paragraphClasses">
         <span class="pa1 bg-white">
-          This map shows Ukraine's total grain production in 2021 by oblast
-          before the war started. The more yellow, the more grain production was
-          produced there.
+          This map shows Ukraine's total grain production by oblast before the war started in 2021. The more green, the more grain that was produced there.
         </span>
       </div>
 
@@ -138,9 +129,7 @@
 
       <div :class="paragraphClasses">
         <span class="pa1 bg-white">
-          No one knows the true impact, but we have made it easy to see the outcomes of various scenarios. Use the sliders and
-          buttons below to simulate different scenarios and see how they might
-          impact grain production in Ukraine in the future.
+          No one has quantified the true impact, but we have made it easy to see the outcomes of various scenarios. Use the sliders and buttons below to simulate different scenarios and see how they might impact future Ukrainian grain production.
         </span>
       </div>
 
@@ -204,8 +193,7 @@
       <!-- small impact -->
       <div :class="paragraphClasses">
         <span class="pa1 bg-white">
-          The small impact scenario predicts that grain production will only be
-          effected by about 15% from normal levels in 2022. Let's see what that looks like for the countries that import Ukraine's grain.
+          The small impact scenario predicts that grain production will only be affected by ~15% from normal levels in 2022. Let's see what that looks like for the countries that import Ukraine's grain.
           <!-- This results in a
           deficit of <strong>TK million tons</strong> of grain, or TK% of
           Ukraine's total grain production. -->
@@ -217,8 +205,7 @@
       <!-- high impact -->
       <div :class="paragraphClasses">
         <span class="pa1 bg-white">
-          The high impact scenario predicts that grain production will be
-          effected by as much as 50% from normal levels in 2022.
+          The high impact scenario predicts that grain production will be affected by as much as 50% from normal levels in 2022.
           <!-- This results in
           a deficit of <strong>TK million tons</strong> of grain, or
           <strong>TK%</strong> of Ukraine's total grain production. -->
