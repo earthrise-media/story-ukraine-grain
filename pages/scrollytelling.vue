@@ -268,12 +268,12 @@ video {
           :valueKey="'harvestedArea'" :focusedOblastName="focusedOblastName"
           @setFocusedOblast="setFocusedOblast($event)" />
 
-        <BarChart class="w-50 fl ph2" ref="barChart" :showSlider="true" :showSentence="false"
+        <BarChart class="w-100 w-50-ns fl ph2" ref="barChart" :showSlider="true" :showSentence="false"
           :initScenario="overallForecastPercent" @scenarioChange="handleScenarioChange" :countryFilter="false"
           :countryFilterPct="0.02" :width="graphicWidth * 0.45" />
 
 
-        <DataTable v-show="scenario" class="w-50 fl" :activeData="active.activeData" :oblastScales="scenario.oblastScales"
+        <DataTable v-show="scenario" class="w-100 w-50-ns fl" :activeData="active.activeData" :oblastScales="scenario.oblastScales"
           :focusedOblastName="focusedOblastName" :totalHarvestedArea="active.totalHarvestedArea"
           :totalYield="active.totalYield" :totalVolume="active.totalVolume" @sliderChange="handleSliderChange"
           @setFocusedOblast="setFocusedOblast($event)" />
@@ -353,7 +353,7 @@ const numberFormat = d3.format(",.0f");
 const pctFormat = d3.format(",.1%");
 
 // the tachyons classes we will use for the paragraphs
-const paragraphClasses = "step pa1 pa4-l f2 lh-copy measure w-100 w-80-l center ml2 ml5-ns z1";
+const paragraphClasses = "step pa1 pa4-l f3 f2-ns lh-copy measure w-100 w-80-l center ml2 ml5-ns z1";
 
 const active = useActiveData();
 
