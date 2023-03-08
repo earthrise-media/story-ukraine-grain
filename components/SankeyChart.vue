@@ -31,7 +31,7 @@
           :y="node.y1 / 2 - node.y0 / 2"
           :dy="0.32 + 'em'"
           text-anchor="end"
-          :fill="/*node.fill*/ 'white'"
+          :fill="/*node.fill*/ 'black'"
           :font-size="Math.max(Math.sqrt(node.value) * 0.0009, 7)"
           transform="translate(-10, 0)"
           :data-json="node"
@@ -92,8 +92,8 @@ watch(
   }
 );
 
-const staggerDelay = 40;
-const animateInDuration = 500;
+const staggerDelay = 55;
+const animateInDuration = 720;
 
 // a function to animate in sankeyPaths and sankeyNodes one by one with anime.js
 const animateSankey = () => {
@@ -101,7 +101,7 @@ const animateSankey = () => {
   anime({
     targets: ".sankey-paths path",
     opacity: [0, 1],
-    duration: animateInDuration * 0.5,
+    duration: animateInDuration * 0.75,
     easing: "easeInOutQuad",
   });
 
@@ -110,7 +110,7 @@ const animateSankey = () => {
     strokeDashoffset: [anime.setDashoffset, 0],
     easing: "easeInOutQuad",
     duration: animateInDuration,
-    delay: (el, i) => animateInDuration * 0.9 + i * staggerDelay,
+    delay: (el, i) => animateInDuration * 0.5 + i * staggerDelay,
     loop: false,
   });
 
@@ -174,7 +174,7 @@ const sankey = d3Sankey
   .nodeAlign(d3Sankey.sankeyRight)
   .nodeWidth(nodeWidth)
   .linkSort((a, b) => b.value - a.value)
-  .nodePadding(2)
+  .nodePadding(props.width * 0.01)
   .extent([
     [1, 1],
     [props.width - 1, props.height - 6],
@@ -186,7 +186,7 @@ const sankeyDiagram = computed(() => {
   // and filter to the top 10
   const filteredData = props.importExportData
     .sort((a, b) => b.ukrTradeValue - a.ukrTradeValue)
-    .slice(0, 10);
+    .slice(0, 30);
 
   return sankey({
     nodes: [
@@ -202,11 +202,35 @@ const sankeyDiagram = computed(() => {
 });
 
 // create a categorical scale for countries
-const colorScale = d3.scaleOrdinal(d3.schemeSet2);
+// const colorScale = d3.scaleOrdinal(d3.schemeSet2);
 // use a way cooler built in d3 scheme
 // const colorScale = d3.scaleOrdinal(d3.schemeTableau10);
 // use d3 turbo instead
 // const colorScale = d3.scaleOrdinal(d3.schemeTurbo);
+
+// make a custom ordinal color scale
+const colorScale = d3.scaleOrdinal([
+  // 10 different dark grays
+  // "#1f1f1f",
+  // "#2d2d2d",
+  // "#3b3b3b",
+  // "#494949",
+  // "#575757",
+  // "#656565",
+  // "#737373",
+  // "#818181",
+  // "#8f8f8f",
+  // "#9d9d9d",  
+  // 10 different light grays
+  "#ababab",
+  "#b9b9b9",
+  "#c7c7c7",
+  "#d5d5d5",
+  "#e3e3e3",
+  "#f1f1f1",
+
+]);
+
 
 // then we can use the sankey diagram to make sankeyPaths and sankeyNodes
 // const sankeyPaths = computed(() => sankeyDiagram.value.links.map(link => ({
@@ -215,6 +239,18 @@ const colorScale = d3.scaleOrdinal(d3.schemeSet2);
 //   // stroke: '#000',
 //   stroke: colorScale(link.target.name),
 // })));
+
+function calculateStrokeWidth(value) {
+  // use value to calculate strokeWidth
+  //return Math.max(Math.sqrt(value) * 0.001, 0.5);
+  // instead we will use a custom d3 linear scale
+  const scale = d3.scaleLinear()
+    .domain([0, 1000000000])
+    .range([0.5, nodeWidth]);
+  return scale(value);
+
+  // make the strokeWidth match the node size of the sankey
+}
 
 // sankey paths but sorted by value
 const sankeyPaths = computed(() =>
@@ -225,7 +261,8 @@ const sankeyPaths = computed(() =>
       fill: "none",
       // stroke: '#000',
       // use value to calculate strokeWidth
-      strokeWidth: Math.max(Math.sqrt(link.value) * 0.0008, 0.5),
+      // strokeWidth: Math.max(Math.sqrt(link.value) * 0.001, 0.5),
+      strokeWidth: calculateStrokeWidth(link.value),
       stroke: colorScale(link.target.name),
     }))
 );
