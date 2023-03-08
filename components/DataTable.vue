@@ -1,6 +1,6 @@
 <template>
   <div>
-    <table id="data-table" class="f6 collapse pa1">
+    <table id="data-table" class="f7 collapse pa1">
       <thead>
         <tr class="tl">
           <th>Oblast</th>
@@ -123,6 +123,11 @@ function setAnimating(value) {
 
 const emit = defineEmits(["sliderChange", "setFocusedOblast"]);
 
+
+
+
+
+
 function handleOblastHover(oblast) {
   // don't bubble hovers when animating
   if (animating.value) return console.error("not hovering, we are animating");
@@ -147,6 +152,11 @@ function handleOblastHover(oblast) {
 //   // emit the oblast name to the parent component
 //   emit("setFocusedOblast", oblastName);
 // }, 100);
+
+
+
+
+
 
 function isOblastFocused(oblastName) {
   return oblastName === props.focusedOblastName;

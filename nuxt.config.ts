@@ -4,6 +4,16 @@ export default defineNuxtConfig({
     '@nuxt/devtools',
     '@vueuse/nuxt'
   ],
+
+  
+  // add google webfonts:
+  // Martel Sans 400, 700, and 900
+  // googleFonts: {
+  //   families: {
+  //     'Martel Sans': [400, 700, 900],
+  //   },
+  // },
+
   // add tachyons CSS framework
   css: ['tachyons/css/tachyons.min.css'],
   vite: {
