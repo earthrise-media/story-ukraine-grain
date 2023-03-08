@@ -4,7 +4,7 @@
       <thead>
         <tr class="tl">
           <th>Oblast</th>
-          <th class="br1 ph1" style="background-color: #146E37; color: white;">
+          <th class="br1 ph1" style="background-color: #146e37; color: white">
             Harvested Area
           </th>
           <!-- <th>Yield</th> -->
@@ -34,7 +34,9 @@
           >
             <td class="w-30 ph1 ttc lh-copy">
               {{ oblast.oblastNameNormalized }}
-              <span class="o-50 f7 dn dib-l"> {{ oblast.oblastNameUkrainian }}</span>
+              <span class="o-50 f7 dn dib-l">
+                {{ oblast.oblastNameUkrainian }}</span
+              >
             </td>
             <td class="w-10">{{ numberFormat(oblast.harvestedArea * 100) }}</td>
             <!-- <td class=" w-10">{{ oblast.grainYield }}</td> -->
@@ -67,7 +69,7 @@
       <tfoot>
         <tr class="bg-gray white f4-l b">
           <td>Total Harvested:</td>
-          <td class="">{{ numberFormat(totalHarvestedArea * 100) }}kg</td>
+          <td class="">{{ numberFormat(props.totalHarvestedArea * 100) }}kg</td>
           <!-- <td>{{ numberFormat(totalYield) }}</td> -->
           <!-- <td>{{ numberFormat(totalVolume) }}</td> -->
         </tr>
@@ -123,11 +125,6 @@ function setAnimating(value) {
 
 const emit = defineEmits(["sliderChange", "setFocusedOblast"]);
 
-
-
-
-
-
 // function handleOblastHover(oblast) {
 //   // don't bubble hovers when animating
 //   if (animating.value) return console.error("not hovering, we are animating");
@@ -179,12 +176,6 @@ const handleOblastHover = debounce((oblast) => {
   // emit the oblast name to the parent component
   emit("setFocusedOblast", oblastName);
 }, 120);
-
-
-
-
-
-
 
 function isOblastFocused(oblastName) {
   return oblastName === props.focusedOblastName;

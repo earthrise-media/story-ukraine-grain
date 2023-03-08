@@ -2,8 +2,15 @@
   <div class="scrollytelling-container" ref="scrollytellingContainer">
     <!-- <h3 class="w-100 fixed top-0 z-3">Step: {{ stepIndex }}</h3> -->
 
-    <div class="step-container w-100 w-two-thirds-ns vh-100 fixed top-0 right-0 z-2" ref="stepContainer">
-      <div id="step-graphics" ref="stepGraphics" class="fixed top-0 right-0 w-100 vh-100 z-0">
+    <div
+      class="step-container w-100 w-two-thirds-ns vh-100 fixed top-0 right-0 z-2"
+      ref="stepContainer"
+    >
+      <div
+        id="step-graphics"
+        ref="stepGraphics"
+        class="fixed top-0 right-0 w-100 vh-100 z-0"
+      >
         <TransitionGroup name="fade" mode="out-in">
           <!-- <div v-show="stepIndex < 1" id="step-graphic-0" :key="0" class="step-graphic-container" step="0" :style="{
             backgroundImage: 'url(images/intro-satellite-animation.gif)',
@@ -36,36 +43,79 @@ video {
 }
 
  we need to refactor to do something like this with inline styles -->
-          <div v-show="stepIndex < 1" id="step-graphic-0" :key="0" class="step-graphic-container"
-            style="position: relative; overflow: hidden;">
-            <video autoplay loop muted playsinline class="vh-100 items-center justify-center"
-              style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
-              <source src="~/assets/intro-video-hires.r5.mp4" type="video/mp4">
+          <div
+            v-show="stepIndex < 1"
+            id="step-graphic-0"
+            :key="0"
+            class="step-graphic-container"
+            style="position: relative; overflow: hidden"
+          >
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              class="vh-100 items-center justify-center"
+              style="
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+              "
+            >
+              <source
+                src="~/assets/intro-video-hires.r5.mp4"
+                type="video/mp4"
+              />
             </video>
           </div>
 
+          <div
+            v-show="stepIndex >= 1 && stepIndex < 4"
+            :key="1"
+            class="step-graphic-container"
+            step="0"
+            :style="{
+              backgroundRepeat: 'no-repeat',
+              backgroundImage:
+                'url(images/nasa_landsat_ukraine_plnt_2022_lrg.jpg)',
+            }"
+          ></div>
 
-
-          <div v-show="stepIndex >= 1 && stepIndex < 4" :key="1" class="step-graphic-container" step="0" :style="{
-            backgroundRepeat: 'no-repeat',
-            backgroundImage:
-              'url(images/nasa_landsat_ukraine_plnt_2022_lrg.jpg)',
-          }"></div>
-
-          <div v-show="active && stepIndex >= 4 && stepIndex < 11" :key="2" class=" f2 h5 fixed top-0 right-0">
-            <UkraineOblastMap :class="['z-2 vh-90 fixed right-0', stepIndex < 10 ? 'w-100' : 'w-50-ns']" ref="oblastMap"
-              id="oblast-map" :activeDataByOblast="active.activeDataByOblast" :activeGrainType="activeGrainType"
-              :width="graphicWidth" :valueKey="'harvestedArea'" :focusedOblastName="focusedOblastName"
-              @setFocusedOblast="setFocusedOblast($event)" />
+          <div
+            v-show="active && stepIndex >= 4 && stepIndex < 11"
+            :key="2"
+            class="f2 h5 fixed top-0 right-0"
+          >
+            <UkraineOblastMap
+              :class="[
+                'z-2 vh-90 fixed right-0 pt4 ph3',
+                stepIndex < 10 ? 'w-100' : 'w-50-ns',
+              ]"
+              ref="oblastMap"
+              id="oblast-map"
+              :activeDataByOblast="active.activeDataByOblast"
+              :activeGrainType="activeGrainType"
+              :width="graphicWidth"
+              :valueKey="'harvestedArea'"
+              :focusedOblastName="focusedOblastName"
+              @setFocusedOblast="setFocusedOblast($event)"
+            />
           </div>
 
-          <SankeyChart v-if="importExportData.length > 1" v-show="stepIndex === 11 || stepIndex === 12" ref="sankeyChart"
-            :key="3" :importExportData="importExportData" class="fixed vh-100 w-100 top-0 right-0" :width="graphicWidth"
-            :height="graphicHeight" :stepIndex="stepIndex" />
+          <SankeyChart
+            v-if="importExportData.length > 1 && graphicWidth > 0"
+            v-show="stepIndex === 11 || stepIndex === 12"
+            ref="sankeyChart"
+            :key="3"
+            :importExportData="importExportData"
+            class="fixed vh-100 w-100 top-0 right-0"
+            :width="graphicWidth"
+            :height="graphicHeight"
+            :stepIndex="stepIndex"
+          />
         </TransitionGroup>
       </div>
-
-
     </div>
 
     <div class="text-container relative z1">
@@ -81,72 +131,81 @@ video {
 
       <div :class="paragraphClasses">
         <span class="bg-white">
-          Ukraine is one of the world's top ten wheat producing countries. In 2022 Ukraine's agricultural exports alone
-          totaled $28 billion.
-        </span>
-      </div>
-
-
-
-      <div :class="paragraphClasses">
-        <span class="bg-white">
-          How is Ukraine's grain
-          farming being impacted by the conflict?
-          <a href="https://earthobservatory.nasa.gov/images/150025/measuring-wars-effect-on-a-global-breadbasket">NASA's
-            Earth Observatory</a>
-          produced a map looking at the location of Ukraine's crops cross referenced against the areas impacted by the
-          war.
+          Ukraine is one of the world's top ten wheat producing countries. In
+          2022 Ukraine's agricultural exports alone totaled $28 billion.
         </span>
       </div>
 
       <div :class="paragraphClasses">
         <span class="bg-white">
-          The conflict has taken a significant toll on the country's infrastructure, particularly in the eastern areas
-          most affected by the conflict, where agricultural infrastructure has been destroyed.
+          How is Ukraine's grain farming being impacted by the conflict?
+          <a
+            href="https://earthobservatory.nasa.gov/images/150025/measuring-wars-effect-on-a-global-breadbasket"
+            >NASA's Earth Observatory</a
+          >
+          produced a map looking at the location of Ukraine's crops cross
+          referenced against the areas impacted by the war.
         </span>
       </div>
 
       <div :class="paragraphClasses">
         <span class="bg-white">
-          The exact impact of the war on grain production hasn't been quantified, as the ability to collect data has been
-          severely limited, but how might the conflict be impacting Ukraine's grain production and who is going to be
-          impacted downstream?
+          The conflict has taken a significant toll on the country's
+          infrastructure, particularly in the eastern areas most affected by the
+          conflict, where agricultural infrastructure has been destroyed.
+        </span>
+      </div>
+
+      <div :class="paragraphClasses">
+        <span class="bg-white">
+          The exact impact of the war on grain production hasn't been
+          quantified, as the ability to collect data has been severely limited,
+          but how might the conflict be impacting Ukraine's grain production and
+          who is going to be impacted downstream?
         </span>
       </div>
 
       <!-- introduce oblast map -->
       <div :class="paragraphClasses">
         <span class="bg-white">
-          Ukraine's agricultural data is organized by oblast. Oblasts are similar to states in the US.
+          Ukraine's agricultural data is organized by oblast. Oblasts are
+          similar to states in the US.
         </span>
       </div>
 
       <div :class="paragraphClasses">
-        <span class="bg-white">This map shows Ukraine's total grain production by oblast before the war started in 2021.
-          The more green, the more grain that was produced there.
+        <span class="bg-white"
+          >This map shows Ukraine's total grain production by oblast before the
+          war started in 2021. The more green, the more grain that was produced
+          there.
         </span>
       </div>
 
       <div :class="paragraphClasses">
         <span class="bg-white">
           Using our forecasting tool, we can explore different scenarios and how
-          they might impact grain production in Ukraine in the future. We use 2021 as our baseline year, 100% of normal
-          production.
+          they might impact grain production in Ukraine in the future. We use
+          2021 as our baseline year, 100% of normal production.
         </span>
       </div>
 
       <!-- small impact -->
       <div :class="paragraphClasses">
-        <span class="bg-white">In one scenario,
-          <a href="https://hub.conflictobservatory.org/portal/apps/sites/#/home/pages/grain-1"
-            class="black link underline b">experts predict a ~15% reduction</a>
+        <span class="bg-white"
+          >In one scenario,
+          <a
+            href="https://hub.conflictobservatory.org/portal/apps/sites/#/home/pages/grain-1"
+            class="black link underline b"
+            >experts predict a ~15% reduction</a
+          >
           from normal levels.
         </span>
       </div>
 
       <div :class="paragraphClasses">
         <span class="bg-white black">
-          If the impact of the war continues to rise and farmers are unable to plant new crops, what if only
+          If the impact of the war continues to rise and farmers are unable to
+          plant new crops, what if only
           <strong>half</strong> of the expected crop is harvested?
           <!-- This results in
           a deficit of <strong>TK kilograms</strong> of grain. -->
@@ -155,22 +214,39 @@ video {
 
       <div :class="paragraphClasses">
         <span class="bg-white">
-          No one has quantified the true impact, but we have made it easy to see the outcomes of various scenarios. Use
-          the sliders and buttons below to simulate different scenarios and see how they might impact future Ukrainian
-          grain production.
+          No one has quantified the true impact, but we have made it easy to see
+          the outcomes of various scenarios. Use the sliders and buttons below
+          to simulate different scenarios and see how they might impact future
+          Ukrainian grain production.
         </span>
       </div>
 
-      <div :class="['step pa4 overflow-y-auto br1', stepIndex === 10 ? 'w-50' : 'w-100']"
-        style="pointer-events: default !important;">
-        <DataTable v-show="scenario" :activeData="active.activeData" :oblastScales="scenario.oblastScales"
-          :focusedOblastName="focusedOblastName" :totalHarvestedArea="active.totalHarvestedArea"
-          :totalYield="active.totalYield" :totalVolume="active.totalVolume" @sliderChange="handleSliderChange"
-          @setFocusedOblast="setFocusedOblast($event)" />
+      <div
+        :class="[
+          'step pa4 overflow-y-auto br1',
+          stepIndex === 10 ? 'w-50' : 'w-100',
+        ]"
+        style="pointer-events: default !important"
+      >
+        <DataTable
+          v-show="scenario"
+          :activeData="active.activeData"
+          :oblastScales="scenario.oblastScales"
+          :focusedOblastName="focusedOblastName"
+          :totalHarvestedArea="active.totalHarvestedArea"
+          :totalYield="active.totalYield"
+          :totalVolume="active.totalVolume"
+          @sliderChange="handleSliderChange"
+          @setFocusedOblast="setFocusedOblast($event)"
+        />
 
         <div class="buttons f5 flex flex-wrap">
           <!-- make a button to set all oblasts to 15% -->
-          <button v-for="percent in [15, 25, 50]" class="dim dib ma1" @click="setAllOblastOutput(percent)">
+          <button
+            v-for="percent in [15, 25, 50]"
+            class="dim dib ma1"
+            @click="setAllOblastOutput(percent)"
+          >
             Set all Oblasts to {{ percent }}%
           </button>
 
@@ -178,8 +254,6 @@ video {
           <button class="dim dib ma1" @click="setEasternOblastOutput(15)">
             Set Eastern Oblasts to 15%
           </button>
-
-
 
           <!-- make a button to reset everything to 100% -->
           <button class="b dim db ma1" @click="setAllOblastOutput(100)">
@@ -193,7 +267,8 @@ video {
 
         <span class="bg-white">
           Where does Ukraine's grain usually end up? In a normal trade year, the
-          bulk of Ukraine's exports go to China, Africa, and Southeast Asian countries.
+          bulk of Ukraine's exports go to China, Africa, and Southeast Asian
+          countries.
         </span>
       </div>
 
@@ -215,96 +290,175 @@ video {
 
       <div :class="paragraphClasses">
         <span class="bg-white">
-          We analyzed COMTRADE data to determine which countries import Ukrainian grain. You can find the detailed
-          methodology and source data in <a href="https://observablehq.com/@codingwithfire/ukraine-grain-importers"
-            class="black link underline b">our methodology notebook</a>.
+          We analyzed COMTRADE data to determine which countries import
+          Ukrainian grain. You can find the detailed methodology and source data
+          in
+          <a
+            href="https://observablehq.com/@codingwithfire/ukraine-grain-importers"
+            class="black link underline b"
+            >our methodology notebook</a
+          >.
         </span>
       </div>
 
       <!-- small impact -->
       <div :class="paragraphClasses">
         <span class="bg-white">
-          The small impact scenario predicts that grain production will only be affected by ~15% from normal levels in
-          2022. Let's see which countries depend most on Ukraine for their grain imports.
+          The small impact scenario predicts that grain production will only be
+          affected by ~15% from normal levels in 2022. Let's see which countries
+          depend most on Ukraine for their grain imports.
           <!-- This results in a
           deficit of <strong>TK million tons</strong> of grain, or TK% of
           Ukraine's total grain production. -->
         </span>
-        <BarChart class="f6" ref="barChart" :showSentence="true" :showSlider="false" :initScenario="0.85"
-          :width="graphicWidth * 0.8" />
+        <BarChart
+          class="f6"
+          ref="barChart"
+          :showSentence="true"
+          :showSlider="false"
+          :initScenario="0.85"
+          :width="graphicWidth * 0.8"
+        />
       </div>
 
       <!-- high impact -->
       <div :class="paragraphClasses">
         <span class="bg-white">
-          The high impact scenario predicts that grain production will be affected by as much as 50% from normal levels in
-          2022.
+          The high impact scenario predicts that grain production will be
+          affected by as much as 50% from normal levels in 2022.
           <!-- This results in
           a deficit of <strong>TK million tons</strong> of grain, or
           <strong>TK%</strong> of Ukraine's total grain production. -->
         </span>
-        <BarChart class="f6" ref="barChart" :showSlider="false" :showSentence="true" :initScenario="0.50"
-          :width="graphicWidth * 0.8" />
+        <BarChart
+          class="f6"
+          ref="barChart"
+          :showSlider="false"
+          :showSentence="true"
+          :initScenario="0.5"
+          :width="graphicWidth * 0.8"
+        />
       </div>
 
       <!-- introduce the slider and allow the user to make their own predictions -->
       <div :class="paragraphClasses">
-        <span class="bg-white f3 lh-copy measure  dib">
+        <span class="bg-white f3 lh-copy measure dib">
           Now it's your turn to make your own predictions. Use the slider below
           to simulate different scenarios and see how they might impact grain
           production in Ukraine in the future.
         </span>
 
-        <BarChart class="f6" ref="barChart" :showSlider="true" :showSentence="true" :initScenario="overallForecastPercent"
-          @scenarioChange="handleScenarioChange" :countryFilter="false" :countryFilterPct="0.02"
-          :width="graphicWidth * 0.8" />
+        <BarChart
+          class="f6"
+          ref="barChart"
+          :showSlider="true"
+          :showSentence="true"
+          :initScenario="overallForecastPercent"
+          @scenarioChange="handleScenarioChange"
+          :countryFilter="false"
+          :countryFilterPct="0.02"
+          :width="graphicWidth * 0.8"
+        />
+      </div>
+      
+      <div class="final-tool-view w-100 f5 pa2 pt5 bg-white cf">
+        <UkraineOblastMap
+          :class="['z-2 vh-40 w-100']"
+          ref="oblastMap"
+          id="oblast-map"
+          :activeDataByOblast="active.activeDataByOblast"
+          :activeGrainType="activeGrainType"
+          :width="graphicWidth"
+          :valueKey="'harvestedArea'"
+          :focusedOblastName="focusedOblastName"
+          @setFocusedOblast="setFocusedOblast($event)"
+        />
+
+        
+        <div class="buttons pv2">
+          <div class="w-100 ph3 f7 flex">
+            <!-- make a button to set all oblasts to 15% -->
+            <button
+              v-for="percent in [50, 60, 70, 80, 90]"
+              class="dim dib ma1 ba bg-white ph2"
+              @click="setAllOblastOutput(percent)"
+            >
+              Set all to {{ percent }}%
+            </button>
+
+            <!-- make a button to reset everything to 100% -->
+            <button
+              class="dim dib ma1 ba bg-dark-gray white b--black ph2"
+              @click="setAllOblastOutput(100)"
+            >
+              Reset all Oblasts to 100%
+            </button>
+          </div>
+
+          <div class="w-100 ph3 f7 flex">
+            <!-- a button to set only eastern oblasts to 15%, all others remain the same -->
+            <button
+              class="dim dib ma1 ba bg-white ph2"
+              v-for="percent in [20, 40, 60, 80]"
+              @click="($event) => setEasternOblastOutput(percent)"
+            >
+              Set Eastern Oblasts to {{ percent }}%
+            </button>
+          </div>
+        </div>
+
+        <BarChart
+          class="w-100 w-50-ns fl ph2"
+          ref="barChart"
+          :showSlider="true"
+          :showSentence="false"
+          :initScenario="overallForecastPercent"
+          @scenarioChange="handleScenarioChange"
+          :countryFilter="false"
+          :countryFilterPct="0.02"
+          :width="graphicWidth * 0.45"
+        />
+
+        <DataTable
+          v-show="scenario"
+          class="w-100 w-50-ns fl"
+          :activeData="active.activeData"
+          :oblastScales="scenario.oblastScales"
+          :focusedOblastName="focusedOblastName"
+          :totalHarvestedArea="active.totalHarvestedArea"
+          :totalYield="active.totalYield"
+          :totalVolume="active.totalVolume"
+          @sliderChange="handleSliderChange"
+          @setFocusedOblast="setFocusedOblast($event)"
+        />
       </div>
 
-
-      <div class="final-tool-view vh-100 w-100 f5 pa2 bg-white">
-
-        <UkraineOblastMap :class="['z-2 vh-50 w-100']" ref="oblastMap" id="oblast-map"
-          :activeDataByOblast="active.activeDataByOblast" :activeGrainType="activeGrainType" :width="graphicWidth"
-          :valueKey="'harvestedArea'" :focusedOblastName="focusedOblastName"
-          @setFocusedOblast="setFocusedOblast($event)" />
-
-        <BarChart class="w-100 w-50-ns fl ph2" ref="barChart" :showSlider="true" :showSentence="false"
-          :initScenario="overallForecastPercent" @scenarioChange="handleScenarioChange" :countryFilter="false"
-          :countryFilterPct="0.02" :width="graphicWidth * 0.45" />
-
-
-        <DataTable v-show="scenario" class="w-100 w-50-ns fl" :activeData="active.activeData" :oblastScales="scenario.oblastScales"
-          :focusedOblastName="focusedOblastName" :totalHarvestedArea="active.totalHarvestedArea"
-          :totalYield="active.totalYield" :totalVolume="active.totalVolume" @sliderChange="handleSliderChange"
-          @setFocusedOblast="setFocusedOblast($event)" />
-
-
-
-
-      </div>
     </div>
 
     <!-- use flex to stack the h2s vertically -->
     <!-- slide transition -->
     <Transition name="slide" mode="out-in">
-      <div class="fixed top-0 right-0 z-3 w-100 flex flex-column"
-        v-show="(stepIndex > 5 && stepIndex < 11) || stepIndex > 13">
-        <h2 class="pa2 f1 tr db  w-100">
-          <span class="db pv4">Harvest:<br />
-            {{ numberFormat(animatedYieldNumber * 100) }}kg</span>
+      <div
+        class="fixed top-0 right-0 z-3 w-100 flex flex-column"
+        v-show="(stepIndex > 5 && stepIndex < 11) || stepIndex > 13"
+      >
+        <h2 class="pa2 f1 tr db w-100">
+          <span class="db pv4"
+            >Harvest:<br />
+            {{ numberFormat(animatedYieldNumber * 100) }}kg</span
+          >
 
-          <span class="db pv4">Output:<br />
-            {{ pctFormat(animatedOutputNumber) }}</span>
+          <span class="db pv4"
+            >Output:<br />
+            {{ pctFormat(animatedOutputNumber) }}</span
+          >
         </h2>
 
         <h2 class="pa2 f1 tr db ba b--blue w-100">
-
           <!-- {{ animatedOutputNumber }} -->
         </h2>
       </div>
     </Transition>
-
-
   </div>
 </template>
 <script setup>
@@ -326,8 +480,7 @@ const scrollytellingContainer = ref(null); // the html element for the container
 //   return stepContainer.value ? stepContainer.value.offsetWidth : 1200;
 // });
 
-const { width: graphicWidth } =
-  useElementSize(scrollytellingContainer);
+const { width: graphicWidth } = useElementSize(scrollytellingContainer);
 
 // we will fill these later with our data
 // const importExportData = ref([]);
@@ -344,7 +497,7 @@ onMounted(() => {
     .then((data) => {
       importExportData.value = d3.csvParse(data);
     });
-})
+});
 
 const valueKey = ref("harvestedArea"); // the key we will use to get the value from the data
 
@@ -353,68 +506,69 @@ const numberFormat = d3.format(",.0f");
 const pctFormat = d3.format(",.1%");
 
 // the tachyons classes we will use for the paragraphs
-const paragraphClasses = "step pa1 pa4-l f3 f2-ns lh-copy measure w-100 w-80-l center ml2 ml5-ns z1";
+const paragraphClasses =
+  "step pa1 pa4-l f3 f2-ns lh-copy measure w-100 w-80-l center ml2 ml5-ns z1";
 
 const active = useActiveData();
-
-
-
-
 
 const { activeGrainType, setActiveGrainType } = useActiveGrainType();
 // const DEFAULT_GRAIN_TYPE = "10 пшенЯР-Table 1";
 // const DEFAULT_GRAIN_TYPE = "12 кукур-Table 1";
-const DEFAULT_GRAIN_TYPE = "4 зерн-Table 1"
+const DEFAULT_GRAIN_TYPE = "4 зерн-Table 1";
 setActiveGrainType(DEFAULT_GRAIN_TYPE);
 // can also use: "12 кукур-Table 1"
 
-
-
 const overallForecastPercent = ref(1);
-
 
 const animatedExportNumber = ref(0); // this will animate up to 27.8
 
-const animatedOutputNumber = ref(0)
-const animatedYieldNumber = ref(0)
+const animatedOutputNumber = ref(0);
+const animatedYieldNumber = ref(0);
 
 function handleScenarioChange(newScenario) {
   setAllOblastOutput(newScenario * 100);
 }
 
-
 onMounted(() => {
   // when active.totalYield changes, animate the animatedYieldNumber to the new value with anime
-  watch(active, (newActive) => {
-    const newValue = newActive.totalYield
-    anime({
-      targets: animatedYieldNumber,
-      value: [animatedYieldNumber.value, newValue],
-      round: 100,
-      easing: "linear",
-      duration: 900,
-    });
-  }, { immediate: true });
+  watch(
+    active,
+    (newActive) => {
+      const newValue = newActive.totalYield;
+      anime({
+        targets: animatedYieldNumber,
+        value: [animatedYieldNumber.value, newValue],
+        round: 100,
+        easing: "linear",
+        duration: 900,
+      });
+    },
+    { immediate: true }
+  );
 
   // watch overallForecastPercent and update animatedOutputNumberr
-  watch(overallForecastPercent, (newValue) => {
-    // console.log('overallForecastPercent changed to', newValue)
-    anime({
-      targets: animatedOutputNumber,
-      value: [animatedOutputNumber.value, newValue],
-      round: 100,
-      easing: "linear",
-      duration: 900,
-    });
-  }, { immediate: true });
-})
+  watch(
+    overallForecastPercent,
+    (newValue) => {
+      // console.log('overallForecastPercent changed to', newValue)
+      anime({
+        targets: animatedOutputNumber,
+        value: [animatedOutputNumber.value, newValue],
+        round: 100,
+        easing: "linear",
+        duration: 900,
+      });
+    },
+    { immediate: true }
+  );
+});
 
-const focusedOblastName = ref(null)
+const focusedOblastName = ref(null);
 
 function setFocusedOblast(oblastName) {
   // console.log('focusing on', oblastName)
   // if oblastName is null, remove the focus
-  focusedOblastName.value = oblastName
+  focusedOblastName.value = oblastName;
 }
 
 const { scenario, setOblastScale, setScenario } = useCurrentScenario();
@@ -446,11 +600,14 @@ const setAllOblastOutput = (percentage) => {
 };
 
 const easternOblastNamesNormalized = [
-  'luhansk',
-  'kherson',
-  'donetsk',
-  'zaporizhzhya'
-]
+  "luhansk",
+  "kherson",
+  "donetsk",
+  "zaporizhzhya",
+  "kharkiv",
+  "dnipropetrovsk",
+  "sumy"
+];
 
 function setEasternOblastOutput(amount) {
   // set the values of the oblasts
@@ -498,7 +655,6 @@ watch(
 
     // else if step 14, set all oblasts to 85
     // else if step 15, set all oblasts to 50
-
     else if (newIndex === 14) {
       setAllOblastOutput(85);
     } else if (newIndex === 15) {
@@ -549,9 +705,7 @@ onMounted(() => {
     });
 
   // take .animated-intro-header and split it into words, then animate it in with anime js with a stagger
-  const animatedIntroHeader = document.querySelector(
-    ".animated-intro-header"
-  );
+  const animatedIntroHeader = document.querySelector(".animated-intro-header");
 
   // split the text into words
   const words = animatedIntroHeader.innerHTML.split(" ");
@@ -582,7 +736,7 @@ onMounted(() => {
     // rotateZ: [90, 0],
     // do some cool 3d transforms
     // translateZ: [20, 0],
-    translateY: ['8vh', 0],
+    translateY: ["8vh", 0],
     // translateX: [40, 0],
     // skewY: [5, 0],
     // easing: "easeInOutQuad",
@@ -627,7 +781,6 @@ onMounted(() => {
   align-items: left; */
 
   /* pointer-events: none; */
-
 }
 
 h2 {
@@ -645,7 +798,8 @@ h2 {
   /* pointer-events: none; */
 }
 
-.text-container p {}
+.text-container p {
+}
 
 .bg-white-o-20 {
   background-color: rgba(255, 255, 255, 0.2);
@@ -679,8 +833,6 @@ h2 {
   height: 90vh;
 }
 
-
-
 /* make a slide transition to slide in and out from the right side of the screen*/
 
 .slide-enter-active,
@@ -700,5 +852,9 @@ h2 {
 
 #oblast-map {
   transition: all 1.3s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.vh-40 {
+  height: 40vh;
 }
 </style>

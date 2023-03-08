@@ -12,5 +12,4 @@ html {
   /* optimize legibility for text rendering */
   text-rendering: optimizeLegibility;
 }
-
 </style>

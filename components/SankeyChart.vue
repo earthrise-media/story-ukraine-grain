@@ -149,7 +149,9 @@ the value will always be the ukrTradeValue
 
 // now we will make a computed sankeyPaths and sankeyNodes that will run importExportData through the sankey and return sankeyPaths with values we can draw in SVG
 
-const nodeWidth = 50;
+const nodeWidth = 25;
+
+const maxValue = 1000000000
 
 // First we set up our sankey
 // const sankey = d3Sankey
@@ -228,8 +230,13 @@ const colorScale = d3.scaleOrdinal([
   "#d5d5d5",
   "#e3e3e3",
   "#f1f1f1",
-
 ]);
+
+const valueColorScale = d3.scaleLinear()
+  .domain([0, maxValue])
+  // .range(["#ccc", "#999"]);
+  // even lighter gray
+  .range(["#f1f1f1", "#ababab"]);
 
 
 // then we can use the sankey diagram to make sankeyPaths and sankeyNodes
@@ -240,14 +247,15 @@ const colorScale = d3.scaleOrdinal([
 //   stroke: colorScale(link.target.name),
 // })));
 
+const strokeWidthScale = d3.scaleLinear()
+    .domain([0, maxValue])
+    .range([0.5, nodeWidth]);
+
 function calculateStrokeWidth(value) {
   // use value to calculate strokeWidth
   //return Math.max(Math.sqrt(value) * 0.001, 0.5);
   // instead we will use a custom d3 linear scale
-  const scale = d3.scaleLinear()
-    .domain([0, 1000000000])
-    .range([0.5, nodeWidth]);
-  return scale(value);
+  return strokeWidthScale(value);
 
   // make the strokeWidth match the node size of the sankey
 }
@@ -263,7 +271,8 @@ const sankeyPaths = computed(() =>
       // use value to calculate strokeWidth
       // strokeWidth: Math.max(Math.sqrt(link.value) * 0.001, 0.5),
       strokeWidth: calculateStrokeWidth(link.value),
-      stroke: colorScale(link.target.name),
+      // stroke: colorScale(link.target.name),
+      stroke: valueColorScale(link.value),
     }))
 );
 
@@ -274,7 +283,8 @@ const sankeyNodes = computed(() =>
     .map((node) => ({
       ...node,
       // fill: node.name === 'Ukraine' ? '#000' : '#fff',
-      fill: colorScale(node.name),
+      // fill: colorScale(node.name),
+      fill: valueColorScale(node.value),
       stroke: "#000",
       textFill: node.name === "Ukraine" ? "#fff" : "#000",
     }))
