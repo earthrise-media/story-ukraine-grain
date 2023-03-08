@@ -12,7 +12,7 @@
           <th class="tc">Forecast</th>
         </tr>
       </thead>
-      <tbody v-if="activeData" class="w-100 bg-white">
+      <tbody v-if="active" class="w-100 bg-white">
         <!-- use a transition-group instead for move animation -->
         <!-- set animating to true when the transition starts -->
         <!-- set animating to false when the transition ends -->
@@ -69,7 +69,7 @@
       <tfoot>
         <tr class="bg-gray white f4-l b">
           <td>Total Harvested:</td>
-          <td class="">{{ numberFormat(props.totalHarvestedArea * 100) }}kg</td>
+          <td class="">{{ numberFormat(active.totalHarvestedArea * 100) }}kg</td>
           <!-- <td>{{ numberFormat(totalYield) }}</td> -->
           <!-- <td>{{ numberFormat(totalVolume) }}</td> -->
         </tr>
@@ -84,37 +84,25 @@ import { normalizeOblastName } from "~~/helpers";
 
 const animating = ref(false); // will help us not overwrite focus when animating the transition
 
+const active = useActiveData();
+
 // we expect a scenario object to be passed in via props
 // what is the difference between scenario and oblastSliderPercentages?
 
 // scenario is a broader thing that describes the scenario
 // oblastSliderPercentages is a more specific thing that describes the oblasts
 const props = defineProps({
-  // map of normalized oblast name to scalar value
-  activeData: {
-    type: Object,
-    required: true,
-    default: [],
-  },
   oblastScales: {
     type: Object,
     required: true,
     default: {},
   },
-  totalHarvestedArea: {
-    type: Number,
-    required: true,
-  },
-  totalYield: {
-    type: Number,
-    required: true,
-  },
-  totalVolume: {
-    type: Number,
-    required: true,
-  },
   focusedOblastName: {
     type: String,
+  },
+  activeData: {
+    type: Array,
+    required: true,
   },
 });
 

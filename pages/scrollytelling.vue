@@ -233,9 +233,6 @@ video {
           :activeData="active.activeData"
           :oblastScales="scenario.oblastScales"
           :focusedOblastName="focusedOblastName"
-          :totalHarvestedArea="active.totalHarvestedArea"
-          :totalYield="active.totalYield"
-          :totalVolume="active.totalVolume"
           @sliderChange="handleSliderChange"
           @setFocusedOblast="setFocusedOblast($event)"
         />
@@ -534,7 +531,8 @@ onMounted(() => {
   watch(
     active,
     (newActive) => {
-      const newValue = newActive.totalYield;
+      // THIS IS REALLY IMPORT BECAUSE IT NEEDS TO MATCH THE DATA TABLE
+      const newValue = newActive.totalHarvestedArea;
       anime({
         targets: animatedYieldNumber,
         value: [animatedYieldNumber.value, newValue],
