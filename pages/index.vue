@@ -260,7 +260,7 @@ video {
       </div>
 
       <div :class="paragraphClasses">
-        <h2 class="f-subheadline pa2 pa5-ns">Who is affected downstream?</h2>
+        <h2 class="f-subheadline pa2 pa5-ns bg-white">Who is affected downstream?</h2>
 
         <span class="bg-white">
           Where does Ukraine's grain usually end up? In a normal trade year, the
