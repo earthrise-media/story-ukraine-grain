@@ -9,16 +9,18 @@
     "prettier": "prettier --single-quote {*.vue,**/*.vue} --write"
   },
   "devDependencies": {
-    "nuxt": "^3.1.1"
+    "nuxt": "^3.2.3"
   },
   "dependencies": {
     "@nuxt/devtools": "^0.1.2",
+    "@nuxtjs/google-fonts": "^2.0.0",
     "@turf/turf": "^6.5.0",
-    "@vueuse/nuxt": "^9.12.0",
+    "@vueuse/nuxt": "^9.13.0",
     "animejs": "^3.2.1",
     "d3": "^7.8.2",
     "d3-sankey": "^0.12.3",
     "intersection-observer": "^0.12.2",
+    "lodash": "^4.17.21",
     "node-fetch": "^3.3.0",
     "scrollama": "^3.2.0",
     "slugify": "^1.6.5",
