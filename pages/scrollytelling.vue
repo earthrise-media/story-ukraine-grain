@@ -225,7 +225,7 @@ video {
       <div :class="paragraphClasses">
         <span class="bg-white">
           The small impact scenario predicts that grain production will only be affected by ~15% from normal levels in
-          2022. Let's see what that looks like for the countries that import Ukraine's grain.
+          2022. Let's see which countries depend most on Ukraine for their grain imports.
           <!-- This results in a
           deficit of <strong>TK million tons</strong> of grain, or TK% of
           Ukraine's total grain production. -->
@@ -392,7 +392,7 @@ onMounted(() => {
       value: [animatedYieldNumber.value, newValue],
       round: 100,
       easing: "linear",
-      duration: 1200,
+      duration: 900,
     });
   }, { immediate: true });
 
@@ -404,7 +404,7 @@ onMounted(() => {
       value: [animatedOutputNumber.value, newValue],
       round: 100,
       easing: "linear",
-      duration: 1200,
+      duration: 900,
     });
   }, { immediate: true });
 })

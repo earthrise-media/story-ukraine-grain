@@ -4,7 +4,7 @@
       <thead>
         <tr class="tl">
           <th>Oblast</th>
-          <th class="br1 ph1" style="background-color: #ffc500">
+          <th class="br1 ph1" style="background-color: #146E37; color: white;">
             Harvested Area
           </th>
           <!-- <th>Yield</th> -->
