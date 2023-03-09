@@ -27,23 +27,25 @@ export default defineNuxtConfig({
   // },
 
   // set up opengraph tags to use public/images/og-share-image.png as share image
-  head: {
-    meta: [
-      { property: "og:title", content: "Ukraine's grain farming amidst the conflict with Russia" },
-      {
-        property: "og:description",
-        content:
-          "by The Plotline",
-      },
-      {
-        name: 'og:image',
-        content: 'images/og-share-image.png',
-      },
-      {
-        name: 'twitter:image',
-        content: 'images/og-share-image.png',
-      },
-    ],
+  app: {
+    head: {
+      meta: [
+        { property: "og:title", content: "Ukraine's grain farming amidst the conflict with Russia" },
+        {
+          property: "og:description",
+          content:
+            "by The Plotline",
+        },
+        {
+          name: 'og:image',
+          content: 'images/og-share-image.png',
+        },
+        {
+          name: 'twitter:image',
+          content: 'images/og-share-image.png',
+        },
+      ],
+    },
   },
 
 
