@@ -11,7 +11,7 @@
         ref="stepGraphics"
         class="fixed top-0 right-0 w-100 vh-100 z-0"
       >
-        <TransitionGroup name="fade" mode="out-in">
+        <TransitionGroup name="fade" >
           <div
             v-show="stepIndex < 1"
             id="step-graphic-0"
@@ -40,14 +40,35 @@
           </div>
 
           <div
-            v-show="stepIndex >= 1 && stepIndex < 4"
-            :key="1"
+            v-show="stepIndex == 1"
+            :key="'1a'"
             class="step-graphic-container"
-            step="0"
             :style="{
               backgroundRepeat: 'no-repeat',
               backgroundImage:
-                'url(images/nasa_landsat_ukraine_plnt_2022_lrg.jpg)',
+                'url(images/landsat-steps/landsat_step1.r1.png)',
+            }"
+          ></div>
+
+          <div
+            v-show="stepIndex == 2"
+            :key="'1b'"
+            class="step-graphic-container"
+            :style="{
+              backgroundRepeat: 'no-repeat',
+              backgroundImage:
+                'url(images/landsat-steps/landsat_step2.r1.png)',
+            }"
+          ></div>
+
+          <div
+            v-show="stepIndex == 3"
+            :key="'1c'"
+            class="step-graphic-container"
+            :style="{
+              backgroundRepeat: 'no-repeat',
+              backgroundImage:
+                'url(images/landsat-steps/landsat_step3.r1.png)',
             }"
           ></div>
 
@@ -788,11 +809,13 @@ h2 {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+  transition: opacity 920ms cubic-bezier(0.45, 0, 0.55, 1);
 }
 
 .fade-enter-to,
 .fade-leave-from {
   opacity: 1;
+  transition: opacity 920ms cubic-bezier(0.45, 0, 0.55, 1);
 }
 
 .top-4 {
