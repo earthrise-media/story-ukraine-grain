@@ -25,6 +25,19 @@ export default defineNuxtConfig({
   //     },
   //   ],
   // },
+
+  // set up opengraph tags to use public/images/og-share-image.png as share image
+  head: {
+    meta: [
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '/images/og-share-image.png',
+      },
+    ],
+  },
+
+  
   // add tachyons CSS framework
   css: ['tachyons/css/tachyons.min.css'],
   vite: {
