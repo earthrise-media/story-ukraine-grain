@@ -22,7 +22,7 @@
         v-for="oblast in featureCollection.features"
         :x="path.centroid(oblast)[0]"
         :y="path.centroid(oblast)[1]"
-        fill="black"
+        :fill="findOblastTextContrastColor(oblast)"
         font-size="12"
         text-anchor="middle"
         :class="{
@@ -243,6 +243,18 @@ function findOblastFillColor(oblastShape) {
   const shapeValue = findOblastValue(oblastShape);
   if (shapeValue) return valueColorScale.value(+shapeValue);
   else return "#FFF";
+}
+
+function findOblastTextContrastColor (oblastShape) {
+  const shapeValue = findOblastValue(oblastShape);
+  if (shapeValue) {
+    const fillColor = valueColorScale.value(+shapeValue);
+    const color = d3.hsl(fillColor);
+    const brightness = color.l;
+    return brightness > 0.5 ? "#000" : "#FFF";
+  } else {
+    return "#FFF";
+  }
 }
 </script>
 <style>
