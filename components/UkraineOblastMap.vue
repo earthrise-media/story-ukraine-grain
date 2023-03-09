@@ -253,7 +253,7 @@ function findOblastTextContrastColor (oblastShape) {
     const brightness = color.l;
     return brightness > 0.5 ? "#000" : "#FFF";
   } else {
-    return "#FFF";
+    return "transparent";
   }
 }
 </script>
@@ -266,7 +266,7 @@ path.focused-shape {
   stroke-width: 2.25 !important;
   stroke: black !important;
   /* fill: yellow !important; */
-  transition: all 0.12s cubic-bezier(0.45, 0, 0.55, 1);
+  /* transition: all 0.12s cubic-bezier(0.45, 0, 0.55, 1); */
   /* transition-delay: 50ms; */
 }
 </style>

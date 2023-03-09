@@ -139,23 +139,35 @@ const emit = defineEmits(["sliderChange", "setFocusedOblast"]);
 // }, 100);
 
 // write our own custom debounce
-function debounce(func, wait) {
-  let timeout;
-  return function executedFunction(...args) {
-    const later = () => {
-      clearTimeout(timeout);
-      func(...args);
-    };
+// function debounce(func, wait) {
+//   let timeout;
+//   return function executedFunction(...args) {
+//     const later = () => {
+//       clearTimeout(timeout);
+//       func(...args);
+//     };
 
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-  };
-}
+//     clearTimeout(timeout);
+//     timeout = setTimeout(later, wait);
+//   };
+// }
 
-// apply debounce to handleOblastHover
-const handleOblastHover = debounce((oblast) => {
+// // apply debounce to handleOblastHover
+// const handleOblastHover = debounce((oblast) => {
+//   // don't bubble hovers when animating
+//   if (animating.value) return console.error("not hovering, we are animating");
+//   // console.log('data table hover', oblast)
+//   // get the normalized oblast name from the oblast object
+//   if (!oblast) return;
+//   const oblastName = oblast.oblastNameNormalized;
+
+//   // emit the oblast name to the parent component
+//   emit("setFocusedOblast", oblastName);
+// }, 120);
+
+const handleOblastHover = useDebounceFn((oblast) => {
   // don't bubble hovers when animating
-  if (animating.value) return console.error("not hovering, we are animating");
+  if (animating.value) return //console.error("not hovering, we are animating");
   // console.log('data table hover', oblast)
   // get the normalized oblast name from the oblast object
   if (!oblast) return;
@@ -163,7 +175,7 @@ const handleOblastHover = debounce((oblast) => {
 
   // emit the oblast name to the parent component
   emit("setFocusedOblast", oblastName);
-}, 120);
+}, 300);
 
 function isOblastFocused(oblastName) {
   return oblastName === props.focusedOblastName;
