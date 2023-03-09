@@ -115,7 +115,7 @@
             <span class="animated-intro-header">Ukraine's grain farming amidst the conflict with Russia
             </span>
             <br />
-            <small class="fw4 tracked f5 bg-white pa1">by The Plotline</small>
+            <small class="fw4 tracked f5 bg-white pa1">by <a href="https://theplotline.org" class="link black underline">The Plotline</a></small>
           </div>
         </h2>
 
@@ -421,6 +421,12 @@
           @sliderChange="handleSliderChange"
           @setFocusedOblast="setFocusedOblast($event)"
         />
+      </div>
+
+      <div class="footer pa5 tc">
+
+        by <a href="https://theplotline.org" class="link black underline">The Plotline</a>
+        
       </div>
 
     </div>
