@@ -136,14 +136,13 @@
         </span>
       </div>
 
-      <!-- introduce oblast map -->
       <div :class="paragraphClasses">
         <span class="bg-white">
           Ukraine's agricultural data is organized by oblast. Oblasts are
           similar to states in the US.
         </span>
-        <p class="f6 grey">
-          <span class="bg-white">
+        <p class="f6 grey measure">
+          <span class="bg-light-gray near-black">
           Data sourced from the <a class="link black underline" href="https://ukrstat.gov.ua">Ukrainian Government</a> in 2021 who have been unable to collect statistics from Crimea or Sevastopol due to the conflict.
           </span>
         </p>
@@ -165,7 +164,6 @@
         </span>
       </div>
 
-      <!-- small impact -->
       <div :class="paragraphClasses">
         <span class="bg-white"
           >In one scenario,
@@ -183,8 +181,6 @@
           If the impact of the war continues to rise and farmers are unable to
           plant new crops, what if only
           <strong>half</strong> of the expected crop is harvested?
-          <!-- This results in
-          a deficit of <strong>TK kilograms</strong> of grain. -->
         </span>
       </div>
 
@@ -199,8 +195,7 @@
 
       <div
         :class="[
-          'step pa4 overflow-y-auto br1',
-          stepIndex === 10 ? 'w-100 w-50-ns' : 'w-100',
+          'step pa4 overflow-y-auto br1 w-100 w-50-ns',
         ]"
         style="pointer-events: default !important"
       >
@@ -413,10 +408,10 @@
     <!-- slide transition -->
     <Transition name="slide" mode="out-in">
       <div
-        class="fixed top-0 right-0 z-3 w-100 flex flex-column dn db-l overflow-hidden"
+        class="fixed top-0 right-0 z-3 w-100 flex flex-column dn db-l overflow-hidden monospace"
         v-show="(stepIndex > 5 && stepIndex < 11) || (stepIndex > 13 && stepIndex < 16)"
       >
-        <h2 class="pa2 f4 f1-ns tr db w-100">
+        <h2 class="pa2 f4 f3-ns tr db w-100">
           <span class="db pv4"
             >Harvest:<br />
             {{ numberFormat(animatedYieldNumber * 100) }}kg</span
@@ -481,7 +476,7 @@ const pctFormat = d3.format(",.1%");
 
 // the tachyons classes we will use for the paragraphs
 const paragraphClasses =
-  "step pa1 pa4-ns f3 f2-ns lh-copy measure w-100 w-80-l center ml2 ml5-ns z1";
+  "step pa1 pa4-ns f3 f2-ns lh-copy measure w-100 w-80-ns center ml2 ml5-ns z1";
 
 const active = useActiveData();
 
