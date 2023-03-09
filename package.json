@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@nuxt/devtools": "^0.1.2",
-    "@nuxtjs/google-fonts": "^3.0.0",
+    "@nuxtjs/google-fonts": "^3.0.0-1",
     "@turf/turf": "^6.5.0",
     "@vueuse/nuxt": "^9.13.0",
     "animejs": "^3.2.1",

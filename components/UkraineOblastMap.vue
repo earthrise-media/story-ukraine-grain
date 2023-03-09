@@ -62,7 +62,7 @@ import { normalizeOblastName } from "@/helpers.js";
 const emits = ["setFocusedOblast"];
 
 function handleOblastHover(oblast) {
-  console.log("map oblast hover", oblast);
+  // console.log("map oblast hover", oblast);
   // get the normalized oblast name from the oblast object
   const oblastName = normalizeOblastName(oblast.properties.name_1);
 
