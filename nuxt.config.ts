@@ -9,7 +9,7 @@ export default defineNuxtConfig({
         Inconsolata: [400],
         // 'Martel Sans': [900],
       },
-    }],    
+    }],
   ],
   // buildModules: ['@nuxtjs/google-fonts'],
   // googleFonts: {
@@ -29,15 +29,24 @@ export default defineNuxtConfig({
   // set up opengraph tags to use public/images/og-share-image.png as share image
   head: {
     meta: [
+      { property: "og:title", content: "Ukraine's grain farming amidst the conflict with Russia" },
       {
-        hid: 'og:image',
-        property: 'og:image',
-        content: '/images/og-share-image.png',
+        property: "og:description",
+        content:
+          "by The Plotline",
+      },
+      {
+        name: 'og:image',
+        content: 'images/og-share-image.png',
+      },
+      {
+        name: 'twitter:image',
+        content: 'images/og-share-image.png',
       },
     ],
   },
 
-  
+
   // add tachyons CSS framework
   css: ['tachyons/css/tachyons.min.css'],
   vite: {
