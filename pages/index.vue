@@ -1,6 +1,6 @@
 <template>
   <div class="scrollytelling-container" ref="scrollytellingContainer">
-    <h3 class="w-100 fixed top-0 z-3">Step: {{ stepIndex }}</h3>
+    <!-- <h3 class="w-100 fixed top-0 z-3">Step: {{ stepIndex }}</h3> -->
 
     <div
       class="step-container w-100 w-two-thirds-ns vh-100 fixed top-0 right-0 z-2"
@@ -90,12 +90,11 @@
     <div class="text-container relative z1 pa2">
       <div class="pt5-ns">
         <h2 class="f1 f-headline-ns lh-title mt2 mt0-ns mb3 pa4">
-          <div class="tc">
-            <span class="animated-intro-header">
-              Ukraine's grain farming amidst the conflict with Russia
+          <div class="tl tc-ns">
+            <span class="animated-intro-header">Ukraine's grain farming amidst the conflict with Russia
             </span>
             <br />
-            <small class="fw4 tracked f5 bg-white">by The Plotline</small>
+            <small class="fw4 tracked f5 bg-white pa1">by The Plotline</small>
           </div>
         </h2>
 

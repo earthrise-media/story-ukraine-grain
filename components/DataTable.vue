@@ -5,7 +5,7 @@
         <tr class="tl">
           <th>Oblast</th>
           <th class="br1 ph1" style="background-color: #146e37; color: white">
-            Harvested Area
+            Harvested <span class="dn dib-l">Area</span>
           </th>
           <!-- <th>Yield</th> -->
           <!-- <th>Volume</th> -->
