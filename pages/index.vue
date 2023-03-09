@@ -1,6 +1,6 @@
 <template>
   <div class="scrollytelling-container" ref="scrollytellingContainer">
-    <!-- <h3 class="w-100 fixed top-0 z-3">Step: {{ stepIndex }}</h3> -->
+    <h3 class="w-100 fixed top-0 z-3">Step: {{ stepIndex }}</h3>
 
     <div
       class="step-container w-100 w-two-thirds-ns vh-100 fixed top-0 right-0 z-2"
@@ -12,37 +12,6 @@
         class="fixed top-0 right-0 w-100 vh-100 z-0"
       >
         <TransitionGroup name="fade" mode="out-in">
-          <!-- <div v-show="stepIndex < 1" id="step-graphic-0" :key="0" class="step-graphic-container" step="0" :style="{
-            backgroundImage: 'url(images/intro-satellite-animation.gif)',
-          }"></div> -->
-
-          <!-- We are going to replace the first graphic with a looping video from public/intro-video.mp4 -->
-          <!-- <div v-show="stepIndex < 1" id="step-graphic-0" :key="0" class="step-graphic-container" step="0">
-            <video autoplay loop muted playsinline class="w-100 h-100">
-              <source src="intro-video.mp4" type="video/mp4">
-            </video>
-          </div> -->
-
-          <!-- refactor to make sure the video covers the entire screen, even if it cuts the edges off a bit -->
-          <!-- <div v-show="stepIndex < 1" id="step-graphic-0" :key="0" class="step-graphic-container bg-black tc" step="0">
-            <video autoplay loop muted playsinline class="vh-100 items-center justify-center">
-              <source src="~/assets/intro-video-hires.r5.mp4" type="video/mp4">
-            </video>
-          </div> -->
-
-          <!-- 
-            /* merge with above css */
-.parent-element-to-video {
-    position: relative; /* or absolute or fixed */
-}
-video {
-    position: absolute;
-    left: 50%; /* % of surrounding element */
-    top: 50%;
-    transform: translate(-50%, -50%); /* % of current element */
-}
-
- we need to refactor to do something like this with inline styles -->
           <div
             v-show="stepIndex < 1"
             id="step-graphic-0"
@@ -90,7 +59,7 @@ video {
             <UkraineOblastMap
               :class="[
                 'z-2 vh-90 fixed right-0 pt4 ph3',
-                stepIndex < 10 ? 'w-100' : 'w-50-ns',
+                stepIndex < 10 ? 'w-100' : 'w-100 w-50-ns',
               ]"
               ref="oblastMap"
               id="oblast-map"
@@ -118,15 +87,18 @@ video {
       </div>
     </div>
 
-    <div class="text-container relative z1">
+    <div class="text-container relative z1 pa2">
       <div class="pt5-ns">
-        <h2 class="f1 f-headline-l lh-title mt2 mb3 pa4">
+        <h2 class="f1 f-headline-ns lh-title mt2 mt0-ns mb3 pa4">
           <div class="tc">
             <span class="animated-intro-header">
               Ukraine's grain farming amidst the conflict with Russia
             </span>
+            <br />
+            <small class="fw4 tracked f5 bg-white">by The Plotline</small>
           </div>
         </h2>
+
       </div>
 
       <div :class="paragraphClasses">
@@ -171,13 +143,18 @@ video {
           Ukraine's agricultural data is organized by oblast. Oblasts are
           similar to states in the US.
         </span>
+        <p class="f6 grey">
+          <span class="bg-white">
+          Data sourced from the <a class="link black underline" href="https://ukrstat.gov.ua">Ukrainian Government</a> in 2021 who have been unable to collect statistics from Crimea or Sevastopol due to the conflict.
+          </span>
+        </p>
       </div>
 
       <div :class="paragraphClasses">
         <span class="bg-white"
           >This map shows Ukraine's total grain production by oblast before the
           war started in 2021. The more green, the more grain that was produced
-          there.
+          there. 
         </span>
       </div>
 
@@ -224,7 +201,7 @@ video {
       <div
         :class="[
           'step pa4 overflow-y-auto br1',
-          stepIndex === 10 ? 'w-50' : 'w-100',
+          stepIndex === 10 ? 'w-100 w-50-ns' : 'w-100',
         ]"
         style="pointer-events: default !important"
       >
@@ -260,7 +237,8 @@ video {
       </div>
 
       <div :class="paragraphClasses">
-        <h2 class="f-subheadline pa2 pa5-ns bg-white">Who is affected downstream?</h2>
+        <h2 class="f1 f-subheadline-l pa2 pa5-ns">
+          <span class="bg-dark-gray white">Who is affected downstream?</span></h2>
 
         <span class="bg-white">
           Where does Ukraine's grain usually end up? In a normal trade year, the
@@ -346,7 +324,7 @@ video {
         </span>
 
         <BarChart
-          class="f6"
+          class="f6 dn"
           ref="barChart"
           :showSlider="true"
           :showSentence="true"
@@ -405,7 +383,7 @@ video {
         </div>
 
         <BarChart
-          class="w-100 w-50-ns fl ph2"
+          class="w-100 w-50-ns fl"
           ref="barChart"
           :showSlider="true"
           :showSentence="false"
@@ -413,7 +391,7 @@ video {
           @scenarioChange="handleScenarioChange"
           :countryFilter="false"
           :countryFilterPct="0.02"
-          :width="graphicWidth * 0.45"
+          :width="graphicWidth < 620 ? graphicWidth * 0.9 : graphicWidth * 0.45"
         />
 
         <DataTable
@@ -436,10 +414,10 @@ video {
     <!-- slide transition -->
     <Transition name="slide" mode="out-in">
       <div
-        class="fixed top-0 right-0 z-3 w-100 flex flex-column"
-        v-show="(stepIndex > 5 && stepIndex < 11) || stepIndex > 13"
+        class="fixed top-0 right-0 z-3 w-100 flex flex-column dn db-l overflow-hidden"
+        v-show="(stepIndex > 5 && stepIndex < 11) || (stepIndex > 13 && stepIndex < 16)"
       >
-        <h2 class="pa2 f1 tr db w-100">
+        <h2 class="pa2 f4 f1-ns tr db w-100">
           <span class="db pv4"
             >Harvest:<br />
             {{ numberFormat(animatedYieldNumber * 100) }}kg</span
@@ -504,7 +482,7 @@ const pctFormat = d3.format(",.1%");
 
 // the tachyons classes we will use for the paragraphs
 const paragraphClasses =
-  "step pa1 pa4-l f3 f2-ns lh-copy measure w-100 w-80-l center ml2 ml5-ns z1";
+  "step pa1 pa4-ns f3 f2-ns lh-copy measure w-100 w-80-l center ml2 ml5-ns z1";
 
 const active = useActiveData();
 
@@ -772,7 +750,7 @@ onMounted(() => {
   /* margin-top: 33vh; */
   margin-bottom: 50vh;
   min-height: 40vh;
-  max-width: 50vw;
+  /* max-width: 50vw; */
   /* display: flex;
   flex-direction: column;
   justify-content: center;
@@ -854,5 +832,9 @@ h2 {
 
 .vh-40 {
   height: 40vh;
+}
+
+button {
+  cursor: pointer;
 }
 </style>

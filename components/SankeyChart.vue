@@ -31,7 +31,7 @@
           :y="node.y1 / 2 - node.y0 / 2"
           :dy="0.32 + 'em'"
           text-anchor="end"
-          :fill="/*node.fill*/ 'black'"
+          :fill="node.name === 'China' ? ' white' : 'black'"
           :font-size="Math.max(Math.sqrt(node.value) * 0.0009, 7)"
           transform="translate(-10, 0)"
           :data-json="node"

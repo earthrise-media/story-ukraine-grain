@@ -19,15 +19,15 @@
       {{ selectedCountry.countryName }} depends on Ukraine for
       {{ formatNumber(selectedCountry.percent) }} of its grain imports. If
       Ukraine's output is reduced to
-      <strong style="background-color: #ffc500">{{
+      <strong class="monospace ph1" style="background-color: #ffc500">{{
         formatNumber(scenario)
       }}</strong
       >, {{ selectedCountry.countryName }} will have
-      <strong class="gray">{{
+      <strong class="gray monospace ph1">{{
         formatNumber(1 - (1 - scenario) * selectedCountry.percent)
       }}</strong>
       of it's expected grain and
-      <strong class="bg-moon-gray ph1 br1"
+      <strong class="bg-moon-gray ph1 br1 monospace"
         >missing
         {{ formatNumber((1 - scenario) * selectedCountry.percent) }}</strong
       >
@@ -37,8 +37,8 @@
     <svg
       ref="svg"
       :width="props.width"
-      :height="height"
-      class=""
+      :height="props.height"
+      class="monospace"
       :viewBox="`-40 0 ${props.width + chartPadding} ${
         props.height + chartPadding
       }`"
@@ -135,7 +135,7 @@
 <script setup>
 import * as d3 from "d3";
 
-const chartPadding = 170;
+const chartPadding = 120;
 
 // const data = ???
 

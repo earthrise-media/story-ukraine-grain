@@ -1,5 +1,5 @@
 <template>
-  <svg id="map" ref="mapSvg" class="" :viewBox="`0 0 ${width} ${height}`">
+  <svg id="map" ref="mapSvg" class="" :viewBox="`0 0 ${width} ${height}`" style="opacity: 0.88">
     <path
       v-if="featureCollection"
       v-for="oblast in featureCollection.features"
@@ -34,7 +34,7 @@
       >
         {{ oblast.properties.name_1 }}
       </text>
-      <text
+      <!-- <text
         v-if="featureCollection"
         v-for="oblast in featureCollection.features"
         :x="path.centroid(oblast)[0]"
@@ -50,8 +50,7 @@
         @mouseout="handleOblastHover(null)"
       >
         {{ labelNumberFormat(findOblastValue(oblast) * 100) }}
-        <!-- {{activeGrainType}} -->
-      </text>
+      </text> -->
     </g>
   </svg>
 </template>

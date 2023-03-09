@@ -1,6 +1,6 @@
 <template>
   <div>
-    <table id="data-table" class="f7 collapse pa1">
+    <table id="data-table" class="f7 collapse pa1 monospace">
       <thead>
         <tr class="tl">
           <th>Oblast</th>
