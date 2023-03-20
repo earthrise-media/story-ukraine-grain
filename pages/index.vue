@@ -33,7 +33,7 @@
               "
             >
               <source
-                src="~/assets/intro-video-hires.r5.mp4"
+                src="assets/intro-video-hires.r5.mp4"
                 type="video/mp4"
               />
             </video>
@@ -425,7 +425,7 @@
 
       <div class="footer pa5 tc">
 
-        by <a href="https://theplotline.org" class="link black underline">The Plotline</a>
+        by EJ Fox & <a href="https://theplotline.org" class="link black underline">The Plotline</a>
         
       </div>
 
@@ -488,7 +488,7 @@ const stepProgress = ref(0); // keep track of the progress within a step
 const importExportData = ref([]);
 
 onMounted(() => {
-  fetch("data/comtrade_imports/00_all_data_ukraine.csv")
+  fetch("./data/comtrade_imports/00_all_data_ukraine.csv")
     .then((response) => response.text())
     .then((data) => {
       importExportData.value = d3.csvParse(data);

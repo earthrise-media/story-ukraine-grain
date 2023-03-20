@@ -202,7 +202,7 @@ const geographicData = ref(null);
 
 // when the page is mounted fill it with the geographic data json
 onMounted(async () => {
-  d3.json("/data/stanford-ukraine-geojson.json").then((geoData) => {
+  d3.json("./data/stanford-ukraine-geojson.json").then((geoData) => {
     geographicData.value = geoData;
   });
 });

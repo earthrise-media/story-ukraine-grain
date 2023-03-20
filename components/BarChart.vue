@@ -235,7 +235,7 @@ watch(
 
 // set the domain of the y scale when the data changes props.oblastData changes
 onMounted(() => {
-  fetch("/data/comtrade_imports/00_all_data_ukraine.csv")
+  fetch("./data/comtrade_imports/00_all_data_ukraine.csv")
     .then((response) => response.text())
     .then((data) => {
       let parsed = d3

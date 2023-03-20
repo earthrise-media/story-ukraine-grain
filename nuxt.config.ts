@@ -38,14 +38,18 @@ export default defineNuxtConfig({
         },
         {
           name: 'og:image',
-          content: '/images/og-share-image.png',
+          content: './images/og-share-image.png',
         },
         {
           name: 'twitter:image',
-          content: '/images/og-share-image.png',
+          content: './images/og-share-image.png',
         },
       ],
+      link: [
+        { rel: 'icon', 'type': 'image/ico', href:'https://s3.us-east-2.amazonaws.com/stories2.theplotline.org/favicon.ico'}
+      ]
     },
+    baseURL: '/ukr-grain/',
   },
 
 

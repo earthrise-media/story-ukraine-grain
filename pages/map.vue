@@ -234,14 +234,14 @@ const aggregate = (topology, objects, idProperty) => {
 
 onMounted(async () => {
   // load our oblast data from public/data/ovuzpsg_1221/cleaned/oblast_data.json
-  fetch("/data/ovuzpsg_1221/cleaned/all_data.json")
+  fetch("./data/ovuzpsg_1221/cleaned/all_data.json")
     .then((response) => response.json())
     .then((data) => {
       oblastData.value = data;
     });
 
   // load our import/export data from public/data/comtrade_imports/00_all_data_ukraine.csv as parse with d3.csvParse
-  fetch("/data/comtrade_imports/00_all_data_ukraine.csv")
+  fetch("./data/comtrade_imports/00_all_data_ukraine.csv")
     .then((response) => response.text())
     .then((data) => {
       importExportData.value = d3.csvParse(data);
