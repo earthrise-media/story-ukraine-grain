@@ -425,7 +425,7 @@
 
       <div class="footer pa5 tc">
 
-        by EJ Fox & <a href="https://theplotline.org" class="link black underline">The Plotline</a>
+        by <a href="https://theplotline.org" class="link black underline">The Plotline</a>
         
       </div>
 
